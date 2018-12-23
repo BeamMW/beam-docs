@@ -40,22 +40,24 @@ Getting Started
 ---------------
 
 
+Reporting Issues and Getting Support
+------------------------------------
+
+
 
 
 .. toctree::
    :caption: User's Guide
    :hidden:
 
-   rtd_pages/gui_user_guide.rst
-   rtd_pages/cli_user_guide.rst
-   rtd_pages/mining_beam.rst
-   rtd_pages/troubleshooting_guide.rst
-   rtd_pages/wallet_backup.rst
-   rtd_pages/SBBS and addresses.rst
-   rtd_pages/beam_conf_guide.rst
-   rtd_pages/zcash_mining_guide.rst
-   rtd_pages/security_warnings.rst
-   rtd_pages/glossary.rst
+   rtd_pages/user_desktop_wallet_guide.rst
+   rtd_pages/user_cli_wallet_guide.rst
+   rtd_pages/user_beam_node_guide.rst
+   rtd_pages/user_backup_restore.rst
+   rtd_pages/user_beam_stratum_server.rst
+   rtd_pages/user_supported_platforms.rst
+   rtd_pages/user_troubleshooting.rst
+   rtd_pages/user_glossary.rst
 
 .. toctree::
    :caption: Developer's guide

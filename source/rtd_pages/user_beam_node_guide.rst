@@ -34,7 +34,7 @@ Beam Node supports two options for mining Beam:
 
 		Optionally, in order to allow each mining node to be able to see all rewards mined by all your mining nodes Beam provides an additional option called `owner_key`. Owner key is a secret view key, it can not be used to spend coins, just to identify your mining rewards regardless of which node was used to mine it. Owner key is derived from primary secret key as well using the same `key_export` command, but without additional parameters.
 
-		Both keys are protected using Wallet Password
+		Both keys are protected using Wallet Password, which should also be provided
 
 
 

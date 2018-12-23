@@ -6,6 +6,8 @@ Glossary
 
 .. _address:
 .. _addresses:
+.. _sbbs address:
+.. _sbbs addresses:
 
 Address
     In Beam, addresses are only used by SBBS system to connect between Wallets during transaction creation. Unlike most other blockchains, addressses are not recorded in the blockchain and are not used to prove ownership of the coins. Each address has a default expiration time of 24 hours (which can be changed using Wallet UI). In general, it is recommened to generate fresh receiving address for each transaction. 
@@ -68,6 +70,12 @@ Seed Phrase
 Mimblewimble
 	Mimblewimble is the protocol used by Beam to provide confidentiality of transactions and scalability in terms of compact blockchain size. `Mimblewimble white paper <https://scalingbitcoin.org/papers/mimblewimble.txt>`_ was published in July 2016 by an anonymous author under the pseudonym Tom Elvis Jedusor.  
 
+
+.. _sbbs:
+
+SBBS
+
+	SBBS (abbreviation of Secure Bulletin Board System) is a subsystem within Beam Node that allows wallets to securely exchange encrypted messages and create transactions without having to be online at the same time.
 
 .. _wallet password:
 
