@@ -1,4 +1,4 @@
-.. _cli_user_guide:
+.. _user_cli_wallet_guide:
 
 Command Line User Guide
 ==========

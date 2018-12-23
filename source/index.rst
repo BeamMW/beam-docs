@@ -43,7 +43,7 @@ Getting Started
 
 
 .. toctree::
-   :caption: Using Beam
+   :caption: User's Guide
    :hidden:
 
    rtd_pages/gui_user_guide.rst
@@ -57,7 +57,12 @@ Getting Started
    rtd_pages/security_warnings.rst
    rtd_pages/glossary.rst
 
+.. toctree::
+   :caption: Developer's guide
+   :hidden:
 
+   rtd_pages/dev_messasge_types.rst
+   rtd_pages/dev_consensus_rules.rst
 
 
 Indices and tables
