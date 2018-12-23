@@ -3,7 +3,7 @@
 .. _user_beam_node_guide:
 
 Beam Node User Guide
-================
+====================
 
 General
 ------------------------
@@ -102,7 +102,7 @@ Beam Node allows to provide the settings via command line or using a configurati
 |                         |                                                                                                          |
 |                         | .. code-block:: bash                                                                                     |
 |                         |                                                                                                          |
-|                         |    history_dir=. 																						 |
+|                         |    history_dir=.                                                                                         |
 +-------------------------+----------------------------------------------------------------------------------------------------------+
 | temp_dir                | Path to temp folder for compressed (cut-through) history files. Must be on the same volume as history_dir|
 |                         |                                                                                                          |
@@ -129,28 +129,19 @@ Beam Node allows to provide the settings via command line or using a configurati
 
    Beam uses Equihash mining algorith with (150,5) parameters and customized data path. It is efficiently mined on GPUs. Using CPU is most likely to be not cost effective.
 
+
 +-------------------------+----------------------------------------------------------------------------------------------------------+
 |**Parameter**            | **Description & Example**                                                                                |
 +-------------------------+----------------------------------------------------------------------------------------------------------+
 | key_mine                | Secret key to attribute mining rewards mined by the node to your wallet                                  |
 |                         | Created using CLI walelt `key_export` command with --subkey=<miner id> parameter                         |
 |                         | See :ref:`user_cli_wallet_guide` for more details                                                        |
-|                         |                                                                                                          |
-|                         | .. code-block:: bash                                                                                     |
-|                         |                                                                                                          |
-|                         |    storage=node.db                                                                                       |
 +-------------------------+----------------------------------------------------------------------------------------------------------+
 | key_owner               | Path to folder where compressed (cut-through) history files are stored. Defaults to same folder.         |
 |                         |                                                                                                          |
-|                         | .. code-block:: bash                                                                                     |
-|                         |                                                                                                          |
-|                         |    history_dir=. 																						 |
 +-------------------------+----------------------------------------------------------------------------------------------------------+
 | pass                    | Path to temp folder for compressed (cut-through) history files. Must be on the same volume as history_dir|
 |                         |                                                                                                          |
-|                         | .. code-block:: bash                                                                                     |
-|                         |                                                                                                          |
-|                         |    temp_dir=.                                                                                            |
 +-------------------------+----------------------------------------------------------------------------------------------------------+
 | stratum_port            | Port on which stratum server will listen to incoming connections. 0 if stratum server is disabled.       |
 |                         |                                                                                                          |

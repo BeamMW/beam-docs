@@ -1,7 +1,7 @@
 .. _user_cli_wallet_guide:
 
 Command Line User Guide
-==========
+=======================
 
 The purpose of this document is to describe the process of setting up BEAM node and command line wallet. 
 
@@ -30,40 +30,40 @@ You will be prompted to enter Wallet Password, which is used to protect the wall
 Sample output for this operation will look something like this:
 
 ::
-	$ beam-wallet.exe init
-	I 2018-12-23.15:24:29.461 Rules signature: ddccf5d8d0f77bd2
-	I 2018-12-23.15:24:29.462 starting a wallet...
-	Enter password: ****************
-	I 2018-12-23.15:24:32.524 Generating wallet phrase...
-	======
-	Generated wallet phrase:
-
-	        despair;evoke;airport;seven;cricket;menu;current;ankle;require;monkey;maple;crawl;
-
-	        IMPORTANT
-
-	        Your recovery phrase is the access key to all the cryptocurrencies in your wallet.
-	        Print or write down the phrase to keep it in a safe or in a locked vault.
-	        Without the phrase you will not be able to recover your money.
-	======
-	I 2018-12-23.15:24:32.728 wallet successfully created...
-	I 2018-12-23.15:24:32.750 New address generated:
-
-	14a38140d8e66be9b8f1e8d770161fd33e35f7000053147b5a0f6a83178926b956
-
-	I 2018-12-23.15:24:32.750 label = default
+	| $ beam-wallet.exe init
+	| I 2018-12-23.15:24:29.461 Rules signature: ddccf5d8d0f77bd2
+	| I 2018-12-23.15:24:29.462 starting a wallet...
+	| Enter password: ****************
+	| I 2018-12-23.15:24:32.524 Generating wallet phrase...
+	| ======
+	| Generated wallet phrase:
+	| 
+	|         despair;evoke;airport;seven;cricket;menu;current;ankle;require;monkey;maple;crawl;
+	| 
+	|         IMPORTANT
+	| 
+	|         Your recovery phrase is the access key to all the cryptocurrencies in your wallet.
+	|         Print or write down the phrase to keep it in a safe or in a locked vault.
+	|         Without the phrase you will not be able to recover your money.
+	| ======
+	| I 2018-12-23.15:24:32.728 wallet successfully created...
+	| I 2018-12-23.15:24:32.750 New address generated:
+	| 
+	| 14a38140d8e66be9b8f1e8d770161fd33e35f7000053147b5a0f6a83178926b956
+	| 
+	| I 2018-12-23.15:24:32.750 label = default
 
 
 The Rules signature is a hash of current node configuration which is used to determine compatibility between different versions of nodes and wallets. 
 
-Generated wallet phrase is the Seed Phrase (see :ref:`seed phrase`_). 
+Generated wallet phrase is the Seed Phrase (see :ref:`seed phrase`). 
 
 .. admonition:: WARNING: Copy the seed phrase to a secure location and keep it safe. 
 
    Seed phrase is the most important secret you need to keep to protect your coins. Anyone knowing the seed phrase will be able to control all your coints regardless of any other infomation. Always generate new wallet you intend to use on a secure air gapped machine in a private environment and keep the wallet phrase safe and secret.
 
 
-The following line indicates that a new temporary SBBS address has been generated (see :ref:`sbbs`_). This address is valid for the next 24 hours and can be used to recive coins. To generate new addresses see 'Creating new receive address' section below.
+The following line indicates that a new temporary SBBS address has been generated (see :ref:`sbbs`). This address is valid for the next 24 hours and can be used to recive coins. To generate new addresses see 'Creating new receive address' section below.
 
 After wallet initialization is complete a wallet.db file is created in the same folder. This is the wallet database file which is encrypted with the Wallet Password and contains transaction history, keys and all the rest of the metadata. If this file is deleted or lost, for any reason, you can always restore your coins using the Seed Phrase, however you will lose all transaction history and any additional metadata store in the wallet database. To understand how to backup and restore the wallet.db file please check the :ref:`backup and restore` page.
 
@@ -192,7 +192,9 @@ The wallet log should look like something like:
 	I 2018-12-23.18:05:51.053 [b21f08337dd94603bb038c82c1888eac] Transaction kernel: 71cf20c4c94f25ce
 
 
-.. admonition:: It is possible, and sometimes necessary to create a transaction to your own SBBS address to split a large UTXO. To do that just issue a send command with required amounts to your own SBBS address. Please note that you will pay the fee for the transaction.
+.. admonition:: Sending transactions to yourself
+
+	It is possible, and sometimes necessary to create a transaction to your own SBBS address to split a large UTXO. To do that just issue a send command with required amounts to your own SBBS address. Please note that you will pay the fee for the transaction.
 
 
 Printing wallet info

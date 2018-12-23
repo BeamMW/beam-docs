@@ -48,13 +48,13 @@ Rules
 |                           |                                                                                                          |
 |                           |    MaturityStd=0                                                                                         |
 +---------------------------+----------------------------------------------------------------------------------------------------------+
-| MaxBodySize               | Block body size (in bytes)    	        														       |
+| MaxBodySize               | Block body size (in bytes)                                                                               |
 |                           |                                                                                                          |
 |                           | .. code-block:: bash                                                                                     |
 |                           |                                                                                                          |
 |                           |    MaxBodySize=0x100000                                                                                  |
 +---------------------------+----------------------------------------------------------------------------------------------------------+
-| DesiredRate_s             | Target block rate (in seconds)																		   |
+| DesiredRate_s             | Target block rate (in seconds)                                                                           |
 |                           |                                                                                                          |
 |                           | .. code-block:: bash                                                                                     |
 |                           |                                                                                                          |

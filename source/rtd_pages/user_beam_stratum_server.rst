@@ -2,7 +2,7 @@
 
 
 Beam Stratum Server
-================
+===================
 
 TODO: Add information about Stratum API
 
