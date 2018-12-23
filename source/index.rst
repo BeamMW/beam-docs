@@ -40,9 +40,23 @@ Getting Started
 ---------------
 
 
+
+
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+   :caption: Using Beam
+   :hidden:
+
+   rtd_pages/gui_user_guide.rst
+   rtd_pages/cli_user_guide.rst
+   rtd_pages/mining_beam.rst
+   rtd_pages/troubleshooting_guide.rst
+   rtd_pages/wallet_backup.rst
+   rtd_pages/SBBS and addresses.rst
+   rtd_pages/beam_conf_guide.rst
+   rtd_pages/zcash_mining_guide.rst
+   rtd_pages/security_warnings.rst
+   rtd_pages/glossary.rst
+
 
 
 

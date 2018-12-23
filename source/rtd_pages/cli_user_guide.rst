@@ -29,9 +29,6 @@ Beam software runs on all operating systems: Linux, Mac OS and Windows. Before y
 	| :fa:`hdd-o` ``10GB`` of free Disk (*the size of the block chain increases over time*)
 
 
-.. note:: Please report any issues you might encounter while running BEAM software on your system
+.. note:: Please report any issues you might encounter while running BEAM software on your system. 
 
 
-Please let us know if you run into snags. We plan to make it less memory/CPU intensive and support more architectures and operating systems in the future.
-
-If you are installing Zcash for the first time, please skip to the :ref:`Installation` section. Otherwise, the below upgrading section will provide information to update your current Zcash environment.
