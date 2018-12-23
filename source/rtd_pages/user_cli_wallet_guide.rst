@@ -234,3 +234,25 @@ Sample output from this command should look like this:
 
 
 
+Creating new SBBS address
+-------------------------
+
+In order to create new SBBS address, run the following command:
+
+::
+
+	./beam-wallet new_addr
+
+You will be prompted for the wallet password
+
+Sample output from this command should look like this:
+
+::
+
+	I 2018-12-23.18:16:44.112 Rules signature: ddccf5d8d0f77bd2
+	I 2018-12-23.18:16:44.113 starting a wallet...
+	Enter password: *
+	I 2018-12-23.18:16:45.392 New address generated:
+
+	646a773da4d4651f35fd75ca958b7859e89d8d8382b8155773bd396e2cc49cca
+
