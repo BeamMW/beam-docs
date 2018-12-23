@@ -22,7 +22,7 @@ Beam Node supports two options for mining Beam:
 
 1. Using Internal Miner
 
-	Beam Node has built in GPU and CPU miners (see :ref:`user_mining_guide` for more details). To start the node with internal miner, specify miner type using `miner_type` parameter. Built in GPU mining is only supported on Linux and Windows platforms.
+	Beam Node has built in GPU and CPU miners. To start the node with internal miner, specify miner type using `miner_type` parameter. Built in GPU mining is only supported on Linux and Windows platforms.
 
 2. Using External Miner via Statum Server API
 

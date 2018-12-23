@@ -63,7 +63,7 @@ Reporting Issues and Getting Support
    :caption: Developer's guide
    :hidden:
 
-   rtd_pages/dev_messasge_types.rst
+   rtd_pages/dev_understanding_logs.rst
    rtd_pages/dev_consensus_rules.rst
 
 

@@ -1,5 +1,8 @@
 .. _user_supported_platforms:
 
+Supported Platforms
+===================
+
 Beam Node and Beam Wallet are currently supported on the following platforms:
 
 	| :fa:`linux` ``64-bit`` Linux OS
