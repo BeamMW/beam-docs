@@ -30,28 +30,28 @@ You will be prompted to enter Wallet Password, which is used to protect the wall
 Sample output for this operation will look something like this:
 
 ::
-	| $ beam-wallet.exe init
-	| I 2018-12-23.15:24:29.461 Rules signature: ddccf5d8d0f77bd2
-	| I 2018-12-23.15:24:29.462 starting a wallet...
-	| Enter password: ****************
-	| I 2018-12-23.15:24:32.524 Generating wallet phrase...
-	| ======
-	| Generated wallet phrase:
-	| 
-	|         despair;evoke;airport;seven;cricket;menu;current;ankle;require;monkey;maple;crawl;
-	| 
-	|         IMPORTANT
-	| 
-	|         Your recovery phrase is the access key to all the cryptocurrencies in your wallet.
-	|         Print or write down the phrase to keep it in a safe or in a locked vault.
-	|         Without the phrase you will not be able to recover your money.
-	| ======
-	| I 2018-12-23.15:24:32.728 wallet successfully created...
-	| I 2018-12-23.15:24:32.750 New address generated:
-	| 
-	| 14a38140d8e66be9b8f1e8d770161fd33e35f7000053147b5a0f6a83178926b956
-	| 
-	| I 2018-12-23.15:24:32.750 label = default
+	 $ beam-wallet.exe init
+	 I 2018-12-23.15:24:29.461 Rules signature: ddccf5d8d0f77bd2
+	 I 2018-12-23.15:24:29.462 starting a wallet...
+	 Enter password: ****************
+	 I 2018-12-23.15:24:32.524 Generating wallet phrase...
+	 
+	 Generated wallet phrase:
+	 
+	         despair;evoke;airport;seven;cricket;menu;current;ankle;require;monkey;maple;crawl;
+	 
+	         IMPORTANT
+	 
+	         Your recovery phrase is the access key to all the cryptocurrencies in your wallet.
+	         Print or write down the phrase to keep it in a safe or in a locked vault.
+	         Without the phrase you will not be able to recover your money.
+	 
+	 I 2018-12-23.15:24:32.728 wallet successfully created...
+	 I 2018-12-23.15:24:32.750 New address generated:
+	 
+	 14a38140d8e66be9b8f1e8d770161fd33e35f7000053147b5a0f6a83178926b956
+	 
+	 I 2018-12-23.15:24:32.750 label = default
 
 
 The Rules signature is a hash of current node configuration which is used to determine compatibility between different versions of nodes and wallets. 
