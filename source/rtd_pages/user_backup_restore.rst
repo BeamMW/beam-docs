@@ -26,7 +26,7 @@ Now you need to export the owner key by running:
 
     ./beam-wallet export_owner_key
 
-(see `Exporting owner key` for more details)
+(see :ref:`exporting owner key` for more details)
 
 Then you need to run your own node, providing the owner key as a parameter as follows:
 

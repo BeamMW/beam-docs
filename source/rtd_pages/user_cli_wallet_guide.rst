@@ -101,6 +101,8 @@ The sample output for this command should look like this:
 
 It is important to keep the Miner Key secret since anyone who knows the miner key will be able to spend all rewards mined by that miner.
 
+.. _exporting owner key:
+
 Exporting owner key
 -------------------
 
