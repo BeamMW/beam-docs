@@ -23,7 +23,7 @@ In order to create new wallet run:
 
 You will be prompted to enter Wallet Password, which is used to protect the wallet database 
 
-.. admonition:: WARNING: Choose strong password for the wallet and keep it secret
+.. warning:: Choose strong password for the wallet and keep it secret
 
    Anyone who knows your wallet password and will have access to your machine will be able to spend your coins and will have access to all metadata store in the wallet, including transaction history.
 
@@ -58,7 +58,7 @@ The Rules signature is a hash of current node configuration which is used to det
 
 Generated wallet phrase is the Seed Phrase (see :ref:`seed phrase`). 
 
-.. admonition:: WARNING: Copy the seed phrase to a secure location and keep it safe. 
+.. warning:: Copy the seed phrase to a secure location and keep it safe. 
 
    Seed phrase is the most important secret you need to keep to protect your coins. Anyone knowing the seed phrase will be able to control all your coints regardless of any other infomation. Always generate new wallet you intend to use on a secure air gapped machine in a private environment and keep the wallet phrase safe and secret.
 
@@ -77,7 +77,7 @@ To restore your UTXOs from a Seed Phrase run init command with additional parame
 
 ::
 
-	./beam-wallet init --wallet_phrase=bla;bla;bla...bla;
+	./beam-wallet restore --wallet_phrase=bla;bla;bla...bla;
 
 Export miner key for specific miner
 -----------------------------------
