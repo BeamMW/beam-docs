@@ -70,17 +70,48 @@ After wallet initialization is complete a wallet.db file is created in the same 
 In addition to the wallet.db file, you will see `logs` folder. A new log file is created every time you run the CLI wallet. Please attach logs to any supports requests you might send. See `Reporting Issues and Getting Support`_ section, for more details.
 
 
-Restore wallet from Seed Phrase
+Restore CLI wallet from Seed Phrase
 -------------------------------
 
-To restore your UTXOs from a Seed Phrase run init command with additional parameter --wallet_prase=<semicolod separated list of 12 words>
+It is only possible to restore your coins by running your own node with your *owner key*
+
+This process involves several steps
+
+First you need to recreate your wallet using your `seed phrase`_ by running the following command: 
 
 ::
 
-	./beam-wallet restore --wallet_phrase=bla;bla;bla...bla;
+	./beam-wallet restore --wallet_phrase=<semicolod separated list of 12 seed phrase words>;
 
-Export miner key for specific miner
------------------------------------
+Now you need to export the owner key by running:
+
+::
+
+	./beam-wallet export_owner_key
+
+(see `Exporting owner key` for more details)
+
+Then you need to run your own node, providing the owner key as a parameter as follows:
+
+::
+
+	./beam-node --peer=<ip and port of peer node> --key_owner=<owner key exported from the wallet> 
+
+Once the node has synchronized, you need to connect your wallet to the node to update the wallet database.
+
+To do that run the following command:
+
+::
+
+	./beam-wallet listen -n <ip and port of your node, ex:127.0.0.1:10000>
+
+After wallet syncrhonizes, use `info` command to check wallet status
+
+:: 
+	./beam-wallet info
+
+Exporting miner key
+-------------------
 
 To generate a secret key used by the miner to attribute mining rewards to your wallet run the following command:
 
@@ -102,8 +133,8 @@ The sample output for this command should look like this:
 
 It is important to keep the Miner Key secret since anyone who knows the miner key will be able to spend all rewards mined by that miner.
 
-Exporting owner key for all miners
-----------------------------------
+Exporting owner key
+-------------------
 
 The purpose of the Owner key is to allow all nodes mining for you to be aware of all mining rewards mined by other nodes so that you would only need to connect to one node to collect all rewards into your wallet. While in most other cryptocurrencies this is done by simply mining to a single address you control, in Mimblewimble it is not as simple since there are no addresses and the mining rewards should be coded with unique blinding factors which are deterministically derived from the Master Key, and then tagged by the single Owner key. 
 
