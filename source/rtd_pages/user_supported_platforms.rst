@@ -5,7 +5,8 @@ Supported Platforms
 
 Beam Node and Beam Wallet are currently supported on the following platforms:
 
-	:fa:`linux` ``64-bit`` Linux OS
+	:fa:`linux` ``64-bit`` Linux OS Ubuntu 14.04 LTS Trusty Tahr
+, Ubuntu 16.04 LTS Xenial Xerus, Ubuntu 18.04 LTS Bionic Beaveр
 	:fa:`microchip` ``64-bit`` Processor
 	:fa:`database` ``5GB`` of free RAM
 	:fa:`hdd-o` ``10GB`` of free Disk (*the size of the block chain increases over time*)
