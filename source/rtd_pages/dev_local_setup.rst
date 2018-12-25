@@ -29,7 +29,7 @@ See :ref:`creating_new_cli_wallet` for more details
 
 	./beam-wallet export_miner_key --subkey=1
 
-.. note:: If you are running more than one mining node repeat step 3 with --subkey=N (where N is the id of the nodes 1,2,3...)
+.. note:: If you are running more than one mining node repeat step 3 with --subkey=N (where N is the id of the mining nodes 1,2,3...)
 
 4. Export owner key by running the following command in the wallet folder:
 
@@ -38,6 +38,7 @@ See :ref:`creating_new_cli_wallet` for more details
 	./beam-wallet export_owner_key
 
 5. Locate sample Beam treasury file treasury.bin (it is located in the root of Beam source folder) and copy it to the same folder as beam-node binary.
+
 
 6. Launch the first node using the following command:
 
