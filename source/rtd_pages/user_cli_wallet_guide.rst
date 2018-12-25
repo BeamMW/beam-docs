@@ -12,8 +12,10 @@ Beam software runs on all operating systems: Linux, Mac OS and Windows. Before y
 
 All examples in this section are formatted for Linux / Mac platforms. If you are using Windows please substitute ./beam-wallet with beam-wallet.exe and run your commands using Windows Command Prompt.
 
+.. _creating_new_cli_wallet:
+
 Creating new wallet
------------------------
+-------------------
 
 In order to create a new wallet run:
 

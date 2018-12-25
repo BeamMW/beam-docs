@@ -134,13 +134,16 @@ Beam Node allows to provide the settings via command line or using a configurati
 |**Parameter**            | **Description & Example**                                                                                |
 +-------------------------+----------------------------------------------------------------------------------------------------------+
 | key_mine                | Secret key to attribute mining rewards mined by the node to your wallet                                  |
-|                         | Created using CLI walelt `key_export` command with --subkey=<miner id> parameter                         |
+|                         | Created using CLI walelt `export_miner_key` command with --subkey=<miner id> parameter                   |
 |                         | See :ref:`user_cli_wallet_guide` for more details                                                        |
-+-------------------------+----------------------------------------------------------------------------------------------------------+
-| key_owner               | Path to folder where compressed (cut-through) history files are stored. Defaults to same folder.         |
 |                         |                                                                                                          |
 +-------------------------+----------------------------------------------------------------------------------------------------------+
-| pass                    | Path to temp folder for compressed (cut-through) history files. Must be on the same volume as history_dir|
+| key_owner               | Secret key allowing the node to monitor mining rewards mined by all mining nodes marked by this key.     |
+|                         | Created using CLI walelt `export_owner_key` command                         |
+|                         | See :ref:`user_cli_wallet_guide` for more details                                                        |
+|                         |                                                                                                          |
++-------------------------+----------------------------------------------------------------------------------------------------------+
+| pass                    | Wallet password. It is required since both Miner Key and Owner Key are protected by walelt password      |
 |                         |                                                                                                          |
 +-------------------------+----------------------------------------------------------------------------------------------------------+
 | stratum_port            | Port on which stratum server will listen to incoming connections. 0 if stratum server is disabled.       |
