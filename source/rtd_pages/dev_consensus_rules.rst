@@ -2,6 +2,9 @@
 
 .. _dev_consensus_rules:
 
+
+.. _consensus_rules:
+
 Consensus Rules
 ================
 

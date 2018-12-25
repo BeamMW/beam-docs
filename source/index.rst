@@ -55,6 +55,7 @@ Reporting Issues and Getting Support
    rtd_pages/user_beam_node_guide.rst
    rtd_pages/user_backup_restore.rst
    rtd_pages/user_beam_stratum_server.rst
+   rtd_pages/user_local_setup.rst
    rtd_pages/user_supported_platforms.rst
    rtd_pages/user_reporting_issues.rst
    rtd_pages/user_troubleshooting.rst
