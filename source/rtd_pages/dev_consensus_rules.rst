@@ -3,7 +3,7 @@
 .. _dev_consensus_rules:
 
 
-.. _consensus_rules:
+.. _consensus rules:
 
 Consensus Rules
 ================

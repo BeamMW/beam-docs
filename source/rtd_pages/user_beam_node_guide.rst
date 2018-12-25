@@ -22,19 +22,19 @@ Beam Node supports two options for mining Beam:
 
 1. Using Internal Miner
 
-	Beam Node has built in GPU and CPU miners. To start the node with internal miner, specify miner type using `miner_type` parameter. Built in GPU mining is only supported on Linux and Windows platforms.
+    Beam Node has built in GPU and CPU miners. To start the node with internal miner, specify miner type using `miner_type` parameter. Built in GPU mining is only supported on Linux and Windows platforms.
 
 2. Using External Miner via Statum Server API
 
-	Beam Node provides built in support for Startum API allowing to connect multiple external mining clients to a single node. (see :ref: `user_beam_stratum_server` for more details). To start the node with stratum server use `stratum_port` and `stratum_secrets_path` parameters. Stratum clients can be run together with the Internal Miner
+    Beam Node provides built in support for Startum API allowing to connect multiple external mining clients to a single node. (see :ref: `user_beam_stratum_server` for more details). To start the node with stratum server use `stratum_port` and `stratum_secrets_path` parameters. Stratum clients can be run together with the Internal Miner
 
-	.. admonition:: Mining keys management
+    .. admonition:: Mining keys management
 
-		In order for the mining node to be able to attribute mining rewards to your wallet, it needs a special secret *mining key*. The mining key is derived from the primary secret key by running `key_export` command with --subkey=<node id> parameter in the Beam CLI Wallet (See :ref: `user_cli_wallet_guide` for more details). You can generate a multiple separate mining keys for different mining nodes.
+        In order for the mining node to be able to attribute mining rewards to your wallet, it needs a special secret *mining key*. The mining key is derived from the primary secret key by running `key_export` command with --subkey=<node id> parameter in the Beam CLI Wallet (See :ref: `user_cli_wallet_guide` for more details). You can generate a multiple separate mining keys for different mining nodes.
 
-		Optionally, in order to allow each mining node to be able to see all rewards mined by all your mining nodes Beam provides an additional option called `owner_key`. Owner key is a secret view key, it can not be used to spend coins, just to identify your mining rewards regardless of which node was used to mine it. Owner key is derived from primary secret key as well using the same `key_export` command, but without additional parameters.
+        Optionally, in order to allow each mining node to be able to see all rewards mined by all your mining nodes Beam provides an additional option called `owner_key`. Owner key is a secret view key, it can not be used to spend coins, just to identify your mining rewards regardless of which node was used to mine it. Owner key is derived from primary secret key as well using the same `key_export` command, but without additional parameters.
 
-		Both keys are protected using Wallet Password, which should also be provided
+        Both keys are protected using Wallet Password, which should also be provided
 
 
 
@@ -43,7 +43,7 @@ Beam Node supports two options for mining Beam:
 Validating mode
 ------------------------
 
-By default (without any parameters)	Beam Node is run in validating mode, meaning that mining is disabled. Validating nodes are still very important for the overall health and safety of the network since they:
+By default (without any parameters) Beam Node is run in validating mode, meaning that mining is disabled. Validating nodes are still very important for the overall health and safety of the network since they:
 
 1. Help in propagating transactions and blocks through the network 
 2. Relay SBBS messages to enable Wallet to Wallet communication.
