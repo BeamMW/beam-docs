@@ -139,7 +139,7 @@ Beam Node allows to provide the settings via command line or using a configurati
 |                         |                                                                                                          |
 +-------------------------+----------------------------------------------------------------------------------------------------------+
 | key_owner               | Secret key allowing the node to monitor mining rewards mined by all mining nodes marked by this key.     |
-|                         | Created using CLI walelt `export_owner_key` command                         |
+|                         | Created using CLI walelt `export_owner_key` command                                                      |
 |                         | See :ref:`user_cli_wallet_guide` for more details                                                        |
 |                         |                                                                                                          |
 +-------------------------+----------------------------------------------------------------------------------------------------------+
