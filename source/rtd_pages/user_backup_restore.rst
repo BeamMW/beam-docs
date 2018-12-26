@@ -31,7 +31,7 @@ First you need to recreate your wallet using your :ref:`seed phrase<seed phrase>
 
 ::
 
-    ./beam-wallet restore --wallet_phrase=<semicolon separated list of 12 seed phrase words>;
+    ./beam-wallet restore --seed_phrase=<semicolon separated list of 12 seed phrase words>;
 
 Now you need to export the owner key by running:
 
