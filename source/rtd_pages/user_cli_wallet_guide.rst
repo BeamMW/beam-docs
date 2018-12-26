@@ -37,15 +37,15 @@ Sample output for the ``init`` operation will look something like this:
     I 2018-12-23.15:24:29.461 Rules signature: ddccf5d8d0f77bd2
     I 2018-12-23.15:24:29.462 starting a wallet...
     Enter password: ****************
-    I 2018-12-23.15:24:32.524 Generating wallet phrase...
+    I 2018-12-23.15:24:32.524 Generating seed phrase...
     
-    Generated wallet phrase:
+    Generated seed phrase:
     
             despair;evoke;airport;seven;cricket;menu;current;ankle;require;monkey;maple;crawl;
     
             IMPORTANT
     
-            Your recovery phrase is the access key to all the cryptocurrencies in your wallet.
+            Your seed phrase is the access key to all the cryptocurrencies in your wallet.
             Print or write down the phrase to keep it in a safe or in a locked vault.
             Without the phrase you will not be able to recover your money.
     
@@ -59,11 +59,11 @@ Sample output for the ``init`` operation will look something like this:
 
 The ``Rules signature`` is a hash of current node configuration which is used to determine compatibility between different versions of nodes and wallets. 
 
-Generated wallet phrase is the :ref:`Seed Phrase <seed phrase>`. 
+Generated seed phrase is the :ref:`Seed Phrase <seed phrase>`. 
 
 .. warning:: Copy the seed phrase to a secure location and keep it safe. 
 
-   Seed phrase is the **most important secret** you need to keep to protect your funds. Anyone knowing the seed phrase will be able to control all your funds regardless of any other infomation. When generating new wallet each and every time, the safest scenario would be to make it on a secure air-gapped machine in a private environment and always keep the wallet phrase in a secret and protected place.
+   Seed phrase is the **most important secret** you need to keep to protect your funds. Anyone knowing the seed phrase will be able to control all your funds regardless of any other infomation. When generating new wallet each and every time, the safest scenario would be to make it on a secure air-gapped machine in a private environment and always keep the seed phrase in a secret and protected place.
 
 
 The following line indicates that a new temporary :ref:`SBBS<sbbs>` address has been generated. This address is valid for the next 24 hours and can be used to recieve coins. To generate new addresses see 'Creating new receive address' section below.
