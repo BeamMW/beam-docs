@@ -1,9 +1,22 @@
 .. _user_backup_restore:
 
+
+.. _backup and restore:
+
 Backup and Restore
 ==================
 
 This document lists all backup and restore procedures necessary to keep your data safe.
+
+
+.. _restore desktop wallet from seed phrase:
+
+Restore Desktop wallet from Seed Phrase
+---------------------------------------
+
+To be completed...
+
+
 
 .. _restore cli wallet from seed phrase:
 

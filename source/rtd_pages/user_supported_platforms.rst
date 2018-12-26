@@ -1,5 +1,8 @@
 .. _user_supported_platforms:
 
+
+.. _supported platforms:
+
 Supported Platforms
 ===================
 
