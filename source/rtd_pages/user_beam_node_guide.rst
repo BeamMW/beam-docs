@@ -9,7 +9,7 @@ General
 ------------------------
 
 
-Beam Node is an essential part of the Beam blockchain and is responsible for validating transactions and blocks. It runs on all platforms: Linux, Windows and Mac (for detalied list of supported and tested platforms please see :ref: `user_supported_platforms`)
+Beam Node is an essential part of the Beam blockchain and is responsible for validating transactions and blocks. It runs on all platforms: Linux, Windows and Mac (for detalied list of supported and tested platforms please see :ref:`user_supported_platforms`)
 
 
 Beam Node can be run in either Mining or Validating mode. 
@@ -30,7 +30,7 @@ Beam Node supports two options for mining Beam:
 
     .. admonition:: Mining keys management
 
-        In order for the mining node to be able to attribute mining rewards to your wallet, it needs a special secret *mining key*. The mining key is derived from the primary secret key by running `key_export` command with --subkey=<node id> parameter in the Beam CLI Wallet (See :ref: `user_cli_wallet_guide` for more details). You can generate a multiple separate mining keys for different mining nodes.
+        In order for the mining node to be able to attribute mining rewards to your wallet, it needs a special secret *mining key*. The mining key is derived from the primary secret key by running `export_miner_key` command with --subkey=<node id> parameter in the Beam CLI Wallet (See :ref:`user_cli_wallet_guide` for more details). You can generate a multiple separate mining keys for different mining nodes.
 
         Optionally, in order to allow each mining node to be able to see all rewards mined by all your mining nodes Beam provides an additional option called `owner_key`. Owner key is a secret view key, it can not be used to spend coins, just to identify your mining rewards regardless of which node was used to mine it. Owner key is derived from primary secret key as well using the same `key_export` command, but without additional parameters.
 
@@ -43,7 +43,7 @@ Beam Node supports two options for mining Beam:
 Validating mode
 ------------------------
 
-By default (without any parameters) Beam Node is run in validating mode, meaning that mining is disabled. Validating nodes are still very important for the overall health and safety of the network since they:
+By default (without `--miner_type` flag) Beam Node is run in validating mode, meaning that mining is disabled. Validating nodes are still very important for the overall health and safety of the network since they:
 
 1. Help in propagating transactions and blocks through the network 
 2. Relay SBBS messages to enable Wallet to Wallet communication.
@@ -58,7 +58,7 @@ If possible, always prefer running a local node either with or without mining!
 Node Settings
 ------------------------
 
-Beam Node allows to provide the settings via command line or using a configuration file called beam-node.cfg and located in the same folder as Beamm Node binary. 
+Beam Node allows to provide the settings via command line or using a configuration file called beam-node.cfg and located in the same folder as Beam Node binary. 
 
 .. admonition:: Command line parameters override configuration file settings
 

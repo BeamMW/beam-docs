@@ -13,12 +13,12 @@ Beam Node and Beam Wallet are currently supported on the following platforms:
 	:fa:`database` ``5GB`` of free RAM
 	:fa:`hdd-o` ``10GB`` of free Disk (*the size of the block chain increases over time*)
 
-	:fa:`mac` ``64-bit`` Mac OS 10.13 or higher
+	:fa:`apple` ``64-bit`` Mac OS 10.13 or higher
 	:fa:`microchip` ``64-bit`` Processor
 	:fa:`database` ``5GB`` of free RAM
 	:fa:`hdd-o` ``10GB`` of free Disk (*the size of the block chain increases over time*)
 
-	:fa:`win` ``64-bit`` Windows 8 or higher
+	:fa:`windows` ``64-bit`` Windows 8 or higher
 	:fa:`microchip` ``64-bit`` Processor
 	:fa:`database` ``5GB`` of free RAM
 	:fa:`hdd-o` ``10GB`` of free Disk (*the size of the block chain increases over time*)

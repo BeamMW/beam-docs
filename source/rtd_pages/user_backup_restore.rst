@@ -31,7 +31,7 @@ First you need to recreate your wallet using your :ref:`seed phrase<seed phrase>
 
 ::
 
-    ./beam-wallet restore --wallet_phrase=<semicolon separated list of 12 seed phrase words>;
+    ./beam-wallet restore --seed_phrase=<semicolon separated list of 12 seed phrase words>;
 
 Now you need to export the owner key by running:
 
@@ -55,7 +55,7 @@ To do that run the following command:
 
     ./beam-wallet listen -n <ip and port of your node, ex:127.0.0.1:10000>
 
-After wallet syncrhonizes, use `info` command to check wallet status
+After wallet syncrhonizes, use :bash:`info` command to check wallet status
 
 :: 
 
