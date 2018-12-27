@@ -24,4 +24,7 @@ Beam Node and Beam Wallet are currently supported on the following platforms:
 	:fa:`hdd-o` ``10GB`` of free Disk (*the size of the block chain increases over time*)
 
 
+.. attention:: At the moment Beam only works on processors that support AVX instruction set. 
+
+
 .. note:: Please report any issues you might encounter while running BEAM software on your system. 

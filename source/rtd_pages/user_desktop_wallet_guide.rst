@@ -1,5 +1,8 @@
 .. _user_desktop_wallet_guide:
 
+
+.. _desktop_wallet_guide:
+
 Desktop Wallet User Guide
 =========================
 

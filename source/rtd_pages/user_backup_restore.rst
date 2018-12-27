@@ -1,5 +1,6 @@
 .. _user_backup_restore:
 
+.. warning:: The following document is still under construction and is subject to changes
 
 .. _backup and restore:
 
@@ -55,7 +56,7 @@ To do that run the following command:
 
     ./beam-wallet listen -n <ip and port of your node, ex:127.0.0.1:10000>
 
-After wallet syncrhonizes, use :bash:`info` command to check wallet status
+After wallet syncrhonizes, use ``info`` command to check wallet status
 
 :: 
 
