@@ -45,12 +45,13 @@ Blockchain Explorer
 Cut through
 	In `mimblewimble`_ protocol, cut through feature enables creation of compacted, yet still verifiable, blockchain history by removing all intermediate transactions and thus significantly reducing the amount of information required by a new node in the system to start mining or verifying new blocks. 
 
-.. _dificulty:
-.. _mining difficulty:
 
-Mining difficulty
 
-	Mining difficulty is a dynamic parameter which determines amount of calculations necessary to solve Beam Proof of Work puzzle. It is designed to ensure that blocks are created once a minute (on average) regarless of number of miners in the network. Current block creation time and difficulty can be seen using the `blockchain explorer`_.
+.. _macroblock:
+
+Macroblock
+
+	A macroblock is a compressed version of blockchain history implementing the cut-through feature of Mimblewimble protocol. Each node generates macroblocks in the background and stores them on the local disk. When new node connects to the system it first downloads the latest Macroblock and then updates more recent blocks in the blockchain one by one. This allows to significantly reduce the time of onboarding new nodes into the system.
 
 
 .. _master key:
@@ -58,6 +59,12 @@ Mining difficulty
 Master key
 	Master key (or master secret key) is the key used to generate all blinding factors in a single wallet. Master key is also used to generate Miner Keys and Owner key used to mine coins for a specific wallet. In general
 
+.. _dificulty:
+.. _mining difficulty:
+
+Mining difficulty
+
+	Mining difficulty is a dynamic parameter which determines amount of calculations necessary to solve Beam Proof of Work puzzle. It is designed to ensure that blocks are created once a minute (on average) regarless of number of miners in the network. Current block creation time and difficulty can be seen using the `blockchain explorer`_.
 
 .. _seed phrase:
 
