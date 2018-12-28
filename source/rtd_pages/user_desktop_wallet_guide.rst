@@ -1,5 +1,6 @@
 .. _user_desktop_wallet_guide:
 
+.. warning:: The following document is still under construction and is subject to changes
 
 .. _desktop_wallet_guide:
 
@@ -31,7 +32,7 @@ Click 'Create new wallet'.
 Generating seed phrase
 ----------------------
 
-Wallet will generate a new :ref:`seed phrase` for you. Seed phrase is your secret that will allow you to restore your coins. It's the most important secret you have to keep.
+Wallet will generate a new :ref: `seed phrase` for you. Seed phrase is your secret that will allow you to restore your coins. It's the most important secret you have to keep.
 
 .. figure:: images/desktop/2_new_wallet_screen.png
    :alt: Before generating seed phrase
@@ -106,35 +107,48 @@ If you are running your own node somewhere and want to connect specifically to i
 Wallet Synchronization
 ----------------------
 
-Once the Wallet is connected, it synchronizes the current blockchain data from the network. In case Beam Wallet is running with local node this process might take some time. The wallet will first download and validate the latest :ref:`macroblock` and then all the rest of the blockchain. 
+Once the Wallet is connected, it synchronizes the current blockchain data from the network. In case Beam Wallet is running with local node this process might take some time. The wallet will first download and validate the latest :ref: `macroblock` and then all the rest of the blockchain. 
 
 .. figure:: images/desktop/14_new_wallet_sync_screen.png
    :alt: Start wallet in local mode  
 
+Once synchronization is complete, you will see the Main Screen of the wallet
 
 Main Screen
 -----------
 
-Main Screen of the wallet shows the current balance of both available and unconfirmed Beams as well as the transaction history.  
+Main Screen of the wallet shows the current balance of both available and unconfirmed Beams as well as the transaction history. On the left, under the Beam logo, the is a toolbar that provides navigation between different wallet screens currently: Wallet (or Main Screen), Addresses, UTXO and Settings
+
+Let's first go over them one by one.
 
 .. figure:: images/desktop/15_main_screen_empty.png
    :alt: Main screen  
 
-In the top left corner, under the screen title, you see connection indicator which shows whether the wallet could successfully connect to peers. In brackets, it specifies the network to which the wallet is connected. In the screenshot above it says '(master)' which means the wallet is connected to internal developers network, called masternet. In case of Testnet 4, it will say '(testnet4)'. If the wallet is unable to connect to the peer it will be shown by red indicator.
+In the top left corner of the Main Screen, under the screen title, you see connection indicator which shows whether the wallet could successfully connect to peers. In brackets, it specifies the network to which the wallet is connected. In the screenshot above it says '(master)' which means the wallet is connected to internal developers network, called masternet. In case of Testnet 4, it will say '(testnet4)'. If the wallet is unable to connect to the peer it will be shown by red indicator.
 
-.. figure:: images/desktop/15_main_screen_empty.png
-   :alt: Main screen  
+.. figure:: images/desktop/wallet disconnected.png
+   :alt: Wallet disconnected  
+
+Send and Receive buttons are located in the top right corner, we will get back to the later when we will talk about sending and receiving Beam coins. There we wil also explain all the details regarding the difference between the Availble and Unconfirmed funds as well as the meanings of the fields in the Transactions table.
 
 Address Screen
 --------------
 
+Addresses screen lists all SBBS addresses that were used in transactions. It's main use is for managing your interactions with other wallets. Add data in this screen is only stored locally and is not related to the blockchain in any way. 
+
 .. figure:: images/desktop/16_address_screen_default.png
    :alt: Address screen
+
+Initially, one default listening address is created. Each address has a default expiration time of 24 hours, including the default address. You can always crete a new address using Receive dialog, as will be explained in the :ref: `Sending and Receiving Beams` section below.
+
+.. attention:: It is highly recommended to create a new address for each transaction
+
+You can explicitly delete the address by clicking on the three dots located to the right of the address and choosing 'Delete address' from the drop down menu
 
 UTXO Screen
 -----------
 
-In Beam, like in most other cryptocurrencies, your balance is constructed as a result of...
+In Beam, like in most other cryptocurrencies, your balance is constructed as a result of transactions. Each Transaction uses some existing inputs and creates new outputs. All the outputs controlled by the wallet are shown in the UTXO screen.
 
 .. figure:: images/desktop/17_utxo_screen_empty.png
    :alt: UTXO Screen
@@ -142,5 +156,23 @@ In Beam, like in most other cryptocurrencies, your balance is constructed as a r
 Settings screen
 ---------------
 
+Settings screen currently consists of four sections
+
 .. figure:: images/desktop/18_settings_local_node.png
    :alt: Address screen
+
+The Remote Node section (top left) is relevant in case the wallet is connected to a remote node and specifies IP address and port of that node.
+
+The Local Node section (bottom left) is relevant in case wallet runs local node. In that section you can enable or disable local node (in case local node is disabled wallet connects to a remote node specified in the Remote Node section). When running local node you should specify the port on which the node will be listening on and the list of node peers. 
+
+General Settings section allows to change walelt password and set the lock screen time, after which wallet will automatically logout to protect against accidental unauthorized access to a running wallet
+
+The Report problem section allows to create an archive of wallet logs and explains how to report an issue. It also shows the current location of the walelt files. See more details about reporting issues and getting support in the :ref: `Reporting Issues and Getting Support` section.
+
+.. attention:: In case the wallet crashes at start or when trying to create the log archive please refer to :ref: `Troubleshooting` section.
+
+In the top right corner of the Settings screen is the wallet version. It is important to always specify the version when asking for support or reporting issues.
+
+
+Sending and Receiving Beams
+---------------------------

@@ -1,7 +1,7 @@
 .. _user_troubleshooting:
 
 Troubleshooting
-=================
+===============
 
 
 Command Line Wallet
