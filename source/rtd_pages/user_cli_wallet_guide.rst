@@ -1,5 +1,8 @@
 .. _user_cli_wallet_guide:
 
+
+.. _command_line_user_guide:
+
 Command Line User Guide
 =======================
 
@@ -79,6 +82,7 @@ Restore a wallet from a Seed Phrase
 
 For all the restore procedures see :ref:`Restore CLI wallet from Seed Phrase`
 
+.. _exporting_miner_key:
 
 Exporting miner key
 -------------------

@@ -81,10 +81,10 @@ If you want to setup a stand alone mining node and use either built in or extern
 Creating CLI wallet for mining rewards
 --------------------------------------
 
-Before you can start mining using Beam you should create a wallet to collect mining rewards. Follow the steps in :ref: `Command Line User Guide` to perform the following operations
+Before you can start mining using Beam you should create a wallet to collect mining rewards. Follow the steps in :ref:`command_line_user_guide` to perform the following operations
 
-1. Create new wallet (see :ref: `Creating new wallet`)
-2. Export miner key and owner key (see :ref: `Exporting miner key` and :ref: `Exporting owner key`)
+1. Create new wallet (see :ref:`creating_new_cli_wallet`)
+2. Export miner key and owner key (see :ref:`exporting_miner_key` and :ref:`exporting owner key`)
 
 
 .. attention:: Testnet 4 does not support built in GPU miner. It will be added back for Mainnet release
