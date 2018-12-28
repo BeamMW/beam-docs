@@ -106,7 +106,7 @@ If you are running your own node somewhere and want to connect specifically to i
 Wallet Synchronization
 ----------------------
 
-Once the Wallet is connected, it synchronizes the current blockchain data from the network. In case Beam Wallet is running with local node this process might take some time. The wallet will first download the latest :ref:`macroblock`
+Once the Wallet is connected, it synchronizes the current blockchain data from the network. In case Beam Wallet is running with local node this process might take some time. The wallet will first download and validate the latest :ref:`macroblock` and then all the rest of the blockchain. 
 
 .. figure:: images/desktop/14_new_wallet_sync_screen.png
    :alt: Start wallet in local mode  
@@ -114,6 +114,13 @@ Once the Wallet is connected, it synchronizes the current blockchain data from t
 
 Main Screen
 -----------
+
+Main Screen of the wallet shows the current balance of both available and unconfirmed Beams as well as the transaction history.  
+
+.. figure:: images/desktop/15_main_screen_empty.png
+   :alt: Main screen  
+
+In the top left corner, under the screen title, you see connection indicator which shows whether the wallet could successfully connect to peers. In brackets, it specifies the network to which the wallet is connected. In the screenshot above it says '(master)' which means the wallet is connected to internal developers network, called masternet. In case of Testnet 4, it will say '(testnet4)'. If the wallet is unable to connect to the peer it will be shown by red indicator.
 
 .. figure:: images/desktop/15_main_screen_empty.png
    :alt: Main screen  
