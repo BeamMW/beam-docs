@@ -126,7 +126,7 @@ Let's first go over them one by one.
 
 In the top left corner of the Main Screen, under the screen title, you see connection indicator which shows whether the wallet could successfully connect to peers. In brackets, it specifies the network to which the wallet is connected. In the screenshot above it says '(master)' which means the wallet is connected to internal developers network, called masternet. In case of Testnet 4, it will say '(testnet4)'. If the wallet is unable to connect to the peer it will be shown by red indicator.
 
-.. figure:: images/desktop/wallet disconnected.png
+.. figure:: images/desktop/wallet_disconnected.png
    :alt: Wallet disconnected  
 
 Send and Receive buttons are located in the top right corner, we will get back to the later when we will talk about sending and receiving Beam coins. There we wil also explain all the details regarding the difference between the Availble and Unconfirmed funds as well as the meanings of the fields in the Transactions table.
