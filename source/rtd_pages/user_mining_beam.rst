@@ -36,6 +36,8 @@ Miner Rewards
 
 During the first year of Beam existence, miner reward will be 80 coins per block. In years 2-5 the reward will be 40 coins per block. In year 6 the reward will be to 25 coins, and then halving will occur every 4 years until year 129. After year 133, Beam emission will stop.
 
+Mining reward (coinbase UTXO) has 4 hours maturity, meaning that it will be available for spending 4 hours after it was mined.
+
 Treasury
 --------
 
@@ -81,8 +83,8 @@ Creating CLI wallet for mining rewards
 
 Before you can start mining using Beam you should create a wallet to collect mining rewards. Follow the steps in :ref: `Command Line User Guide` to perform the following operations
 
-1. Create new wallet 
-2. Export miner key and owner key
+1. Create new wallet (see :ref: `Creating new wallet`)
+2. Export miner key and owner key (see :ref: `Exporting miner key` and :ref: `Exporting owner key`)
 
 
 .. attention:: Testnet 4 does not support built in GPU miner. It will be added back for Mainnet release
@@ -92,7 +94,7 @@ Using Beam Stratum Server
 
 Beam node implements Stratum protocol for connecting external miner clients. Clients open a TCP connection to the node though which they receive jobs to mine blocks using Equihash mining protocol.
 
-.. iportant::Stratum server connections are protected using Transport Layer Security (TLS) protocol and require TLS certificates in order to work properly. You can get the 
+.. important::Stratum server connections are protected using Transport Layer Security (TLS) protocol and require TLS certificates in order to work properly. You can either buy the certificates or create self signed certificates on your local machine.
 	
 	In addition a text file called 'statum.api.keys' should be created and contain one or more *API keys* - random strings of 8 characters or more. 
 

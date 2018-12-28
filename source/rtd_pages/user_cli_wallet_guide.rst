@@ -80,8 +80,8 @@ Restore a wallet from a Seed Phrase
 For all the restore procedures see :ref:`Restore CLI wallet from Seed Phrase`
 
 
-Exporting the miner key
------------------------
+Exporting miner key
+-------------------
 
 To generate a secret key used by the miner to attribute mining rewards to your wallet run the following command:
 
@@ -105,8 +105,8 @@ It is important to **keep the Miner Key secret** since anyone who knows the mine
 
 .. _exporting owner key:
 
-Exporting the owner key
------------------------
+Exporting owner key
+-------------------
 
 The purpose of the ``Owner Key`` is to allow all nodes mining for you to be aware of all mining rewards mined by other nodes so that you would only need to connect to one node to collect all the rewards into your wallet. While in most other cryptocurrencies this is done by simply mining to a single address you control, in Mimblewimble it is not as simple since there are no addresses and the mining rewards should be coded with unique blinding factors which are deterministically derived from the ``Master Key``, and then tagged by the single ``Owner Key``. 
 
