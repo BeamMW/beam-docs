@@ -176,3 +176,60 @@ In the top right corner of the Settings screen is the wallet version. It is impo
 
 Sending and Receiving Beams
 ---------------------------
+
+Let's start with the Receiving flow.
+
+To receive Beams you shoul go to the Main Wallet screen and click on the blue 'Receive' button in the top right corner. This will open a Receive Dialog.
+
+.. figure:: images/desktop/desktop_wallet_receive_dialog.png
+   :alt: Receive dialog
+
+
+A new SBBS address is generated each time the dialog is open. You can copy and send the address to the Sending party via any available channel (email, Telegram etc...)
+
+.. attention:: You have to click 'Close' button in the dialog for the address to become active
+
+By default, each address is valid for 24 hours. You can explicitly set the expiration time to 'Never' by clicking on the 'Expires' dropdown.
+
+.. figure:: images/desktop/desktop_wallet_address_expiration.png
+   :alt: Address expiration in Receive dialog
+
+
+.. attention:: The permanent addresses that never expire are only useful in very limited special cases, like working with exchanges and such. Never use this option for regular transactions, rather always create a new address for each transaction.
+
+You also add a comment when creating the receiving address. The comment is never sent to the network, it is only visible inside your wallet and is used for internal bookkeeping only. 
+
+Afer you are done, don't forget to click the 'Close' button to activate the address.
+
+When the sending party receives your address and sends Beams, you will see a new Transaction appearing in the transaction list in the Main Wallet screen.
+
+.. figure:: images/desktop/desktop_wallet_transaction_confirming.png
+   :alt: Incoming transaction
+
+Transaction will pass through the following stages:
+
+* In Progress - during the phase when transaction is being created by the wallets
+
+* Confirmiing - after transaction was sent to the nodes but before it was mined
+
+* Completed - after transaction was mined 
+
+.. figure:: images/desktop/desktop_wallet_tranaction_completed.png
+   :alt: Transaction completed
+
+
+Once transaction is completed the balance in the availabe tab will be updated
+
+
+In order to Send Beams you will need to click on 'Send' button in Main Wallet screen. This will open a Send dialog.
+
+.. figure:: images/desktop/desktop_wallet_send_dialog_empty.png
+   :alt: Send dialog
+
+In the Send To field you should paste the SBBS Address you have received from the person you want to send funds to. You may also choose to fill in the optional Comment field which will only be stored locally inside your wallet for bookkeeping purposes. 
+
+Transaction amount is in Beam and may contain fractional values such as 1.25 Beam or 11.3 Beam and the like. 
+
+Transaction fees are specified in Groth (100 millionths of a Beam). Amount of Fees you need to pay depends on the current status of the network and average fee sizes. If your fee will be significantly low than average and the network is loaded you will wait longer for your transaction to be mined. To determine the current average fee size you should use Beam :ref:`blockchain explorer`.
+
+
