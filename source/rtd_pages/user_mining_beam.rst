@@ -98,8 +98,86 @@ Beam node implements Stratum protocol for connecting external miner clients. Cli
 	
 	In addition a text file called 'statum.api.keys' should be created and contain one or more *API keys* - random strings of 8 characters or more. 
 
-To run Beam Node with Stratum server you are required to provide the following parameter:
 
+You will need to download the following components for your platforms:
+
+1. Beam Node
+2. Beam CLI Wallet
+3. Beam mining client for your platform and GPU
+
+In addition you will have to create a folder with the following files:
+
++-------------------------+----------------------------------------------------------------------------------+
+| stratum.crt             | TLS certificate                                                                  |
++-------------------------+----------------------------------------------------------------------------------+
+| stratum.key             | Private key for TLS certificate                                                  |
++-------------------------+----------------------------------------------------------------------------------+
+| stratum.api.keys        | Text file with list of allowed API keys                                          |
+|                         |                                                                                  |
+|                         | Each key should have 8 symbols or more. example: abcd1234                        |
++-------------------------+----------------------------------------------------------------------------------+
+
+
+For testing purposes ONLY stratum.crt and stratum.key can be downloaded from:
+
+	https://github.com/BeamMW/beam/blob/master/utility/unittest/test.crt
+	https://github.com/BeamMW/beam/blob/master/utility/unittest/test.key
+
+
+
+Sample folder for running Stratum server can look something like this:
+
+.. figure:: images/stratum_folder.png
+   :alt: Sample contents of stratum folder
+
+
+To run Beam Node with Stratum server you are required to provide the following parameters:
+
++-------------------------+----------------------------------------------------------------------------------------------------------+
+|**Parameter**            | **Description & Example**                                                                                |
++-------------------------+----------------------------------------------------------------------------------------------------------+
+| port                    | Port to start the server on                                                                              |
+|                         |                                                                                                          |
+|                         | .. code-block:: bash                                                                                     |
+|                         |                                                                                                          |
+|                         |    port=10000                                                                                            |
++-------------------------+----------------------------------------------------------------------------------------------------------+
+| stratum_port            | Port the stratum server is listening for incoming connections                                            |
+|                         |                                                                                                          |
+|                         | .. code-block:: bash                                                                                     |
+|                         |                                                                                                          |
+|                         |    --stratum_port=10002                                                                                  |
++-------------------------+----------------------------------------------------------------------------------------------------------+
+| peer                    | Comma separated list of peer ip:port (must have at least one peer)                                       |
+|                         |                                                                                                          |
+|                         | .. code-block:: bash                                                                                     |
+|                         |                                                                                                          |
+|                         |    --peer=127.0.0.1:10003                                                                                |
++-------------------------+----------------------------------------------------------------------------------------------------------+
+| stratum_secrets_path    | Path to a folder which holds TLS Certificate and API keys files described above.                         |
+|                         |                                                                                                          |
+|                         | .. code-block:: bash                                                                                     |
+|                         |                                                                                                          |
+|                         |    --stratum_secrets_path=.                                                                              |
++-------------------------+----------------------------------------------------------------------------------------------------------+
+| key_mine                | Miner key, exported by CLI wallet (see :ref: `Creating CLI wallet for mining rewards`)                   |
+|                         |                                                                                                          |
+|                         | .. code-block:: bash                                                                                     |
+|                         |                                                                                                          |
+|                         |    --key_mine=c3C9TVdEgza7w8p9na/B9rNeC8FvQAbJSPBfLZpW0sw                                                |
++-------------------------+----------------------------------------------------------------------------------------------------------+
+| key_owner               | Owner key, exported by CLI wallet                                                                        |
+|                         |                                                                                                          |
+|                         | .. code-block:: bash                                                                                     |
+|                         |                                                                                                          |
+|                         |    --key_owner=mW9ItV9dUsSY9hN/dH19GEbzIUHQPw6VgDaCPYZiAsNL1LU                                           |
++-------------------------+----------------------------------------------------------------------------------------------------------+
+| pass                    | Wallet password.                                                                                         |
+|                         |                                                                                                          |
+|                         | .. code-block:: bash                                                                                     |
+|                         |                                                                                                          |
+|                         |    --pass=1234                                                                                           |
++-------------------------+----------------------------------------------------------------------------------------------------------+
 
 
 Example command line. Please substitute your parameters
@@ -117,7 +195,36 @@ Beam provides two mining clients for Equihash 150,5 with data path change: one f
 
 .. note:: Mining clients are only supported on Linux and Windows platforms
 
-Miner clients are available for download from Beam download page. After extracting the client on a machine with supported GPU run the following command:
+Miner clients are available for download from Beam download page. 
+
+After extracting the client on a machine with supported GPU run the following parameter:
+
++-------------------------+----------------------------------------------------------------------------------------------------------+
+|**Parameter**            | **Description & Example**                                                                                |
++-------------------------+----------------------------------------------------------------------------------------------------------+
+| server                  | IP and port of the Stratum server to connect to                                                          |
+|                         |                                                                                                          |
+|                         | .. code-block:: bash                                                                                     |
+|                         |                                                                                                          |
+|                         |    port=127.0.0.1:10001                                                                                  |
++-------------------------+----------------------------------------------------------------------------------------------------------+
+| key                     | API key you have set in your Stratum server (In stratum.api.keys file)                                   |
+|                         |                                                                                                          |
+|                         |                                                                                                          |
+|                         | .. code-block:: bash                                                                                     |
+|                         |                                                                                                          |
+|                         |    --key=abcd1234                                                                                        |
++-------------------------+----------------------------------------------------------------------------------------------------------+
+| devices                 | Only specify this flag to use specific GPU                                                               |
+|                         |                                                                                                          |
+|                         | By default, miner will use all available GPUs                                                            |
+|                         |                                                                                                          |
+|                         | .. code-block:: bash                                                                                     |
+|                         |                                                                                                          |
+|                         |    --devices=0                                                                                           |
++-------------------------+----------------------------------------------------------------------------------------------------------+
+
+Example command line:
 
 ::
 
