@@ -94,11 +94,15 @@ Using Beam Stratum Server
 
 Beam node implements Stratum protocol for connecting external miner clients. Clients open a TCP connection to the node though which they receive jobs to mine blocks using Equihash mining protocol.
 
-.. important::Stratum server connections are protected using Transport Layer Security (TLS) protocol and require TLS certificates in order to work properly. You can either buy the certificates or create self signed certificates on your local machine.
+.. important:: Stratum server connections are protected using Transport Layer Security (TLS) protocol and require TLS certificates in order to work properly. You can either buy the certificates or create self signed certificates on your local machine.
 	
 	In addition a text file called 'statum.api.keys' should be created and contain one or more *API keys* - random strings of 8 characters or more. 
 
-To run Beam Node with Stratum server
+To run Beam Node with Stratum server you are required to provide the following parameter:
+
+
+
+Example command line. Please substitute your parameters
 
 ::
 
@@ -120,4 +124,15 @@ Miner clients are available for download from Beam download page. After extracti
 	beamMiner.exe --server <ip and port of *stratum* server> --key <API key for the stratum server> --devices <id of the GPU device, if the flag not specified client will try to mine on all devices>
 
 
+
+GPU Support
+-----------
+
+OpenCL Miner
+
++----------------+-----------------+----------------------------------------------------------------+
+| **GPU**        | **Supported**   | **Reported Sol/s rate**                                        |
++----------------+-----------------+----------------------------------------------------------------+
+|                |                 |                                                                |
++----------------+-----------------+----------------------------------------------------------------+
 
