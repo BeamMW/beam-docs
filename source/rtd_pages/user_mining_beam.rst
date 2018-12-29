@@ -152,7 +152,7 @@ To run Beam Node with Stratum server you are required to provide the following p
 |                         |                                                                                                          |
 |                         | .. code-block:: bash                                                                                     |
 |                         |                                                                                                          |
-|                         |    --peer=127.0.0.1:10003                                                                                |
+|                         |    --peer=3.1.46.96:8100                                                                                 |
 +-------------------------+----------------------------------------------------------------------------------------------------------+
 | stratum_secrets_path    | Path to a folder which holds TLS Certificate and API keys files described above.                         |
 |                         |                                                                                                          |
