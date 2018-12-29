@@ -206,14 +206,14 @@ After extracting the client on a machine with supported GPU run the following pa
 |                         |                                                                                                          |
 |                         | .. code-block:: bash                                                                                     |
 |                         |                                                                                                          |
-|                         |    port=127.0.0.1:10001                                                                                  |
+|                         |    --server 127.0.0.1:10001                                                                                  |
 +-------------------------+----------------------------------------------------------------------------------------------------------+
 | key                     | API key you have set in your Stratum server (In stratum.api.keys file)                                   |
 |                         |                                                                                                          |
 |                         |                                                                                                          |
 |                         | .. code-block:: bash                                                                                     |
 |                         |                                                                                                          |
-|                         |    --key=abcd1234                                                                                        |
+|                         |    --key abcd1234                                                                                        |
 +-------------------------+----------------------------------------------------------------------------------------------------------+
 | devices                 | Only specify this flag to use specific GPU                                                               |
 |                         |                                                                                                          |
@@ -221,7 +221,7 @@ After extracting the client on a machine with supported GPU run the following pa
 |                         |                                                                                                          |
 |                         | .. code-block:: bash                                                                                     |
 |                         |                                                                                                          |
-|                         |    --devices=0                                                                                           |
+|                         |    --devices 0                                                                                           |
 +-------------------------+----------------------------------------------------------------------------------------------------------+
 
 Example command line:
