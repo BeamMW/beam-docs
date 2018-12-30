@@ -59,6 +59,8 @@ ASIC Resistance
 
 To ensure better decentralization, Beam plans to stay ASIC resistance in the first 12-18 months. To achieve this, we plan to perform one or two hard forks – first after approximately 6 months of existence and another one after approximately 12 months. Each hard fork will change the mining algorithm. The exact modifications will be revealed several weeks before the actual hard fork.
 
+
+
 Mininig Guide
 -------------
 
@@ -78,34 +80,94 @@ Please bear in mind that since GPUs are much more capable of parallel computatio
 
 If you want to setup a stand alone mining node and use either built in or external miner, follow sections below.
 
-Creating CLI wallet for mining rewards
---------------------------------------
-
-Before you can start mining using Beam you should create a wallet to collect mining rewards. Follow the steps in :ref:`command_line_user_guide` to perform the following operations
-
-1. Create new wallet (see :ref:`creating_new_cli_wallet`)
-2. Export miner key and owner key (see :ref:`exporting_miner_key` and :ref:`exporting owner key`)
 
 
-.. attention:: Testnet 4 does not support built in GPU miner. It will be added back for Mainnet release
+Mining using external miner
+---------------------------
 
-Using Beam Stratum Server
--------------------------
+This is a step by step guide on how to setup mining using stand alone Beam Node with Stratum Server and a mining client.
+
+1. Download CLI Wallet archive for your platform from `Beam Website <https://beam.mw/downloads>`_
+
+2. Extract the CLI Wallet to any folder on your machine (we will call it Wallet Folder)
+
+3. Open a Terminal window (on Mac / Linux) or Command Prompt (on Windows) and change directory to Walelt Folder
+
+
+.. attention:: The following steps involve seed phrase and should be done in secure environment to avoid someone stealing your seed phrase
+
+4. If you want to create a new wallet (with new seed phrase) run the following command:
+
+::
+
+	./beam-wallet init
+
+If you have already created a wallet run the following command:
+
+::
+
+	./beam-wallet restore --seed_phrase=<semicolon separated list of 12 seed phrase words>;
+
+.. attention:: Remember your wallet password, you will need it in step 11 to run Stratum server
+
+5. Export miner key by running the following command
+
+::
+
+    ./beam-wallet export_miner_key --subkey=1
+
+.. note:: If you want to run several different mining nodes with different keys you can run the command again with different subkeys.
+	
+	Example:
+		For second node, run:
+		./beam-wallet export_miner_key --subkey=2 
+
+		For third node, run:
+		./beam-wallet export_miner_key --subkey=3
+
+		and so on
+
+
+Save the exported mining key in some text file, you will need it later
+
+6. Export owner key by running the following command:
+
+::
+
+    ./beam-wallet export_owner_key
+
+Save the exported owner key in some text file, you will need it later
+
+7. Download Beam Node archive for your platform from `Beam Website <https://beam.mw/downloads>`_
+
+8. Extract Beam Node to any folder on your machine (from now on we will call it Node Folder)
+
+9. Create certificate and API key for Stratum server
+
+
+.. note:: If you are only testing you can download the sample certificate and key files from here:
+
+	:download:`Certificate File<stratum/stratum.crt>`
+
+	:download:`Certificate Secret Key File<stratum/stratum.key>`
+
+	:download:`API Keys file <stratum/stratum.api.keys>`
+
+	API Keys file currently contains one key: aaaa1234. You will need to provide it later in the ``--key=aaaa1234`` parameter for miner client.
+
+	You should copy these files to the Beam Node folder (same folder as beam-node binary)
+
+	You can now jump to step 10
+
+.. attention:: For production setup please read the following section carefully
 
 Beam node implements Stratum protocol for connecting external miner clients. Clients open a TCP connection to the node though which they receive jobs to mine blocks using Equihash mining protocol.
 
-.. important:: Stratum server connections are protected using Transport Layer Security (TLS) protocol and require TLS certificates in order to work properly. You can either buy the certificates or create self signed certificates on your local machine.
+Stratum server connections are protected using Transport Layer Security (TLS) protocol and require TLS certificates in order to work properly. You can either buy the certificates or create self signed certificates on your local machine. Instructions on how to do this are outside the scope of this guide. You should receive two files: one for certificate and one with the certificate secret key. For testing purposes you can always use sample files provided in the note above.
 	
-	In addition a text file called 'statum.api.keys' should be created and contain one or more *API keys* - random strings of 8 characters or more. 
+In addition you should create a file 'stratum.api.keys' which will contain one or more lines. Each line represents one *API key* - random strings of 8 characters or more. You should generate these keys yourself and put each one in new line. These keys are then used by the miner client via --key flag.
 
-
-You will need to download the following components for your platforms:
-
-1. Beam Node
-2. Beam CLI Wallet
-3. Beam mining client for your platform and GPU
-
-In addition you will have to create a folder with the following files:
+As a result you will have three files:
 
 +-------------------------+----------------------------------------------------------------------------------+
 | stratum.crt             | TLS certificate                                                                  |
@@ -117,21 +179,32 @@ In addition you will have to create a folder with the following files:
 |                         | Each key should have 8 symbols or more. example: abcd1234                        |
 +-------------------------+----------------------------------------------------------------------------------+
 
+All three files should be copied into the same folder. The path to this folder will be provided via --stratum_secrets_folder parameter. By default the path points to the same folder as the node binary.
 
-For testing purposes ONLY stratum.crt and stratum.key can be downloaded from:
-
-	https://github.com/BeamMW/beam/blob/master/utility/unittest/test.crt
-	https://github.com/BeamMW/beam/blob/master/utility/unittest/test.key
-
-
-
-Sample folder for running Stratum server can look something like this:
+At this point Node Folder should look something like this:
 
 .. figure:: images/stratum_folder.png
    :alt: Sample contents of stratum folder
 
+10. Open a Terminal window (on Mac / Linux) or Command Prompt (on Windows) and change directory to Node Folder
 
-To run Beam Node with Stratum server you are required to provide the following parameters:
+11. Run Beam Node with stratum server using the following command:
+
+::
+
+	./beam-node 
+		--port=10001 
+		--peer=3.0.115.1:8100 
+		--stratum_port=10002
+		--stratum_secrets_path=. 
+		--key_mine=<mining key you got in step 5 > 
+		--key_owner=<owner key you got in step 6> 
+		--pass=<your wallet password (not seed phrase) >
+
+
+.. note:: Parameters in the example above are good for testing. You can always change them if necessary. You can also change the beam-node.cfg file and set all these parameters there instead of the command line.
+
+The following table describes all parameters in more details
 
 +-------------------------+----------------------------------------------------------------------------------------------------------+
 |**Parameter**            | **Description & Example**                                                                                |
@@ -149,6 +222,10 @@ To run Beam Node with Stratum server you are required to provide the following p
 |                         |    --stratum_port=10002                                                                                  |
 +-------------------------+----------------------------------------------------------------------------------------------------------+
 | peer                    | Comma separated list of peer ip:port (must have at least one peer)                                       |
+|                         |                                                                                                          |
+|                         | Peer should be a machine on the network you want to connect to (for example Testnet 4)                   |
+|                         |                                                                                                          |
+|                         | List of peers is published on the downloads page at https://beam.mw/downloads                            |
 |                         |                                                                                                          |
 |                         | .. code-block:: bash                                                                                     |
 |                         |                                                                                                          |
@@ -180,24 +257,31 @@ To run Beam Node with Stratum server you are required to provide the following p
 +-------------------------+----------------------------------------------------------------------------------------------------------+
 
 
-Example command line. Please substitute your parameters
-
-::
-
-	./beam-node --port=<node port> --peer=<ip:port of the peer node --stratum_port=<port stratum server will listen to> --stratum_secrets_path=<folder with stratum key files> --key_mine=<miner key exported by wallet> --key_owner=<owner key exported by wallet> --pass=<wallet password>
-
-Connecting Miner Client
------------------------
+12. Downloads miner client archive for your GPU and platform from `Beam Website <https://beam.mw/downloads>`_
 
 Beam provides two mining clients for Equihash 150,5 with data path change: one for OpenCL and one for CUDA
 
-.. attention:: Only OpenCL mining client will be available in Testnet 4
+.. attention:: Only OpenCL mining client is currently available in Testnet 4
 
 .. note:: Mining clients are only supported on Linux and Windows platforms
 
-Miner clients are available for download from Beam download page. 
 
-After extracting the client on a machine with supported GPU run the following parameter:
+13. Extract miner client to a folder on your mining machine (from now on we wil call it Miner Folder)
+
+14. Open a Terminal window (on Mac / Linux) or Command Prompt (on Windows) and change directory to Miner Folder
+
+15. Run the following command (example on Windows):
+
+::
+
+	 beamMiner.exe --server 127.0.0.1:10002 --key aaaa1234
+
+If your node runs on different machine than the miner, change IP address above to the IP of the node machine
+
+If you have set a different API key than 'aaa1234' from the example set your key in the --key parameter.
+
+
+Detailed explanation about mining client parameters is provided in the table below:
 
 +-------------------------+----------------------------------------------------------------------------------------------------------+
 |**Parameter**            | **Description & Example**                                                                                |
@@ -224,22 +308,48 @@ After extracting the client on a machine with supported GPU run the following pa
 |                         |    --devices 0                                                                                           |
 +-------------------------+----------------------------------------------------------------------------------------------------------+
 
-Example command line:
 
-::
+Your mining should start now.
 
-	beamMiner.exe --server <ip and port of *stratum* server> --key <API key for the stratum server> --devices <id of the GPU device, if the flag not specified client will try to mine on all devices>
 
+To see your mining rewards use one of two options below:
+
+1. Run Beam Desktop Wallet with the same seed phrase using built in node.
+
+2. Run either CLI or Desktop wallet and connect it to *Your* node which was started with your owner key parameter (via --key_owner flag). It could be the same node as the miner, or another node - as long as it has your owner key
+
+.. warning:: You will NOT be able to see your mining rewards if you connect to a node which does not know your owner key.
 
 
 GPU Support
 -----------
 
+Here are some performance stats reported by our community
+
 OpenCL Miner
 
-+----------------+-----------------+----------------------------------------------------------------+
-| **GPU**        | **Supported**   | **Reported Sol/s rate**                                        |
-+----------------+-----------------+----------------------------------------------------------------+
-|                |                 |                                                                |
-+----------------+-----------------+----------------------------------------------------------------+
++--------------------+-----------------+----------------------------------------------------------------+
+| **GPU**            | **Supported**   | **Reported Sol/s rate**                                        |
++--------------------+-----------------+----------------------------------------------------------------+
+| AMD RX560          |   Yes           | ~4                                                             |
++--------------------+-----------------+----------------------------------------------------------------+
+| AMD RX570          |   Yes           | ~7-8                                                           |
++--------------------+-----------------+----------------------------------------------------------------+
+| AMD RX580          |   Yes           | ~8-9                                                           |
++--------------------+-----------------+----------------------------------------------------------------+
+| nVidia GTX 1066    |   Yes           | ~5.25                                                          |
++--------------------+-----------------+----------------------------------------------------------------+
+| nVidia GTX 1060 6Gb|   Yes           | ~5                                                             |
++--------------------+-----------------+----------------------------------------------------------------+
+| nVidia GTX 1070    |   Yes           | ~7                                                             |
++--------------------+-----------------+----------------------------------------------------------------+
+| nVidia GTX 1080    |   Yes           | ~8-9                                                           |
++--------------------+-----------------+----------------------------------------------------------------+
+| nVidia GTX 1080Ti  |   Yes           | ~10-11                                                         |
++--------------------+-----------------+----------------------------------------------------------------+
+| nVidia GTX 2080    |   Yes           | ~10-11                                                         |
++--------------------+-----------------+----------------------------------------------------------------+
 
+CUDA Miner
+
+.. note:: CUDA Mining client is still in development. 
