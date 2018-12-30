@@ -14,6 +14,14 @@ To download the Desktop Wallet for your platform go to http://beam.mw/downloads 
 Once the wallet is installed on your platform follow this guide 
 
 
+Where are the files
+-------------------
+
+When Desktop Wallet is installed the walelt data files are stored separately from the binaries. 
+
+The locations of all the files are described here: :ref:`files and locations`
+
+
 Creating new wallet
 -------------------
 
@@ -231,5 +239,59 @@ In the Send To field you should paste the SBBS Address you have received from th
 Transaction amount is in Beam and may contain fractional values such as 1.25 Beam or 11.3 Beam and the like. 
 
 Transaction fees are specified in Groth (100 millionths of a Beam). Amount of Fees you need to pay depends on the current status of the network and average fee sizes. If your fee will be significantly low than average and the network is loaded you will wait longer for your transaction to be mined. To determine the current average fee size you should use Beam :ref:`blockchain explorer`.
+
+
+An example of such a dialog is shown below:
+
+.. figure:: images/desktop/desktop_wallet_send_dialog_full.png
+   :alt: Send dialog
+
+After you click 'Send' you will see a confirmation with all relevant transaction details
+
+.. figure:: images/desktop/desktop_wallet_send_dialog_confirm.png
+   :alt: Send dialog confirmation
+
+Once you confirm, the transaction is sent to the Receiver wallet. If Receiver wallet is currently offline or if the network is loaded you might see the transaction appear 'In Progress' in your transaction list. When the other party receives the transaction and comletes transaction creation, the transaction will be sent to the nodes and shown as 'Confirming'.
+
+.. note:: While is in 'In Progress' state you can cancel it by clicking on the dropdown menu to the right of the transaction and then 'Cancel'. The other party will receive notification that transaction was either 'Cancelled' or 'Failed' and funds that were allocated for this tranaction will be released and become available again. **It is not possible to cancel a tranasctio in 'Confirming' or 'Completed' states.**
+
+.. important:: Desktop Wallet automatically selects which UTXOs will be used for the transaction by trying to minimize the change you should receive as a result. This is important to understand since until transaction is complete, the UTXOs used in the transaction can not be used for any other transaction and do not appear in the list of 'Available' funds.
+
+	For example if you have two UTXOs: 20 Beam and 10 Beam, and you want to send 9 Beam to someone, the wallet will automatically select the 10 Beam UTXO and create a transaction with 9 Beams sent and 1 Beam change. 
+
+	However, if you have one large UTXO, say 100 Beams, and you want to pay 1 Beam to someone this UTXO will be locked until the 1 Beam transaction completes and you will have 0 (zero) available Beams. If Receiving party is offline, it might take a long time during which you will not be able to send Beams to anyone else. You can, of course, always cancel the transaction in this case. 
+
+	One thing you can do is to split the large UTXO into two parts by sending a transaction to yourself (using you own SBBS address). You will however pay fees for this transaction.
+
+.. attention:: **If the transaction was not sent to the nodes, for any reason, it will expire after 1440 blocks, or roughly 24 hours**
+
+	This is done to avoid a situation in which one of the Wallets did not send a created tranaction to the nodes and the UTXOs remain locked forever
+
+After some time your main wallet screen may look something like that:
+
+.. figure:: images/desktop/desktop_wallet_main_screen_inprogress.png
+   :alt: Send dialog confirmation
+
+
+The UTXO screen will show you exactly which UTXOs you own and what is their origin
+
+.. figure:: images/desktop/desktop_wallet_utxo_screen_1.png
+   :alt: Send dialog confirmation
+
+The types of UTXOs can be either:
+
+* Coinbase  - UTXO you have mined. It has maturity of 3 hours (240 blocks) and will not be immediately seen in Available tab
+* Regular   - UTXO received as a result of a transaction. It is immediately available for spending
+* Change    - UTXO received as a result as a change from a transaction spending a larger UTXO
+* Comission - Fees received as a result of mining a block which contained transactions
+
+Here is another example of UTXO screen with different UTXO types
+
+.. figure:: images/desktop/desktop_wallet_utxo_screen_2.png
+   :alt: Send dialog confirmation
+
+
+
+
 
 
