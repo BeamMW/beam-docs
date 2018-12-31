@@ -9,6 +9,19 @@ Welcome to Beam's documentation!
 ================================
 
 
+.. _rules_signature:
+
+Announcement
+------------
+
+.. note:: Beam is currently in Testnet 4
+
+	Rules Signature: 3284aa6102cdefa4
+
+	Download binaries from: `Beam Downloads Page <http://beam.mw/downloads>`_
+
+	Source code: `Beam Github <https://github.com/BeamMW/beam>`_
+
 What is Beam?
 --------------
 
