@@ -21,15 +21,15 @@ Windows
 +-------------------------+----------------------------------------------------------------------------------+
 | **File**                | **Location**                                                                     |
 +-------------------------+----------------------------------------------------------------------------------+
-| Main Executable         | `\Program Files\Beam\Beam Wallet.exe`                                            |
+| Main Executable         | `\\Program Files\\Beam\\Beam Wallet.exe`                                         |
 +-------------------------+----------------------------------------------------------------------------------+
-| Configuration           | `\Program Files\Beam\beam-wallet.cfg`                                            |
+| Configuration           | `\\Program Files\\Beam\\beam-wallet.cfg`                                         |
 +-------------------------+----------------------------------------------------------------------------------+
-| Logs                    | `\Users\\{your User name}\AppData\Local\Beam Wallet\logs`                        |
+| Logs                    | `\\Users\\{your User name}\\AppData\\Local\\Beam Wallet\\logs`                   |
 +-------------------------+----------------------------------------------------------------------------------+
-| Database                | `\Users\{your User name}\AppData\Local\Beam Wallet\wallet.db (node.db)`          |
+| Database                | `\\Users\\{your User name}\\AppData\\Local\\Beam Wallet\\wallet.db (node.db)`    |
 +-------------------------+----------------------------------------------------------------------------------+
-| Dumps                   | `\Users\{your User name}\AppData\Local\Beam Wallet\Beam Wallet.exe0.dmp`         |
+| Dumps                   | `\\Users\\{your User name}\\AppData\\Local\\Beam Wallet\\Beam Wallet.exe0.dmp`   |
 +-------------------------+----------------------------------------------------------------------------------+
 
 Mac
