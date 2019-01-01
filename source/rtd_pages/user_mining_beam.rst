@@ -61,7 +61,7 @@ To ensure better decentralization, Beam plans to stay ASIC resistance in the fir
 
 
 
-Mininig Guide
+Mining Guide
 -------------
 
 The following section describes how to set up mining for Beam Network
@@ -222,7 +222,7 @@ All three files should be copied into the same folder. The path to this folder w
 
 At this point Node Folder should look something like this:
 
-.. figure:: images/stratum_folder.png
+.. figure:: images/sample_stratum_folder.png
    :alt: Sample contents of stratum folder
 
 10. Open a Terminal window (on Mac / Linux) or Command Prompt (on Windows) and change directory to Node Folder
