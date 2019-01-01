@@ -61,7 +61,7 @@ To ensure better decentralization, Beam plans to stay ASIC resistance in the fir
 
 
 
-Mininig Guide
+Mining Guide
 -------------
 
 The following section describes how to set up mining for Beam Network
