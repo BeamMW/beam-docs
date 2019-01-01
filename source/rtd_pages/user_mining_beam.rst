@@ -87,6 +87,40 @@ Mining using external miner
 
 This is a step by step guide on how to setup mining using stand alone Beam Node with Stratum Server and a mining client.
 
+Before you start with the steps, please review the sample Mining Architecture
+
+.. figure:: images/mining_archtecture.png
+   :alt: Mining Archtecture
+
+
+Important points to understand
+
+* Beam node should connect to some other node on the network via --peer parmeter (for example --peer=3.0.115.1:8100 for testnet 4)
+
+* Beam node should run Stratum server by setting up --stratum_port parameter (for example --stratum_port=10002)
+
+* Beam node should know **both** mining key and owner key in order to attribute mining rewards to a specific wallet. Mining and owner keys are exported from the wallet as explained in the steps 5 and 6 of the step by step guide. They are passed to the node via --key_mine and --key_owner parameters respectively
+
+.. important:: Miner keys and Owner key should be kept secret at all times
+
+* Several Mining clients can connect to the same node. Mining clients should run on machines with GPUs. 
+
+* The connection between the Mining Client and the Beam Node is encrypted using TLS. In order for TLS to work you need to provide a certificate file and secret keys for it, as described in Step 9.
+
+* Mining Client and Beam Node should use the same API key. Details on how to setup an API key are described in Step 9.
+
+* Your wallet will see mining rewards only if the following conditions hold:
+
+	1. It was created using the same seed phrase as the wallet which created the miner and owner keys
+	2. It is connected to the node that knows the owner key.
+
+.. note:: In case of Desktop wallet, you need to run local node from within the wallet (which automatically knows the owner key) or connect to are remote node that know the owner key. If you just connect to random node you will NOT see your mining rewards
+
+Beam node should 
+
+
+Now let's start with the steps:
+
 1. Download CLI Wallet archive for your platform from `Beam Website <https://beam.mw/downloads>`_
 
 2. Extract the CLI Wallet to any folder on your machine (we will call it Wallet Folder)
@@ -112,6 +146,9 @@ If you have already created a wallet run the following command:
 
 5. Export miner key by running the following command
 
+
+.. warning:: Mining key should be kept **secret**. Never send it or show it to anyone.
+
 ::
 
     ./beam-wallet export_miner_key --subkey=1
@@ -131,6 +168,8 @@ If you have already created a wallet run the following command:
 Save the exported mining key in some text file, you will need it later
 
 6. Export owner key by running the following command:
+
+.. warning:: Owner key should be kept **secret**. Never send it or show it to anyone.
 
 ::
 
