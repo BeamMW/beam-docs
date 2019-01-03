@@ -4,6 +4,7 @@
 .. warning:: The following document is still under construction and is subject to changes
 
 
+.. _mining_beam:
 
 Mining Beam
 ===========

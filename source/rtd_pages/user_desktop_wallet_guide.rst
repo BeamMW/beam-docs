@@ -148,7 +148,7 @@ As a part of creating new wallet, the new seed phrase will be generated for you.
 .. figure:: images/desktop/03_creating_new_wallet/04.jpg
    :alt: Keeping seed phrase safe warning
 
-Did you wrote down your seed phrase correctly? Triple-check your handwriting again. The difference between “*f*unnel” and “*t*unnel” can be crucial when trying to restore a wallet with valuable funds in the far or near future.
+Did you wrote down your seed phrase correctly? Triple-check your handwriting again. The difference between "**f** unnel" and " **t** unnel" can be crucial when trying to restore a wallet with valuable funds in the far or near future.
 
 Did you verified your handwriting? Now go find a safe space for the paper! 
 
@@ -189,7 +189,7 @@ Beam Desktop Wallet can be run in one of three modes.
 
 To run an integrated node from within the wallet choose “Run integrated node (recommended)”. The trusted node will automatically verify the blockchain, hence it’s the recommended option. 
 
-.. advanced:: When running behind a firewall you can change the default port the node will be listening on, and in case of CPU mining, set the amount of mining threads. You will be probably provided at least one default peer to connect to but you can always add more peers on the Settings screen. The recommended peers are published in the list of bootstrap nodes in the `downloads page <https://beam.mw/downloads>`_ on `Beam official website <https://beam.mw>`_.
+.. note:: When running behind a firewall you can change the default port the node will be listening on, and in case of CPU mining, set the amount of mining threads. You will be probably provided at least one default peer to connect to but you can always add more peers on the Settings screen. The recommended peers are published in the list of bootstrap nodes in the `downloads page <https://beam.mw/downloads>`_ on `Beam official website <https://beam.mw>`_.
 
 .. figure:: images/desktop/03_creating_new_wallet/09.jpg
    :alt: Start wallet with integrated node  
@@ -210,7 +210,7 @@ Synchronizing the wallet
 
 Once the Wallet is connected, it synchronizes the current blockchain state from the network. Be patient when running with the integrated node: the data downloading process might take some time. The wallet will first download and validate the latest :ref: `macroblock` and then all the rest of the blockchain.
 
-.. figure:: images/desktop/desktop/03_creating_new_wallet/12.jpg
+.. figure:: images/desktop/03_creating_new_wallet/12.jpg
    :alt: Synchronizing the wallet
 
 
@@ -219,7 +219,7 @@ Main Screen
 
 Once your wallet is created, the main screen will show up. The screen usually opens up automatically when you enter the application and successfully submit the local password. 
 
-.. figure:: images/desktop/desktop/04_main_screen/01.jpg
+.. figure:: images/desktop/04_main_screen/01.jpg
    :alt: Main screen
 
 The Main Screen of the wallet shows the current balance of both available and unconfirmed BEAM as well as the transaction history and statuses. On the left, under the Beam logo, there is a toolbar that provides navigation between different wallet screens, currently: Wallet (or Main Screen), Addresses, UTXO and Settings.
@@ -237,7 +237,7 @@ Near “online” word a blockchain name the node is connected to might appear. 
 
 .. attention:: Unless you know what you are doing, please verify that nothing is written after ``online``.
 
-.. figure:: images/desktop/desktop/04_main_screen/02.jpg
+.. figure:: images/desktop/04_main_screen/02.jpg
    :alt: Main screen
 
 In the top left corner of the Main Screen, under the screen title, you see connection indicator which shows whether the wallet could successfully connect to peers. In brackets, it specifies the network to which the wallet is connected. In the screenshot above it says '(master)' which means the wallet is connected to internal developers network, called masternet. In case of Testnet 4, it will say '(testnet4)'. If the wallet is unable to connect to the peer it will be shown by red indicator.

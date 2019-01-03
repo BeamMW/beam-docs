@@ -22,6 +22,17 @@ Announcement
 
 	Source code: `Beam Github <https://github.com/BeamMW/beam>`_
 
+
+**TLDR;**
+
+:ref:`I want to Mine Beam<mining_beam>`
+
+:ref:`I want to learn how to use Beam Desktop Wallet<desktop_wallet_guide>`
+
+:ref:`I want to learn how to use Beam Command Line Wallet<command_line_wallet_user_guide>`
+
+
+
 What is Beam?
 --------------
 

@@ -2,9 +2,10 @@
 
 
 .. _command_line_user_guide:
+.. _command_line_wallet_user_guide:
 
-Command Line User Guide
-=======================
+Command Line Wallet User Guide
+==============================
 
 The purpose of this document is to describe the process of setting up Beam node and command line wallet. 
 
