@@ -371,7 +371,7 @@ Select the transaction amount in BEAM you want to send. Transaction amount is in
 .. figure:: images/desktop/06_sending_beam/04.jpg
    :alt: Send BEAM amount
 
-Transaction fees are specified in GROTH (100 millionths of BEAM). Amount of Fees you need to pay depends on the current status of the network and average fee sizes. Simply said, the higher transaction fee will help miners to prioritize your transaction. To determine the current average fee size use Beam `Blockchain Explorer <https://bbb.>`.
+Transaction fees are specified in GROTH (100 millionths of BEAM). Amount of Fees you need to pay depends on the current status of the network and average fee sizes. Simply said, the higher transaction fee will help miners to prioritize your transaction. To determine the current average fee size use Beam `Blockchain Explorer <https://explorer.beam.mw>`.
 
 .. figure:: images/desktop/06_sending_beam/05.jpg
    :alt: Send BEAM transaction fee
@@ -437,46 +437,159 @@ Upon completion, you’ll see the main screen of the wallet with your restored f
 
 .. attention:: in case the available balance is zero, it means that some words from your seed phrase weren’t typed correctly. Remove the wallet files, double-check each and every word and repeat the process.
 
-Address Screen
+Address
+-------
+
+Let’s define the meaning of address in BEAM ecosystem: BEAM is always sent from one address to another. Both sending and receiving addresses are alphanumeric tokens that uniquely define the transaction endpoints. 
+
+A person can create as many addresses as required. The address creation process will be explained in details in :ref: `Sending BEAM` and :ref: `Receiving BEAM`.
+
+.. example:: Imagine a world with only two wallets. One belongs to you and the other belongs to Alice. You have created one address to receive money from Alice and another address to send money to Alice. Alice will never know that she’s receiving money from the same person she sends the money to. 
+
+.. example:: Imagine a world with only three wallets. One belongs to you, another belongs to Alice and yet another belongs to Bob. You have created one address to receive money from Alice and another address to receive money from Bob. Alice and Bob will never know they send money to the same person.
+
+
+.. attention:: For the ultimate privacy, it is advised to have a **dedicated address for every transaction** (ie. for both Sending or Receiving). In other cases an address can be reused unless it had reached its expiration time (which is specified when an address is created). 
+
+.. example:: Imagine you’ve created the address with expiration interval of 24 hours and immediately sent it to Alice. In the next 24 hours Alice will be able to send BEAM to you as many times as she likes, reusing the same address of yours. 
+
+.. warning:: Reusing same addresses, created with longer expiration interval, can be convenient yet the tradeoff of decreased privacy should be kept in mind.
+
+Same address can be used for sending and receiving money. 
+
+.. example:: you have created an address to send money to Alice. Alice can see the address the money came from and can send money to the address back to you.
+
+Address screen
 --------------
 
-Addresses screen lists all SBBS addresses that were used in transactions. It's main use is for managing your interactions with other wallets. Add data in this screen is only stored locally and is not related to the blockchain in any way. 
+The screen lists all your addresses that were used in all incoming and outgoing transactions. All the data in this screen is only stored locally and is not related to the blockchain in any way.
 
-.. figure:: images/desktop/16_address_screen_default.png
-   :alt: Address screen
+.. note:: Yes, you heard right! For any incoming transaction dedicated address is created. That address will be seen in your active or expired addresses list (see below).
 
-Initially, one default listening address is created. Each address has a default expiration time of 24 hours, including the default address. You can always crete a new address using Receive dialog, as will be explained in the :ref: `Sending and Receiving Beams` section below.
+Initially, a single address is created by default. You can always create a new address using Receive dialog.
 
-.. attention:: It is highly recommended to create a new address for each transaction
+.. figure:: images/desktop/08_address_screen/01.jpg
+   :alt: Default address
 
-You can explicitly delete the address by clicking on the three dots located to the right of the address and choosing 'Delete address' from the drop down menu
+An expired address becomes inactive and won’t be able to be used in any incoming or outgoing transaction. Each address has a default expiration time of 24 hours, including the default address. 
 
-UTXO Screen
+.. figure:: images/desktop/08_address_screen/02.jpg
+   :alt: Expired default address
+
+You can manually expire any active address by clicking on the three dots located to the right of the address and choosing ‘Expire address’ from the drop down-menu.
+
+For privacy concerns, you can manually delete any address by clicking the three dots located to the right of the address and choosing ‘Delete address’ from the drop-down menu.
+
+.. figure:: images/desktop/08_address_screen/03.jpg
+   :alt: Address screen drop-down menu
+
+Finally, in ‘Contacts’ tab you will see every address that sent you the money or to which you’ve sent the money to.
+
+.. figure:: images/desktop/08_address_screen/04.jpg
+   :alt: Contacts
+
+
+UTXO
+====
+
+UTXO, Unspent Transaction (TX) Output is like a bill, banknote or a cheque of a a specific amount. You can have multiple 'bills' in your wallet at one time. Simply said, if BEAM is the currency, any UTXO can be considered as such a 'bill'.
+
+UTXO screen
 -----------
 
-In Beam, like in most other cryptocurrencies, your balance is constructed as a result of transactions. Each Transaction uses some existing inputs and creates new outputs. All the outputs controlled by the wallet are shown in the UTXO screen.
+On the technical level, in Beam, like in most other cryptocurrencies, your balance emerges as a result of multiple incoming and outgoing transactions. Each Transaction uses some existing inputs and creates new outputs. All the outputs controlled by the wallet are shown in the UTXO screen.
 
-.. figure:: images/desktop/17_utxo_screen_empty.png
-   :alt: UTXO Screen
+.. figure:: images/desktop/09_address_screen/01.jpg
+   :alt: UTXO screen
+
+The type of UTXO can be:
+* **Coinbase** - UTXO you have mined. It has maturity of 3 hours (240 blocks) and will not be immediately seen in Available tab
+* **Regular** - UTXO received as a result of a transaction. It is immediately available for spending
+* **Change** - UTXO received as a result as a change from a transaction spending a larger UTXO
+* **Transaction fee** - Fees received as a result of mining a block which contained transactions
+
+UTXO in sending BEAM dialog (explained by example)
+--------------------------------------------------
+
+Assume that you have 100 BEAM in a single “bill”. So, if you want to send to Alice 10 BEAM, your single 'bill' will be split into one 'bill' of 10 BEAM to send and another 'bill' of 90 BEAM to remain in your wallet, right? Well, almost: we also have to consider the 'bill' of the transaction fee. Let’s say the transaction fee is 10M GROTH (0.1 BEAM), so in that case the 'bill' will be split in 3 as shown on the screenshot:
+
+.. figure:: images/desktop/09_address_screen/02.jpg
+   :alt: Sending BEAM (UTXO change example)
+
+Why UTXO can be locked
+----------------------
+
+.. important:: Desktop Wallet automatically selects which UTXOs will be used for the transaction by trying to minimize the change you should receive as a result. This is important to understand since until transaction is complete, the UTXOs used in the transaction can not be used for any other transaction and do not appear in the list of ‘Available’ funds.
+
+.. example:: Assume that you have two UTXOs: 20 Beam and 10 Beam, and you want to send 9 Beam to someone, the wallet will automatically select the 10 Beam UTXO and create a transaction with 9 Beams sent and 1 Beam change.
+
+.. figure:: images/desktop/09_address_screen/03.jpg
+   :alt: Sending BEAM (UTXO locked example)
+
+
+.. example:: If you have one UTXO worth large value of 100 BEAM, and you want to pay 1 BEAM to someone this UTXO will be locked until the 1 BEAM transaction completes and you will have 0 (zero) available BEAM. If Receiving party is offline, it might take a long time during which you will not be able to send BEAM to anyone else. You can, of course, always cancel the transaction in this case.
+
+You can split UTXO by yourself
+-------------------------------
+
+One thing you can do is to split the large UTXO into two parts by sending a transaction to yourself (using you own active address). 
+
+.. attention:: You will pay fees for this transaction. 
+
 
 Settings screen
 ---------------
 
-Settings screen currently consists of four sections
+.. figure:: images/desktop/10_settings_screen/01.jpg
+   :alt: Setting screen
 
-.. figure:: images/desktop/18_settings_local_node.png
-   :alt: Address screen
+.. note:: At the top right corner of the screen the Desktop Wallet version is displayed. It is always important to specify the version when asking for support or reporting issues.
 
-The Remote Node section (top left) is relevant in case the wallet is connected to a remote node and specifies IP address and port of that node.
+For integrated and external nodes settings See: `Choosing the node connectivity mode`. Worth mentioning that when running integrated node you should specify the port on which the node will be listening on and the list of node peers. 
 
-The Local Node section (bottom left) is relevant in case wallet runs local node. In that section you can enable or disable local node (in case local node is disabled wallet connects to a remote node specified in the Remote Node section). When running local node you should specify the port on which the node will be listening on and the list of node peers. 
+General Settings section allows to change wallet password and set the duration, after which wallet will automatically lock to protect the funds from accidental unauthorized access to an active wallet.
 
-General Settings section allows to change walelt password and set the lock screen time, after which wallet will automatically logout to protect against accidental unauthorized access to a running wallet
+The 'Report problem' section allows to create an archive of wallet logs and explains how to report an issue. It also shows the current location of the wallet files. See more details about reporting issues and getting support in the :ref: `Reporting Issues` and :ref: `Troubleshooting` section.
 
-The Report problem section allows to create an archive of wallet logs and explains how to report an issue. It also shows the current location of the walelt files. See more details about reporting issues and getting support in the :ref: `Reporting Issues and Getting Support` section.
+Troubleshooting
+===============
 
-.. attention:: In case the wallet crashes at start or when trying to create the log archive please refer to :ref: `Troubleshooting` section.
+Where the wallet files are located?
+-----------------------------------
 
-In the top right corner of the Settings screen is the wallet version. It is important to always specify the version when asking for support or reporting issues.
+When Desktop Wallet is installed the wallet data files are stored separately from the binaries. The locations of all the files are described here: `Files and Locations`
 
+Why my transaction is 'In Progress' for too long?
+-------------------------------------------------
 
+Both wallets need to be online to accomplish a transaction. Any active transaction will be expired in 24 hours if the peer doesn't come online.
+
+I had available balance. Why I can’t send any money?
+----------------------------------------------------
+
+UTXO can be locked during active outgoing transaction (shown as a change) and the change will become spendable when the transaction is expire on will be completed.
+
+I’ve send my address to someone but the transaction can’t succeed
+-----------------------------------------------------------------
+
+The addresses expire in 24 hours by default. Check in the 'Expired addresses' section on the `Address screen`.
+
+I’ve forgot the local password for my wallet
+--------------------------------------------
+
+See `Restoring funds`
+
+I’ve restored the wallet but I can’t see the transaction list and/or my active addresses
+----------------------------------------------------------------------------------------
+
+As explained in `Restoring funds`, only the funds are kept on the blockchain, hence that’s all that can be restored.
+
+I’ve restored the wallet but I can’t see my balance
+---------------------------------------------------
+
+Triple-check that all the words from the seed phrase are typed-in correctly.
+
+My question is not answered here
+--------------------------------
+
+See `Reporting issues and getting support`
