@@ -421,7 +421,7 @@ You will be asked to enter your seed phrase. This is the time to get the phrase 
 .. figure:: images/desktop/07_restoring_funds/02.jpg
    :alt: Submit seed phrase
 
-.. attention:: If any wrong word was typed-in or an existing word which was misspelled, your funds will not be restored successfully. Example: 'litt_el_' instead of 'litt_le_'. 
+.. attention:: If any wrong word was typed-in or an existing word which was misspelled, your funds will not be restored successfully. *Example:* 'litt_el_' instead of 'litt_le_'. 
 
 .. figure:: images/desktop/07_restoring_funds/03.jpg
    :alt: Fully submitted seed phrase
@@ -444,20 +444,20 @@ Let’s define the meaning of address in BEAM ecosystem: BEAM is always sent fro
 
 A person can create as many addresses as required. The address creation process will be explained in details in :ref: `Sending BEAM` and :ref: `Receiving BEAM`.
 
-.. example:: Imagine a world with only two wallets. One belongs to you and the other belongs to Alice. You have created one address to receive money from Alice and another address to send money to Alice. Alice will never know that she’s receiving money from the same person she sends the money to. 
+*Example:* Imagine a world with only two wallets. One belongs to you and the other belongs to Alice. You have created one address to receive money from Alice and another address to send money to Alice. Alice will never know that she’s receiving money from the same person she sends the money to. 
 
-.. example:: Imagine a world with only three wallets. One belongs to you, another belongs to Alice and yet another belongs to Bob. You have created one address to receive money from Alice and another address to receive money from Bob. Alice and Bob will never know they send money to the same person.
+*Example:* Imagine a world with only three wallets. One belongs to you, another belongs to Alice and yet another belongs to Bob. You have created one address to receive money from Alice and another address to receive money from Bob. Alice and Bob will never know they send money to the same person.
 
 
 .. attention:: For the ultimate privacy, it is advised to have a **dedicated address for every transaction** (ie. for both Sending or Receiving). In other cases an address can be reused unless it had reached its expiration time (which is specified when an address is created). 
 
-.. example:: Imagine you’ve created the address with expiration interval of 24 hours and immediately sent it to Alice. In the next 24 hours Alice will be able to send BEAM to you as many times as she likes, reusing the same address of yours. 
+*Example:* Imagine you’ve created the address with expiration interval of 24 hours and immediately sent it to Alice. In the next 24 hours Alice will be able to send BEAM to you as many times as she likes, reusing the same address of yours. 
 
 .. warning:: Reusing same addresses, created with longer expiration interval, can be convenient yet the tradeoff of decreased privacy should be kept in mind.
 
 Same address can be used for sending and receiving money. 
 
-.. example:: you have created an address to send money to Alice. Alice can see the address the money came from and can send money to the address back to you.
+*Example:* you have created an address to send money to Alice. Alice can see the address the money came from and can send money to the address back to you.
 
 Address screen
 --------------
@@ -521,13 +521,13 @@ Why UTXO can be locked
 
 .. important:: Desktop Wallet automatically selects which UTXOs will be used for the transaction by trying to minimize the change you should receive as a result. This is important to understand since until transaction is complete, the UTXOs used in the transaction can not be used for any other transaction and do not appear in the list of ‘Available’ funds.
 
-.. example:: Assume that you have two UTXOs: 20 Beam and 10 Beam, and you want to send 9 Beam to someone, the wallet will automatically select the 10 Beam UTXO and create a transaction with 9 Beams sent and 1 Beam change.
+*Example:* Assume that you have two UTXOs: 20 Beam and 10 Beam, and you want to send 9 Beam to someone, the wallet will automatically select the 10 Beam UTXO and create a transaction with 9 Beams sent and 1 Beam change.
 
 .. figure:: images/desktop/09_utxo_screen/03.jpg
    :alt: Sending BEAM (UTXO locked example)
 
 
-.. example:: If you have one UTXO worth large value of 100 BEAM, and you want to pay 1 BEAM to someone this UTXO will be locked until the 1 BEAM transaction completes and you will have 0 (zero) available BEAM. If Receiving party is offline, it might take a long time during which you will not be able to send BEAM to anyone else. You can, of course, always cancel the transaction in this case.
+*Example:* If you have one UTXO worth large value of 100 BEAM, and you want to pay 1 BEAM to someone this UTXO will be locked until the 1 BEAM transaction completes and you will have 0 (zero) available BEAM. If Receiving party is offline, it might take a long time during which you will not be able to send BEAM to anyone else. You can, of course, always cancel the transaction in this case.
 
 You can split UTXO by yourself
 -------------------------------
