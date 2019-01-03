@@ -148,7 +148,7 @@ As a part of creating new wallet, the new seed phrase will be generated for you.
 .. figure:: images/desktop/03_creating_new_wallet/04.jpg
    :alt: Keeping seed phrase safe warning
 
-Did you wrote down your seed phrase correctly? Triple-check your handwriting again. The difference between “*f*unnel” and “*t*unnel” can be crucial when trying to restore a wallet with valuable funds in the far or near future.
+Did you wrote down your seed phrase correctly? Triple-check your handwriting again. The difference between '*f*unnel' and '*t*unnel' can be crucial when trying to restore a wallet with valuable funds in the far or near future.
 
 Did you verified your handwriting? Now go find a safe space for the paper! 
 
@@ -228,7 +228,7 @@ In the top left corner of the Main Screen, under the screen title, you see conne
 
 Green indicator means that the node is up and running. In case the wallet is unable to connect to the node, red indicator will appear.
 
-Near “online” word a blockchain name the node is connected to might appear. In general, there are 3 networks:
+Near ``online`` word a blockchain name the node is connected to might appear. In general, there are 3 networks:
 * **Mainnet:** the actual production network. 
 * **Testnet<number>:** (such as Testnet3, Testnet4 etc): staging environments for trying new features in our wallet, node and miner software. For advanced users only.
 * **Masternet:** new features under development, if you see this name in your wallet it means that you are very early adopter or Beam code contributor otherwise you’ve probably arrived to the wrong place.
@@ -240,12 +240,12 @@ Near “online” word a blockchain name the node is connected to might appear. 
 .. figure:: images/desktop/desktop/04_main_screen/02.jpg
    :alt: Main screen
 
-In the top left corner of the Main Screen, under the screen title, you see connection indicator which shows whether the wallet could successfully connect to peers. In brackets, it specifies the network to which the wallet is connected. In the screenshot above it says '(master)' which means the wallet is connected to internal developers network, called masternet. In case of Testnet 4, it will say '(testnet4)'. If the wallet is unable to connect to the peer it will be shown by red indicator.
+In the top left corner of the Main Screen, under the screen title, you see connection indicator which shows whether the wallet could successfully connect to peers. In brackets, it specifies the network to which the wallet is connected. In the screenshot above it says ``(master)`` which means the wallet is connected to internal developers network, called masternet. In case of Testnet 4, it will say ``(testnet4)``. If the wallet is unable to connect to the peer it will be shown by red indicator.
 
 .. figure:: images/desktop/wallet_disconnected.png
    :alt: Wallet disconnected  
 
-“Send” and “Receive” buttons at the top right corner help us to :ref: `Sending BEAM` and :ref: `Receiving BEAM`. Let's start using the wallet!
+'Send' and 'Receive' buttons at the top right corner help us to :ref: `Sending BEAM` and :ref: `Receiving BEAM`. Let's start using the wallet!
 
 Receiving BEAM
 --------------
@@ -260,7 +260,7 @@ In a nutshell, here is how the process of receiving BEAM looks like from a Recei
 Create an address
 -----------------
 
-Proceed to the Main screen and click the blue "Receive" button at the top right corner. Receive Dialog will open:
+Proceed to the Main screen and click the blue 'Receive' button at the top right corner. Receive Dialog will open:
 
 
 Sending BEAM
