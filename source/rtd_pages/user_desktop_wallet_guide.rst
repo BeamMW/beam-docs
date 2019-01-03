@@ -329,7 +329,7 @@ Normally, a transaction will pass through the following stages:
 
 Once transaction is completed the Available balance will be updated and the 'In Progress' panel will disappear.
 
-.. figure:: images/desktop/05_receiving_beam/05.jpg
+.. figure:: images/desktop/05_receiving_beam/06.jpg
    :alt: BEAM received
 
 
