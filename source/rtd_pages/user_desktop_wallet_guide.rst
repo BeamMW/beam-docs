@@ -557,11 +557,11 @@ Settings screen
 
 .. note:: At the top right corner of the screen the Desktop Wallet version is displayed. It is always important to specify the version when asking for support or reporting issues.
 
-For integrated and external nodes settings See: `Choosing the node connectivity mode`. Worth mentioning that when running integrated node you should specify the port on which the node will be listening on and the list of node peers. 
+For integrated and external nodes settings See: :ref:`Choosing the node connectivity mode`. Worth mentioning that when running integrated node you should specify the port on which the node will be listening on and the list of node peers. 
 
 General Settings section allows to change wallet password and set the duration, after which wallet will automatically lock to protect the funds from accidental unauthorized access to an active wallet.
 
-The 'Report problem' section allows to create an archive of wallet logs and explains how to report an issue. It also shows the current location of the wallet files. See more details about reporting issues and getting support in the :ref:`Reporting Issues and Getting Support` and :ref:`Desktop Wallet Troubleshooting` section.
+The 'Report problem' section allows to create an archive of wallet logs and explains how to report an issue. It also shows the current location of the wallet files. See more details about reporting issues and getting support in the :ref:`Reporting Issues and Getting Support` and :ref:`Desktop Wallet Troubleshooting` sections.
 
 Desktop Wallet Troubleshooting
 ==============================
