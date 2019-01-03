@@ -148,7 +148,10 @@ As a part of creating new wallet, the new seed phrase will be generated for you.
 .. figure:: images/desktop/03_creating_new_wallet/04.jpg
    :alt: Keeping seed phrase safe warning
 
-Did you wrote down your seed phrase correctly? Triple-check your handwriting again. The difference between "**f** unnel" and " **t** unnel" can be crucial when trying to restore a wallet with valuable funds in the far or near future.
+
+Did you write down your seed phrase correctly? Triple-check your handwriting again. The difference between "**f** unnel" and " **t** unnel" can be crucial when trying to restore a wallet with valuable funds in the far or near future.
+
+
 
 Did you verified your handwriting? Now go find a safe space for the paper! 
 
@@ -228,7 +231,7 @@ In the top left corner of the Main Screen, under the screen title, you see conne
 
 Green indicator means that the node is up and running. In case the wallet is unable to connect to the node, red indicator will appear.
 
-Near “online” word a blockchain name the node is connected to might appear. In general, there are 3 networks:
+Near ``online`` word a blockchain name the node is connected to might appear. In general, there are 3 networks:
 * **Mainnet:** the actual production network. 
 * **Testnet<number>:** (such as Testnet3, Testnet4 etc): staging environments for trying new features in our wallet, node and miner software. For advanced users only.
 * **Masternet:** new features under development, if you see this name in your wallet it means that you are very early adopter or Beam code contributor otherwise you’ve probably arrived to the wrong place.
@@ -240,12 +243,32 @@ Near “online” word a blockchain name the node is connected to might appear. 
 .. figure:: images/desktop/04_main_screen/02.jpg
    :alt: Main screen
 
-In the top left corner of the Main Screen, under the screen title, you see connection indicator which shows whether the wallet could successfully connect to peers. In brackets, it specifies the network to which the wallet is connected. In the screenshot above it says '(master)' which means the wallet is connected to internal developers network, called masternet. In case of Testnet 4, it will say '(testnet4)'. If the wallet is unable to connect to the peer it will be shown by red indicator.
+In the top left corner of the Main Screen, under the screen title, you see connection indicator which shows whether the wallet could successfully connect to peers. In brackets, it specifies the network to which the wallet is connected. In the screenshot above it says ``(master)`` which means the wallet is connected to internal developers network, called masternet. In case of Testnet 4, it will say ``(testnet4)``. If the wallet is unable to connect to the peer it will be shown by red indicator.
 
 .. figure:: images/desktop/wallet_disconnected.png
    :alt: Wallet disconnected  
 
-“Send” and “Receive” buttons at the top right corner help us to :ref: `Sending BEAM` and :ref: `Receiving BEAM`. Let's start using the wallet!
+'Send' and 'Receive' buttons at the top right corner help us to :ref: `Sending BEAM` and :ref: `Receiving BEAM`. Let's start using the wallet!
+
+Receiving BEAM
+--------------
+
+Before starting to receive BEAM for the first time, please read first about what ref :address: is.
+
+In a nutshell, here is how the process of receiving BEAM looks like from a Receiver’s perspective:
+* Create an address (unless you’d like to reuse one that already exists, more on that later)
+* Send your address to the Sender person **over a secure communication channel**
+* Stay online when Sender will initiate the transaction
+
+Create an address
+-----------------
+
+Proceed to the Main screen and click the blue 'Receive' button at the top right corner. Receive Dialog will open:
+
+
+Sending BEAM
+------------
+
 
 Address Screen
 --------------
@@ -288,118 +311,5 @@ The Report problem section allows to create an archive of wallet logs and explai
 .. attention:: In case the wallet crashes at start or when trying to create the log archive please refer to :ref: `Troubleshooting` section.
 
 In the top right corner of the Settings screen is the wallet version. It is important to always specify the version when asking for support or reporting issues.
-
-
-Sending and Receiving Beams
----------------------------
-
-Let's start with the Receiving flow.
-
-To receive Beams you shoul go to the Main Wallet screen and click on the blue 'Receive' button in the top right corner. This will open a Receive Dialog.
-
-.. figure:: images/desktop/desktop_wallet_receive_dialog.png
-   :alt: Receive dialog
-
-
-A new SBBS address is generated each time the dialog is open. You can copy and send the address to the Sending party via any available channel (email, Telegram etc...)
-
-.. attention:: You have to click 'Close' button in the dialog for the address to become active
-
-By default, each address is valid for 24 hours. You can explicitly set the expiration time to 'Never' by clicking on the 'Expires' dropdown.
-
-.. figure:: images/desktop/desktop_wallet_address_expiration.png
-   :alt: Address expiration in Receive dialog
-
-
-.. attention:: The permanent addresses that never expire are only useful in very limited special cases, like working with exchanges and such. Never use this option for regular transactions, rather always create a new address for each transaction.
-
-You also add a comment when creating the receiving address. The comment is never sent to the network, it is only visible inside your wallet and is used for internal bookkeeping only. 
-
-Afer you are done, don't forget to click the 'Close' button to activate the address.
-
-When the sending party receives your address and sends Beams, you will see a new Transaction appearing in the transaction list in the Main Wallet screen.
-
-.. figure:: images/desktop/desktop_wallet_transaction_confirming.png
-   :alt: Incoming transaction
-
-Transaction will pass through the following stages:
-
-* In Progress - during the phase when transaction is being created by the wallets
-
-* Confirmiing - after transaction was sent to the nodes but before it was mined
-
-* Completed - after transaction was mined 
-
-.. figure:: images/desktop/desktop_wallet_tranaction_completed.png
-   :alt: Transaction completed
-
-
-Once transaction is completed the balance in the availabe tab will be updated
-
-
-In order to Send Beams you will need to click on 'Send' button in Main Wallet screen. This will open a Send dialog.
-
-.. figure:: images/desktop/desktop_wallet_send_dialog_empty.png
-   :alt: Send dialog
-
-In the Send To field you should paste the SBBS Address you have received from the person you want to send funds to. You may also choose to fill in the optional Comment field which will only be stored locally inside your wallet for bookkeeping purposes. 
-
-Transaction amount is in Beam and may contain fractional values such as 1.25 Beam or 11.3 Beam and the like. 
-
-Transaction fees are specified in Groth (100 millionths of a Beam). Amount of Fees you need to pay depends on the current status of the network and average fee sizes. If your fee will be significantly low than average and the network is loaded you will wait longer for your transaction to be mined. To determine the current average fee size you should use Beam :ref:`blockchain explorer`.
-
-
-An example of such a dialog is shown below:
-
-.. figure:: images/desktop/desktop_wallet_send_dialog_full.png
-   :alt: Send dialog
-
-After you click 'Send' you will see a confirmation with all relevant transaction details
-
-.. figure:: images/desktop/desktop_wallet_send_dialog_confirm.png
-   :alt: Send dialog confirmation
-
-Once you confirm, the transaction is sent to the Receiver wallet. If Receiver wallet is currently offline or if the network is loaded you might see the transaction appear 'In Progress' in your transaction list. When the other party receives the transaction and comletes transaction creation, the transaction will be sent to the nodes and shown as 'Confirming'.
-
-.. note:: While is in 'In Progress' state you can cancel it by clicking on the dropdown menu to the right of the transaction and then 'Cancel'. The other party will receive notification that transaction was either 'Cancelled' or 'Failed' and funds that were allocated for this tranaction will be released and become available again. **It is not possible to cancel a tranasctio in 'Confirming' or 'Completed' states.**
-
-.. important:: Desktop Wallet automatically selects which UTXOs will be used for the transaction by trying to minimize the change you should receive as a result. This is important to understand since until transaction is complete, the UTXOs used in the transaction can not be used for any other transaction and do not appear in the list of 'Available' funds.
-
-	For example if you have two UTXOs: 20 Beam and 10 Beam, and you want to send 9 Beam to someone, the wallet will automatically select the 10 Beam UTXO and create a transaction with 9 Beams sent and 1 Beam change. 
-
-	However, if you have one large UTXO, say 100 Beams, and you want to pay 1 Beam to someone this UTXO will be locked until the 1 Beam transaction completes and you will have 0 (zero) available Beams. If Receiving party is offline, it might take a long time during which you will not be able to send Beams to anyone else. You can, of course, always cancel the transaction in this case. 
-
-	One thing you can do is to split the large UTXO into two parts by sending a transaction to yourself (using you own SBBS address). You will however pay fees for this transaction.
-
-.. attention:: **If the transaction was not sent to the nodes, for any reason, it will expire after 1440 blocks, or roughly 24 hours**
-
-	This is done to avoid a situation in which one of the Wallets did not send a created tranaction to the nodes and the UTXOs remain locked forever
-
-After some time your main wallet screen may look something like that:
-
-.. figure:: images/desktop/desktop_wallet_main_screen_inprogress.png
-   :alt: Send dialog confirmation
-
-
-The UTXO screen will show you exactly which UTXOs you own and what is their origin
-
-.. figure:: images/desktop/desktop_wallet_utxo_screen_1.png
-   :alt: Send dialog confirmation
-
-The types of UTXOs can be either:
-
-* Coinbase  - UTXO you have mined. It has maturity of 3 hours (240 blocks) and will not be immediately seen in Available tab
-* Regular   - UTXO received as a result of a transaction. It is immediately available for spending
-* Change    - UTXO received as a result as a change from a transaction spending a larger UTXO
-* Comission - Fees received as a result of mining a block which contained transactions
-
-Here is another example of UTXO screen with different UTXO types
-
-.. figure:: images/desktop/desktop_wallet_utxo_screen_2.png
-   :alt: Send dialog confirmation
-
-
-
-
 
 
