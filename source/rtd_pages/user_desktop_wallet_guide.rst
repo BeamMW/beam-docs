@@ -64,12 +64,12 @@ Mac
 
 When you click on the .dmg file you will see a screen with Disclaimer and End User License Agreement. Please read it carefully
 
-.. figure:: images/mac_install_1.png
+.. figure:: images/desktop/02_installing/01.png
    :alt: Mac EULA
 
 On the next screen, drag the Beam Wallet icon into the Applications folder to install
 
-.. figure:: images/mac_install_2.png
+.. figure:: images/desktop/02_installing/02.png
    :alt: Mac Install
 
 
@@ -77,27 +77,27 @@ When you will try to open the wallet for the first time, you will receive a secu
 
 1. Open 'System Preferences'
 
-.. figure:: images/mac_install_security_1.png
+.. figure:: images/desktop/02_installing/03.png
    :alt: Mac Security
 
 2. Locate and click on the 'Security & Privacy' settings
 
-.. figure:: images/mac_install_security_2.png
+.. figure:: images/desktop/02_installing/04.png
    :alt: Mac Security
 
 3. Click on the lock icon in the bottom left corner of the dialog
 
-.. figure:: images/mac_install_security_3.png
+.. figure:: images/desktop/02_installing/05.png
    :alt: Mac Security
 
 4. Change the 'Allow apps downloaded from' setting from 'App Store' to 'App Store and identified developers'
 
-.. figure:: images/mac_install_security_4.png
+.. figure:: images/desktop/02_installing/06.png
    :alt: Mac Security
 
 5. Launch the Beam Wallet from the Applicatins folder. When notification appears, click 'open'
 
-.. figure:: images/mac_install_security_5.png
+.. figure:: images/desktop/02_installing/07.png
    :alt: Mac Security
 
 
