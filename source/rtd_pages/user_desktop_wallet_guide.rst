@@ -10,7 +10,7 @@ Desktop Wallet User Guide
 Using Beam Dekstop Wallet is the simplest way to start using Beam. It is available for Linux, Mac and Windows platforms (see :ref:`supported platforms` for details). 
 
 
-Downloading Binaries
+Downloading binaries
 --------------------
 
 Proceed to the `download page <https://beam.mw/downloads>`_ of Beam official website: https://beam.mw/downloads
@@ -45,7 +45,7 @@ On Windows, open Power Shell and type
 
 ::
 
-   Get-FileHash 'C:\Users\bigromanov\Downloads\beam-node-1.0.3860.zip'
+   Get-FileHash 'C:\Users\<your_user_name>\Downloads\beam-node-1.0.3860.zip'
 
 
 Substitute your own path instead of the one in the example above
@@ -55,7 +55,6 @@ Substitute your own path instead of the one in the example above
 
 Installation
 ------------
-
 
 Once the application image is downloaded, double-click the icon to start the installation.
 
@@ -75,27 +74,27 @@ On the next screen, drag the Beam Wallet icon into the Applications folder to in
 
 When you will try to open the wallet for the first time, you will receive a security warning stating that Beam Wallet was created by an unrecognized developer. Please follow the steps below to launch the wallet.
 
-1. Open 'System Preferences'
+Open 'System Preferences'
 
 .. figure:: images/desktop/02_installing/03.png
    :alt: Mac Security
 
-2. Locate and click on the 'Security & Privacy' settings
+Locate and click 'Security & Privacy' settings
 
 .. figure:: images/desktop/02_installing/04.png
    :alt: Mac Security
 
-3. Click on the lock icon in the bottom left corner of the dialog
+Click the lock icon in the bottom left corner of the dialog
 
 .. figure:: images/desktop/02_installing/05.png
    :alt: Mac Security
 
-4. Change the 'Allow apps downloaded from' setting from 'App Store' to 'App Store and identified developers'
+Change the 'Allow apps downloaded from' setting from 'App Store' to 'App Store and identified developers'
 
 .. figure:: images/desktop/02_installing/06.png
    :alt: Mac Security
 
-5. Launch the Beam Wallet from the Applicatins folder. When notification appears, click 'open'
+Launch the Beam Wallet from the Applicatins folder. When notification appears, click 'Open'
 
 .. figure:: images/desktop/02_installing/07.png
    :alt: Mac Security
@@ -104,9 +103,9 @@ When you will try to open the wallet for the first time, you will receive a secu
 Where are the files
 -------------------
 
-When Desktop Wallet is installed the walelt data files are stored separately from the binaries. 
+When Desktop Wallet is installed the wallet data files are stored separately from the binaries. 
 
-The locations of all the files are described here: :ref:`files and locations`
+The locations of all the files are described here: :ref:`Files and locations`
 
 
 Creating new wallet
@@ -183,9 +182,12 @@ Wallet Password protects your wallet in case someone has access to your computer
 Choosing the node connectivity mode
 -----------------------------------
 
-Beam Desktop Wallet can be run in one of three modes.
+Beam Desktop Wallet can connect to the network through:
+* Integrated node
+* Random remote node
+* Specific remote node
 
-To run an integrated node from within the wallet choose “Run integrated node (recommended)”. The trusted node will automatically verify the blockchain, hence it’s the recommended option. 
+To run an integrated node from within the wallet choose 'Run integrated node (recommended)'. The trusted node will automatically verify the blockchain, hence it’s the recommended option. 
 
 .. advanced:: When running behind a firewall you can change the default port the node will be listening on, and in case of CPU mining, set the amount of mining threads. You will be probably provided at least one default peer to connect to but you can always add more peers on the Settings screen. The recommended peers are published in the list of bootstrap nodes in the `downloads page <https://beam.mw/downloads>`_ on `Beam official website <https://beam.mw>`_.
 
@@ -251,6 +253,7 @@ Receiving BEAM
 Before starting to receive BEAM for the first time, please read first about what ref :address: is.
 
 In a nutshell, here is how the process of receiving BEAM looks like from a Receiver’s perspective:
+
 * Create an address (unless you’d like to reuse one that already exists, more on that later)
 * Send your address to the Sender person **over a secure communication channel**
 * Stay online when Sender will initiate the transaction
@@ -549,13 +552,13 @@ General Settings section allows to change wallet password and set the duration, 
 
 The 'Report problem' section allows to create an archive of wallet logs and explains how to report an issue. It also shows the current location of the wallet files. See more details about reporting issues and getting support in the :ref: `Reporting Issues` and :ref: `Troubleshooting` section.
 
-Desktop Wallet troubleshooting
+Desktop Wallet Troubleshooting
 ==============================
 
 Where the wallet files are located?
 -----------------------------------
 
-When Desktop Wallet is installed the wallet data files are stored separately from the binaries. The locations of all the files are described here: `Files and Locations`
+When Desktop Wallet is installed the wallet data files are stored separately from the binaries. The locations of all the files are described here: :ref:`Files and Locations`
 
 Why my transaction is 'In Progress' for too long?
 -------------------------------------------------
