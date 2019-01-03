@@ -211,7 +211,7 @@ If you are running your own node somewhere (or maybe even more than one) and wan
 Synchronizing the wallet
 ------------------------
 
-Once the Wallet is connected, it synchronizes the current blockchain state from the network. Be patient when running with the integrated node: the data downloading process might take some time. The wallet will first download and validate the latest :ref: `macroblock` and then all the rest of the blockchain.
+Once the Wallet is connected, it synchronizes the current blockchain state from the network. Be patient when running with the integrated node: the data downloading process might take some time. The wallet will first download and validate the latest :ref:`Macroblock` and then all the rest of the blockchain.
 
 .. figure:: images/desktop/03_creating_new_wallet/12.jpg
    :alt: Synchronizing the wallet
@@ -234,7 +234,7 @@ Green indicator means that the node is up and running. In case the wallet is una
 Near ``online`` word a blockchain name the node is connected to might appear. In general, there are 3 networks:
 
 * **Mainnet:** the actual production network. 
-* **Testnet<number>:** (such as Testnet3, Testnet4 etc): staging environments for trying new features in our wallet, node and miner software. For advanced users only.
+* **Testnet<number>** (such as Testnet3, Testnet4 etc)**:** staging environments for trying new features in our wallet, node and miner software. For advanced users only.
 * **Masternet:** new features under development, if you see this name in your wallet it means that you are very early adopter or Beam code contributor otherwise you’ve probably arrived to the wrong place.
 
 .. attention:: Since Mainnet is the default network for the vast majority of Beam users, nothing is written by the online status.
@@ -244,7 +244,9 @@ Near ``online`` word a blockchain name the node is connected to might appear. In
 .. figure:: images/desktop/04_main_screen/02.jpg
    :alt: Main screen
 
-In the top left corner of the Main Screen, under the screen title, you see connection indicator which shows whether the wallet could successfully connect to peers. In brackets, it specifies the network to which the wallet is connected. In the screenshot above it says ``(master)`` which means the wallet is connected to internal developers network, called masternet. In case of Testnet 4, it will say ``(testnet4)``. If the wallet is unable to connect to the peer it will be shown by red indicator.
+In the top left corner of the Main Screen, under the screen title, you see connection indicator which shows whether the wallet could successfully connect to peers. In brackets, it specifies the network to which the wallet is connected. In the screenshot above it says ``(testnet4)`` which would be the 'wrong' option for an ordinary Wallet user. 
+
+If the wallet is unable to connect to the peer it will be shown by red indicator.
 
 .. figure:: images/desktop/04_main_screen/03.jpg
    :alt: Wallet disconnected  
