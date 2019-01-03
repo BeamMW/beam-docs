@@ -14,9 +14,9 @@ Welcome to Beam's documentation!
 Announcement
 ------------
 
-.. note:: Beam is currently in Testnet 4
+.. note:: Beam is currently in Mainnet.
 
-	Rules Signature: 3284aa6102cdefa4
+	Rules Signature: ed91a717313c6eb0
 
 	Download binaries from: `Beam Downloads Page <http://beam.mw/downloads>`_
 
