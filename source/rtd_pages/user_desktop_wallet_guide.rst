@@ -336,7 +336,106 @@ In a nutshell, here is how the process of sending BEAM looks like from a Sender�
 * Send BEAM in the Beam wallet
 * Stay online till Receiver confirms the transaction
 
+Receiving the address
+---------------------
 
+.. attention:: Make sure that the address is received untampered by using **secure communication channel**.
+
+.. attention:: When copying the address to the Beam Wallet app please verify visually that the address in the wallet looks exactly like the address in the secure messaging app because viruses and malware on your computer may change your address while it’s in the clipboard.
+
+Sending funds
+-------------
+
+In order to Send Beams you will need to click the magenta ‘Send’ button at the top right corner. This will open a Send dialog.
+
+.. figure:: images/desktop/06_sending_beam/01.jpg
+   :alt: Send BEAM dialog
+
+Make sure you have the correct address and paste the Receiver’s Beam address in the 'Send To' field. 
+
+To help to identify the transaction you may also choose to fill in the optional Comment field. The comment will remind you what or who the transaction is for. The comment is stored locally, thus it will only be visible only in in your wallet for bookkeeping purposes. 
+
+The comment can be seen on the :ref: `Address screen`:
+
+.. figure:: images/desktop/06_sending_beam/02.jpg
+   :alt: Send BEAM dialog
+
+The comment is also displayed in the extended transaction view:
+
+.. figure:: images/desktop/06_sending_beam/03.jpg
+   :alt: Extended transaction view
+
+
+Select the transaction amount in BEAM you want to send. Transaction amount is in BEAM and may contain fractional values such as 1.25 Beam or 11.3 Beam and the like. Keep in mind you also have to pay a transaction fee, hence the amount to send plus the fee must be equal to or less than the available balance. 
+
+.. figure:: images/desktop/06_sending_beam/04.jpg
+   :alt: Send BEAM amount
+
+Transaction fees are specified in GROTH (100 millionths of BEAM). Amount of Fees you need to pay depends on the current status of the network and average fee sizes. Simply said, the higher transaction fee will help miners to prioritize your transaction. To determine the current average fee size use Beam `Blockchain Explorer <https://bbb.>`.
+
+.. figure:: images/desktop/06_sending_beam/05.jpg
+   :alt: Send BEAM transaction fee
+
+You can see the remaining amount of BEAM in your wallet and the change that will be received after the transaction. 
+
+.. figure:: images/desktop/06_sending_beam/06.jpg
+   :alt: Send BEAM change and remaining amounts
+
+After you click ‘Send’ you will see a confirmation with the most important transaction details:
+
+.. figure:: images/desktop/06_sending_beam/07.jpg
+   :alt: Send BEAM confirmation 
+
+Completing the transaction
+--------------------------
+
+Once you confirm, the transaction is sent to the Receiver wallet. If Receiver wallet is currently offline or if the network is loaded you might see the transaction appear ‘In Progress’ in your transaction list. When the other party receives the transaction and completes transaction creation, the transaction will be sent to the nodes and shown as ‘Confirming’.
+
+.. note:: While a transaction is in ‘In Progress’ you can cancel it by clicking on the dropdown to the right of the transaction row and then select ‘Cancel’. The other party will receive notification that transaction was either ‘Cancelled’ or ‘Failed’ and funds that were allocated for this transaction will become available again. It is not possible to cancel a transaction in ‘Confirming’ or ‘Completed’ states.
+
+.. figure:: images/desktop/06_sending_beam/08.jpg
+   :alt: Canceling outgoing transaction
+
+If your transaction appears as In Progress for a notifiably long time, it means the Receiver is not online.
+
+.. attention:: If the transaction was not sent to the nodes, for any reason, it will expire after 1440 blocks, or roughly 24 hours This is done to avoid a situation in which one of the Wallets did not send a created transaction to the nodes and the UTXOs remain locked forever.
+
+Restoring funds
+---------------
+
+The operation allows to restore your funds directly from the blockchain. It is useful in the scenarios such as:
+* You’ve got a new device and would like to use your wallet on that
+* You’ve forgot your local password and can’t access your funds
+
+.. attention:: With Beam, only funds are stored on blockchain. Everything else, such as your active addresses, contacts or transaction history can’t be restored.
+
+.. note:: Very soon exporting transactions history for backup and bookkeeping purposes will be implemented.
+
+To start the restore process, start the wallet from a fresh install and press the 'Restore wallet' button.
+
+.. figure:: images/desktop/07_restoring_funds/01.jpg
+   :alt: Restore funds
+
+You will be asked to enter your seed phrase. This is the time to get the phrase out from your safe locker and type the words in:
+
+.. figure:: images/desktop/07_restoring_funds/02.jpg
+   :alt: Submit seed phrase
+
+.. attention:: If any wrong word was typed-in or an existing word which was misspelled, your funds will not be restored successfully. Example: 'litt_el_' instead of 'litt_le_'. 
+
+.. figure:: images/desktop/07_restoring_funds/03.jpg
+   :alt: Fully submitted seed phrase
+
+Did you checked your spelling? Click 'Restore wallet', the restoring screen will open and restore process will be started:
+
+.. figure:: images/desktop/07_restoring_funds/04.jpg
+   :alt: Restoring funds
+
+Upon completion, you’ll see the main screen of the wallet with your restored funds.
+
+.. note:: Please be patient, restoring funds is thorough and time consuming operation. 
+
+.. attention:: in case the available balance is zero, it means that some words from your seed phrase weren’t typed correctly. Remove the wallet files, double-check each and every word and repeat the process.
 
 Address Screen
 --------------
