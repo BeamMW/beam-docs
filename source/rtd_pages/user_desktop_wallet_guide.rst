@@ -306,7 +306,7 @@ Comment
 
 You also add a comment when creating the receiving address. The comment is never sent to the network, it is only visible inside your wallet and is used for internal bookkeeping only. 
 
-The comment can be seen on the :ref: `address screen` and in the extended transaction view.
+The comment can be seen on the :ref:`Address screen` and in the extended transaction view.
 
 Sending the address
 -------------------
@@ -561,7 +561,7 @@ For integrated and external nodes settings See: `Choosing the node connectivity 
 
 General Settings section allows to change wallet password and set the duration, after which wallet will automatically lock to protect the funds from accidental unauthorized access to an active wallet.
 
-The 'Report problem' section allows to create an archive of wallet logs and explains how to report an issue. It also shows the current location of the wallet files. See more details about reporting issues and getting support in the :ref: `Reporting Issues` and :ref: `Troubleshooting` section.
+The 'Report problem' section allows to create an archive of wallet logs and explains how to report an issue. It also shows the current location of the wallet files. See more details about reporting issues and getting support in the :ref:`Reporting Issues and Getting Support` and :ref:`Desktop Wallet Troubleshooting` section.
 
 Desktop Wallet Troubleshooting
 ==============================
