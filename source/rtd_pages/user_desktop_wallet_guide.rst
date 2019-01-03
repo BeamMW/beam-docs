@@ -148,10 +148,7 @@ As a part of creating new wallet, the new seed phrase will be generated for you.
 .. figure:: images/desktop/03_creating_new_wallet/04.jpg
    :alt: Keeping seed phrase safe warning
 
-
-Did you write down your seed phrase correctly? Triple-check your handwriting again. The difference between "**f** unnel" and " **t** unnel" can be crucial when trying to restore a wallet with valuable funds in the far or near future.
-
-
+Did you wrote down your seed phrase correctly? Triple-check your handwriting again. The difference between '*f*unnel' and '*t*unnel' can be crucial when trying to restore a wallet with valuable funds in the far or near future.
 
 Did you verified your handwriting? Now go find a safe space for the paper! 
 
@@ -192,7 +189,7 @@ Beam Desktop Wallet can be run in one of three modes.
 
 To run an integrated node from within the wallet choose “Run integrated node (recommended)”. The trusted node will automatically verify the blockchain, hence it’s the recommended option. 
 
-.. note:: When running behind a firewall you can change the default port the node will be listening on, and in case of CPU mining, set the amount of mining threads. You will be probably provided at least one default peer to connect to but you can always add more peers on the Settings screen. The recommended peers are published in the list of bootstrap nodes in the `downloads page <https://beam.mw/downloads>`_ on `Beam official website <https://beam.mw>`_.
+.. advanced:: When running behind a firewall you can change the default port the node will be listening on, and in case of CPU mining, set the amount of mining threads. You will be probably provided at least one default peer to connect to but you can always add more peers on the Settings screen. The recommended peers are published in the list of bootstrap nodes in the `downloads page <https://beam.mw/downloads>`_ on `Beam official website <https://beam.mw>`_.
 
 .. figure:: images/desktop/03_creating_new_wallet/09.jpg
    :alt: Start wallet with integrated node  
@@ -240,7 +237,7 @@ Near ``online`` word a blockchain name the node is connected to might appear. In
 
 .. attention:: Unless you know what you are doing, please verify that nothing is written after ``online``.
 
-.. figure:: images/desktop/04_main_screen/02.jpg
+.. figure:: images/desktop/desktop/04_main_screen/02.jpg
    :alt: Main screen
 
 In the top left corner of the Main Screen, under the screen title, you see connection indicator which shows whether the wallet could successfully connect to peers. In brackets, it specifies the network to which the wallet is connected. In the screenshot above it says ``(master)`` which means the wallet is connected to internal developers network, called masternet. In case of Testnet 4, it will say ``(testnet4)``. If the wallet is unable to connect to the peer it will be shown by red indicator.
@@ -265,9 +262,80 @@ Create an address
 
 Proceed to the Main screen and click the blue 'Receive' button at the top right corner. Receive Dialog will open:
 
+.. figure:: images/desktop/05_receiving_beam/01.jpg
+   :alt: Receive BEAM dialog
+
+Copy and paste the newly-generated Beam address to send it to the Sender over a **secure communication channel**. There are three ways to do it:
+* By selecting the address and clicking ``Command-C`` or ``Ctrl-C`` (depending on your platform)
+* By right-click on the address and choosing 'Copy' from the drop-down menu
+* By clicking the 'Copy' button
+
+.. figure:: images/desktop/05_receiving_beam/02.jpg
+   :alt: Copy address
+
+Each time the Receive Beam dialog is open, new Beam address is generated. By default, the address is valid for 24 hours. It is best to give the Sender your address closest to the time they will be sending beams so the address does not expire. 
+
+.. figure:: images/desktop/05_receiving_beam/03.jpg
+   :alt: Set address expiration
+
+
+You can explicitly set the expiration time to ‘Never’ by selecting the value in the ‘Expires’ dropdown.
+
+.. warning:: The permanent addresses that never expire are only useful in very limited special cases, like working with exchanges and such. For ultimate privacy, do not use this option for regular transactions, rather always create a new address for each transaction.
+
+.. attention:: You have to click ‘Close’ button in the dialog for the address to become active
+
+QR code
+-------
+
+If the Sender uses a mobile app he can scan the QR code directly from your laptop. The feature will be available soon in the upcoming Beam Wallet mobile app. 
+
+.. figure:: images/desktop/05_receiving_beam/04.jpg
+   :alt: QR code
+
+Comment
+-------
+
+You also add a comment when creating the receiving address. The comment is never sent to the network, it is only visible inside your wallet and is used for internal bookkeeping only. 
+
+The comment can be seen on the :ref: `address screen` and in the extended transaction view.
+
+Sending the address
+-------------------
+
+.. attention:: When sending the address make sure you use a secure communication channel.
+
+.. attention:: Make sure the entire address is sent to the Sender as it’s longer than it appears on the screen. Don’t forget to double check the value in whichever messenger app of your choice because viruses and malware on your computer may change your address while it’s in the clipboard. 
+
+Completing the transaction
+--------------------------
+
+Once the Sender initiates the transaction, you will see a new Transaction appearing in the transaction list on the Main screen and the sending amount will appear on the 'In progress' panel. 
+
+.. figure:: images/desktop/05_receiving_beam/05.jpg
+   :alt: Incoming transaction
+
+Normally, a transaction will pass through the following stages:
+* **In Progress** - during the phase when transaction is being created by the wallets
+* **Confirming** - after transaction was sent to the nodes but before it was mined
+* **Completed** - after transaction was fully mined and confirmed
+
+Once transaction is completed the Available balance will be updated and the 'In Progress' panel will disappear.
+
+.. figure:: images/desktop/05_receiving_beam/05.jpg
+   :alt: BEAM received
+
 
 Sending BEAM
 ------------
+
+Before starting to send BEAM, please read first about what :ref: `address` is.
+
+In a nutshell, here is how the process of sending BEAM looks like from a Sender’s perspective:
+* Receive and address the funds should be sent to
+* Send BEAM in the Beam wallet
+* Stay online till Receiver confirms the transaction
+
 
 
 Address Screen
