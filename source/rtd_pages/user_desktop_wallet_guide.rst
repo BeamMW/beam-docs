@@ -35,7 +35,7 @@ On Mac open terminal and run:
 
 ::
 
-   openssl sha256 <file>
+   shasum -a 256 <file>
 
 
 On Linux run
