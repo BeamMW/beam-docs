@@ -490,7 +490,7 @@ Finally, in ‘Contacts’ tab you will see every address that sent you the mone
 
 
 UTXO
-====
+----
 
 UTXO, Unspent Transaction (TX) Output is like a bill, banknote or a cheque of a a specific amount. You can have multiple 'bills' in your wallet at one time. Simply said, if BEAM is the currency, any UTXO can be considered as such a 'bill'.
 
@@ -499,7 +499,7 @@ UTXO screen
 
 On the technical level, in Beam, like in most other cryptocurrencies, your balance emerges as a result of multiple incoming and outgoing transactions. Each Transaction uses some existing inputs and creates new outputs. All the outputs controlled by the wallet are shown in the UTXO screen.
 
-.. figure:: images/desktop/09_address_screen/01.jpg
+.. figure:: images/desktop/09_utxo_screen/01.jpg
    :alt: UTXO screen
 
 The type of UTXO can be:
@@ -513,7 +513,7 @@ UTXO in sending BEAM dialog (explained by example)
 
 Assume that you have 100 BEAM in a single “bill”. So, if you want to send to Alice 10 BEAM, your single 'bill' will be split into one 'bill' of 10 BEAM to send and another 'bill' of 90 BEAM to remain in your wallet, right? Well, almost: we also have to consider the 'bill' of the transaction fee. Let’s say the transaction fee is 10M GROTH (0.1 BEAM), so in that case the 'bill' will be split in 3 as shown on the screenshot:
 
-.. figure:: images/desktop/09_address_screen/02.jpg
+.. figure:: images/desktop/09_utxo_screen/02.jpg
    :alt: Sending BEAM (UTXO change example)
 
 Why UTXO can be locked
@@ -523,7 +523,7 @@ Why UTXO can be locked
 
 .. example:: Assume that you have two UTXOs: 20 Beam and 10 Beam, and you want to send 9 Beam to someone, the wallet will automatically select the 10 Beam UTXO and create a transaction with 9 Beams sent and 1 Beam change.
 
-.. figure:: images/desktop/09_address_screen/03.jpg
+.. figure:: images/desktop/09_utxo_screen/03.jpg
    :alt: Sending BEAM (UTXO locked example)
 
 
@@ -551,8 +551,8 @@ General Settings section allows to change wallet password and set the duration, 
 
 The 'Report problem' section allows to create an archive of wallet logs and explains how to report an issue. It also shows the current location of the wallet files. See more details about reporting issues and getting support in the :ref: `Reporting Issues` and :ref: `Troubleshooting` section.
 
-Troubleshooting
-===============
+Desktop Wallet troubleshooting
+==============================
 
 Where the wallet files are located?
 -----------------------------------
