@@ -103,9 +103,6 @@ When you will try to open the wallet for the first time, you will receive a secu
    :alt: Mac Security
 
 
-
-
-
 Where are the files
 -------------------
 
@@ -119,117 +116,136 @@ Creating new wallet
 
 One you launch the wallet for the first time, you will be suggested to either create a new wallet or restore from existing seed phrase
 
-.. figure:: images/desktop/1_create_restore_screen.png
+.. figure:: images/desktop/03_creating_new_wallet/01.jpg
    :alt: Choosing between new and restore
 
 
-Click 'Create new wallet'. 
-
-.. attention:: Restoring flow is covered in :ref:`restore desktop wallet from seed phrase` section of the :ref:`backup and restore` document
-
+Click 'Create new wallet'. You will be prompted to generate the seed phrase.
 
 
 Generating seed phrase
 ----------------------
 
-Wallet will generate a new :ref: `seed phrase` for you. Seed phrase is your secret that will allow you to restore your coins. It's the most important secret you have to keep.
+As a part of creating new wallet, the new seed phrase will be generated for you.
 
-.. figure:: images/desktop/2_new_wallet_screen.png
+.. attention:: Seed phrase is the **most important secret you have to keep**. Knowing the seed phrase enables you (or anyone else) to access all your funds. 
+
+
+.. figure:: images/desktop/03_creating_new_wallet/02.jpg
    :alt: Before generating seed phrase
 
 
-.. warning:: Be careful when generating the seed phrase. It's for your eyes only. Always do it on a clear and air gapped machine.
+.. attention:: Seed phrase in the Beam wallet is *not* linked to email, phone number or any other identifier. You will need this phrase to restore your wallet, when you lose or reformat your device, or want to access your funds from your mobile phone or from another desktop or laptop. 
 
-.. figure:: images/desktop/3_new_wallet_phrase_screen.png
+
+.. figure:: images/desktop/03_creating_new_wallet/03.jpg
    :alt: Generating seed phrase
 
 
-.. warning:: Always store your seed phrase in a safe and secure location. Write it on a piece of paper. Do not store electronically as plain text
+.. attention:: Generating the seed phrase is **for your eyes only**! For the best security always do it on a clean air-gapped machine.
 
-.. figure:: images/desktop/4_new_wallet_phrase_confirm_screen.png
+
+.. figure:: images/desktop/03_creating_new_wallet/04.jpg
    :alt: Keeping seed phrase safe warning
 
-In order to make sure that you have really wrote down your :ref:`seed phrase<seed phrase>`, the wallet will ask you to enter a selection of words from your phrase in random order.
+Did you wrote down your seed phrase correctly? Triple-check your handwriting again. The difference between “*f*unnel” and “*t*unnel” can be crucial when trying to restore a wallet with valuable funds in the far or near future.
 
-.. figure:: images/desktop/5_new_wallet_repeat_screen.png
+Did you verified your handwriting? Now go find a safe space for the paper! 
+
+.. note:: Storing the info on your computer makes your funds prone to cyber attacks (read: much less secure). Creative approaches like saving a screenshot of the wallet or your handwriting on your computer may sound like a good idea, but it is not recommended. If someone hacks into your computer, network drive etc; they can steal your recovery phrase. There are programs (called OCR) that can scan pictures and transform them to plain text. 
+
+.. attention:: Always store your seed phrase in a safe and secure location (and better more than one in different geo locations). Write it on a piece of paper. Do not store electronically neither as plain text nor in any other form!
+
+In order to ensure that you have really wrote down your seed phrase, the wallet will ask you to fill in the specific recovery words from your phrase in random order.
+
+.. figure:: images/desktop/03_creating_new_wallet/05.jpg
    :alt: Repeat your seed phrase 
 
+Only when you typed all the selected words correctly you will be allowed to proceed to the next step.
 
-When you type all the words correctly you will be allowed to proceed to the next step
-
-.. figure:: images/desktop/7_new_wallet_repeat_screen_3.png
+.. figure:: images/desktop/03_creating_new_wallet/06.jpg
    :alt: Indicate correct words 
 
 
-Setting Wallet Password
+Setting wallet password
 -----------------------
 
-Next thing you need to do is to set Wallet Password
+To access your Beam Wallet, you will need to create a password. This password is not the same as the recovery phrase. Recovery phrase identifies a wallet and enables the access to all the funds stored in it from any device, wallet password provides with a complementary security layer in case someone gained access to your computer or has stolen your wallet database file. It is important to choose a strong password. 
 
 
-.. figure:: images/desktop/8_new_wallet_password_screen_1.png
-   :alt: New wallet password 
+.. figure:: images/desktop/03_creating_new_wallet/07.jpg
+   :alt: Example of a weak password
 
 Wallet Password protects your wallet in case someone has access to your computer or has stolen your wallet database file. It is important to choose strong password that you can remember. The wallet will provide some indication of password strength for your convenience. Do not count on it however. Choose password that is at least 8 symbols long with combination of characters from different types, such as letters numbers and special symbols
 
-.. figure:: images/desktop/9_new_wallet_weak_password_screen.png
-   :alt: Example of weak password 
+.. figure:: images/desktop/03_creating_new_wallet/08.jpg
+   :alt: Example of a stronger password 
 
 
-.. figure:: images/desktop/10_new_wallet_strong_password_screen.png
-   :alt: Example of strong password
-
-Choosing Wallet Mode
---------------------
+Choosing the node connectivity mode
+-----------------------------------
 
 Beam Desktop Wallet can be run in one of three modes.
 
-To run a local node from within the wallet choose the first option (recommended)
+To run an integrated node from within the wallet choose “Run integrated node (recommended)”. The trusted node will automatically verify the blockchain, hence it’s the recommended option. 
 
-.. figure:: images/desktop/11_new_wallet_mode_local_screen.png
-   :alt: Start wallet in local mode  
+.. advanced:: When running behind a firewall you can change the default port the node will be listening on, and in case of CPU mining, set the amount of mining threads. You will be probably provided at least one default peer to connect to but you can always add more peers on the Settings screen. The recommended peers are published in the list of bootstrap nodes in the `downloads page <https://beam.mw/downloads>`_ on `Beam official website <https://beam.mw>`_.
 
+.. figure:: images/desktop/03_creating_new_wallet/09.jpg
+   :alt: Start wallet with integrated node  
 
-You can change the default port the node will be listening on, if necessary and, in case of CPU mining, set the amount of mining threads. You will be probably provided at least one default peer to connect to but you can always add more peers from the list of bootstrap nodes published in the `downloads section of Beam website <http://beam.mw/downloads>`_. 
+Random mode allows you to automatically connect to random bootstrap node. In this mode Beam Wallet acts like a ‘light client’, it will create transactions but will have to trust the remote node for blockchain verification. It is recommended for lighter devices (with limited CPU power and/or RAM memory).
 
-
-Random mode allows you to automatically connect to random bootstrap node. In this mode Beam Wallet acts like 'light client', it will create transactions but will have to trust the remote node for blockchain verification. It is recommened for weaker devices.
-
-.. figure:: images/desktop/12_new_wallet_mode_random_screen.png
-   :alt: Start wallet in random mode  
+.. figure:: images/desktop/03_creating_new_wallet/10.jpg
+   :alt: Start wallet with random mode  
 
 
-If you are running your own node somewhere and want to connect specifically to it, use the third option by providing the IP and port the node is listening on.
+If you are running your own node somewhere (or maybe even more than one) and want to connect specifically to it, use the third option by providing the IP and port the node is listening on.
 
-.. figure:: images/desktop/13_new_wallet_mode_remote_screen.png
-   :alt: Start wallet in remote mode  
+.. figure:: images/desktop/03_creating_new_wallet/11.jpg
+   :alt: Start wallet with specific remote node  
 
-Wallet Synchronization
-----------------------
+Synchronizing the wallet
+------------------------
 
-Once the Wallet is connected, it synchronizes the current blockchain data from the network. In case Beam Wallet is running with local node this process might take some time. The wallet will first download and validate the latest :ref: `macroblock` and then all the rest of the blockchain. 
+Once the Wallet is connected, it synchronizes the current blockchain state from the network. Be patient when running with the integrated node: the data downloading process might take some time. The wallet will first download and validate the latest :ref: `macroblock` and then all the rest of the blockchain.
 
-.. figure:: images/desktop/14_new_wallet_sync_screen.png
-   :alt: Start wallet in local mode  
+.. figure:: images/desktop/desktop/03_creating_new_wallet/12.jpg
+   :alt: Synchronizing the wallet
 
-Once synchronization is complete, you will see the Main Screen of the wallet
 
 Main Screen
 -----------
 
-Main Screen of the wallet shows the current balance of both available and unconfirmed Beams as well as the transaction history. On the left, under the Beam logo, the is a toolbar that provides navigation between different wallet screens currently: Wallet (or Main Screen), Addresses, UTXO and Settings
+Once your wallet is created, the main screen will show up. The screen usually opens up automatically when you enter the application and successfully submit the local password. 
 
-Let's first go over them one by one.
+.. figure:: images/desktop/desktop/04_main_screen/01.jpg
+   :alt: Main screen
 
-.. figure:: images/desktop/15_main_screen_empty.png
-   :alt: Main screen  
+The Main Screen of the wallet shows the current balance of both available and unconfirmed BEAM as well as the transaction history and statuses. On the left, under the Beam logo, there is a toolbar that provides navigation between different wallet screens, currently: Wallet (or Main Screen), Addresses, UTXO and Settings.
+
+In the top left corner of the Main Screen, under the screen title, you see connection status indicator which shows whether the wallet could successfully connect to the node. In brackets, it specifies the network to which the wallet is connected. In the screenshot above it says ‘(master)’ which means the wallet is connected to internal developers network, called “masternet”. In case of Testnet 4, it will say ‘(testnet4)’. For the main (production) network no name will be written. 
+
+Green indicator means that the node is up and running. In case the wallet is unable to connect to the node, red indicator will appear.
+
+Near “online” word a blockchain name the node is connected to might appear. In general, there are 3 networks:
+* **Mainnet:** the actual production network. 
+* **Testnet<number>:** (such as Testnet3, Testnet4 etc): staging environments for trying new features in our wallet, node and miner software. For advanced users only.
+* **Masternet:** new features under development, if you see this name in your wallet it means that you are very early adopter or Beam code contributor otherwise you’ve probably arrived to the wrong place.
+
+.. attention:: Since Mainnet is the default network for the vast majority of Beam users, nothing is written by the online status.
+
+.. attention:: Unless you know what you are doing, please verify that nothing is written after ``online``.
+
+.. figure:: images/desktop/desktop/04_main_screen/02.jpg
+   :alt: Main screen
 
 In the top left corner of the Main Screen, under the screen title, you see connection indicator which shows whether the wallet could successfully connect to peers. In brackets, it specifies the network to which the wallet is connected. In the screenshot above it says '(master)' which means the wallet is connected to internal developers network, called masternet. In case of Testnet 4, it will say '(testnet4)'. If the wallet is unable to connect to the peer it will be shown by red indicator.
 
 .. figure:: images/desktop/wallet_disconnected.png
    :alt: Wallet disconnected  
 
-Send and Receive buttons are located in the top right corner, we will get back to the later when we will talk about sending and receiving Beam coins. There we wil also explain all the details regarding the difference between the Availble and Unconfirmed funds as well as the meanings of the fields in the Transactions table.
+“Send” and “Receive” buttons at the top right corner help us to :ref: `Sending BEAM` and :ref: `Receiving BEAM`. Let's start using the wallet!
 
 Address Screen
 --------------
