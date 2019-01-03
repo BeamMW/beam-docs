@@ -147,11 +147,11 @@ As a part of creating new wallet, the new seed phrase will be generated for you.
 .. figure:: images/desktop/03_creating_new_wallet/04.jpg
    :alt: Keeping seed phrase safe warning
 
-Did you wrote down your seed phrase correctly? Triple-check your handwriting again. The difference between '_F_unnel' and '_T_unnel' can be crucial when trying to restore a wallet with valuable funds in the far or near future.
+Did you wrote down your seed phrase correctly? Triple-check your handwriting again. The difference between *_F_unnel* and *_T_unnel* can be crucial when trying to restore a wallet with valuable funds in the far or near future.
 
 Did you verified your handwriting? Now go find a safe space for the paper! 
 
-.. note:: Storing the info on your computer makes your funds prone to cyber attacks (read: much less secure). Creative approaches like saving a screenshot of the wallet or your handwriting on your computer may sound like a good idea, but it is not recommended. If someone hacks into your computer, network drive etc; they can steal your recovery phrase. There are programs (called OCR) that can scan pictures and transform them to plain text. 
+.. important:: Storing the info on your computer makes your funds prone to cyber attacks (read: much *less* secure). 'Creative' approaches like saving a screenshot of the wallet or your handwriting on your computer or in the cloud *may* sound like a good idea, but it is absolutely **not recommended**. If someone hacks into your computer, network drive etc; they can help by OCR programs (which can scan pictures and transform them into plain text) hackers can potentially steal your recovery phrase and therefore get the access to your funds.
 
 .. attention:: Always store your seed phrase in a safe and secure location (and better more than one in different geo locations). Write it on a piece of paper. Do not store electronically neither as plain text nor in any other form!
 
