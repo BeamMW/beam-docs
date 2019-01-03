@@ -249,12 +249,12 @@ In the top left corner of the Main Screen, under the screen title, you see conne
 .. figure:: images/desktop/04_main_screen/03.jpg
    :alt: Wallet disconnected  
 
-'Send' and 'Receive' buttons at the top right corner help us to :ref: `Sending BEAM` and :ref: `Receiving BEAM`. Let's start using the wallet!
+'Send' and 'Receive' buttons at the top right corner help us to :ref:`Sending BEAM` and :ref:`Receiving BEAM`. Let's start using the wallet!
 
 Receiving BEAM
 --------------
 
-Before starting to receive BEAM for the first time, please read first about what ref :address: is.
+Before starting to receive BEAM for the first time, please read first about what :ref:`address` is.
 
 In a nutshell, here is how the process of receiving BEAM looks like from a Receiver’s perspective:
 
@@ -336,7 +336,7 @@ Once transaction is completed the Available balance will be updated and the 'In 
 Sending BEAM
 ------------
 
-Before starting to send BEAM, please read first about what :ref: `address` is.
+Before starting to send BEAM, please read first about what :ref:`Address` is.
 
 In a nutshell, here is how the process of sending BEAM looks like from a Sender’s perspective:
 
@@ -363,7 +363,7 @@ Make sure you have the correct address and paste the Receiver’s Beam address i
 
 To help to identify the transaction you may also choose to fill in the optional Comment field. The comment will remind you what or who the transaction is for. The comment is stored locally, thus it will only be visible only in in your wallet for bookkeeping purposes. 
 
-The comment can be seen on the :ref: `Address screen`:
+The comment can be seen on the :ref:`Address screen`:
 
 .. figure:: images/desktop/06_sending_beam/02.jpg
    :alt: Send BEAM dialog
