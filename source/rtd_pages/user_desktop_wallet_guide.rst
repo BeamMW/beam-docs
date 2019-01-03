@@ -40,6 +40,8 @@ On Mac open terminal and run:
 
 On Linux run
 
+``TBD``
+
 
 On Windows, open Power Shell and type
 
@@ -61,12 +63,12 @@ Once the application image is downloaded, double-click the icon to start the ins
 Mac
 ---
 
-When you click on the .dmg file you will see a screen with Disclaimer and End User License Agreement. Please read it carefully
+When you click on the .dmg file you will see a screen with Disclaimer and End User License Agreement. Please read it carefully.
 
 .. figure:: images/desktop/02_installing/01.png
    :alt: Mac EULA
 
-On the next screen, drag the Beam Wallet icon into the Applications folder to install
+On the next screen, drag the Beam Wallet icon into the Applications folder to install.
 
 .. figure:: images/desktop/02_installing/02.png
    :alt: Mac Install
@@ -183,6 +185,7 @@ Choosing the node connectivity mode
 -----------------------------------
 
 Beam Desktop Wallet can connect to the network through:
+
 * Integrated node
 * Random remote node
 * Specific remote node
@@ -229,6 +232,7 @@ In the top left corner of the Main Screen, under the screen title, you see conne
 Green indicator means that the node is up and running. In case the wallet is unable to connect to the node, red indicator will appear.
 
 Near ``online`` word a blockchain name the node is connected to might appear. In general, there are 3 networks:
+
 * **Mainnet:** the actual production network. 
 * **Testnet<number>:** (such as Testnet3, Testnet4 etc): staging environments for trying new features in our wallet, node and miner software. For advanced users only.
 * **Masternet:** new features under development, if you see this name in your wallet it means that you are very early adopter or Beam code contributor otherwise you’ve probably arrived to the wrong place.
@@ -237,12 +241,12 @@ Near ``online`` word a blockchain name the node is connected to might appear. In
 
 .. attention:: Unless you know what you are doing, please verify that nothing is written after ``online``.
 
-.. figure:: images/desktop/desktop/04_main_screen/02.jpg
+.. figure:: images/desktop/04_main_screen/02.jpg
    :alt: Main screen
 
 In the top left corner of the Main Screen, under the screen title, you see connection indicator which shows whether the wallet could successfully connect to peers. In brackets, it specifies the network to which the wallet is connected. In the screenshot above it says ``(master)`` which means the wallet is connected to internal developers network, called masternet. In case of Testnet 4, it will say ``(testnet4)``. If the wallet is unable to connect to the peer it will be shown by red indicator.
 
-.. figure:: images/desktop/wallet_disconnected.png
+.. figure:: images/desktop/04_main_screen/03.jpg
    :alt: Wallet disconnected  
 
 'Send' and 'Receive' buttons at the top right corner help us to :ref: `Sending BEAM` and :ref: `Receiving BEAM`. Let's start using the wallet!
@@ -267,6 +271,7 @@ Proceed to the Main screen and click the blue 'Receive' button at the top right 
    :alt: Receive BEAM dialog
 
 Copy and paste the newly-generated Beam address to send it to the Sender over a **secure communication channel**. There are three ways to do it:
+
 * By selecting the address and clicking ``Command-C`` or ``Ctrl-C`` (depending on your platform)
 * By right-click on the address and choosing 'Copy' from the drop-down menu
 * By clicking the 'Copy' button
@@ -317,6 +322,7 @@ Once the Sender initiates the transaction, you will see a new Transaction appear
    :alt: Incoming transaction
 
 Normally, a transaction will pass through the following stages:
+
 * **In Progress** - during the phase when transaction is being created by the wallets
 * **Confirming** - after transaction was sent to the nodes but before it was mined
 * **Completed** - after transaction was fully mined and confirmed
@@ -333,6 +339,7 @@ Sending BEAM
 Before starting to send BEAM, please read first about what :ref: `address` is.
 
 In a nutshell, here is how the process of sending BEAM looks like from a Sender’s perspective:
+
 * Receive and address the funds should be sent to
 * Send BEAM in the Beam wallet
 * Stay online till Receiver confirms the transaction
@@ -372,7 +379,7 @@ Select the transaction amount in BEAM you want to send. Transaction amount is in
 .. figure:: images/desktop/06_sending_beam/04.jpg
    :alt: Send BEAM amount
 
-Transaction fees are specified in GROTH (100 millionths of BEAM). Amount of Fees you need to pay depends on the current status of the network and average fee sizes. Simply said, the higher transaction fee will help miners to prioritize your transaction. To determine the current average fee size use Beam `Blockchain Explorer <https://explorer.beam.mw>`.
+Transaction fees are specified in GROTH (100 millionths of BEAM). Amount of Fees you need to pay depends on the current status of the network and average fee sizes. Simply said, the higher transaction fee will help miners to prioritize your transaction. To determine the current average fee size use Beam `Blockchain Explorer <https://explorer.beam.mw>`_.
 
 .. figure:: images/desktop/06_sending_beam/05.jpg
    :alt: Send BEAM transaction fee
@@ -405,6 +412,7 @@ Restoring funds
 ---------------
 
 The operation allows to restore your funds directly from the blockchain. It is useful in the scenarios such as:
+
 * You’ve got a new device and would like to use your wallet on that
 * You’ve forgot your local password and can’t access your funds
 
@@ -504,6 +512,7 @@ On the technical level, in Beam, like in most other cryptocurrencies, your balan
    :alt: UTXO screen
 
 The type of UTXO can be:
+
 * **Coinbase** - UTXO you have mined. It has maturity of 3 hours (240 blocks) and will not be immediately seen in Available tab
 * **Regular** - UTXO received as a result of a transaction. It is immediately available for spending
 * **Change** - UTXO received as a result as a change from a transaction spending a larger UTXO
