@@ -1,6 +1,6 @@
 .. _user_desktop_wallet_guide:
 
-.. warning:: The following document is still under construction and is subject to changes
+.. warning:: The following document is still under construction and is subject to changes.
 
 .. _desktop_wallet_guide:
 
@@ -13,7 +13,7 @@ Using Beam Dekstop Wallet is the simplest way to start using Beam. It is availab
 Downloading binaries
 --------------------
 
-Proceed to the `download page <https://beam.mw/downloads>`_ of Beam official website: https://beam.mw/downloads
+Proceed to the download page of Beam official website: https://beam.mw/downloads
 
 Ensure that the communication between your browser and Beam official website is encrypted by verifying that the padlock icon is displayed in its locked state on the URL bar.
 
@@ -145,7 +145,7 @@ As a part of creating new wallet, the new seed phrase will be generated for you.
 .. figure:: images/desktop/03_creating_new_wallet/04.jpg
    :alt: Keeping seed phrase safe warning
 
-Did you wrote down your seed phrase correctly? Triple-check your handwriting again. The difference between '*f*unnel' and '*t*unnel' can be crucial when trying to restore a wallet with valuable funds in the far or near future.
+Did you wrote down your seed phrase correctly? Triple-check your handwriting again. The difference between '_F_unnel' and '_T_unnel' can be crucial when trying to restore a wallet with valuable funds in the far or near future.
 
 Did you verified your handwriting? Now go find a safe space for the paper! 
 
