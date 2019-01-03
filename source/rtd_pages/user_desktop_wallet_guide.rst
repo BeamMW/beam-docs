@@ -13,7 +13,7 @@ Using Beam Dekstop Wallet is the simplest way to start using Beam. It is availab
 Downloading Binaries
 --------------------
 
-Proceed to the download page of `Beam official website <https://beam.mw/downloads>`_: https://beam.mw/downloads
+Proceed to the `download page <https://beam.mw/downloads>`_ of Beam official website: https://beam.mw/downloads
 
 Ensure that the communication between your browser and Beam official website is encrypted by verifying that the padlock icon is displayed in its locked state on the URL bar.
 
