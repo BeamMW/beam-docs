@@ -55,8 +55,8 @@ Substitute your own path instead of the one in the example above
 .. warning:: As the wallet will be continuously updated, the actual version numbers and SHA values might be different from the screenshot at the moment of reading.
 
 
-Installation
-------------
+Installing the desktop app
+--------------------------
 
 Once the application image is downloaded, double-click the icon to start the installation.
 
@@ -571,8 +571,8 @@ Where the wallet files are located?
 
 When Desktop Wallet is installed the wallet data files are stored separately from the binaries. The locations of all the files are described here: :ref:`Files and Locations`
 
-Why my transaction is 'In Progress' for too long?
--------------------------------------------------
+Why my transaction is 'In Progress' for so long?
+------------------------------------------------
 
 Both wallets need to be online to accomplish a transaction. Any active transaction will be expired in 24 hours if the peer doesn't come online.
 
