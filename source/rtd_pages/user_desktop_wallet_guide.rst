@@ -289,7 +289,7 @@ You can explicitly set the expiration time to ‘Never’ by selecting the value
 
 .. warning:: The permanent addresses that never expire are only useful in very limited special cases, like working with exchanges and such. For ultimate privacy, do not use this option for regular transactions, rather always create a new address for each transaction.
 
-.. attention:: You have to click ‘Close’ button in the dialog for the address to become active
+.. attention:: You have to click ‘Close’ button in the dialog for the address to become active.
 
 QR code
 -------
