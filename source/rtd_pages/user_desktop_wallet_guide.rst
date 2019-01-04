@@ -34,7 +34,7 @@ Ensure that you’ve downloaded the untampered Wallet installation file by check
 
 Substitute your own path instead of the one in the example above
 
-.. warning:: As the wallet will be continuously updated, the actual version numbers and SHA values might be different from the screenshot at the moment of reading.
+.. note:: As the wallet will be continuously updated, the actual version numbers and SHA values might be different from the screenshot at the moment of reading.
 
 
 Installing the desktop app
