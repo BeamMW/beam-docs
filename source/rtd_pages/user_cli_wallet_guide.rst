@@ -252,7 +252,7 @@ In order to create new SBBS address, run the following command:
 
 ::
 
-    ./beam-wallet new_addr
+    ./beam-wallet new_addr --expiration_time=never|24h --label="some label"
 
 You will be prompted for the wallet password
 
