@@ -5,8 +5,8 @@
    :align: right
 
 
-Welcome to Beam's documentation!
-================================
+Welcome to Beam documentation!
+==============================
 
 
 .. _rules_signature:
