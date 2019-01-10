@@ -558,8 +558,8 @@ Why my transaction is 'In Progress' for so long?
 
 Both wallets need to be online to accomplish a transaction. Any active transaction will be expired in 24 hours if the peer doesn't come online.
 
-I'm sending only some of my funds to a friend. Why my available balance is less than expected?
-----------------------------------------------------------------------------------------------
+I'm sending only some of my funds to a friend. Why my available balance became less than expected?
+--------------------------------------------------------------------------------------------------
 
 UTXO can be locked during active outgoing transaction. The locked amount is displayed as a change in "Sendi screen". The change will become spendable when the transaction expires or completes.
 
