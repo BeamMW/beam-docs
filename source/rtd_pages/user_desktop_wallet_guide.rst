@@ -561,7 +561,7 @@ Both wallets need to be online to accomplish a transaction. Any active transacti
 I'm sending only some of my funds to a friend. Why my available balance became less than expected?
 --------------------------------------------------------------------------------------------------
 
-UTXO can be locked during active outgoing transaction. The locked amount is displayed as a change in "Sendi screen". The change will become spendable when the transaction expires or completes.
+UTXO can be locked during active outgoing transaction. The locked amount is displayed as a change in "Sending screen". The change will become spendable when the transaction expires or completes.
 
 I’ve send my address to someone but the transaction can’t succeed
 -----------------------------------------------------------------
