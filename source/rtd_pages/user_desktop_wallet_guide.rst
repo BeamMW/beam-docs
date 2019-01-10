@@ -583,6 +583,17 @@ I’ve restored the wallet but I can’t see my balance
 
 Triple-check that all the words from the seed phrase are typed-in correctly.
 
+I’ve restored the wallet using my seed phrase - can someone still send me money to the addresses created in the previous wallet?
+--------------------------------------------------------------------------------------------------------------------------------
+
+When a wallet is restored, *only the balance (UTXO) is restored*. Addresses (active and expired), contacts, transaction history are stored only locally, hence they can't be restored from the blockchain. Each wallet instance is aware only of the active and expired addresses it displays. Therefore, all transactions sent to the addresses no wallet is aware of anymore will fail by timeout and the funds will be automatically released in sender's wallet.
+
+I've copied my ``wallet.db`` file to the new machine and I'd like to run wallets on both new and old machines simultaneously  
+----------------------------------------------------------------------------------------------------------------------------
+
+At the current implementation each ``wallet.db`` file should be managed by only a single wallet instance. Any case involving manual transfer of the wallet database **is not supported**.
+
+
 My question is not answered here
 --------------------------------
 
