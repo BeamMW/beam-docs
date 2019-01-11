@@ -14,7 +14,7 @@ General points to mention:
 * The default location of the Desktop Wallet app can be modified during the installation process (Windows only).
 * The default Database location for the Desktop Wallet app can be changed setting the `appdata` parameter to `beam-wallet.cfg` (Windows only).
 * Memory dump files are generated on Windows only. A dedicated memory dump file is created per each crash case.
-* Each version of the wallet keeps its files in the dedicated sub-folder, designated by the version number. On each wallet update the new folder is created and the files from previous version are copied (and updated if necessary).
+* Each version of the wallet keeps the wallet database file (`wallet.db`) in the dedicated sub-folder, designated by the version number. On each wallet update the new folder is created to which and the wallet database file from previous version is copied into (and updated if necessary).
 
 Windows
 -------
@@ -26,11 +26,11 @@ Windows
 +-------------------------+---------------------------------------------------------------------------------------------+
 | Configuration           | `\\Program Files\\Beam\\<version>\\beam-wallet.cfg`                                         |
 +-------------------------+---------------------------------------------------------------------------------------------+
-| Logs                    | `\\Users\\{your User name}\\AppData\\Local\\Beam Wallet\\<version>\\logs`                   |
+| Logs                    | `\\Users\\{your User name}\\AppData\\Local\\Beam Wallet\\logs`                   |
 +-------------------------+---------------------------------------------------------------------------------------------+
 | Database                | `\\Users\\{your User name}\\AppData\\Local\\Beam Wallet\\<version>\\wallet.db (node.db)`    |
 +-------------------------+---------------------------------------------------------------------------------------------+
-| Dumps                   | `\\Users\\{your User name}\\AppData\\Local\\Beam Wallet\\<version>\\Beam Wallet.exe0.dmp`   |
+| Dumps                   | `\\Users\\{your User name}\\AppData\\Local\\Beam Wallet\\Beam Wallet.exe0.dmp`   |
 +-------------------------+---------------------------------------------------------------------------------------------+
 
 Mac
@@ -43,7 +43,7 @@ Mac
 +-------------------------+--------------------------------------------------------------------------------------------+
 | Configuration           | N/A                                                                                        |
 +-------------------------+--------------------------------------------------------------------------------------------+
-| Logs                    | `/Users/{your User name}/Library/Application Support/Beam Wallet/<version>/logs`           |
+| Logs                    | `/Users/{your User name}/Library/Application Support/Beam Wallet/logs`                     |
 +-------------------------+--------------------------------------------------------------------------------------------+
 | Database                | `/Users/{your User name}/Library/Application Support/Beam Wallet/<version>/wallet.db`      |
 +-------------------------+--------------------------------------------------------------------------------------------+
@@ -58,7 +58,7 @@ Linux
 +-------------------------+----------------------------------------------------------------------------------+
 | Configuration           | `/usr/bin/beam-wallet.cfg`                                                       |
 +-------------------------+----------------------------------------------------------------------------------+
-| Logs                    | `/home/{your User name}/.local/share/Beam Wallet/<version>/logs`                 | 
+| Logs                    | `/home/{your User name}/.local/share/Beam Wallet/logs`                           | 
 +-------------------------+----------------------------------------------------------------------------------+
 | Database                | `/home/{your User name}/.local/share/Beam Wallet/<version>/wallet.db (node.db)`  |
 +-------------------------+----------------------------------------------------------------------------------+
