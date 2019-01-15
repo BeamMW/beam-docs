@@ -261,6 +261,12 @@ A sample output for this command should look like this:
                       id |          Beam |         Groth |        height |          maturity |                  status |    type  
         1545571472000001             300               0            8347                8351   [Available]                 norm   
 
+Starting from Milestone 1 it is also possible to see the transaction history using the --tx_history flag
+
+::
+
+    ./beam-wallet  info --tx_history
+
 
 
 Creating new SBBS address
@@ -284,4 +290,56 @@ Sample output from this command should look like this:
     I 2018-12-23.18:16:45.392 New address generated:
 
     646a773da4d4651f35fd75ca958b7859e89d8d8382b8155773bd396e2cc49cca
+
+
+
+Proof of transaction
+--------------------
+
+Starting from Milestone 1, receiver wallet automatically signs proof of received transaction and sends it to the sender. Upon request, sender can generate proof of transaction following the procedure below:
+
+1. Print the list of transactions using:
+
+::
+
+    ./beam-wallet  info --tx_history
+
+2. Get the id of the transaction we need and run:
+
+::
+
+    ./beam-wallet payment_proof_export --tx_id=<txid>
+
+Sample output of the command above should look something like:
+
+::
+
+    I 2019-01-14.14:40:37.464 Payment tx details:
+    Sender: 4bd0ca080bd8c3ec4b3061bf5916aa34266f0649a7c151c6777ffe492f15e09768
+    Receiver: ebb27b5501213c84eb212ea276e8ced74f540fbcceb0f4c1c2da2c5108188651a1
+    Amount: 6 groth
+    KernelID: 4ac2f195ce9056c171fd0cd41e8a02dc9c0bb72861b2e03fbbbb5942e5e63d1a
+
+    I 2019-01-14.14:40:37.465 Sender address own ID: 1547460707000004
+    I 2019-01-14.14:40:37.465 Exported form: 000000000000004bd0ca080bd8c3ec4b3061bf5
+    916aa34266f0649a7c151c6777ffe492f15e0976800000000000000ebb27b5501213c84eb212ea27
+    6e8ced74f540fbcceb0f4c1c2da2c5108188651a1864ac2f195ce9056c171fd0cd41e8a02dc9c0bb
+    72861b2e03fbbbb5942e5e63d1a7728a2954a10d3bfb9938f0c17509a6a0e870c6bb22ff2d1297f3
+    dae7f54592b00e84c6b3c9ea3e3ad9bc43661b6dcf7dbd818ccc92707d1d75b429697e8492653
+
+3. Send the contents of exported form only (proof) to the receiver, our case it will look like this:
+
+::
+
+    I 2019-01-14.14:40:37.465 Exported form: 000000000000004bd0ca080bd8c3ec4b3061bf5
+    916aa34266f0649a7c151c6777ffe492f15e0976800000000000000ebb27b5501213c84eb212ea27
+    6e8ced74f540fbcceb0f4c1c2da2c5108188651a1864ac2f195ce9056c171fd0cd41e8a02dc9c0bb
+    72861b2e03fbbbb5942e5e63d1a7728a2954a10d3bfb9938f0c17509a6a0e870c6bb22ff2d1297f3
+    dae7f54592b00e84c6b3c9ea3e3ad9bc43661b6dcf7dbd818ccc92707d1d75b429697e8492653
+
+4. Receiver can verify that proof is correct by running :
+
+::
+
+    ./beam-wallet payment_proof_verify --payment_proof=<proof>
 
