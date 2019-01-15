@@ -7,13 +7,27 @@
 Desktop Wallet User Guide
 =========================
 
-Using Beam Dekstop Wallet is the simplest way to start using Beam. It is available for Linux, Mac and Windows platforms (see :ref:`supported platforms` for details). 
+Using Beam Desktop Wallet is the simplest way to start using Beam. It is available for Linux, Mac and Windows platforms (see :ref:`supported platforms` for details). 
+
+.. attention::
+
+   Beam blockchain does not store transaction history and SBBS addresses. These are only stored in local database inside the wallet data folder. 
+
+   Please follow the guidelines below to avoid problems with sending are receiving Beam transactions.
+
+   1. Do not copy the wallet.db to another machine and run another wallet simultaneously using the same wallet database
+
+   2. Do not run two different wallets with the same seed at the same time
+
+   3. SBBS messages sent between wallets expire after 12 hours. You have to connect within 12 hours of the transaction initiation to receive or send the funds.
+
+   4. SBBS Addresses by default expire after 24 hours. Always use 'never' expiring addresses with pools and exchanges to make sure you receive payments.
 
 
 Downloading binaries
 --------------------
 
-Start dowloading here: https://beam.mw/downloads
+Start downloading here: https://beam.mw/downloads
 
 Ensure that the communication between your browser and Beam's official website is encrypted by verifying that the padlock icon is displayed in its locked state on the URL bar.
 
@@ -56,7 +70,7 @@ On the next screen, drag the Beam Wallet icon into the Applications folder to in
    :alt: Mac Install
 
 
-When you will try to open the wallet for the first time, you will receive a security warning stating that Beam Wallet was created by an unrecognized developer. We are working to elimitate the warning, meanwhile follow the steps below to launch Beam Wallet app on your Mac.
+When you will try to open the wallet for the first time, you will receive a security warning stating that Beam Wallet was created by an unrecognized developer. We are working to eliminate the warning, meanwhile follow the steps below to launch Beam Wallet app on your Mac.
 
 Open 'System Preferences'.
 
@@ -173,7 +187,7 @@ Beam Desktop Wallet can connect to the network through:
 
 If you choose to run an integrated node from within the wallet, the trusted node will automatically verify the blockchain. This means you will automatically be connected to a node when you open your wallet.
 
-.. advanced:: When running behind a firewall you can change the default port the node will be listening on, and in case of CPU mining, set the amount of mining threads. You will be probably provided at least one default peer to connect to but you can always add more peers on the Settings screen. The recommended peers are published in the list of bootstrap nodes in the `downloads page <https://beam.mw/downloads>`_ on `Beam official website <https://beam.mw>`_.
+.. note:: When running behind a firewall you can change the default port the node will be listening on, and in case of CPU mining, set the amount of mining threads. You will be probably provided at least one default peer to connect to but you can always add more peers on the Settings screen. The recommended peers are published in the list of bootstrap nodes in the `downloads page <https://beam.mw/downloads>`_ on `Beam official website <https://beam.mw>`_.
 
 .. figure:: images/desktop/03_creating_new_wallet/09.jpg
    :alt: Start wallet with integrated node  
@@ -192,7 +206,7 @@ If you are running your own node somewhere (or maybe even more than one) and wan
 Synchronizing the wallet
 ------------------------
 
-Once the Wallet is connected, it synchronizes with the current blockchain state from the network. Be patient when running with the integrated node: the data downloading process might take some time. The wallet will first download and validate the latest :ref:`Macroblock` and then all the rest of the blockchain.
+Once the Wallet is connected, it synchronizes with the current blockchain state from the network. Be patient when running with the integrated node: the data downloading process might take some time. The wallet will first download and validate the latest :ref:'macroblock' and then all the rest of the blockchain.
 
 .. figure:: images/desktop/03_creating_new_wallet/12.jpg
    :alt: Synchronizing the wallet
@@ -242,7 +256,7 @@ Financial transactions
 Receiving BEAM
 --------------
 
-Before starting to receive BEAM for the first time, please read first about what :ref:`Address` is.
+Before starting to receive BEAM for the first time, please read first about what :ref:'address' is.
 
 Here is how the process of receiving BEAM looks like from a Receiver’s perspective:
 
@@ -269,12 +283,12 @@ Copy and paste the newly-generated Beam address to send it to the Sender over a 
 .. figure:: images/desktop/05_receiving_beam/02.jpg
    :alt: Copy address
 
-A new Beam address is generated everytime the 'Receive' screen is opened.  By default, the address is valid for 24 hours. It is best to give the Sender your address closest to the time they will be sending BEAM so the address does not expire. 
+A new Beam address is generated every time the 'Receive' screen is opened.  By default, the address is valid for 24 hours. It is best to give the Sender your address closest to the time they will be sending BEAM so the address does not expire. 
 
 .. figure:: images/desktop/05_receiving_beam/03.jpg
    :alt: Set address expiration
 
-You can set the expiration time to ‘Never’ for this address only by selecting the value in the ‘Expires’ dropdown.
+You can set the expiration time to ‘Never’ for this address only by selecting the value in the ‘Expires’ drop down.
 
 .. warning:: The permanent addresses that never expire are only useful in very limited special cases, like working with exchanges and such. For ultimate privacy, do not use this option for regular transactions, rather always create a new address for each transaction.
 
@@ -293,7 +307,7 @@ Comment
 
 You can add a comment when creating the receiving address. The comment is never sent to the network, it is only visible inside your wallet and is used for internal bookkeeping only. 
 
-The comment can be seen on the :ref:`Address screen` and in the extended transaction view.
+The comment can be seen on the :ref:'Address screen' and in the extended transaction view.
 
 Sending the address
 -------------------
@@ -325,7 +339,7 @@ Once transaction is complete, the available balance will be updated and the ‘I
 Sending BEAM
 ------------
 
-Before starting to send BEAM, please read first about what :ref:`Address` is.
+Before starting to send BEAM, please read first about what :ref:'Address' is.
 
 Here is how the process of sending BEAM looks like from a Sender’s perspective:
 
@@ -352,7 +366,7 @@ Make sure you have the correct address and paste the Receiver’s Beam address i
 
 To help to identify the transaction, you may also choose to fill in the optional Comment field. The comment will remind you what or who the transaction is for. The comment is stored locally, thus it will only be visible in your wallet for bookkeeping purposes. 
 
-The comment can be seen on the :ref:`Address screen`:
+The comment can be seen on the :ref:'Address screen':
 
 .. figure:: images/desktop/06_sending_beam/02.jpg
    :alt: Send BEAM screen
@@ -388,12 +402,12 @@ Completing the transaction
 
 Once you confirm, the transaction is sent to the Receiver's wallet. If Receiver's wallet is currently offline or if the network is loaded, you might see the transaction appear ‘In Progress’ on your transaction list. Once the transaction is complete, it will be sent to the nodes and shown as 'Confirming'.
 
-.. note:: While a transaction is in ‘In Progress’ you can cancel it by clicking on the dropdown to the right of the transaction row and then select ‘Cancel’. The other party will receive notification that the transaction was either ‘Cancelled’ or ‘Failed,’ and funds+fee that were allocated for this transaction will become available again. It is not possible to cancel a transaction in ‘Confirming’ or ‘Completed’ states.
+.. note:: While a transaction is in ‘In Progress’ you can cancel it by clicking on the dropdown to the right of the transaction row and then select ‘Cancel’. The other party will receive notification that the transaction was either ‘Canceled’ or ‘Failed,’ and funds+fee that were allocated for this transaction will become available again. It is not possible to cancel a transaction in ‘Confirming’ or ‘Completed’ states.
 
 .. figure:: images/desktop/06_sending_beam/08.jpg
    :alt: Canceling outgoing transaction
 
-.. warning:: If your transaction appears as 'In Progress' for a notifiably long time, it means the Receiver is not online.
+.. warning:: If your transaction appears as 'In Progress' for a long time, it means the Receiver is not online.
 
 .. attention:: If the transaction was not sent to the nodes, for any reason, it will expire after 1440 blocks, or roughly 24 hours. This is done to avoid a situation in which one of the Wallets did not send a created transaction to the nodes and the UTXOs remain locked forever.
 
@@ -421,7 +435,7 @@ You will be asked to enter your seed phrase. Time to get the phrase out from you
 .. figure:: images/desktop/07_restoring_funds/02.jpg
    :alt: Submit seed phrase
 
-.. warning:: If a wrong word was typed or an existing word was misspelled, your funds will not be restored successfully. Example: ‘litt_el_’ instead of ‘litt_le_.'
+.. warning:: If a wrong word was typed or an existing word was misspelled, your funds will not be restored successfully. Example: ‘litt\_el_’ instead of ‘lit\_le\_.'
 
 .. figure:: images/desktop/07_restoring_funds/03.jpg
    :alt: Fully submitted seed phrase
@@ -477,7 +491,7 @@ Each address has a default expiration time of 24 hours. An expired address becom
 .. figure:: images/desktop/08_address_screen/02.jpg
    :alt: Expired default address
 
-When you'll click the three dots located to the right of any address, the menu with addtional address actions will open. You can manually edit or delete any address choosing 'Edit' or 'Delete' items from the menu.
+When you'll click the three dots located to the right of any address, the menu with additional address actions will open. You can manually edit or delete any address choosing 'Edit' or 'Delete' items from the menu.
 
 .. figure:: images/desktop/08_address_screen/03.jpg
    :alt: Address screen drop-down menu
@@ -560,7 +574,7 @@ When Beam Desktop Wallet app is installed, the wallet data files are stored sepa
 Why is my transaction 'In Progress' for so long?
 ------------------------------------------------
 
-Both Sender and Receiver Wallets need to be online to complete a transaction. All active addresses expires after 24 hours since creation (unless specified otherwise). If Sender / Receiver does not come online within that time the transaction will be cancelled automatically.
+Both Sender and Receiver Wallets need to be online to complete a transaction. All active addresses expires after 24 hours since creation (unless specified otherwise). If Sender / Receiver does not come online within that time the transaction will be canceled automatically.
 
 I'm sending only some of my funds to a friend. Why my available balance became less than expected?
 ---------------------------------------------------------------------------------------------------
@@ -582,12 +596,12 @@ See `Restoring funds`
 I’ve restored the wallet but I can’t see my transaction list and/or my active addresses
 -----------------------------------------------------------------------------------------
 
-As explained in `Restoring funds`, only your available balance (ie. your UTXO) is kept on the blockchain, hence that’s all that can be restored.
+As explained in `Restoring funds`, only your available balance (i.e. your UTXO) is kept on the blockchain, hence that’s all that can be restored.
 
 I’ve restored the wallet but my balance is zero
 -----------------------------------------------
 
-Triple-check that all the words from the seed phrase are typed in correctly. One or more the of the words is wrong or mispelled. You will need to remove the ``wallet.db`` file and to repeat the restore procedure.
+Triple-check that all the words from the seed phrase are typed in correctly. One or more the of the words is wrong or misspelled. You will need to remove the ``wallet.db`` file and to repeat the restore procedure.
 
 I’ve restored the wallet using my seed phrase - can someone still send me money to the addresses created in the previous wallet?
 --------------------------------------------------------------------------------------------------------------------------------
@@ -607,7 +621,7 @@ To ensure the utmost privacy, the only information we can use to link you to you
 I've lost my seed phrase
 ------------------------
 
-By design, the only way to access your funds (UTXO) is to have the seed phrase. If you still have an access to your wallet, create another wallet with new seed phrase on another machine and transfer funds to there. Any solution that would allow to access your funds without the seed phrase would severely compromise the privacy of BEAM. Therefore, in case you don't have any active access to your funds there is nothing to do (the funds will be stored in the blockchain forever and noone will be able to access or spend them).
+By design, the only way to access your funds (UTXO) is to have the seed phrase. If you still have an access to your wallet, create another wallet with new seed phrase on another machine and transfer funds to there. Any solution that would allow to access your funds without the seed phrase would severely compromise the privacy of BEAM. Therefore, in case you don't have any active access to your funds there is nothing to do (the funds will be stored in the blockchain forever and no one will be able to access or spend them).
 
 I've copied my ``wallet.db`` file to the new machine and I'd like to run wallets on both new and old machines simultaneously  
 ----------------------------------------------------------------------------------------------------------------------------

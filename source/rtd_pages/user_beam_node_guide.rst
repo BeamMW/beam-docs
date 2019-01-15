@@ -67,19 +67,19 @@ Beam Node allows to provide the settings via command line or using a configurati
 +-------------------------+----------------------------------------------------------------------------------------------------------+
 |**Parameter**            | **Description & Example**                                                                                |
 +-------------------------+----------------------------------------------------------------------------------------------------------+
-| port                    | Port to start the server on                                                                              |
+| --port                  | Port to start the server on                                                                              |
 |                         |                                                                                                          |
 |                         | .. code-block:: bash                                                                                     |
 |                         |                                                                                                          |
 |                         |    port=10000                                                                                            |
 +-------------------------+----------------------------------------------------------------------------------------------------------+
-| log_level               | Log level [info|debug|verbose]                                                                           |
+| --log_level             | Log level [info|debug|verbose]                                                                           |
 |                         |                                                                                                          |
 |                         | .. code-block:: bash                                                                                     |
 |                         |                                                                                                          |
 |                         |    log_level=info                                                                                        |
 +-------------------------+----------------------------------------------------------------------------------------------------------+
-| file_log_level          | File log level [info|debug|verbose]                                                                      |
+| --file_log_level        | File log level [info|debug|verbose]                                                                      |
 |                         |                                                                                                          |
 |                         | .. code-block:: bash                                                                                     |
 |                         |                                                                                                          |
@@ -92,32 +92,32 @@ Beam Node allows to provide the settings via command line or using a configurati
 +-------------------------+----------------------------------------------------------------------------------------------------------+
 |**Parameter**            | **Description & Example**                                                                                |
 +-------------------------+----------------------------------------------------------------------------------------------------------+
-| storage                 | Path to node database file (defaults to node.db in the same folder)                                      |
+| --storage               | Path to node database file (defaults to node.db in the same folder)                                      |
 |                         |                                                                                                          |
 |                         | .. code-block:: bash                                                                                     |
 |                         |                                                                                                          |
 |                         |    storage=node.db                                                                                       |
 +-------------------------+----------------------------------------------------------------------------------------------------------+
-| history_dir             | Path to folder where compressed (cut-through) history files are stored. Defaults to same folder.         |
+| --history_dir           | Path to folder where compressed (cut-through) history files are stored. Defaults to same folder.         |
 |                         |                                                                                                          |
 |                         | .. code-block:: bash                                                                                     |
 |                         |                                                                                                          |
 |                         |    history_dir=.                                                                                         |
 +-------------------------+----------------------------------------------------------------------------------------------------------+
-| temp_dir                | Path to temp folder for compressed (cut-through) history files. Must be on the same volume as history_dir|
+| --temp_dir              | Path to temp folder for compressed (cut-through) history files. Must be on the same volume as history_dir|
 |                         |                                                                                                          |
 |                         | .. code-block:: bash                                                                                     |
 |                         |                                                                                                          |
 |                         |    temp_dir=.                                                                                            |
 +-------------------------+----------------------------------------------------------------------------------------------------------+
-| miner_type              | Type of built in miner [cpu|gpu]. Only relevant for Linux and Windows builds which support GPU mining.   |
+| --miner_type            | Type of built in miner [cpu|gpu]. Only relevant for Linux and Windows builds which support GPU mining.   |
 |                         | In case of CPU mining uses number of threads specified in the mining_threads parameter (see below).      |
 |                         |                                                                                                          |
 |                         | .. code-block:: bash                                                                                     |
 |                         |                                                                                                          |
 |                         |    miner_type=cpu                                                                                        |
 +-------------------------+----------------------------------------------------------------------------------------------------------+
-| mining_threads          | Number of concurrent threads used in CPU mining (if set to 0, mining is disabled)                        |
+| --mining_threads        | Number of concurrent threads used in CPU mining (if set to 0, mining is disabled)                        |
 |                         | Relevant for CPU mining only                                                                             |
 |                         |                                                                                                          |
 |                         | .. code-block:: bash                                                                                     |
@@ -133,26 +133,26 @@ Beam Node allows to provide the settings via command line or using a configurati
 +-------------------------+----------------------------------------------------------------------------------------------------------+
 |**Parameter**            | **Description & Example**                                                                                |
 +-------------------------+----------------------------------------------------------------------------------------------------------+
-| key_mine                | Secret key to attribute mining rewards mined by the node to your wallet                                  |
+| --key_mine              | Secret key to attribute mining rewards mined by the node to your wallet                                  |
 |                         | Created using CLI walelt `export_miner_key` command with --subkey=<miner id> parameter                   |
 |                         | See :ref:`user_cli_wallet_guide` for more details                                                        |
 |                         |                                                                                                          |
 +-------------------------+----------------------------------------------------------------------------------------------------------+
-| key_owner               | Secret key allowing the node to monitor mining rewards mined by all mining nodes marked by this key.     |
+| --key_owner             | Secret key allowing the node to monitor mining rewards mined by all mining nodes marked by this key.     |
 |                         | Created using CLI walelt `export_owner_key` command                                                      |
 |                         | See :ref:`user_cli_wallet_guide` for more details                                                        |
 |                         |                                                                                                          |
 +-------------------------+----------------------------------------------------------------------------------------------------------+
-| pass                    | Wallet password. It is required since both Miner Key and Owner Key are protected by walelt password      |
+| --pass                  | Wallet password. It is required since both Miner Key and Owner Key are protected by walelt password      |
 |                         |                                                                                                          |
 +-------------------------+----------------------------------------------------------------------------------------------------------+
-| stratum_port            | Port on which stratum server will listen to incoming connections. 0 if stratum server is disabled.       |
+| --stratum_port          | Port on which stratum server will listen to incoming connections. 0 if stratum server is disabled.       |
 |                         |                                                                                                          |
 |                         | .. code-block:: bash                                                                                     |
 |                         |                                                                                                          |
 |                         |    stratum_port=0                                                                                        |
 +-------------------------+----------------------------------------------------------------------------------------------------------+
-| stratum_secrets_path    | Path to folder containing stratum certificates                                                           |
+| --stratum_secrets_path  | Path to folder containing stratum certificates                                                           |
 |                         |                                                                                                          |
 |                         | .. code-block:: bash                                                                                     |
 |                         |                                                                                                          |

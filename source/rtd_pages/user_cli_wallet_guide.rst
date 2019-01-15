@@ -9,6 +9,24 @@ Command Line Wallet User Guide
 
 The purpose of this document is to describe the process of setting up Beam node and command line wallet. 
 
+.. attention::
+
+    Beam blockchain does not store transaction history and SBBS addresses. These are only stored in local database inside the wallet data folder. 
+
+    Please follow the guidelines below to avoid problems with sending are receiving Beam transactions.
+
+    1. DO NOT run several wallet processes on the same wallet.db file. 
+
+    2. Do not do listen and send at the same time using CLI wallet
+
+    3. Do not copy the wallet.db to another machine and run another wallet simultaneously using the same wallet database
+    
+    4. Do not run two different wallets with the same seed at the same time
+
+    5. SBBS messages sent between wallets expire after 12 hours. You have to connect within 12 hours of the transaction initiation to receive or send the funds.
+
+    6. SBBS Addresses by default expire after 24 hours. Always use 'never' expiring addresses with pools and exchanges to make sure you receive payments.
+
 Getting Started
 ---------------
 
@@ -67,10 +85,10 @@ Generated seed phrase is the :ref:`Seed Phrase <seed phrase>`.
 
 .. warning:: Copy the seed phrase to a secure location and keep it safe. 
 
-   Seed phrase is the **most important secret** you need to keep to protect your funds. Anyone knowing the seed phrase will be able to control all your funds regardless of any other infomation. When generating new wallet each and every time, the safest scenario would be to make it on a secure air-gapped machine in a private environment and always keep the seed phrase in a secret and protected place.
+   Seed phrase is the **most important secret** you need to keep to protect your funds. Anyone knowing the seed phrase will be able to control all your funds regardless of any other information. When generating new wallet each and every time, the safest scenario would be to make it on a secure air-gapped machine in a private environment and always keep the seed phrase in a secret and protected place.
 
 
-The following line indicates that a new temporary :ref:`SBBS<sbbs>` address has been generated. This address is valid for the next 24 hours and can be used to recieve coins. To generate new addresses see 'Creating new receive address' section below.
+The following line indicates that a new temporary :ref:`SBBS<sbbs>` address has been generated. This address is valid for the next 24 hours and can be used to receive coins. To generate new addresses see 'Creating new receive address' section below.
 
 After wallet initialization is succeeded a ``wallet.db`` file is created in the same folder the wallet was run at. ``wallet.db`` is the wallet database file which is encrypted with the Wallet Password and contains the entire transaction history, keys and all the rest of the wallet metadata. If this file is deleted or lost, for any reason, you can always restore your funds using the Seed Phrase, however you will lose all transaction history and any additional metadata stored in the wallet database. To understand how to backup and restore the ``wallet.db`` file please check the :ref:`Backup and Restore` page.
 
