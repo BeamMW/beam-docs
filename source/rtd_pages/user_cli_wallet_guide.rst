@@ -343,3 +343,6 @@ Sample output of the command above should look something like:
 
     ./beam-wallet payment_proof_verify --payment_proof=<proof>
 
+
+.. note:: Sender can require receiver to always send proof of transaction by using --payment_proof_required=1. Please note that this will prevent working with older wallets.
+
