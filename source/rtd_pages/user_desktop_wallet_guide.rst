@@ -212,6 +212,38 @@ Once the Wallet is connected, it synchronizes with the current blockchain state 
    :alt: Synchronizing the wallet
 
 
+
+.. _upgrading:
+
+Upgrading from previous version
+-------------------------------
+
+If during installation the wallet discovers one or more previous versions installed it will propose to migrate to a new version
+
+.. figure:: images/upgrade/screen_1.png
+   :alt: Migrating from previous version
+
+If you do not wish to migrate an existing wallet, you can also create a new wallet or choose the location of the wallet database file yourself  by clicking 'Login to another wallet or create a new one'
+
+.. note:: Migration will copy the existing wallet database (wallet.db) keeping all the data intact. 
+
+
+In the next screen you will be asked to choose which database file you want to migrate. If the file you need does not appear in the list you can select it manually using 'Select file manually' option.
+
+.. figure:: images/upgrade/screen_2.png
+   :alt: Migrating from previous version
+
+Once file is selected, click 'next' to enter database password.
+
+.. figure:: images/upgrade/screen_3.png
+   :alt: Migrating from previous version
+
+
+Once you enter the correct password, the migration will complete and the wallet will resume synchronization with the blockchain.
+
+
+
+
 Main Screen
 -----------
 

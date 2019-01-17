@@ -8,11 +8,7 @@
 Welcome to Beam documentation!
 ==============================
 
-
 .. _rules_signature:
-
-Announcement
-------------
 
 .. note:: Beam is currently in Mainnet.
 
@@ -21,6 +17,50 @@ Announcement
 	Download binaries from: `Beam Downloads Page <http://beam.mw/downloads>`_
 
 	Source code: `Beam Github <https://github.com/BeamMW/beam>`_
+
+
+Current release
+===============
+
+Agile Atom 1.1.4194 (Milestone 1)
+
+This is the first official maintenance version of Mainnet release, focused on stability and address management. Migration assistant will be automatically triggered in the desktop wallet when upgrading to this version (doc link).
+
+Features:
+
+[desktop wallet, cli wallet] Expired addresses can become active again. Common use case: a mining pool had already registered a particular address and can’t update it. #318
+
+[desktop wallet] Assisted migration of wallet database from the previous wallet versions. #307
+
+[cli wallet] Can print all the managed addresses. #282
+
+[cli wallet] Can create and verify the proof of transaction. #87 (Documentation)
+                  
+
+Enhancements:
+
+[node] Faster transaction initiation between wallets due to reduced number of roundtrips between sender and receiver. #299
+
+[node] If transaction is stuck in "Syncing with blockchain" state for more than 2 hours it will fail automatically. #311
+
+[desktop wallet, cli wallet] On wallet restore user will see a warning if submitted words from the seed phrase are not in BIP39 dictionary. #253
+
+[node] SBBS message system is more resistant to flood & spam.
+
+[desktop wallet, node] System time sync with node is verified when user logs into wallet, see wallet and node logs for details. #314   
+
+[node] Transaction Kernel ID is displayed fully in the logs. #344
+               
+
+Fixes:
+
+[node] Reworked node and DB management to increase robustness, stability and data integrity.
+                  
+Known limitations
+
+Inconsistent transaction statuses when running two or more wallets that use the same wallet.db file, cloned manually. 
+
+
 
 
 **TLDR;**
