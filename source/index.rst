@@ -22,11 +22,11 @@ Welcome to Beam documentation!
 Current release
 ===============
 
-Agile Atom 1.1.4194 (Milestone 1)
+**Agile Atom 1.1.4194 (Milestone 1)**
 
-This is the first official maintenance version of Mainnet release, focused on stability and address management. Migration assistant will be automatically triggered in the desktop wallet when upgrading to this version (doc link).
+This is the first official maintenance version of Mainnet release, focused on stability and address management. Migration assistant will be automatically triggered in the desktop wallet when upgrading to this version (:ref:`upgrading`).
 
-Features:
+**Features:**
 
 [desktop wallet, cli wallet] Expired addresses can become active again. Common use case: a mining pool had already registered a particular address and can’t update it. #318
 
@@ -37,7 +37,7 @@ Features:
 [cli wallet] Can create and verify the proof of transaction. #87 (Documentation)
                   
 
-Enhancements:
+**Enhancements:**
 
 [node] Faster transaction initiation between wallets due to reduced number of roundtrips between sender and receiver. #299
 
@@ -52,7 +52,7 @@ Enhancements:
 [node] Transaction Kernel ID is displayed fully in the logs. #344
                
 
-Fixes:
+**Fixes:**
 
 [node] Reworked node and DB management to increase robustness, stability and data integrity.
                   
