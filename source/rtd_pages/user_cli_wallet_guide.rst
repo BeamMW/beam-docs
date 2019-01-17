@@ -291,7 +291,7 @@ Sample output from this command should look like this:
 
     646a773da4d4651f35fd75ca958b7859e89d8d8382b8155773bd396e2cc49cca
 
-
+.. _proof_of_transaction:
 
 Proof of transaction
 --------------------

@@ -28,28 +28,28 @@ This is the first official maintenance version of Mainnet release, focused on st
 
 **Features:**
 
-[desktop wallet, cli wallet] Expired addresses can become active again. Common use case: a mining pool had already registered a particular address and can’t update it. #318
+[desktop wallet, cli wallet] Expired addresses can become active again. Common use case: a mining pool had already registered a particular address and can’t update it. `#318 <https://github.com/BeamMW/beam/issues/318>`_
 
-[desktop wallet] Assisted migration of wallet database from the previous wallet versions. #307
+[desktop wallet] Assisted migration of wallet database from the previous wallet versions. `#307 <https://github.com/BeamMW/beam/issues/307>`_
 
-[cli wallet] Can print all the managed addresses. #282
+[cli wallet] Can print all the managed addresses. `#282 <https://github.com/BeamMW/beam/issues/282>`_
 
-[cli wallet] Can create and verify the proof of transaction. #87 (Documentation)
+[cli wallet] Can create and verify the proof of transaction. `#87 <https://github.com/BeamMW/beam/issues/87>`_ (:ref:`proof_of_transaction`)
                   
 
 **Enhancements:**
 
-[node] Faster transaction initiation between wallets due to reduced number of roundtrips between sender and receiver. #299
+[node] Faster transaction initiation between wallets due to reduced number of roundtrips between sender and receiver. `#299 <https://github.com/BeamMW/beam/issues/299>`_
 
-[node] If transaction is stuck in "Syncing with blockchain" state for more than 2 hours it will fail automatically. #311
+[node] If transaction is stuck in "Syncing with blockchain" state for more than 2 hours it will fail automatically. `#311 <https://github.com/BeamMW/beam/issues/311>`_
 
-[desktop wallet, cli wallet] On wallet restore user will see a warning if submitted words from the seed phrase are not in BIP39 dictionary. #253
+[desktop wallet, cli wallet] On wallet restore user will see a warning if submitted words from the seed phrase are not in BIP39 dictionary. `#253 <https://github.com/BeamMW/beam/issues/253>`_
 
 [node] SBBS message system is more resistant to flood & spam.
 
-[desktop wallet, node] System time sync with node is verified when user logs into wallet, see wallet and node logs for details. #314   
+[desktop wallet, node] System time sync with node is verified when user logs into wallet, see wallet and node logs for details. `#314 <https://github.com/BeamMW/beam/issues/314>`_   
 
-[node] Transaction Kernel ID is displayed fully in the logs. #344
+[node] Transaction Kernel ID is displayed fully in the logs. `#344 <https://github.com/BeamMW/beam/issues/344>`_
                
 
 **Fixes:**
