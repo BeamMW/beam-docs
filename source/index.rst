@@ -22,7 +22,7 @@ Welcome to Beam documentation!
 Current release
 ===============
 
-**Agile Atom 1.1.4194 (Milestone 1)**
+**Agile Atom 1.1.4201**
 
 This is the first official maintenance version of Mainnet release, focused on stability and address management. Migration assistant will be automatically triggered in the desktop wallet when upgrading to this version (:ref:`upgrading`).
 
@@ -35,6 +35,8 @@ This is the first official maintenance version of Mainnet release, focused on st
 [cli wallet] Can print all the managed addresses. `#282 <https://github.com/BeamMW/beam/issues/282>`_
 
 [cli wallet] Can create and verify the proof of transaction. `#87 <https://github.com/BeamMW/beam/issues/87>`_ (:ref:`proof_of_transaction`)
+
+[desktop wallet, cli wallet] Rescan function added `#345 <https://github.com/BeamMW/beam/issues/345>`_ (:ref:`rescan`)
                   
 
 **Enhancements:**
