@@ -57,6 +57,8 @@ This is the first official maintenance version of Mainnet release, focused on st
 **Fixes:**
 
 [node] Reworked node and DB management to increase robustness, stability and data integrity.
+
+[desktop wallet, cli wallet] Fixed issue with completed transactions becoming Failed and balance invalid on network rollback `#367 <https://github.com/BeamMW/beam/issues/367>`_ , `#368 <https://github.com/BeamMW/beam/issues/368>` (:ref:`rescan`)
                   
 Known limitations
 
