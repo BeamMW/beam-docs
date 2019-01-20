@@ -595,6 +595,35 @@ The 'General settings' section allows you to change your wallet password and loc
 
 The ‘Report problem’ section allows you to create an archive of wallet logs and explains how to report an issue. It also shows the current location of the wallet files. See more details about reporting issues and getting support in the `Reporting Issues and Getting Support` and `Desktop Wallet Troubleshooting` sections.
 
+.. _rescan:
+
+Rescan wallet
+-------------
+
+During regular operation the wallet constantly monitors the blockchain and updates the information in the wallet.
+However, if you suspect that your balance, transaction or UTXO status is not up to date or invalid, you can always 'rescan' the blockchain and update the information in your wallet with the latest state. 
+
+To perform rescan please perform the following steps:
+
+1. In the Settings page, switch to the 'Local node' and click 'Apply settings'
+
+.. figure:: images/rescan/screen2.png
+   :alt: In the settings screen switch to local node
+
+
+2. Click on the 'Rescan' button and then 'Yes'
+
+.. figure:: images/rescan/screen3.png
+   :alt: Click on the rescan button
+
+
+3. Verify that your balance, transaction and UTXO state are up to date.
+
+
+.. note:: If you have just started the node it may take some time for it to download updates from the blockchain and synchronize. This may result in your balance and UTXOs to be gradually updated and the node synchronizes. Please for the sync to complete before drawing any conclusions about the state of your wallet
+
+
+
 Desktop Wallet troubleshooting
 ==============================
 

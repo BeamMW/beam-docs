@@ -346,3 +346,37 @@ Sample output of the command above should look something like:
 
 .. note:: Sender can require receiver to always send proof of transaction by using --payment_proof_required=1. Please note that this will prevent working with older wallets.
 
+
+.. _rescan_cli:
+
+Rescan wallet
+-------------
+
+During regular operation the wallet constantly monitors the blockchain and updates the information in the wallet.
+However, if you suspect that your balance, transaction or UTXO status is not up to date or invalid, you can always 'rescan' the blockchain and update the information in your wallet with the latest state.
+
+In order to rescan the CLI wallet please follow the steps below:
+
+1. Run a node with your 'owner' key and make sure it has completed the synchronization with the network. See :ref:`exporting owner key`
+
+::
+
+    ./beam-node --peer=<ip or url of the peer> --key_owner=<your owner key>
+
+2. Run 'refresh' command as follows:
+
+::
+
+    ./beam-wallet refresh -n <ip:port of the node with the owner key>
+
+3. Run 'listen' command to get updated information from the node
+
+::
+
+    ./beam-wallet listen -n <ip:port of the node with the owner key>
+
+4. Wait for the wallet to synchronize and check that balance and transactions were update using 'info' command
+
+::
+
+    ./beam-wallet info
