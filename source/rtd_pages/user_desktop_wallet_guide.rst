@@ -146,7 +146,7 @@ Did you wrote down your seed phrase correctly? Triple-check your handwriting aga
 
 Did you verified your handwriting? Now go find a safe space for the paper! 
 
-.. important:: Storing the seed phrase on your computer makes your funds prone to cyber attacks (read: much *less* secure). 'Creative' approaches like saving a screenshot of the wallet or your handwriting on your computer or in the cloud *may* sound like a good idea, but it is absolutely **not recommended**. If hackers get the access to your computer, network drive etc., they can can potentially steal your recovery phrase by using OCR programs (which can scan pictures and transform them into plain text) and, therefore, get access to your funds.
+.. important:: Storing the seed phrase on your computer makes your funds prone to cyber attacks (read: much *less* secure). 'Creative' approaches like saving a screenshot of the wallet or your handwriting on your computer or in the cloud *may* sound like a good idea, but it is absolutely **not recommended**. If hackers get the access to your computer, network drive etc., they can can potentially steal your seed phrase by using OCR programs (which can scan pictures and transform them into plain text) and, therefore, get access to your funds.
 
 .. attention:: Always store your seed phrase in a safe and secure location (and better more than one in different geo locations). Write it on a piece of paper. Do not store electronically neither as plain text nor in any other form!
 
@@ -170,7 +170,7 @@ To access your Beam Wallet, you will need to create a password. This password is
 .. figure:: images/desktop/03_creating_new_wallet/07.jpg
    :alt: Example of a weak password
 
-The wallet will provide some indication of password strength for your convenience. Do not count on it, however. Choose a password that is at least 8 characters long with combination of letters, numbers, and symbols.
+The wallet will provide some indication of password strength for your convenience. Do not count on it, however. Choose a password that is at least 8 characters long with a combination of letters, numbers, and symbols.
 
 .. figure:: images/desktop/03_creating_new_wallet/08.jpg
    :alt: Example of a stronger password 
@@ -247,7 +247,7 @@ Once you enter the correct password, the migration will complete and the wallet 
 Main Screen
 -----------
 
-Once your wallet is created, the main screen will show up. In the future, the screen will usually open up automatically each time you open the application and successfully submit the password. 
+Once your wallet is created, the main screen will show up. In the future, the screen will pop-up automatically after you open the application and type in your password. 
 
 Wallet status indicator
 -----------------------
@@ -260,7 +260,7 @@ The main screen of the wallet shows the current balance as well as the transacti
 
 In the top left corner of the Main Screen, under 'Wallet', you see connection status indicator. 
 
-Green indicator means that the node is up, running and connected to peers.
+Green indicator means that the node is up and running connected to peers.
 
 .. figure:: images/desktop/04_main_screen/02.jpg
    :alt: Main screen
@@ -272,7 +272,7 @@ Red means it is either unable to connect to the node or the node has a problem y
 
 In brackets, the indicator also specifies the network to which the wallet is connected:
 
-* **Mainnet:** the network with real money and actual transactions. Since this is a default choice for most users, nothing will be written in the application.
+* **Mainnet:** the network with real money and actual transactions. 
 * **Testnet<number>** (such as Testnet3, Testnet4 etc) **:** staging environments for trying new features in our wallet, node and miner software. For advanced users only.
 * **Masternet:** new features under development, if you see this name in your wallet it means that you are very early adopter or Beam code contributor otherwise you’ve probably arrived to the wrong place.
 
@@ -306,7 +306,7 @@ Proceed to the main screen and click the blue ‘Receive’ button at the top ri
 .. figure:: images/desktop/05_receiving_beam/01.jpg
    :alt: Receive BEAM screen
 
-Copy and paste the newly-generated Beam address to send it to the Sender over a **secure communication channel**. There are three ways to do it:
+Copy and paste the newly generated Beam address to send to Sender over a **secure communication channel**. There are three ways to do it:
 
 * By selecting the address and clicking ``Command-C`` or ``Ctrl-C`` (depending on your platform)
 * By right-click on the address and choosing 'Copy' from the drop-down menu
@@ -322,14 +322,14 @@ A new Beam address is generated every time the 'Receive' screen is opened.  By d
 
 You can set the expiration time to ‘Never’ for this address only by selecting the value in the ‘Expires’ drop down.
 
-.. warning:: The permanent addresses that never expire are only useful in very limited special cases, like working with exchanges and such. For ultimate privacy, do not use this option for regular transactions, rather always create a new address for each transaction.
+.. warning:: The permanent addresses that never expire are only useful in limited special cases, like working with mining pools or exchanges. For ultimate privacy, do not use this option for regular transactions, rather always create a new address for each transaction.
 
 .. attention:: You have to click ‘Close’ button in the screen for the address to become active.
 
 QR code
 -------
 
-If the Sender uses a mobile app, he can scan the QR code to save sending, copying and pasting the address. This feature will be available soon in the upcoming Beam Wallet mobile app.
+If the Sender uses a mobile app, he can quickly scan the QR code instead of  receiving, copying and pasting the alphanumeric address. This feature will be available soon in the upcoming Beam Wallet mobile app.
 
 .. figure:: images/desktop/05_receiving_beam/04.jpg
    :alt: QR code
@@ -389,7 +389,7 @@ Receiving the address
 Sending funds
 -------------
 
-In order to Send BEAM you will need to click the magenta ‘Send’ button at the top right corner. This will open a Send screen.
+In order to send BEAM, you will need to click the magenta ‘Send’ button at the top right corner. This will open the Send screen.
 
 .. figure:: images/desktop/06_sending_beam/01.jpg
    :alt: Send BEAM screen
@@ -434,14 +434,14 @@ Completing the transaction
 
 Once you confirm, the transaction is sent to the Receiver's wallet. If Receiver's wallet is currently offline or if the network is loaded, you might see the transaction appear ‘In Progress’ on your transaction list. Once the transaction is complete, it will be sent to the nodes and shown as 'Confirming'.
 
-.. note:: While a transaction is in ‘In Progress’ you can cancel it by clicking on the dropdown to the right of the transaction row and then select ‘Cancel’. The other party will receive notification that the transaction was either ‘Canceled’ or ‘Failed,’ and funds+fee that were allocated for this transaction will become available again. It is not possible to cancel a transaction in ‘Confirming’ or ‘Completed’ states.
+.. note:: While a transaction is in ‘In Progress’ you can cancel it by clicking on the dropdown to the right of the transaction row and then select ‘Cancel’. The other party will receive notification that the transaction was either ‘Canceled’ or ‘Failed,’ and funds plus fee that were allocated for this transaction will become available again. It is not possible to cancel a transaction in ‘Confirming’ or ‘Completed’ states.
 
 .. figure:: images/desktop/06_sending_beam/08.jpg
    :alt: Canceling outgoing transaction
 
 .. warning:: If your transaction appears as 'In Progress' for a long time, it means the Receiver is not online.
 
-.. attention:: If the transaction was not sent to the nodes, for any reason, it will expire after 1440 blocks, or roughly 24 hours. This is done to avoid a situation in which one of the Wallets did not send a created transaction to the nodes and the UTXOs remain locked forever.
+.. attention:: If the transaction was not sent to the nodes, for any reason, it will expire after 1440 blocks, or roughly 24 hours. This is done to avoid a situation in which UTXO is locked forever.
 
 Restoring funds
 ---------------
@@ -451,7 +451,7 @@ This process allows you to restore your funds directly from the blockchain. It i
 * You’ve got a new device and would like to use your wallet on it
 * You forgot your local password and can’t access your funds
 
-.. attention:: With Beam, only funds are stored on blockchain. Everything else, such as your active addresses, contacts or transaction history can’t be restored.
+.. attention:: With Beam, only funds are stored on the blockchain. Everything else, such as your active addresses, contacts or transaction history can’t be restored.
 
 .. note:: Very soon exporting transactions history for backup and bookkeeping purposes will be implemented.
 
@@ -523,7 +523,7 @@ Each address has a default expiration time of 24 hours. An expired address becom
 .. figure:: images/desktop/08_address_screen/02.jpg
    :alt: Expired default address
 
-When you'll click the three dots located to the right of any address, the menu with additional address actions will open. You can manually edit or delete any address choosing 'Edit' or 'Delete' items from the menu.
+When you'll click the three dots located to the right of any address, the menu with additional address actions will open. You can manually edit or delete any address choosing 'Edit' or 'Delete' from the menu.
 
 .. figure:: images/desktop/08_address_screen/03.jpg
    :alt: Address screen drop-down menu
@@ -568,15 +568,15 @@ Why UTXO can be locked
 
 Example: you have 100 BEAM in two 'bills' (UTXO): 90 BEAM and 10 BEAM. You want to send Alice 9 BEAM. The wallet will automatically select the 10 Beam UTXO and create a transaction with 9 BEAM sent, 0.9 BEAM to remain in your wallet and 0.1 BEAM to pay fee.
 
+This 10 BEAM UTXO will be locked until the 9 BEAM transaction completes. If Alice is currently offline, it might take a time during which you will not be able to send BEAM to anyone else. You can, of course, cancel the transaction and resend when Alice comes online.
+
 .. figure:: images/desktop/09_utxo_screen/03.jpg
    :alt: Sending BEAM (UTXO locked example)
-
-This 10 BEAM UTXO will be locked until the 9 BEAM transaction completes. If Alice is currently offline, it might take a time during which you will not be able to send BEAM to anyone else. You can, of course, cancel the transaction and resend when Alice comes online.
 
 You can split UTXO by yourself
 -------------------------------
 
-One thing you can do is to split the large UTXO into two parts by sending a transaction to yourself (using you own active address). 
+One thing you can do is to split UTXO by sending a transaction to yourself (using you own active address). You may want to do this in the case your UTXO is too large, and you don't want it all locked during a transaction. 
 
 .. attention:: You will pay a fee for this transaction. 
 
@@ -630,29 +630,32 @@ Desktop Wallet troubleshooting
 Where are the wallet files located?
 -----------------------------------
 
-When Beam Desktop Wallet app is installed, the wallet data files are stored separately from the binaries. The locations of all the files are described here: :ref:`Files and Locations`
+When Beam Wallet desktop app is installed, the wallet data files are stored separately from the binaries. The locations of all the files are described here: :ref:'Files and Locations'
 
 Why is my transaction 'In Progress' for so long?
 ------------------------------------------------
 
-Both Sender and Receiver Wallets need to be online to complete a transaction. All active addresses expires after 24 hours since creation (unless specified otherwise). If Sender / Receiver does not come online within that time the transaction will be canceled automatically.
+Both Sender and Receiver Wallets need to be online to complete a transaction. All active addresses expires after 24 hours since creation (unless specified otherwise). If Sender / Receiver both do not come online within 12 hours the transaction will be canceled automatically.
 
-I'm sending only some of my funds to a friend. Why my available balance became less than expected?
+Why is my available balance lower than expected while I'm sending BEAM?
 ---------------------------------------------------------------------------------------------------
 
 UTXO can be locked during active outgoing transaction. The locked amount is displayed as a change in 'Sending screen'. The change will become spendable when the transaction expires or completes.
 
-I’ve send my address to someone but the transaction is stuck 'In Progress'
---------------------------------------------------------------------------
+I’ve transfered BEAM to someone, but the transaction is stuck 'In Progress'
+---------------------------------------------------------------------------
 
 The most common reasons are listed here:
-* Addresses expire in 24 hours by default. Check to see if it's expired in the ‘Expired addresses’ section on the `Address screen`.
-* Address might be misspelled. Check to see if the address is complete, is it missing any letters or number.
+
+* Addresses expire in 12 hours by default. Check to see if it's expired in the :ref:'Expired addresses' section on the :ref:'Address screen'.
+* Address might be misspelled. Check to see if the address is complete. Are there any letters or number missing or misspelled?
+* Receiver has not come online.
+* Receiver's Wallet was restored between the time the address was created and the time it was sent.
 
 I’ve forgot the local password for my wallet
 --------------------------------------------
 
-See `Restoring funds`
+See :ref:'Restoring funds'
 
 I’ve restored the wallet but I can’t see my transaction list and/or my active addresses
 -----------------------------------------------------------------------------------------
@@ -662,12 +665,12 @@ As explained in `Restoring funds`, only your available balance (i.e. your UTXO) 
 I’ve restored the wallet but my balance is zero
 -----------------------------------------------
 
-Triple-check that all the words from the seed phrase are typed in correctly. One or more the of the words is wrong or misspelled. You will need to remove the ``wallet.db`` file and to repeat the restore procedure.
+One or more the of the words is wrong or misspelled. Triple-check that all the words from the seed phrase are typed in correctly. You will need to repeate the :ref:'Restoring funds' procedure.
 
 I’ve restored the wallet using my seed phrase - can someone still send me money to the addresses created in the previous wallet?
 --------------------------------------------------------------------------------------------------------------------------------
 
-When a wallet is restored, *only the balance (UTXO) is restored*. Addresses (active and expired), contacts, transaction history are stored only locally, hence they can't be restored from the blockchain. Each wallet instance is aware only of the active and expired addresses it displays. Therefore, all transactions sent to the addresses no wallet is aware of anymore will fail by timeout and the funds will be automatically released in sender's wallet.
+When a wallet is restored, *only the balance (UTXO) is restored*. Addresses (active and expired), contacts and transaction history are only stored locally, so they can't be restored from the blockchain. Each wallet is aware of only the active and expired addresses it displays. Therefore, all transactions sent to the addresses no wallet is aware of anymore will fail by timeout and the funds will be automatically released in Sender's wallet.
 
 I've forgot my password
 -----------------------
@@ -682,7 +685,7 @@ To ensure the utmost privacy, the only information we can use to link you to you
 I've lost my seed phrase
 ------------------------
 
-By design, the only way to access your funds (UTXO) is to have the seed phrase. If you still have an access to your wallet, create another wallet with new seed phrase on another machine and transfer funds to there. Any solution that would allow to access your funds without the seed phrase would severely compromise the privacy of BEAM. Therefore, in case you don't have any active access to your funds there is nothing to do (the funds will be stored in the blockchain forever and no one will be able to access or spend them).
+By design, the only way to access your funds (UTXO) is to have the seed phrase. If you still have access to your wallet, create another wallet with new seed phrase on another device and transfer funds to there. Any solution that would allow you to access your funds without the seed phrase would severely compromise the privacy of BEAM. Therefore, in case you don't have any active access to your funds there is nothing to do (the funds will be stored in the blockchain forever and no one will be able to access or spend them).
 
 I've copied my ``wallet.db`` file to the new machine and I'd like to run wallets on both new and old machines simultaneously  
 ----------------------------------------------------------------------------------------------------------------------------
