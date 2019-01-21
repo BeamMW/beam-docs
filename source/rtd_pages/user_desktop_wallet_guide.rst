@@ -290,7 +290,7 @@ A new Beam address is generated every time the 'Receive' screen is opened.  By d
 
 You can set the expiration time to ‘Never’ for this address only by selecting the value in the ‘Expires’ drop down.
 
-.. warning:: The permanent addresses that never expire are only useful in very limited special cases, like working with exchanges and such. For ultimate privacy, do not use this option for regular transactions, rather always create a new address for each transaction.
+.. warning:: The permanent addresses that never expire are only useful in limited special cases, like working with mining pools or exchanges. For ultimate privacy, do not use this option for regular transactions, rather always create a new address for each transaction.
 
 .. attention:: You have to click ‘Close’ button in the screen for the address to become active.
 
