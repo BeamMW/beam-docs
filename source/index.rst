@@ -22,7 +22,7 @@ Welcome to Beam documentation!
 Current release
 ===============
 
-**Agile Atom 1.1.4201**
+**Agile Atom 1.1.4202**
 
 This is the first official maintenance version of Mainnet release, focused on stability and address management. Migration assistant will be automatically triggered in the desktop wallet when upgrading to this version (:ref:`upgrading`).
 
