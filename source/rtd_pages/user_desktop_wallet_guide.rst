@@ -107,6 +107,8 @@ The locations of all the files are described here: :ref:`Files and locations`
 
 ..note::When the Beam wallet app is running, right click on it and select *Options | Keep in dock* for easy access of the app in the future.
 
+.. figure:: images/desktop/02_installing/08.png
+   :alt: Keep in dock
 
 Creating new wallet
 -------------------
