@@ -58,11 +58,11 @@ This is the first official maintenance version of Mainnet release, focused on st
 
 [node] Reworked node and DB management to increase robustness, stability and data integrity.
 
-[desktop wallet, cli wallet] Fixed issue with completed transactions becoming Failed and balance invalid on network rollback `#367 <https://github.com/BeamMW/beam/issues/367>`_ , `#368 <https://github.com/BeamMW/beam/issues/368>` (:ref:`rescan`)
+[desktop wallet, cli wallet] Fixed issue with completed transactions becoming Failed and balance invalid on network rollback `#367 <https://github.com/BeamMW/beam/issues/367>`_ , `#368 <https://github.com/BeamMW/beam/issues/368>`_ (:ref:`rescan`)
 
 [node] The rare scenario resulted from the untypical (yet valid) wallet usage pattern which caused the nodes to fail to mine the next block after height 25709. The fix was applied to the flaw in the block construction code, which generated a wrong commitment to the UTXO state. `#386 <https://github.com/BeamMW/beam/issues/386>`_
                   
-Known limitations
+**Known limitations**
 
 Inconsistent transaction statuses when running two or more wallets that use the same wallet.db file, cloned manually. 
 
