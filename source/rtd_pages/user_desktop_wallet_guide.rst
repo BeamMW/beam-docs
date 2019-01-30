@@ -634,25 +634,114 @@ Where are the wallet files located?
 
 When Beam Wallet desktop app is installed, the wallet data files are stored separately from the binaries. The locations of all the files are described here: :ref:'Files and Locations'
 
-Why is my transaction 'In Progress' for so long?
-------------------------------------------------
 
-Both Sender and Receiver Wallets need to be online to complete a transaction. All active addresses expires after 24 hours since creation (unless specified otherwise). If Sender / Receiver both do not come online within 12 hours the transaction will be canceled automatically.
+Wallet is stuck in 'Downloading blocks' screen
+----------------------------------------------
+
+1. Close your wallet
+
+2. Locate the Beam Wallet folder :ref:'Files and Locations'
+
+3. Use any text editor to open settings.ini file
+
+4. Check the contents of the 'peers' value
+
+::
+
+   [localnode]
+   mining_threads=0
+   port=10005
+   run=true
+   peers=@Invalid()
+
+   [node]
+   address=us-node01.mainnet.beam.mw:8100 
+
+5. If the value is @Invalid() replace it with the following:
+
+
+::
+
+   [localnode]
+   mining_threads=0
+   port=10005
+   run=true
+   peers=eu-node02.mainnet.beam.mw:8100, eu-node01.mainnet.beam.mw:8100, us-node02.mainnet.beam.mw:8100, us-node04.mainnet.beam.mw:8100, ap-node01.mainnet.beam.mw:8100, ap-node02.mainnet.beam.mw:8100
+
+   [node]
+   address=us-node01.mainnet.beam.mw:8100 
+
+
+My peers look ok but the wallet is still stuck during sync
+----------------------------------------------------------
+
+1. Close your wallet
+
+2. Locate the Beam Wallet folder :ref:'Files and Locations'
+
+3. Delete node.db file and all files starting with 'tempmb'
+
+4. Restart the wallet
+
+
+
+My transaction is stuck 'In Progress' for a long time
+-----------------------------------------------------
+
+In progress means that the message sent to the other wallet address was not answered yet. Each message has a lifetime of 12 hours, so if the message will not be answered during that time transaction will be canceled automatically by the wallet. At this stage, the sender can cancel the transaction by clicking on transaction menu and selecting 'Cancel'.
+
+
+My transaction is stuck in 'Synching with blockchain' for a very long time
+--------------------------------------------------------------------------
+
+In order to create a transaction Sender and Receiver should exchange messages with all the necessary information. After that, Sender creates the transaction and sends it to the network for distribution and mining.
+
+'Synching with blockchain' is a state in which wallet waits for a message from the other side. For a 'Sender' it means that the message was sent and not answered yet. For a 'Receiver' it means that the answer was sent but the transaction is not yet visible in the blockchain either because it was not sent to the network or because it was not mined yet.
+
+In any case, if the transaction does not appear in the blockchain after 2 hours it is automatically canceled by the wallet.
+
+.. note: In older versions of the wallet (before 1.1.4201) the timeout was set to 24 hours.
+
+
+Why can't I just cancel the transaction in the 'Synching with blockchain' state?
+--------------------------------------------------------------------------------
+
+Your wallet has already disclosed enough information so that transaction can be created anyway and sent to the network even if you cancel it. 
+
+I am trying to send Beam but transactions are failing 
+-----------------------------------------------------
+
+In certain cases, the wallet my get out of sync with the blockchain which might result in UTXOs that were already spent being incorrectly marked as available. When such UTXOs are selected for a transaction by the wallet, the transaction will be rejected by the blockchain.
+
+To fix the situation, do the following:
+
+1. Open the Wallet and open Settings tab
+
+2. Switch to a local node
+
+3. Click on 'Rescan' button 
+
+4. Wait for the wallet to synchronize
+
+In some cases this operation may result in change if your wallet balance, which was incorrectly displaying already spent UTXOs as available. 
+
+If this does not help, you may try to resync the wallet completely by following the procedure below:
+
+1. Erase the wallet.db (you can back it up), because it may continue to create duplicated coins. Then restore it via your secret phrase. No need to erase node.db.
+
+2. After the sync is complete - send all your "visible" funds to yourself. You can set fee=0. Wait until transaction completes.
+
+3. Wait for 2 days. Meanwhile you may use your wallet normally, but some of the funds may still look missing.
+
+4. After 2 days: Erase both wallet.db AND node.db. Then - do a full restore.
+
 
 Why is my available balance lower than expected while I'm sending BEAM?
 ---------------------------------------------------------------------------------------------------
 
 UTXO can be locked during active outgoing transaction. The locked amount is displayed as a change in 'Sending screen'. The change will become spendable when the transaction expires or completes.
 
-I’ve transfered BEAM to someone, but the transaction is stuck 'In Progress'
----------------------------------------------------------------------------
 
-The most common reasons are listed here:
-
-* Addresses expire in 12 hours by default. Check to see if it's expired in the :ref:'Expired addresses' section on the :ref:'Address screen'.
-* Address might be misspelled. Check to see if the address is complete. Are there any letters or number missing or misspelled?
-* Receiver has not come online.
-* Receiver's Wallet was restored between the time the address was created and the time it was sent.
 
 I’ve forgot the local password for my wallet
 --------------------------------------------
