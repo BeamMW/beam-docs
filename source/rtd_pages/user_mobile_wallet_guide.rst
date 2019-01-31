@@ -61,6 +61,7 @@ As a part of creating a new wallet, a new seed phrase will be generated for you.
 
 
 .. figure:: images/mobile/02_creating_new_wallet/03.jpg
+   :scale: 50
    :alt: Generating seed phrase
 
 
@@ -74,6 +75,7 @@ Did you verified your handwriting? Now go find a safe space for the paper!
 .. important:: Storing the seed phrase on your computer makes your funds prone to cyber attacks (read: much *less* secure). 'Creative' approaches like saving a screenshot of the wallet or your handwriting on your computer or in the cloud *may* sound like a good idea, but it is absolutely **not recommended**. If hackers get the access to your computer, network drive etc., they can can potentially steal your seed phrase by using OCR programs (which can scan pictures and transform them into plain text) and, therefore, get access to your funds.
 
 .. figure:: images/mobile/02_creating_new_wallet/04.jpg
+   :scale: 50
    :alt: Keeping seed phrase safe warning
 
 .. attention:: Always store your seed phrase in a safe and secure location (and better more than one in different geo locations). Write it on a piece of paper. Do not store electronically neither as plain text nor in any other form!
@@ -83,6 +85,7 @@ In order to ensure that you have really written down your seed phrase, you will 
 Only when you typed all the selected words correctly, you will be allowed to proceed to the next step.
 
 .. figure:: images/mobile/02_creating_new_wallet/05.jpg
+   :scale: 50
    :alt: Repeat your seed phrase 
 
 
@@ -94,6 +97,7 @@ To access your Beam Wallet, you will need to create a password. This password is
 The wallet will provide some indication of password strength for your convenience. Do not count on it, however. Choose a password that is at least 8 characters long with a combination of letters, numbers, and symbols.
 
 .. figure:: images/mobile/02_creating_new_wallet/06.jpg
+   :scale: 50
    :alt: Setting the password 
 
 
@@ -117,6 +121,7 @@ Synchronizing the wallet
 Once the wallet is connected, it synchronizes with the current blockchain state from the network. Be patient when running with the integrated node: the data downloading process might take some time. The wallet will first download and validate the latest :ref:'macroblock' and then all the rest of the blockchain.
 
 .. figure:: images/mobile/02_creating_new_wallet/07.jpg
+   :scale: 50
    :alt: Creating the wallet
 
 Main screen
