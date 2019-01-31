@@ -220,24 +220,27 @@ Upgrading from previous version
 
 If during installation the wallet discovers one or more previous versions installed it will propose to migrate to a new version
 
-.. figure:: images/upgrade/screen_1.png
-   :alt: Migrating from previous version
+.. figure:: images/desktop/upgrade/01.png
+   :alt: Start migration
 
 If you do not wish to migrate an existing wallet, you can also create a new wallet or choose the location of the wallet database file yourself  by clicking 'Login to another wallet or create a new one'
 
 .. note:: Migration will copy the existing wallet database (wallet.db) keeping all the data intact. 
 
-In the next screen you will be asked to choose which database file you want to migrate. If the file you need does not appear in the list you can select it manually using 'Select file manually' option.
+In the next screen you will be asked to choose which wallet database file you want to migrate. If the file you need does not appear in the list you can select it manually using 'Select file manually' option.
 
-.. figure:: images/upgrade/screen_2.png
-   :alt: Migrating from previous version
+.. figure:: images/desktop/upgrade/02.png
+   :alt: Select the wallet database file
 
 Once file is selected, click 'next' to enter database password.
 
-.. figure:: images/upgrade/screen_3.png
-   :alt: Migrating from previous version
+.. figure:: images/desktop/upgrade/03.png
+   :alt: Starting the migration
 
 Once you enter the correct password, the migration will complete and the wallet will resume synchronization with the blockchain.
+
+.. figure:: images/desktop/upgrade/04.png
+   :alt: Migration
 
 Main screen
 -----------
@@ -627,21 +630,18 @@ To perform rescan please perform the following steps:
 
 1. In the Settings page, switch to the 'Local node' and click 'Apply settings'
 
-.. figure:: images/rescan/screen2.png
+.. figure:: images/desktop/rescan/01.png
    :alt: In the settings screen switch to local node
 
 
 2. Click on the 'Rescan' button and then 'Yes'
 
-.. figure:: images/rescan/screen3.png
+.. figure:: images/desktop/rescan/02.png
    :alt: Click on the rescan button
-
 
 3. Verify that your balance, transaction and UTXO state are up to date.
 
-
 .. note:: If you have just started the node it may take some time for it to download updates from the blockchain and synchronize. This may result in your balance and UTXOs to be gradually updated and the node synchronizes. Please for the sync to complete before drawing any conclusions about the state of your wallet
-
 
 
 Desktop Wallet troubleshooting
