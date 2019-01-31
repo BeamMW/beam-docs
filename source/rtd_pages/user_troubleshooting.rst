@@ -6,7 +6,7 @@ Wallet Troubleshooting (all wallets)
 Where are the wallet files located?
 -----------------------------------
 
-When Beam Wallet desktop app is installed, the wallet data files are stored separately from the binaries. The locations of all the files are described here: :ref:'Files and Locations'
+When Beam Wallet desktop app is installed, the wallet data files are stored separately from the binaries. The locations of all the files are described here: :ref:`Files and Locations`
 
 My transaction is stuck 'In Progress' for a long time
 --------------------------------------------------------------
@@ -29,13 +29,13 @@ In any case, if the transaction does not appear in the blockchain after 2 hours 
 I’ve forgot the local password for my wallet
 --------------------------------------------
 
-See :ref:'Restoring funds'
+See :ref:`Restoring funds`
 
 
 I’ve restored the wallet but my balance is zero
 -----------------------------------------------
 
-One or more the of the words is wrong or misspelled. Triple-check that all the words from the seed phrase are typed in correctly. You will need to repeate the :ref:'Restoring funds' procedure.
+One or more the of the words is wrong or misspelled. Triple-check that all the words from the seed phrase are typed in correctly. You will need to repeate the :ref:`Restoring funds`procedure.
 
 
 I've forgot my password
@@ -120,7 +120,7 @@ Wallet is stuck in 'Downloading blocks' screen
 
 1. Close your wallet
 
-2. Locate the Beam Wallet folder :ref:'Files and Locations'
+2. Locate the Beam Wallet folder :ref:`Files and Locations`
 
 3. Use any text editor to open settings.ini file
 
@@ -157,7 +157,7 @@ My peers look ok but the wallet is still stuck during sync
 
 1. Close your wallet
 
-2. Locate the Beam Wallet folder :ref:'Files and Locations'
+2. Locate the Beam Wallet folder :ref:`Files and Locations`
 
 3. Delete node.db file and all files starting with 'tempmb'
 
