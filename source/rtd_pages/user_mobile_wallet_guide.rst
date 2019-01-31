@@ -39,7 +39,7 @@ Creating new wallet
 Once you launch the wallet for the first time you will be suggested to create a new wallet.
 
 .. figure:: images/mobile/02_creating_new_wallet/01.jpg
-   :scale: 50
+   :scale: 30
    :alt: Choosing to create a new wallet
 
 {TODO: only create new wallet on the screenshot above}
@@ -53,7 +53,7 @@ As a part of creating a new wallet, a new seed phrase will be generated for you.
 
 
 .. figure:: images/mobile/02_creating_new_wallet/02.jpg
-   :scale: 50
+   :scale: 30
    :alt: Before generating seed phrase
 
 
@@ -61,7 +61,7 @@ As a part of creating a new wallet, a new seed phrase will be generated for you.
 
 
 .. figure:: images/mobile/02_creating_new_wallet/03.jpg
-   :scale: 50
+   :scale: 30
    :alt: Generating seed phrase
 
 
@@ -75,7 +75,7 @@ Did you verified your handwriting? Now go find a safe space for the paper!
 .. important:: Storing the seed phrase on your computer makes your funds prone to cyber attacks (read: much *less* secure). 'Creative' approaches like saving a screenshot of the wallet or your handwriting on your computer or in the cloud *may* sound like a good idea, but it is absolutely **not recommended**. If hackers get the access to your computer, network drive etc., they can can potentially steal your seed phrase by using OCR programs (which can scan pictures and transform them into plain text) and, therefore, get access to your funds.
 
 .. figure:: images/mobile/02_creating_new_wallet/04.jpg
-   :scale: 50
+   :scale: 30
    :alt: Keeping seed phrase safe warning
 
 .. attention:: Always store your seed phrase in a safe and secure location (and better more than one in different geo locations). Write it on a piece of paper. Do not store electronically neither as plain text nor in any other form!
@@ -85,7 +85,7 @@ In order to ensure that you have really written down your seed phrase, you will 
 Only when you typed all the selected words correctly, you will be allowed to proceed to the next step.
 
 .. figure:: images/mobile/02_creating_new_wallet/05.jpg
-   :scale: 50
+   :scale: 30
    :alt: Repeat your seed phrase 
 
 
@@ -97,7 +97,7 @@ To access your Beam Wallet, you will need to create a password. This password is
 The wallet will provide some indication of password strength for your convenience. Do not count on it, however. Choose a password that is at least 8 characters long with a combination of letters, numbers, and symbols.
 
 .. figure:: images/mobile/02_creating_new_wallet/06.jpg
-   :scale: 50
+   :scale: 30
    :alt: Setting the password 
 
 
@@ -121,7 +121,7 @@ Synchronizing the wallet
 Once the wallet is connected, it synchronizes with the current blockchain state from the network. Be patient when running with the integrated node: the data downloading process might take some time. The wallet will first download and validate the latest :ref:'macroblock' and then all the rest of the blockchain.
 
 .. figure:: images/mobile/02_creating_new_wallet/07.jpg
-   :scale: 50
+   :scale: 30
    :alt: Creating the wallet
 
 Main screen
@@ -130,11 +130,13 @@ Main screen
 Once your wallet is created, the main screen will show up. 
 
 .. figure:: images/mobile/03_main_screen/01.jpg
+   :scale: 30
    :alt: Main screen
 
 On the top left, the hamburger button (the three lines) provides navigation between different wallet screens, currently: Wallet (or Main Screen), Address book, UTXO, Dashboard, Notification, Help and Settings.
 
 .. figure:: images/mobile/03_main_screen/02.jpg
+   :scale: 30
    :alt: Menu
 
 Wallet status indicator
@@ -164,6 +166,7 @@ Financial transactions
 ‘Send’ and ‘Receive’ buttons at the top right corner help us to `Sending BEAM` and `Receiving BEAM`.
 
 .. figure:: images/mobile/03_main_screen/03.jpg
+   :scale: 30
    :alt: Submitting a password
 
 Main screen password
@@ -172,6 +175,7 @@ Main screen password
 In the future, the screen will pop-up automatically after you open the application and type in your password. 
 
 .. figure:: images/mobile/03_main_screen/04.jpg
+   :scale: 30
    :alt: Submitting a password
 
 Receiving BEAM
@@ -193,11 +197,13 @@ Generate an address
 Proceed to the main screen and click the blue ‘Receive’ button at the top right corner. 
 
 .. figure:: images/mobile/04_receiving_beam/01.jpg
+   :scale: 30
    :alt: Receive BEAM button
 
 This will open the receive screen. 
 
 .. figure:: images/mobile/04_receiving_beam/02.jpg
+   :scale: 30
    :alt: Receive BEAM screen
 
 Copy and paste the newly generated Beam address to send to Sender over a **secure communication channel**. 
@@ -205,6 +211,7 @@ Copy and paste the newly generated Beam address to send to Sender over a **secur
 A new Beam address is generated every time the 'Receive' screen is opened. By default, the address is valid for 24 hours. It is best to give the Sender your address closest to the time they will be sending BEAM so the address does not expire. 
 
 .. figure:: images/mobile/04_receiving_beam/03.jpg
+   :scale: 30
    :alt: Set address expiration
 
 You can explicitly set the expiration time to ‘Never’ for this address only by selecting the value in the ‘Expires’ drop down.
@@ -219,6 +226,7 @@ QR code
 If the Sender uses a mobile app, he can quickly scan the QR code from your mobile instead of receiving, copying and pasting the alphanumeric address. 
 
 .. figure:: images/mobile/04_receiving_beam/04.jpg
+   :scale: 30
    :alt: QR code
 
 Comment
@@ -229,6 +237,7 @@ You can add a comment when creating the receiving address. The comment is never 
 The comment can be seen on the :ref:'Address screen' and in the extended transaction view.
 
 .. figure:: images/mobile/04_receiving_beam/05.jpg
+   :scale: 30
    :alt: Comment
 
 
@@ -245,6 +254,7 @@ Completing the transaction
 Once Sender initiates the transaction, you will see on the new transaction appear in the transaction list on the main screen. The amount sent will also appear on the ‘In progress’ box.
 
 .. figure:: images/mobile/04_receiving_beam/06.jpg
+   :scale: 30
    :alt: Incoming transaction
 
 Normally, a transaction will pass through the following stages:
@@ -256,6 +266,7 @@ Normally, a transaction will pass through the following stages:
 Once transaction is complete, the available balance will be updated and the ‘In Progress’ box will disappear.
 
 .. figure:: images/mobile/04_receiving_beam/07.jpg
+   :scale: 30
    :alt: BEAM received
 
 Sending BEAM
@@ -282,6 +293,7 @@ Sending funds
 In order to send BEAM, you will need to click the magenta ‘Send’ button at the top right corner. This will open the Send screen.
 
 .. figure:: images/mobile/05_sending_beam/01.jpg
+   :scale: 30
    :alt: Send BEAM screen
 
 Make sure you have the correct address and paste the Receiver’s Beam address in the 'Send To' field. 
@@ -291,6 +303,7 @@ To help to identify the transaction, you may also choose to fill in the optional
 The comment can be seen on the :ref:'Address screen':
 
 .. figure:: images/mobile/05_sending_beam/02.jpg
+   :scale: 30
    :alt: Send BEAM screen
 
 The comment is also displayed in the extended transaction view on Main Screen:
@@ -300,11 +313,13 @@ The comment is also displayed in the extended transaction view on Main Screen:
 Select the transaction amount in BEAM you want to send. Transaction amount is in BEAM and may contain fractional values such as 1.25 BEAM or 11.3 BEAM and the like. Keep in mind you also have to pay a transaction fee, hence the amount to send plus the fee must be equal to or less than the available balance. 
 
 .. figure:: images/mobile/05_sending_beam/03.jpg
+   :scale: 30
    :alt: Send BEAM amount
 
 Transaction fees are specified in GROTH (100 millionths of BEAM). Amount of fees you need to pay depends on the current status of the network and average fee sizes. Simply said, the higher transaction fee will help miners to prioritize your transaction. To determine the current average fee size use `Beam Blockchain Explorer <https://explorer.beam.mw>`_.
 
 .. figure:: images/mobile/05_sending_beam/04.jpg
+   :scale: 30
    :alt: Send BEAM transaction fee
 
 You can see the remaining amount of BEAM in your wallet and the change that will be received after the transaction. 
@@ -314,6 +329,7 @@ You can see the remaining amount of BEAM in your wallet and the change that will
 After you click ‘Send’ you will see a confirmation with the most important transaction details:
 
 .. figure:: images/mobile/05_sending_beam/05.jpg
+   :scale: 30
    :alt: Send BEAM confirmation 
 
 {TODO: no password on the screenshot above}
@@ -324,6 +340,7 @@ Completing the transaction
 Once you confirm, the transaction is sent to the Receiver's wallet. If Receiver's wallet is currently offline or if the network is loaded, you might see the transaction appear ‘In Progress’ on your transaction list. Once the transaction is complete, it will be sent to the nodes and shown as 'Confirming'.
 
 .. figure:: images/mobile/05_sending_beam/06.jpg
+   :scale: 30
    :alt: Sending BEAM
 
 {TODO: screenshot above should display an outgoing transaction only}
@@ -386,11 +403,13 @@ The screen lists all the addresses that were used in all incoming and outgoing t
 Upon Beam Wallet mobile app installation, a single address is created by default. The address has a default expiration time of 24 hours.
 
 .. figure:: images/mobile/06_address_screen/01.jpg
+   :scale: 30
    :alt: Default address
 
 You can always create a new one by using Receive Screen. You can see all your active addresses in the 'My Active Addresses' tab.
 
 .. figure:: images/mobile/06_address_screen/02.jpg
+   :scale: 30
    :alt: Default address
 
 Once an expired address becomes inactive, it cannot be used in any incoming or outgoing transaction. Each address has a default expiration time of 24 hours, including the default address. An expired address becomes inactive and you won’t be able to be use it again. You can see the expired addresses listed under 'My Expired Addresses.' 
@@ -400,21 +419,25 @@ Once an expired address becomes inactive, it cannot be used in any incoming or o
 When you'll click the three dots located to the right of any address, the menu with additional address actions will open. You can manually edit or delete any address choosing 'Edit' or 'Delete' from the menu.
 
 .. figure:: images/mobile/06_address_screen/03.jpg
+   :scale: 30
    :alt: Address screen drop-down menu
 
 You can manually expire any active address by choosing ‘Expire address’ from the drop down menu.
 
 .. figure:: images/mobile/06_address_screen/04.jpg
+   :scale: 30
    :alt: Edit address
 
 For privacy concerns, you can manually delete any address by clicking the three dots located to the right of the address and choosing ‘Delete address’ from the drop down menu.
 
 .. figure:: images/mobile/06_address_screen/05.jpg
+   :scale: 30
    :alt: Delete address
 
 In the ‘Contacts’ tab, you can see every address that sent you BEAM or to which you’ve sent BEAM to.
 
 .. figure:: images/mobile/06_address_screen/06.jpg
+   :scale: 30
    :alt: Contacts
 
 UTXO
@@ -428,6 +451,7 @@ UTXO screen
 On the technical level, in Beam, like in most other cryptocurrencies, your balance emerges as a result of multiple incoming and outgoing transactions. Each transaction uses some existing inputs and creates new outputs. All the outputs controlled by the wallet are shown in the UTXO screen.
 
 .. figure:: images/mobile/07_utxo_screen/01.jpg
+   :scale: 30
    :alt: UTXO screen
 
 The type of UTXO can be:
@@ -443,6 +467,7 @@ UTXO details
 Click on the specific UTXO you want to see more details of. 
 
 .. figure:: images/mobile/07_utxo_screen/02.jpg
+   :scale: 30
    :alt: UTXO screen
 
 {TODO: in screenshot above, remove the comment ‘thank you very much’ since Receiver won’t be able to see any sender comments}
@@ -453,6 +478,7 @@ UTXO in sending BEAM screen (explained by example)
 Assume that you have 100 BEAM in a single 'bill'. So, if you want to send to Alice 10 BEAM, your single 'bill' will be split into one 'bill' of 10 BEAM to send and another 'bill' of 90 BEAM to remain in your wallet, right? Well, almost: we also have to consider the transaction fee. Let’s say the transaction fee is 10M GROTH (0.1 BEAM), so in this case the ‘bill’ will be split into 3 'bills' (10 BEAM to send, 89.9 BEAM to remain in your wallet and 0.1 BEAM to pay fee).
 
 .. figure:: images/mobile/07_utxo_screen/03.jpg
+   :scale: 30
    :alt: Sending BEAM (UTXO change example)
 
 Why UTXO can be locked
@@ -465,6 +491,7 @@ Example: you have 100 BEAM in two 'bills' (UTXO): 90 BEAM and 10 BEAM. You want 
 This 10 BEAM UTXO will be locked until the 9 BEAM transaction completes. If Alice is currently offline, it might take a time during which you will not be able to send BEAM to anyone else. You can, of course, cancel the transaction and resend when Alice comes online.
 
 .. figure:: images/mobile/07_utxo_screen/04.jpg
+   :scale: 30
    :alt: Sending BEAM (UTXO locked example)
 
 You can split UTXO by yourself
