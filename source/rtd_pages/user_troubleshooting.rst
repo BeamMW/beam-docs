@@ -59,18 +59,6 @@ I've copied my ``wallet.db`` file to the new machine and I'd like to run wallets
 At the current implementation each ``wallet.db`` file should be managed by only a single wallet instance. Any case involving manual transfer of the wallet database **is not supported**.
 
 
-My peers look ok but the wallet is still stuck during sync
-----------------------------------------------------------
-
-1. Close your wallet
-
-2. Locate the Beam Wallet folder :ref:'Files and Locations'
-
-3. Delete node.db file and all files starting with 'tempmb'
-
-4. Restart the wallet
-
-
 I am trying to send Beam but transactions are failing 
 -----------------------------------------------------
 
@@ -162,6 +150,19 @@ Wallet is stuck in 'Downloading blocks' screen
 
    [node]
    address=us-node01.mainnet.beam.mw:8100 
+
+
+My peers look ok but the wallet is still stuck during sync
+----------------------------------------------------------
+
+1. Close your wallet
+
+2. Locate the Beam Wallet folder :ref:'Files and Locations'
+
+3. Delete node.db file and all files starting with 'tempmb'
+
+4. Restart the wallet
+
 
 
 Command Line Wallet Troubleshooting
