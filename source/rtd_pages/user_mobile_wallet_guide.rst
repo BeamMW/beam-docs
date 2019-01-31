@@ -38,7 +38,7 @@ Creating new wallet
 
 Once you launch the wallet for the first time you will be suggested to create a new wallet.
 
-.. figure:: images/desktop/02_creating_new_wallet/01.jpg
+.. figure:: images/mobile/02_creating_new_wallet/01.jpg
    :scale: 50
    :alt: Choosing to create a new wallet
 
@@ -53,6 +53,7 @@ As a part of creating a new wallet, a new seed phrase will be generated for you.
 
 
 .. figure:: images/mobile/02_creating_new_wallet/02.jpg
+   :scale: 50
    :alt: Before generating seed phrase
 
 
