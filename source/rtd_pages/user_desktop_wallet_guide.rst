@@ -559,7 +559,7 @@ UTXO screen
 
 On the technical level, in Beam, like in most other cryptocurrencies, your balance emerges as a result of multiple incoming and outgoing transactions. Each transaction uses some existing inputs and creates new outputs. All the outputs controlled by the wallet are shown in the UTXO screen.
 
-.. figure:: images/mobile/08_utxo_screen/01.jpg
+.. figure:: images/desktop/09_utxo_screen/01.jpg
    :alt: UTXO screen
 
 The type of UTXO can be:
