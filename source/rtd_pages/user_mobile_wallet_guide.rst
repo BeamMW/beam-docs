@@ -30,7 +30,7 @@ Proceed to install Beam Wallet Mobile App by going to the Google Play store.
 Download the mobile wallet. Once it's done installing, open the app and agree to the Terms of use.
 
 .. figure:: images/mobile/01_downloading_and_installing/01.jpg
-   :scale: 50
+   :scale: 30
    :alt: Terms of Use
 
 Creating new wallet
