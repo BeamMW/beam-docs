@@ -104,7 +104,7 @@ The wallet will provide some indication of password strength for your convenienc
 Choosing the node connectivity mode
 -----------------------------------
 
-Beam Desktop Wallet can connect to the network through:
+Beam Mobile Wallet can connect to the network through:
 
 * Random remote node
 * Specific remote node
