@@ -124,12 +124,12 @@ Main screen
 
 Once your wallet is created, the main screen will show up. 
 
-.. figure:: images/mobile/02_main_screen/01.jpg
+.. figure:: images/mobile/03_main_screen/01.jpg
    :alt: Main screen
 
 On the top left, the hamburger button (the three lines) provides navigation between different wallet screens, currently: Wallet (or Main Screen), Address book, UTXO, Dashboard, Notification, Help and Settings.
 
-.. figure:: images/mobile/02_main_screen/02.jpg
+.. figure:: images/mobile/03_main_screen/02.jpg
    :alt: Menu
 
 Wallet status indicator
@@ -158,7 +158,7 @@ Financial transactions
 
 ‘Send’ and ‘Receive’ buttons at the top right corner help us to `Sending BEAM` and `Receiving BEAM`.
 
-.. figure:: images/mobile/02_main_screen/03.jpg
+.. figure:: images/mobile/03_main_screen/03.jpg
    :alt: Submitting a password
 
 Main screen password
@@ -166,7 +166,7 @@ Main screen password
 
 In the future, the screen will pop-up automatically after you open the application and type in your password. 
 
-.. figure:: images/mobile/02_main_screen/04.jpg
+.. figure:: images/mobile/03_main_screen/04.jpg
    :alt: Submitting a password
 
 Receiving BEAM
@@ -199,7 +199,7 @@ Copy and paste the newly generated Beam address to send to Sender over a **secur
 
 A new Beam address is generated every time the 'Receive' screen is opened. By default, the address is valid for 24 hours. It is best to give the Sender your address closest to the time they will be sending BEAM so the address does not expire. 
 
-.. figure:: images/desktop/04_receiving_beam/03.jpg
+.. figure:: images/mobile/04_receiving_beam/03.jpg
    :alt: Set address expiration
 
 You can explicitly set the expiration time to ‘Never’ for this address only by selecting the value in the ‘Expires’ drop down.
@@ -342,10 +342,11 @@ This process allows you to restore your funds directly from the blockchain. It i
 .. attention:: With Beam, only funds are stored on the blockchain. Everything else, such as your active addresses, contacts or transaction history can’t be restored.
 
 .. attention:: In the current mobile wallet implementation restoring funds is only implemented in the Beam Desktop Wallet App. Here is what you need to do:
-* Proceed to your desktop wallet app
-* Restore your funds on desktop usingt the mobile wallet seed phrase
-* Create the new wallet on mobile
-* Transfer the restored funds to you newly created mobile wallet
+
+   * Proceed to your desktop wallet app
+   * Restore your funds on desktop usingt the mobile wallet seed phrase
+   * Create the new wallet on mobile
+   * Transfer the restored funds to you newly created mobile wallet
 
 Address
 -------
