@@ -154,6 +154,50 @@ Sample output for this command should look like this:
     Owner Viewer key: dmVxtRCM3BH1VakviSB/XY86DsCKuWDLKk51eLDlibgMeL2fZ317Zdqx3E6oXbKtldqZz/lo5stTCSz9M1bDJdYUF4DG/ZaIuHHszi/H9wDmNDVboUdNtC/1Z/haWr9JxeIDtRSDBN+xpUbv
 
 
+Printing the wallet info
+------------------------
+
+To print the current status of your wallet, run the following command:
+
+::
+
+    ./beam-wallet info
+
+You will be prompted for the wallet password
+
+A sample output for this command should look like this:
+
+::
+
+    I 2018-12-23.17:56:19.368 Rules signature: ddccf5d8d0f77bd2                                                                   
+    I 2018-12-23.17:56:19.369 starting a wallet...                                                                                
+    Enter password: *                                                                                                             
+    I 2018-12-23.17:56:21.144 wallet sucessfully opened...                                                                        
+    ____Wallet summary____                                                                                                        
+                                                                                                                                  
+    Current height............8353                                                                                                
+    Current state ID..........72329a2efa2ddad4                                                                                    
+                                                                                                                                  
+    Available.................300 beams                                                                                           
+    Maturing..................0 groth                                                                                             
+    In progress...............0 groth                                                                                             
+    Unavailable...............0 groth                                                                                             
+    Available coinbase .......0 groth                                                                                             
+    Total coinbase............0 groth                                                                                             
+    Avaliable fee.............0 groth                                                                                             
+    Total fee.................0 groth                                                                                             
+    Total unspent.............300 beams                                                                                           
+                                                                                                                                  
+                      id |          Beam |         Groth |        height |          maturity |                  status |    type  
+        1545571472000001             300               0            8347                8351   [Available]                 norm   
+
+It is also possible to see the transaction history using the --tx_history flag
+
+::
+
+    ./beam-wallet  info --tx_history
+
+
 Receiving BEAMs
 ---------------
 
@@ -224,48 +268,32 @@ The wallet log should look similar to something like:
     It is possible, and sometimes necessary to create a transaction to your own SBBS address to split a large UTXO. To do that just issue a send command with required amounts to your own SBBS address. Please note that you will pay the fee for the transaction.
 
 
-Printing the wallet info
-------------------------
+Sending specific UTXO
+---------------------
 
-To print the current status of your wallet, run the following command:
+In some cases you might want to use specific UTXO for your transaction. To send funds using specific UTXO please follow the steps below:
+
+1. Choose UTXOs you want to send using the `info` command
 
 ::
 
     ./beam-wallet info
 
-You will be prompted for the wallet password
+In the output (as shown in the example below) choose the UTXOs you want to use
 
-A sample output for this command should look like this:
+.. figure:: images/cli/choose_utxo.jpg
+   :alt: Choose specific UTXO
 
-::
 
-    I 2018-12-23.17:56:19.368 Rules signature: ddccf5d8d0f77bd2                                                                   
-    I 2018-12-23.17:56:19.369 starting a wallet...                                                                                
-    Enter password: *                                                                                                             
-    I 2018-12-23.17:56:21.144 wallet sucessfully opened...                                                                        
-    ____Wallet summary____                                                                                                        
-                                                                                                                                  
-    Current height............8353                                                                                                
-    Current state ID..........72329a2efa2ddad4                                                                                    
-                                                                                                                                  
-    Available.................300 beams                                                                                           
-    Maturing..................0 groth                                                                                             
-    In progress...............0 groth                                                                                             
-    Unavailable...............0 groth                                                                                             
-    Available coinbase .......0 groth                                                                                             
-    Total coinbase............0 groth                                                                                             
-    Avaliable fee.............0 groth                                                                                             
-    Total fee.................0 groth                                                                                             
-    Total unspent.............300 beams                                                                                           
-                                                                                                                                  
-                      id |          Beam |         Groth |        height |          maturity |                  status |    type  
-        1545571472000001             300               0            8347                8351   [Available]                 norm   
-
-Starting from Milestone 1 it is also possible to see the transaction history using the --tx_history flag
+2. in the `send` command, add --utxo parameter and specify a comma separated list of utxo ids:
 
 ::
 
-    ./beam-wallet  info --tx_history
+    ./beam-wallet send -n <node address and port, ex: 127.0.0.1:10000> -r <sbbs address> -a <amount (in Beams), ex: 11.3> -f <fee (in Groth) , ex: 0.2> --utxo=<comma separated list of utxo ids>
+
+
+.. figure:: images/cli/set_utxo.jpg
+   :alt: Comma separated list of UTXOs
 
 
 
@@ -290,6 +318,33 @@ Sample output from this command should look like this:
     I 2018-12-23.18:16:45.392 New address generated:
 
     646a773da4d4651f35fd75ca958b7859e89d8d8382b8155773bd396e2cc49cca
+
+
+
+Export and import SBBS addresses
+--------------------------------
+
+Sometimes when upgrading the wallet or restoring from seed phrase you need to reimport the list of SBBS addresses from the previous wallet. To do that use the commands below:
+
+To export addresses:
+
+::
+
+    ./beam-wallet export_addresses --file_location=<path to addresses file, for example: ~\addresses.dat>
+
+To import addresses
+
+::
+
+    ./beam-wallet import_addresses --file_location=<path to addresses file, for example: ~\addresses.dat>
+
+.. note:: It is important that imported addresses were originally created by the wallet with the SAME seed phrase. Only addresses matching the wallet seed phrase will be imported. Other addresse will not be imported as shown in the screenshot below.
+
+
+.. figure:: images/cli/wrong_address.jpg
+   :alt: Choose specific UTXO
+
+
 
 .. _proof_of_transaction:
 

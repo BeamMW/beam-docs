@@ -29,13 +29,13 @@ In any case, if the transaction does not appear in the blockchain after 2 hours 
 I’ve forgot the local password for my wallet
 --------------------------------------------
 
-See :ref:`Restoring funds`
+See :ref: `Restoring funds`
 
 
 I’ve restored the wallet but my balance is zero
 -----------------------------------------------
 
-One or more the of the words is wrong or misspelled. Triple-check that all the words from the seed phrase are typed in correctly. You will need to repeate the :ref:`Restoring funds`procedure.
+One or more the of the words is wrong or misspelled. Triple-check that all the words from the seed phrase are typed in correctly. You will need to repeate the :ref: `Restoring funds` procedure.
 
 
 I've forgot my password
