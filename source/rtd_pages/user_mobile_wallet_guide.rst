@@ -417,29 +417,31 @@ You can always create a new one by using Receive Screen. You can see all your ac
 
 Once an expired address becomes inactive, it cannot be used in any incoming or outgoing transaction. Each address has a default expiration time of 24 hours, including the default address. An expired address becomes inactive and you won’t be able to be use it again. You can see the expired addresses listed under 'My Expired Addresses.' 
 
-{TODO: screenshot, expired default address}
+.. figure:: images/mobile/06_address_screen/03.jpg
+   :scale: 30
+   :alt: Expired address
 
 When you'll click the three dots located to the right of any address, the menu with additional address actions will open. You can manually edit or delete any address choosing 'Edit' or 'Delete' from the menu.
 
-.. figure:: images/mobile/06_address_screen/03.jpg
+.. figure:: images/mobile/06_address_screen/04.jpg
    :scale: 30
    :alt: Address screen drop-down menu
 
 You can manually expire any active address by choosing ‘Expire address’ from the drop down menu.
 
-.. figure:: images/mobile/06_address_screen/04.jpg
+.. figure:: images/mobile/06_address_screen/05.jpg
    :scale: 30
    :alt: Edit address
 
 For privacy concerns, you can manually delete any address by clicking the three dots located to the right of the address and choosing ‘Delete address’ from the drop down menu.
 
-.. figure:: images/mobile/06_address_screen/05.jpg
+.. figure:: images/mobile/06_address_screen/06.jpg
    :scale: 30
    :alt: Delete address
 
 In the ‘Contacts’ tab, you can see every address that sent you BEAM or to which you’ve sent BEAM to.
 
-.. figure:: images/mobile/06_address_screen/06.jpg
+.. figure:: images/mobile/06_address_screen/07.jpg
    :scale: 30
    :alt: Contacts
 
@@ -473,7 +475,6 @@ Click on the specific UTXO you want to see more details of.
    :scale: 30
    :alt: UTXO screen
 
-{TODO: in screenshot above, remove the comment ‘thank you very much’ since Receiver won’t be able to see any sender comments}
 
 UTXO in sending BEAM screen (explained by example)
 --------------------------------------------------
