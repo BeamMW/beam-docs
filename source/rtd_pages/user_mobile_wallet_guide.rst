@@ -308,46 +308,49 @@ The comment can be seen on the :ref:'Address screen':
 
 The comment is also displayed in the extended transaction view on Main Screen:
 
-{TODO: screenshot}
+.. figure:: images/mobile/05_sending_beam/03.jpg
+   :scale: 30
+   :alt: Send BEAM comment
 
 Select the transaction amount in BEAM you want to send. Transaction amount is in BEAM and may contain fractional values such as 1.25 BEAM or 11.3 BEAM and the like. Keep in mind you also have to pay a transaction fee, hence the amount to send plus the fee must be equal to or less than the available balance. 
 
-.. figure:: images/mobile/05_sending_beam/03.jpg
+.. figure:: images/mobile/05_sending_beam/04.jpg
    :scale: 30
    :alt: Send BEAM amount
 
 Transaction fees are specified in GROTH (100 millionths of BEAM). Amount of fees you need to pay depends on the current status of the network and average fee sizes. Simply said, the higher transaction fee will help miners to prioritize your transaction. To determine the current average fee size use `Beam Blockchain Explorer <https://explorer.beam.mw>`_.
 
-.. figure:: images/mobile/05_sending_beam/04.jpg
+.. figure:: images/mobile/05_sending_beam/05.jpg
    :scale: 30
    :alt: Send BEAM transaction fee
 
 You can see the remaining amount of BEAM in your wallet and the change that will be received after the transaction. 
 
-{TODO: screenshot, Send BEAM change and remaining amounts}
+.. figure:: images/mobile/05_sending_beam/06.jpg
+   :scale: 30
+   :alt: Send BEAM change and remaining amounts
 
 After you click ‘Send’ you will see a confirmation with the most important transaction details:
 
-.. figure:: images/mobile/05_sending_beam/05.jpg
+.. figure:: images/mobile/05_sending_beam/07.jpg
    :scale: 30
    :alt: Send BEAM confirmation 
 
-{TODO: no password on the screenshot above}
 
 Completing the transaction
 --------------------------
 
 Once you confirm, the transaction is sent to the Receiver's wallet. If Receiver's wallet is currently offline or if the network is loaded, you might see the transaction appear ‘In Progress’ on your transaction list. Once the transaction is complete, it will be sent to the nodes and shown as 'Confirming'.
 
-.. figure:: images/mobile/05_sending_beam/06.jpg
+.. figure:: images/mobile/05_sending_beam/08.jpg
    :scale: 30
    :alt: Sending BEAM
 
-{TODO: screenshot above should display an outgoing transaction only}
-
 .. note:: While a transaction is in ‘In Progress’ you can cancel it by clicking on the dropdown to the right of the transaction row and then select ‘Cancel’. The other party will receive notification that the transaction was either ‘Canceled’ or ‘Failed,’ and funds plus fee that were allocated for this transaction will become available again. It is not possible to cancel a transaction in ‘Confirming’ or ‘Completed’ states.
 
-{TODO screenshot, Canceling outgoing transaction}
+.. figure:: images/mobile/05_sending_beam/09.jpg
+   :scale: 30
+   :alt: Canceling outgoing transaction
 
 .. warning:: If your transaction appears as 'In Progress' for a long time, it means the Receiver is not online.
 
