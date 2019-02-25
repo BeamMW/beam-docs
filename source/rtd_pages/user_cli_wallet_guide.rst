@@ -321,6 +321,46 @@ Sample output from this command should look like this:
 
 
 
+Print list of all addresses
+---------------------------
+
+To print the entire list of addresses use the following command:
+
+::
+
+    ./beam-wallet address_list
+
+A sample ouput for this command will look something like this
+
+::
+
+    I 2019-02-25.19:41:26.839 Beam Wallet 1.2.4419 (mainnet)
+    I 2019-02-25.19:41:26.839 Rules signature: ed91a717313c6eb0
+    I 2019-02-25.19:41:26.841 starting a wallet...
+    Enter password: *
+    I 2019-02-25.19:41:27.718 wallet sucessfully opened...
+    Addresses
+
+     comment         |address                                                               |active  |expiration date     |created
+                       14e191aaebace13b14e3ab41382280baff288faa312545eadd1a1bcfa3adaeac6ff    false    2019.02.25 12:34:07  2019.02.24 12:34:07
+                       12908d7079a41ca9929ed33b965758f261030e766d3bcf0524ce1d21f55b88dc8ff    false    2019.02.20 12:32:11  2019.02.19 12:32:11
+     default           d2fb05822407ca08d2dcc735894b63a26c6d2c1b88d6deddabaee887f6a668b086     false    2019.02.20 10:33:50  2019.02.19 10:33:50
+
+
+Change address expiration
+-------------------------
+
+It is possible to change address expiration period to 'never' using the following command:
+
+::
+
+    ./beam-wallet change_address_expiration --address=14e191aaebace13b14e3ab41382280baff288faa312545eadd1a1bcfa3adaeac6ff
+
+For specific address.
+
+To change all existing addresses in the wallet just omit the `--address` parameter
+
+
 Export and import SBBS addresses
 --------------------------------
 
