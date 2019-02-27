@@ -18,7 +18,7 @@ We welcome everyone to join our mining community to support the network and earn
 Mining Algorithm
 ----------------
 
-To secure the network, Beam uses the `Equihash <https://www.cryptolux.org/index.php/Equihash>`_ proof-of-work mining algorithm). Miners compete against each other using their computing power produce a new block on the chain. The first miner that gets to complete the precise computation for each block is granted with a network standard block reward and any fees for transactions added to that block.
+To secure the network, Beam uses the uses a `modified <https://docs.beam.mw/Beam_Equihash.pdf>`_ version of Equihash (150,5) proof-of-work mining algorithm. Miners compete against each other using their computing power produce a new block on the chain. The first miner that gets to complete the precise computation for each block is granted with a network standard block reward and any fees for transactions added to that block.
 
 At Mainnet launch, we will use the following Equihash parameters: n=150, k=5. In addition, we will introduce a small change to the datapath to further reduce the chance of zero-day ASICs.
 
