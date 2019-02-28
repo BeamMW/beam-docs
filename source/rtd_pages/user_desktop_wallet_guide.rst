@@ -189,7 +189,7 @@ Beam Desktop Wallet can connect to the network through:
 
 If you choose to run an integrated node from within the wallet, the trusted node will automatically verify the blockchain. This means you will automatically be connected to a node when you open your wallet.
 
-.. note:: When running behind a firewall you can change the default port the node will be listening on, and in case of CPU mining, set the amount of mining threads. You will be probably provided at least one default peer to connect to but you can always add more peers on the Settings screen. The recommended peers are published in the list of bootstrap nodes in the `downloads page <https://beam.mw/downloads>`_ on `Beam official website <https://beam.mw>`_.
+.. note:: When running behind a firewall you can change the default port the node will be listening on. You will be probably provided at least one default peer to connect to but you can always add more peers on the Settings screen. The recommended peers are published in the list of bootstrap nodes in the `downloads page <https://beam.mw/downloads>`_ on `Beam official website <https://beam.mw>`_.
 
 .. figure:: images/desktop/03_creating_new_wallet/09.jpg
    :alt: Start wallet with integrated node  
