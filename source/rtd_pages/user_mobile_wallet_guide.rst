@@ -42,8 +42,6 @@ Once you launch the wallet for the first time you will be suggested to create a 
    :scale: 30
    :alt: Choosing to create a new wallet
 
-{TODO: only create new wallet on the screenshot above}
-
 Generating seed phrase
 ----------------------
 
