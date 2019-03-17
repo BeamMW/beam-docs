@@ -130,7 +130,7 @@ Important differences from other cryptocurrencies
 
 Mimblewimble has several important differences from most other existing cryptocurrencies which are very important to understand. Please review the following information carefully.
 
-**The concept of **Address** is completely different**
+**The concept of Address is completely different**
 
 In most cryptocurrencies Address is a hashed public key for which the owner of that Address knows the corresponding private key. In order to transfer funds, the Sender should only know the Address of the Receiver in order to create a unilateral transaction. *The Sender is not aware of whether the Receiver is online or not or whether it even exists*. Once transaction to an Address is complete and added to the blockchain, Receiver that can prove knowledge of the private key corresponding the Address can control this UTXO (short for Unspent Transaction Output).
 
