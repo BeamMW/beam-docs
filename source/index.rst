@@ -28,7 +28,7 @@ This is the first official maintenance version of Mainnet release, focused on st
 
 **Features:**
 
-.. [desktop wallet, cli wallet] Expired addresses can become active again. Common use case: a mining pool had already registered a particular address and can’t update it. `#318 <https://github.com/BeamMW/beam/issues/318>`_
+[desktop wallet, cli wallet] Expired addresses can become active again. Common use case: a mining pool had already registered a particular address and can’t update it. `#318 <https://github.com/BeamMW/beam/issues/318>`_
 
 [desktop wallet] Assisted migration of wallet database from the previous wallet versions. `#307 <https://github.com/BeamMW/beam/issues/307>`_
 
@@ -109,7 +109,7 @@ Things that make BEAM special include:
 Getting Started
 ---------------
 
-The simplest way to get started with Beam is by visiting the `Beam website <http://beam.mw>`_, reading and understanding the materials posted there and joining Beam Community on Telegram (https://t.me/BeamPrivacy) for updates and discussions.
+The simplest way to get started with Beam is by visiting the `Beam website <https://beam.mw>`_, reading and understanding the materials posted there and joining Beam Community on Telegram (https://t.me/BeamPrivacy) for updates and discussions.
 
 .. danger:: Beam is extremely new and experimental technology. No guarantees can be provided by anyone whatsoever. Use it at your own risk. Make sure you know what you are doing, especially if there is money involved.
 
