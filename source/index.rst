@@ -179,7 +179,7 @@ To report issues and get support please perform the following steps:
 
    * Detailed description of the problem you have encountered and steps to reproduce it
    * Version of the binaries you are running
-   * Logs (see :ref: `log locations` for information where to find the logs files)
+   * Logs (see :ref:`log locations` for information where to find the logs files)
    * Relevant configuration files (please check for private information before sending)
    * Your system configuration
    * Screen shots or any additional information you think is relevant
