@@ -14,7 +14,7 @@ Welcome to Beam documentation!
 
 	Rules Signature: ed91a717313c6eb0
 
-	Download binaries from: `Beam Downloads Page <http://beam.mw/downloads>`_
+	Download binaries from: `Beam Downloads Page <https://beam.mw/downloads>`_
 
 	Source code: `Beam Github <https://github.com/BeamMW/beam>`_
 
@@ -28,7 +28,7 @@ This is the first official maintenance version of Mainnet release, focused on st
 
 **Features:**
 
-[desktop wallet, cli wallet] Expired addresses can become active again. Common use case: a mining pool had already registered a particular address and can’t update it. `#318 <https://github.com/BeamMW/beam/issues/318>`_
+.. [desktop wallet, cli wallet] Expired addresses can become active again. Common use case: a mining pool had already registered a particular address and can’t update it. `#318 <https://github.com/BeamMW/beam/issues/318>`_
 
 [desktop wallet] Assisted migration of wallet database from the previous wallet versions. `#307 <https://github.com/BeamMW/beam/issues/307>`_
 
@@ -69,7 +69,7 @@ Inconsistent transaction statuses when running two or more wallets that use the 
 
 
 
-**TLDR;**
+**TL;DR**
 
 :ref:`I want to Mine Beam<mining_beam>`
 
