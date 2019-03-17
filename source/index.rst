@@ -109,7 +109,7 @@ Things that make BEAM special include:
 Getting Started
 ---------------
 
-The simplest way to get started with Beam is by visiting the `Beam website <https://beam.mw>`_, reading and understanding the materials posted there and joining Beam Community on Telegram (https://t.me/BeamPrivacy) for updates and discussions.
+The simplest way to get started with Beam is by visiting the `Beam website <https://beam.mw>`_, reading and understanding the materials posted there and joining `Beam Community <https://t.me/BeamPrivacy>`_ on Telegram for updates and discussions.
 
 .. danger:: Beam is extremely new and experimental technology. No guarantees can be provided by anyone whatsoever. Use it at your own risk. Make sure you know what you are doing, especially if there is money involved.
 
