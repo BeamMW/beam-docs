@@ -138,7 +138,7 @@ In Mimblewimble there are no addresses at all and transaction are created **inte
 
 .. attention:: In Beam it is not possible to create a transaction unilaterally. Both Sender and Receiver have participate in transaction creation.
 
-To allow Sender and Receiver wallets to create transactions without having to be online at the same time and directly connected to each other, Beam added a module called :ref:`SBBS<sbbs>` that allows wallets to securely communicate using encrypted messages to create a transaction. SBBS Addresses are merely merely private / public key pairs used to encrypt and decrypt these messages. 
+To allow Sender and Receiver wallets to create transactions without having to be online at the same time and directly connected to each other, Beam added a module called :ref:`SBBS<sbbs>` that allows wallets to securely communicate using encrypted messages to create a transaction. SBBS Addresses are merely private / public key pairs used to encrypt and decrypt these messages. 
 
 .. important:: SBBS Addresses are not recorded in the blockchain and are not used to control funds
 
