@@ -101,7 +101,7 @@ Now, launch the Beam Wallet from the Applications folder. When notification appe
 Where are the files?
 --------------------
 
-Once Beam Wallet desktop app is installed, the wallet data filers are stored separately from the binaries. 
+Once Beam Wallet desktop app is installed, the wallet data files are stored separately from the binaries. 
 
 The locations of all the files are described here: :ref:`Files and locations`
 
