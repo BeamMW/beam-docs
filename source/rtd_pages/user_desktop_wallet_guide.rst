@@ -342,7 +342,7 @@ Comment
 
 You can add a comment when creating the receiving address. The comment is never sent to the network, it is only visible inside your wallet and is used for internal bookkeeping only. 
 
-The comment can be seen on the :ref:'Address screen' and in the extended transaction view.
+The comment can be seen on the `Address screen`_ and in the extended transaction view.
 
 Sending the address
 -------------------
@@ -402,7 +402,7 @@ Make sure you have the correct address and paste the Receiver’s Beam address i
 
 To help to identify the transaction, you may also choose to fill in the optional Comment field. The comment will remind you what or who the transaction is for. The comment is stored locally, thus it will only be visible in your wallet for bookkeeping purposes. 
 
-The comment can be seen on the :ref:'Address screen':
+The comment can be seen on the `Address screen`_:
 
 .. figure:: images/desktop/06_sending_beam/02.jpg
    :alt: Send BEAM screen
