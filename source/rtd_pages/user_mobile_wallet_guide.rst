@@ -25,7 +25,7 @@ Beam Mobile Wallet is the simplest way to start using Beam. It is currently avai
 Downloading and Installing
 --------------------------
 
-Proceed to install Beam Wallet Mobile App by going to the Google Play store.
+Proceed to install Beam Wallet Mobile App by going to the `Google Play store <https://play.google.com/store/apps/details?id=com.mw.beam.beamwallet>`_.
 
 Download the mobile wallet. Once it's done installing, open the app and agree to the Terms of use.
 
