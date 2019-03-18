@@ -374,7 +374,6 @@ Once transaction is complete, the available balance will be updated and the ‘I
 Sending BEAM
 ------------
 
-Before starting to send BEAM, please read first about what :ref:'Address' is.
 Before starting to send BEAM, please read first about what :ref:`Address` is.
 
 Here is how the process of sending BEAM looks like from a Sender’s perspective:
