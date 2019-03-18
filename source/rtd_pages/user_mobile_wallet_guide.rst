@@ -116,7 +116,7 @@ Specific remote node will automatically verify the blockchain for your wallet. I
 Synchronizing the wallet
 ------------------------
 
-Once the wallet is connected, it synchronizes with the current blockchain state from the network. Be patient when running with the integrated node: the data downloading process might take some time. The wallet will first download and validate the latest :ref:'macroblock' and then all the rest of the blockchain.
+Once the wallet is connected, it synchronizes with the current blockchain state from the network. Be patient when running with the integrated node: the data downloading process might take some time. The wallet will first download and validate the latest :ref:`macroblock` and then all the rest of the blockchain.
 
 .. figure:: images/mobile/02_creating_new_wallet/07.jpg
    :scale: 30
