@@ -208,7 +208,7 @@ If you are running your own node somewhere (or maybe even more than one) and wan
 Synchronizing the wallet
 ------------------------
 
-Once the wallet is connected, it synchronizes with the current blockchain state from the network. Be patient when running with the integrated node: the data downloading process might take some time. The wallet will first download and validate the latest :ref:`macroblock` and then all the rest of the blockchain.
+Once the wallet is connected, it synchronizes with the current blockchain state from the network. Be patient when running with the integrated node: the data downloading process might take some time. The wallet will first download and validate the latest :ref:'macroblock' and then all the rest of the blockchain.
 
 .. figure:: images/desktop/03_creating_new_wallet/12.jpg
    :alt: Synchronizing the wallet
@@ -281,7 +281,7 @@ Finally, node connectivity node is displayed (ie. integrated, random remote node
 Financial transactions
 ----------------------
 
-‘Send’ and ‘Receive’ buttons at the top right corner help us to `Sending BEAM` and `Receiving BEAM`.
+‘Send’ and ‘Receive’ buttons at the top right corner help us `Sending BEAM`_ and `Receiving BEAM`_.
 
 Main screen password
 --------------------
@@ -375,6 +375,7 @@ Sending BEAM
 ------------
 
 Before starting to send BEAM, please read first about what :ref:`Address` is.
+
 
 Here is how the process of sending BEAM looks like from a Sender’s perspective:
 
