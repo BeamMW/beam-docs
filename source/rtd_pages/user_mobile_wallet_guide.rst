@@ -161,7 +161,7 @@ Finally, node connectivity node is displayed (ie. random remote node or specific
 Financial transactions
 ----------------------
 
-‘Send’ and ‘Receive’ buttons at the top right corner help us with `Sending BEAM` and `Receiving BEAM`.
+‘Send’ and ‘Receive’ buttons at the top right corner help us with `Sending BEAM`_ and `Receiving BEAM`_.
 
 .. figure:: images/mobile/03_main_screen/03.jpg
    :scale: 30
