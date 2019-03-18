@@ -493,7 +493,7 @@ Address
 
 Let’s define the meaning of address in the BEAM ecosystem: BEAM is always sent from one address to another. Both sending and receiving addresses are alphanumeric tokens that uniquely define the transaction endpoints. 
 
-A person can create as many addresses as required. The address creation process is explained in `Receiving BEAM`.
+A person can create as many addresses as required. The address creation process is explained in `Receiving BEAM`_.
 
 *Example:* There are two wallets: one belongs to you and the other belongs to Alice. You have created one address to receive money from Alice and another address to send money to Alice. Since you can generate multiple addresses, Alice will never know that she’s receiving money from the same person that she is sending the money to (unless you want her to know).
 
