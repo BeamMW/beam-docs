@@ -291,7 +291,7 @@ In the future, the screen will pop-up automatically after you open the applicati
 Receiving BEAM
 --------------
 
-Before starting to receive BEAM for the first time, please read first about what :ref:'address' is.
+Before starting to receive BEAM for the first time, please read first about what :ref:`address` is.
 
 Here is how the process of receiving BEAM looks like from a Receiver’s perspective:
 
