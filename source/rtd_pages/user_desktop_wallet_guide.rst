@@ -208,7 +208,7 @@ If you are running your own node somewhere (or maybe even more than one) and wan
 Synchronizing the wallet
 ------------------------
 
-Once the wallet is connected, it synchronizes with the current blockchain state from the network. Be patient when running with the integrated node: the data downloading process might take some time. The wallet will first download and validate the latest :ref:'macroblock' and then all the rest of the blockchain.
+Once the wallet is connected, it synchronizes with the current blockchain state from the network. Be patient when running with the integrated node: the data downloading process might take some time. The wallet will first download and validate the latest :ref:`macroblock` and then all the rest of the blockchain.
 
 .. figure:: images/desktop/03_creating_new_wallet/12.jpg
    :alt: Synchronizing the wallet
@@ -374,7 +374,7 @@ Once transaction is complete, the available balance will be updated and the ‘I
 Sending BEAM
 ------------
 
-Before starting to send BEAM, please read first about what :ref:`Address` is.
+Before starting to send BEAM, please read first about what :ref:`address` is.
 
 
 Here is how the process of sending BEAM looks like from a Sender’s perspective:

@@ -10,6 +10,7 @@ Glossary
 .. _sbbs addresses:
 
 Address
+-------
     In Beam, addresses are only used by SBBS system to connect between Wallets during transaction creation. Unlike most other blockchains, addressses are not recorded in the blockchain and are not used to prove ownership of the coins. Each address has a default expiration time of 24 hours (which can be changed using Wallet UI). In general, it is recommened to generate fresh receiving address for each transaction. 
 
 .. _blinding factor:
@@ -50,6 +51,7 @@ Cut through
 .. _macroblock:
 
 Macroblock
+----------
 	A macroblock is a compressed version of blockchain history implementing the cut-through feature of Mimblewimble protocol. Each node generates macroblocks in the background and stores them on the local disk. When new node connects to the system it first downloads the latest Macroblock and then updates more recent blocks in the blockchain one by one. This allows to significantly reduce the time of onboarding new nodes into the system.
 
 
