@@ -613,7 +613,7 @@ Settings screen
 
 .. note:: At the top right corner of the screen the version is displayed. It is always important to specify the version when asking for support or reporting issues.
 
-For integrated and external nodes settings see `Choosing the node connectivity mode`. When running integrated node you should specify the port on which the node will be listening on and the list of node peers. 
+For integrated and external nodes settings see `Choosing the node connectivity mode`_. When running integrated node you should specify the port on which the node will be listening on and the list of node peers. 
 
 The 'General settings' section allows you to change your wallet password and lock screen time. The Wallet will automatically lock to protect the funds from accidental unauthorized access to an active wallet in the set time you choose. 
 
