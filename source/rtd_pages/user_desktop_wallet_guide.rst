@@ -625,7 +625,7 @@ The ‘Report problem’ section allows you to create an archive of wallet logs 
 Proof of transaction
 --------------------
 
-Starting from version 2.0, receiver wallet automatically signs proof of received transaction and sends it to the sender. Proof of transaction will be added to the outcoming transaction that was successfully completed (transaction's status is 'sent'). Proof of transaction is not available for transaction with different status ('expired', 'failed', 'completed', 'received'). Upon request, sender can generate proof of transaction following the procedure below:
+Starting from version 2.0, receiver wallet automatically signs proof of received transaction and sends it to the sender. Proof of transaction will be added to the outcoming transaction that was successfully completed (transaction's status is 'sent'). Proof of transaction is not available for transaction with different status ('expired', 'failed', 'completed', 'received'). Upon request, sender can observe proof of transaction following the procedure below:
 
 1. Click outcoming transaction from the list of transactions:
 
