@@ -625,32 +625,42 @@ The ‘Report problem’ section allows you to create an archive of wallet logs 
 Proof of transaction
 --------------------
 
-Starting from Milestone 1, receiver wallet automatically signs proof of received transaction and sends it to the sender. Upon request, sender can generate proof of transaction following the procedure below:
+Starting from version 2.0, receiver wallet automatically signs proof of received transaction and sends it to the sender. Proof of transaction will be added to the outcoming transaction that was successfully completed (transaction's status is 'sent'). Proof of transaction is not available for transaction with different status ('expired', 'failed', 'completed', 'received'). Upon request, sender can generate proof of transaction following the procedure below:
 
-1. Click transaction from the list of transactions:
+1. Click outcoming transaction from the list of transactions:
 
-.. figure:: images/desktop/proof_of_transaction/01.jpg
+.. figure:: images/desktop/proof_of_transaction/1.jpg
    :alt: Proof of transaction (the list of transactions)
 
 2. Click 'Details' button under Payment proof:
 
-.. figure:: images/desktop/proof_of_transaction/02.jpg
-   :alt: Proof of transaction (details of transaction)
+.. figure:: images/desktop/proof_of_transaction/2.jpg
+   :alt: Proof of transaction ('Payment proof' form)
 
-3. Click 'Copy code' button and send payment proof code to the receiver:
+3. Send payment proof code to the receiver. Copy it by clicking 'Copy code' button at 'Payment proof' form, or 'Copy' button in transactions details:
+
+.. figure:: images/desktop/proof_of_transaction/2.1.jpg   
+   :alt: Proof of transaction (copy the code)
+
+
+Payment proof code:
 
 ::
 
-    02e20303f40a4f9ef05fe29ff7c25824ab3d0d9bc48ef0d974e95f88c1669abe2c8ce602560309df221ce4567b5647371bf3321b4fd3bdf8371f19707900bc927340345a175b0400ca9a3b11fd66c44dee2e1c26c48931b4f78c78790ebec15c98cb691160c20ad6647f808d2c980d3cee56ee004969a2061621cee2605860d87a8ff85199cf838ee24e8301ed4c19628ec44fa754e002ec37915e89d0ebb796293f4752c0cefd860680b8c7
+   02e20303f40a4f9ef05fe29ff7c25824ab3d0d9bc48ef0d974e95f88c1669abe2c8ce602560309df221ce4567b5647371bf3321b4fd3bdf8371f19707900bc927340345a175b0400ca9a3b11fd66c44dee2e1c26c48931b4f78c78790ebec15c98cb691160c20ad6647f808d2c980d3cee56ee004969a2061621cee2605860d87a8ff85199cf838ee24e8301ed4c19628ec44fa754e002ec37915e89d0ebb796293f4752c0cefd860680b8c7
 
 4. Receiver can verify that proof is correct by clicking 'Payment proof verification' icon at the top right of the transatctions' list:
-
-.. figure:: images/desktop/proof_of_transaction/04.jpg
+   
+.. figure:: images/desktop/proof_of_transaction/5.jpg
+   :width: 80px
+   :height: 80px
+   :align: center
+.. figure:: images/desktop/proof_of_transaction/4.jpg
    :alt: Proof of transaction (Paymet proof verification form)
 
 5. And pasting payment proof code into the form:
 
-.. figure:: images/desktop/proof_of_transaction/03.jpg
+.. figure:: images/desktop/proof_of_transaction/3.jpg
    :alt: Proof of transaction (successfully proved transaction)
 
 

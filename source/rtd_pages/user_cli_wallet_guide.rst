@@ -386,12 +386,12 @@ To import addresses
 
 
 
-.. _proof_of_transaction:
+.. _proof_of_transaction_cli:
 
 Proof of transaction
 --------------------
 
-Starting from Milestone 1, receiver wallet automatically signs proof of received transaction and sends it to the sender. Upon request, sender can generate proof of transaction following the procedure below:
+Starting from 1.1.4194 version, receiver wallet automatically signs proof of received transaction and sends it to the sender. Upon request, sender can generate proof of transaction following the procedure below:
 
 1. Print the list of transactions using:
 
