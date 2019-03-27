@@ -3,4 +3,10 @@
 Reporting Issues and Getting Support
 ====================================
 
-Work in progress
+To report an issue please use our `GitHub <https://github.com/BeamMW/beam/issues/new/choose>`_.
+
+To get support please contact our Technical Support Team via:
+
+#. `Telegram <https://t.me/BeamSupport>`_
+#. `Discord <https://discord.gg/GugwQKn>`_
+#. Email (support@beam-mw.com)
