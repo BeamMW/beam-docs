@@ -22,49 +22,39 @@ Welcome to Beam documentation!
 Current release
 ===============
 
-**Agile Atom 1.2.4419**
+**Bright Boson 2.0.4739**
 
-This is the first official maintenance version of Mainnet release, focused on stability and address management. Migration assistant will be automatically triggered in the desktop wallet when upgrading to this version (:ref:`upgrading`).
+This is the first maintenance Mainnet release for Bright Boson.
 
 **Features:**
 
-[desktop wallet, cli wallet] Expired addresses can become active again. Common use case: a mining pool had already registered a particular address and can’t update it. `#318 <https://github.com/BeamMW/beam/issues/318>`_
+[desktop wallet, node] Аfter being offline node sync will be lightning-fast, for both standalone node and integrated into the desktop wallet, see technical documentation. `#454 <https://github.com/BeamMW/beam/issues/454>`_
 
-[desktop wallet] Assisted migration of wallet database from the previous wallet versions. `#307 <https://github.com/BeamMW/beam/issues/307>`_
+[desktop wallet, cli wallet] For desktop wallet, upon successful transaction completion a sender will receive a proof, signed by the receiver, for cli wallet, the proof will be generated once а handshake between the wallets has been accomplished, see user manual and technical documentation. `#415 <https://github.com/BeamMW/beam/issues/415>`_
 
-[cli wallet] Can print all the managed addresses. `#282 <https://github.com/BeamMW/beam/issues/282>`_
+**Improvements:**
 
-[cli wallet] Can create and verify the proof of transaction. `#87 <https://github.com/BeamMW/beam/issues/87>`_ (:ref:`proof_of_transaction`)
+[desktop wallet] When sending beams, the Sender’s wallet will wait longer for Receiver to come online, namely 12 hours instead of 2. `#473 <https://github.com/BeamMW/beam/issues/473>`_
 
-[desktop wallet, cli wallet] Rescan function added `#345 <https://github.com/BeamMW/beam/issues/345>`_ (:ref:`rescan`)
-                  
+[desktop wallet] No more security warnings. The apps are signed now on both Mac and Windows. `#37 <https://github.com/BeamMW/beam/issues/37>`_
 
-**Enhancements:**
+[cli wallet] Transaction history will display Kernel ID from now on. `#418 <https://github.com/BeamMW/beam/issues/418>`_
 
-[node] Faster transaction initiation between wallets due to reduced number of roundtrips between sender and receiver. `#299 <https://github.com/BeamMW/beam/issues/299>`_
-
-[node] If transaction is stuck in "Syncing with blockchain" state for more than 2 hours it will fail automatically. `#311 <https://github.com/BeamMW/beam/issues/311>`_
-
-[desktop wallet, cli wallet] On wallet restore user will see a warning if submitted words from the seed phrase are not in BIP39 dictionary. `#253 <https://github.com/BeamMW/beam/issues/253>`_
-
-[node] SBBS message system is more resistant to flood & spam.
-
-[desktop wallet, node] System time sync with node is verified when user logs into wallet, see wallet and node logs for details. `#314 <https://github.com/BeamMW/beam/issues/314>`_   
-
-[node] Transaction Kernel ID is displayed fully in the logs. `#344 <https://github.com/BeamMW/beam/issues/344>`_
-               
+[wallet] Wallet application and Wallet API became much more responsive due to reworked request service architecture. `#407 <https://github.com/BeamMW/beam/issues/407>`_     
 
 **Fixes:**
 
-[node] Reworked node and DB management to increase robustness, stability and data integrity.
+[desktop wallet] Deleted transaction re-appears with “receiving” status. `#554 <https://github.com/BeamMW/beam/issues/554>`_     
 
-[desktop wallet, cli wallet] Fixed issue with completed transactions becoming Failed and balance invalid on network rollback `#367 <https://github.com/BeamMW/beam/issues/367>`_ , `#368 <https://github.com/BeamMW/beam/issues/368>`_ (:ref:`rescan`)
+[cli wallet] Fixed incorrect amounts in transaction history for certain locales. `#480 <https://github.com/BeamMW/beam/issues/480>`_
 
-[node] The rare scenario resulted from the untypical (yet valid) wallet usage pattern which caused the nodes to fail to mine the next block after height 25709. The fix was applied to the flaw in the block construction code, which generated a wrong commitment to the UTXO state. `#386 <https://github.com/BeamMW/beam/issues/386>`_
+[cli wallet, node] Fixed inconsistent params names. `#249 <https://github.com/BeamMW/beam/issues/249>`_
+
+[desktop wallet] Fixed crash, happened in rare cases when wallet was switched from remote to local node and restarted. `#573 <https://github.com/BeamMW/beam/issues/573>`_
                   
-**Known limitations**
+**Misc**
 
-Inconsistent transaction statuses when running two or more wallets that use the same wallet.db file, cloned manually. 
+The work on Atomic Swap is well in the process.
 
 
 
