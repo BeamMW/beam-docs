@@ -44,7 +44,7 @@ See :ref:`creating_new_cli_wallet` for more details
 
 ::
 
-	./beam-node --mining_threads=1 --treasury_path=treasury.bin --key_owner=<owner key> --key_mine=<miner key> --pass=<wallet password>
+	./beam-node --mining_threads=1 --treasury_path=treasury.bin --owner_key=<owner key> --miner_key=<miner key> --pass=<wallet password>
 
 Sample output printed by the node to the console (and in the logs) should look like this:
 

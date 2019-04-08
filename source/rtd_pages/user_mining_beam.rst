@@ -128,7 +128,7 @@ Important points to understand
 
 * Beam node should run Stratum server by setting up --stratum_port parameter (for example --stratum_port=10002)
 
-* Beam node should know **both** mining key and owner key in order to attribute mining rewards to a specific wallet. Mining and owner keys are exported from the wallet as explained in the steps 5 and 6 of the step by step guide. They are passed to the node via --key_mine and --key_owner parameters respectively
+* Beam node should know **both** mining key and owner key in order to attribute mining rewards to a specific wallet. Mining and owner keys are exported from the wallet as explained in the steps 5 and 6 of the step by step guide. They are passed to the node via --miner_key and --owner_key parameters respectively
 
 .. important:: Miner keys and Owner key should be kept secret at all times
 
@@ -265,8 +265,8 @@ At this point Node Folder should look something like this:
 		--peer=3.0.115.1:8100 
 		--stratum_port=10002
 		--stratum_secrets_path=. 
-		--key_mine=<mining key you got in step 5 > 
-		--key_owner=<owner key you got in step 6> 
+		--miner_key=<mining key you got in step 5 > 
+		--owner_key=<owner key you got in step 6> 
 		--pass=<your wallet password (not seed phrase) >
 
 
@@ -305,17 +305,17 @@ The following table describes all parameters in more details
 |                         |                                                                                                          |
 |                         |    --stratum_secrets_path=.                                                                              |
 +-------------------------+----------------------------------------------------------------------------------------------------------+
-| key_mine                | Miner key, exported by CLI wallet (see :ref: `Creating CLI wallet for mining rewards`)                   |
+| miner_key                | Miner key, exported by CLI wallet (see :ref: `Creating CLI wallet for mining rewards`)                   |
 |                         |                                                                                                          |
 |                         | .. code-block:: bash                                                                                     |
 |                         |                                                                                                          |
-|                         |    --key_mine=c3C9TVdEgza7w8p9na/B9rNeC8FvQAbJSPBfLZpW0sw                                                |
+|                         |    --miner_key=c3C9TVdEgza7w8p9na/B9rNeC8FvQAbJSPBfLZpW0sw                                                |
 +-------------------------+----------------------------------------------------------------------------------------------------------+
-| key_owner               | Owner key, exported by CLI wallet                                                                        |
+| owner_key               | Owner key, exported by CLI wallet                                                                        |
 |                         |                                                                                                          |
 |                         | .. code-block:: bash                                                                                     |
 |                         |                                                                                                          |
-|                         |    --key_owner=mW9ItV9dUsSY9hN/dH19GEbzIUHQPw6VgDaCPYZiAsNL1LU                                           |
+|                         |    --owner_key=mW9ItV9dUsSY9hN/dH19GEbzIUHQPw6VgDaCPYZiAsNL1LU                                           |
 +-------------------------+----------------------------------------------------------------------------------------------------------+
 | pass                    | Wallet password.                                                                                         |
 |                         |                                                                                                          |
@@ -384,7 +384,7 @@ To see your mining rewards use one of two options below:
 
 1. Run Beam Desktop Wallet with the same seed phrase using built in node.
 
-2. Run either CLI or Desktop wallet and connect it to *Your* node which was started with your owner key parameter (via --key_owner flag). It could be the same node as the miner, or another node - as long as it has your owner key
+2. Run either CLI or Desktop wallet and connect it to *Your* node which was started with your owner key parameter (via --owner_key flag). It could be the same node as the miner, or another node - as long as it has your owner key
 
 .. warning:: You will NOT be able to see your mining rewards if you connect to a node which does not know your owner key.
 

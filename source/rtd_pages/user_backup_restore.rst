@@ -46,7 +46,7 @@ Then you need to run your own node, providing the owner key as a parameter as fo
 
 ::
 
-    ./beam-node --peer=<ip and port of peer node> --key_owner=<owner key exported from the wallet> 
+    ./beam-node --peer=<ip and port of peer node> --owner_key=<owner key exported from the wallet> 
 
 Once the node has synchronized, you need to connect your wallet to the node to update the wallet database.
 

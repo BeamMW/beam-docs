@@ -133,12 +133,12 @@ Beam Node allows to provide the settings via command line or using a configurati
 +-------------------------+----------------------------------------------------------------------------------------------------------+
 |**Parameter**            | **Description & Example**                                                                                |
 +-------------------------+----------------------------------------------------------------------------------------------------------+
-| --key_mine              | Secret key to attribute mining rewards mined by the node to your wallet                                  |
+| --miner_key             | Secret key to attribute mining rewards mined by the node to your wallet                                  |
 |                         | Created using CLI walelt `export_miner_key` command with --subkey=<miner id> parameter                   |
 |                         | See :ref:`user_cli_wallet_guide` for more details                                                        |
 |                         |                                                                                                          |
 +-------------------------+----------------------------------------------------------------------------------------------------------+
-| --key_owner             | Secret key allowing the node to monitor mining rewards mined by all mining nodes marked by this key.     |
+| --owner_key             | Secret key allowing the node to monitor mining rewards mined by all mining nodes marked by this key.     |
 |                         | Created using CLI walelt `export_owner_key` command                                                      |
 |                         | See :ref:`user_cli_wallet_guide` for more details                                                        |
 |                         |                                                                                                          |
