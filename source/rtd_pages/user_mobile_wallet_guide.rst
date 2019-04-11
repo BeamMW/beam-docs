@@ -7,7 +7,7 @@
 Mobile Wallet User Guide
 =========================
 
-Beam Mobile Wallet is the simplest way to start using Beam. It is currently available for Android, the iOS app is planned to be developed later on. 
+Beam Mobile Wallet is the simplest way to start using Beam. It is currently available for Android, the iOS app for Testnet is currently in beta and can be downloaded here: https://testflight.apple.com/join/M0WBrpmD
 
 .. attention::
 
