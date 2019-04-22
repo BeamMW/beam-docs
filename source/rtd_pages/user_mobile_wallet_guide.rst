@@ -7,7 +7,7 @@
 Mobile Wallet User Guide
 =========================
 
-Beam Mobile Wallet is the simplest way to start using Beam. It is currently available for Android, the iOS app for Testnet is currently in beta and can be downloaded here: https://testflight.apple.com/join/M0WBrpmD
+Beam Mobile Wallet is the simplest way to start using Beam. It is currently available for `Android <https://play.google.com/store/apps/details?id=com.mw.beam.beamwallet.mainnet>`_ and `iOS <https://itunes.apple.com/us/app/beam-privacy-wallet/id1459842353?ls=1&mt=8>`_.
 
 .. attention::
 
@@ -25,7 +25,7 @@ Beam Mobile Wallet is the simplest way to start using Beam. It is currently avai
 Downloading and Installing
 --------------------------
 
-Proceed to install Beam Wallet Mobile App by going to the `Google Play store <https://play.google.com/store/apps/details?id=com.mw.beam.beamwallet>`_.
+Proceed to install Beam Wallet Mobile App by going to the `Google Play store <https://play.google.com/store/apps/details?id=com.mw.beam.beamwallet.mainnet>`_ or `App Store <https://itunes.apple.com/us/app/beam-privacy-wallet/id1459842353?ls=1&mt=8>`_.
 
 Download the mobile wallet. Once it's done installing, open the app and agree to the Terms of use.
 
