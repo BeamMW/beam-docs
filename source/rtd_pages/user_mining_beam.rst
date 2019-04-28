@@ -95,21 +95,6 @@ Mining Guide
 
 The following section describes how to set up mining for Beam Network
 
-Mining using Desktop Wallet
----------------------------
-
-Our official Desktop Wallet supports both CPU and GPU mining.
-
-.. attention:: Testnet 4 does not support built in GPU miner. It will be added back for Mainnet release
-
-To mine Beam using the Wallet, go to the Settings screen, select “Run Local Node” and set the number of Mining Threads to a value that is greater than zero. Note: the more threads you dedicate to mining, the more strain on your CPU. If you have a supported GPU, turn the “Use GPU” switch to On. If you have a supported GPU, you can also choose “Use GPU” in the Wallet settings. Thread count is not relevant for GPU. Make sure your GPU has the latest drivers installed.
-
-Please bear in mind that since GPUs are much more capable of parallel computations than CPUs, mining with GPUs is much more efficient.
-
-
-If you want to setup a stand alone mining node and use either built in or external miner, follow sections below.
-
-
 
 Mining using external miner
 ---------------------------
