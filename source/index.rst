@@ -114,9 +114,9 @@ Once you familiarized yourself with key ideas and concepts, it is recommended to
 
 .. note:: Download papers
 
-   :download:`Beam Position Paper<pdfs/BEAM_Position_Paper_v0.2.2.pdf>`
+   :download:`Beam Position Paper<rtd_pages/pdfs/BEAM_Position_Paper_v0.2.2.pdf>`
 
-   :download:`Mimblewimble Paper File<pdfs/Mimblewimble.pdf>`
+   :download:`Mimblewimble Paper File<rtd_pages/pdfs/Mimblewimble.pdf>`
 
 
 Important differences from other cryptocurrencies
