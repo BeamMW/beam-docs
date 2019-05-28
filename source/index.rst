@@ -112,7 +112,11 @@ To lean more about how cryptocurrencies work in general and Beam in particular p
 
 Once you familiarized yourself with key ideas and concepts, it is recommended to start from connecting to our Testnet. The simplest way to do that is by downloading and installing our Desktop Wallet and following instructions in :ref:`desktop_wallet_guide`.
 
+.. note:: Download papers
 
+   :download:`Beam Position Paper<rtd_pages/pdfs/BEAM_Position_Paper_v0.2.2.pdf>`
+
+   :download:`Mimblewimble Paper File<rtd_pages/pdfs/Mimblewimble.pdf>`
 
 
 Important differences from other cryptocurrencies
