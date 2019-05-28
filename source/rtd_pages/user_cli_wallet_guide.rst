@@ -442,6 +442,66 @@ Sample output of the command above should look something like:
 .. note:: Sender can require receiver to always send proof of transaction by using --payment_proof_required=1. Please note that this will prevent working with older wallets.
 
 
+.. _cold_wallet:
+
+Cold Wallet
+-----------
+
+To use the wallet in 'cold' mode you need to initialize it with ``--cold_wallet`` flag.
+
+::
+
+    ./beam-wallet init --cold_wallet
+
+This command will create two databases: wallet.db and wallet.db.private.
+
+.. _sending_from_cold_wallet:
+
+Sending from cold wallet
+------------------------
+
+Pre-conditions: Make sure the cold wallet is synced. In order to do so, follow the next steps:
+
+1. Copy the wallet.db file to the "hot" wallet's data folder.
+2. Launch the "hot" wallet and wait till it's synced.
+3. Stop the "hot" wallet, copy the wallet.db file into the "cold" wallet folder.
+4. Launch the "cold" wallet for listening.
+
+::
+
+   ./beam-wallet listen --cold_wallet
+
+Now as the "cold" wallet is synced, proceed with the next steps:
+
+1. In the cold wallet run the command: 
+   
+::
+
+   ./beam-wallet send -a <amount> -r <receiver address> -f <fee> --cold_wallet
+
+.. note:: Here is no need in node address in this case.
+
+2. Copy wallet.db file to "hot" wallet's data folder.
+3. Launch "hot" wallet. It should send encrypted message to the node, also he may get encrypted message back.
+4. Stop "hot" wallet, copy wallet.db file into "cold" wallet folder.
+5. Launch "cold" wallet for listening beam-wallet listen ``--cold_wallet`` it should create a signed transaction kernel.
+6. Copy wallet.db from "cold" to "hot" new transaction should go to the node and got confirmed.
+7. Copy wallet.db from "hot" to "cold" "cold" wallet should have actual balance and transactions statuses.
+
+.. _receiving_to_cold_wallet:
+
+Receiving to cold wallet
+--------------------------
+
+1. Generate new address in "cold" wallet and send it to the sender.
+2. Copy wallet.db to "hot" wallet.
+3. Launch "hot" wallet. Note there will be no new transactions, since "hot" wallet cannot decrypt incoming messages.
+4. Stop "hot" wallet. copy wallet.db from "hot" to "cold".
+5. Launch "cold" wallet for listening, it should get new transaction and accept it.
+6. Copy wallet.db from "cold" to "hot".
+7. Launch "hot", wait until new transaction becomes completed.
+8. Copy wallet.db "hot" to "cold" balance and transactions statuses should be correct.
+
 .. _rescan_cli:
 
 Rescan wallet
