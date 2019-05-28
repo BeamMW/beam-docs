@@ -244,7 +244,7 @@ To send beams you need to run the following command:
 
 ::
 
-    ./beam-wallet send -n <node address and port, ex: 127.0.0.1:10000> -r <sbbs address> -a <amount (in Beams), ex: 11.3> -f <fee (in Groth) , ex: 10>
+    ./beam-wallet send -n <node address and port, ex: 127.0.0.1:10000> -r <sbbs address> -a <amount (in Beams), ex: 11.3> -f <fee (in Groth) , ex: 0.2>
 
 .. note:: 1 Groth equals 10^-8 Beam
 
