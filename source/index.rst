@@ -22,7 +22,7 @@ Welcome to Beam documentation!
 Current release
 ===============
 
-**Bright Boson 2.0.4739**
+**Bright Boson 2.1.4915**
 
 This is the first maintenance Mainnet release for Bright Boson.
 
