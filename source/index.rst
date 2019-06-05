@@ -24,34 +24,21 @@ Current release
 
 **Bright Boson 2.1.4915**
 
-This is the first maintenance Mainnet release for Bright Boson.
+This is maintenance Mainnet release for Bright Boson.
 
 **Features:**
 
-[desktop wallet, node] Аfter being offline node sync will be lightning-fast, for both standalone node and integrated into the desktop wallet, see technical documentation. `#454 <https://github.com/BeamMW/beam/issues/454>`_
+[cli wallet] Cold wallet technique allows to protect your private key it from network attacks by storing it on a "cold" air-gapped machine, separately from the rest of the data. Read into the details in our technical documentation. `#593 <https://github.com/BeamMW/beam/issues/593>`_
 
-[desktop wallet, cli wallet] For desktop wallet, upon successful transaction completion a sender will receive a proof, signed by the receiver, for cli wallet, the proof will be generated once а handshake between the wallets has been accomplished, see user manual and technical documentation. `#415 <https://github.com/BeamMW/beam/issues/415>`_
+**Known limitations:**
 
-**Improvements:**
+1. Inconsistent transaction statuses when running two or more wallets that use the same wallet.db file, cloned manually.
+2. If multiple wallets are restored from the same seed phrase, transaction history and addresses will not be shared among the wallets.
 
-[desktop wallet] When sending beams, the Sender’s wallet will wait longer for Receiver to come online, namely 12 hours instead of 2. `#473 <https://github.com/BeamMW/beam/issues/473>`_
+**Points to mention:**
 
-[desktop wallet] No more security warnings. The apps are signed now on both Mac and Windows. `#37 <https://github.com/BeamMW/beam/issues/37>`_
+In case a mobile wallet is connected to a random node and the user has both mobile and a desktop wallets which are using the same seed phrase, the funds sent to the desktop wallet won’t appear on the mobile wallet. If the desktop wallet is running a local node, it will see funds sent to both wallets. The reason is that the local node (integrated into desktop wallet) always monitors the blockchain for UTXOs related to the seed of the wallet. The mobile wallet does not run a local node and thus can only monitor transactions sent to its specific SBBS addresses. Of course, no funds will be lost in any event.
 
-[cli wallet] Transaction history will display Kernel ID from now on. `#418 <https://github.com/BeamMW/beam/issues/418>`_
-
-[wallet] Wallet application and Wallet API became much more responsive due to reworked request service architecture. `#407 <https://github.com/BeamMW/beam/issues/407>`_     
-
-**Fixes:**
-
-[desktop wallet] Deleted transaction re-appears with “receiving” status. `#554 <https://github.com/BeamMW/beam/issues/554>`_     
-
-[cli wallet] Fixed incorrect amounts in transaction history for certain locales. `#480 <https://github.com/BeamMW/beam/issues/480>`_
-
-[cli wallet, node] Fixed inconsistent params names. `#249 <https://github.com/BeamMW/beam/issues/249>`_
-
-[desktop wallet] Fixed crash, happened in rare cases when wallet was switched from remote to local node and restarted. `#573 <https://github.com/BeamMW/beam/issues/573>`_
-                  
 **Misc**
 
 The work on Atomic Swap is well in the process.
