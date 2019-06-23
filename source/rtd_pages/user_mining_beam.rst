@@ -46,7 +46,7 @@ Here’s an example. Let’s assume we have 100 miners in our network. They are 
 
 To mitigate that, Beam nodes adjust [shall we mention that they reach consensus here?]the difficulty, increasing the difficulty of the proof of work algorithm as more miners join, and lowering it if the number of miners decreases.
 
-In Beam, the difficulty is reassessed with every block, by every client independently The algorithm looks at the average time and the average difficulty the last 1440 blocks. f the time required to mine the last 1440 blocks is higher or lower than 24 hours, the difficulty is retargeted accordingly.
+In Beam, the difficulty is reassessed with every block, by every client independently. The algorithm looks at the average time and the average difficulty the last 1440 blocks. If the time required to mine the last 1440 blocks is higher or lower than 24 hours, the difficulty is retargeted accordingly.
 
 
 The detailed algorithm is outlined below:
