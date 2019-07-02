@@ -72,7 +72,8 @@ For Bob
 
 ::
 
-   $ ./beam-wallet swap_init --swap_coin=ltc -n 127.0.0.1:10005 --amount 20 -r <Alice_address> --swap_amount 50000 --ltc_node_addr 127.0.0.1:13400 --ltc_user Bob --swap_feerate=1660
+   $ ./beam-wallet swap_init --swap_coin=ltc -n 127.0.0.1:10005 --amount 50 -r <Alice_address> --swap_amount 100000000 --ltc_node_addr 127.0.0.1:9332 --ltc_user Bob --swap_feerate=90000
+
 
 .. attention::
 
@@ -86,11 +87,13 @@ Alice will use next command to participate in the swap:
 
 ::
 
-   $ ./beam-wallet swap-listen --swap_coin=ltc -n 127.0.0.1:10000 --amount 20 --swap_amount=50000 ltc_node_addr 127.0.0.1:13300 --ltc_pass 123 --ltc_user Alice --swap_beam_side --swap_feerate=1660
+   $ ./beam-wallet swap-listen --swap_coin=ltc -n 127.0.0.1:10000 --amount 50 --swap_amount=50000 ltc_node_addr 127.0.0.1:9332 --ltc_pass 123 --ltc_user Alice --swap_beam_side --swap_feerate=90000  --swap_beam_side
 
 .. attention::
 
     Swap conditions in both Bob and Alice commands have to match each other, otherwise swap will be failed.
+
+    ``--swap_beam_side`` flag is used to point out a party changin BEAM to LTC
 
 5. If swap conditions match each other, a swap transaction will be created, and LTC UTXO will be locked on Bob’s blockchain.
 
