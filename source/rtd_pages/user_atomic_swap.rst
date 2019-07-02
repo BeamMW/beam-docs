@@ -92,8 +92,7 @@ Alice will use next command to participate in the swap:
 .. attention::
 
     Swap conditions in both Bob and Alice commands have to match each other, otherwise swap will be failed.
-
-    ``--swap_beam_side`` flag is used to point out a party changin BEAM to LTC
+    ``--swap_beam_side`` flag is used to point out a party changing BEAM to LTC (in this case Alice).
 
 5. If swap conditions match each other, a swap transaction will be created, and LTC UTXO will be locked on Bob’s blockchain.
 
