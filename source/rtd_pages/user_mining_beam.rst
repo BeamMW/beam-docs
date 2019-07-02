@@ -289,11 +289,11 @@ The following table describes all parameters in more details
 |                         |                                                                                                          |
 |                         |    --stratum_secrets_path=.                                                                              |
 +-------------------------+----------------------------------------------------------------------------------------------------------+
-| miner_key                | Miner key, exported by CLI wallet (see :ref: `Creating CLI wallet for mining rewards`)                   |
+| miner_key                | Miner key, exported by CLI wallet (see :ref: `Creating CLI wallet for mining rewards`)                  |
 |                         |                                                                                                          |
 |                         | .. code-block:: bash                                                                                     |
 |                         |                                                                                                          |
-|                         |    --miner_key=c3C9TVdEgza7w8p9na/B9rNeC8FvQAbJSPBfLZpW0sw                                                |
+|                         |    --miner_key=c3C9TVdEgza7w8p9na/B9rNeC8FvQAbJSPBfLZpW0sw                                               |
 +-------------------------+----------------------------------------------------------------------------------------------------------+
 | owner_key               | Owner key, exported by CLI wallet                                                                        |
 |                         |                                                                                                          |
