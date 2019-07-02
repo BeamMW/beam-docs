@@ -22,13 +22,13 @@ Welcome to Beam documentation!
 Current release
 ===============
 
-**Bright Boson 2.1.4915**
+**Bright Boson 2.1.4919**
 
 This is maintenance Mainnet release for Bright Boson.
 
-**Features:**
+**Fixes**
 
-[cli wallet] Cold wallet technique allows to protect your private key it from network attacks by storing it on a "cold" air-gapped machine, separately from the rest of the data. Read into the details in our technical documentation. `#593 <https://github.com/BeamMW/beam/issues/593>`_
+- [cli wallet, desktop wallet] Mining key generation scheme fix
 
 **Known limitations:**
 
@@ -179,6 +179,7 @@ To report issues and get support please perform the following steps:
    rtd_pages/user_beam_node_guide.rst
    rtd_pages/user_backup_restore.rst
    rtd_pages/user_mining_beam.rst
+   rtd_pages/user_atomic_swap.rst
    rtd_pages/user_blockchain_explorer.rst
    rtd_pages/user_supported_platforms.rst
    rtd_pages/user_files_and_locations.rst
