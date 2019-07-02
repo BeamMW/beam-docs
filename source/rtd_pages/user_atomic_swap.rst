@@ -201,7 +201,7 @@ Example:
 
 ::
 
-  beam-wallet swap_init  -n 127.0.0.1:10005 --amount=50 -r <Alice SBBS address> --swap_coin=btc --swap_amount=100000000  --swap_feerate=90000 --btc_node_addr=127.0.0.1:8332 --btc_user=Bob --btc_pass=123
+  beam-wallet swap_init  -n 127.0.0.1:10000 --amount=50 -r <Alice SBBS address> --swap_coin=btc --swap_amount=100000000  --swap_feerate=90000 --btc_node_addr=127.0.0.1:8332 --btc_user=Bob --btc_pass=123
 
 
 .. attention::
@@ -224,7 +224,7 @@ Example
 
 ::
 
-   $ ./beam-wallet swap_listen --swap_coin=btc -n 127.0.0.1:10005 --amount 50 --fee=100 --swap_amount=50000 btc_node_addr 127.0.0.1:9332 --btc_pass 123 --btc_user Alice --swap_beam_side --swap_feerate=90000 
+   $ ./beam-wallet swap_listen --swap_coin=btc -n 127.0.0.1:10000 --amount 50 --fee=100 --swap_amount=50000 btc_node_addr 127.0.0.1:9332 --btc_pass 123 --btc_user Alice --swap_beam_side --swap_feerate=90000 
 
 .. attention::
 
