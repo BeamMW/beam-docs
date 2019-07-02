@@ -57,12 +57,12 @@ In this example we are using standard node and RPC ports.
 
 .. attention::
   
-  The nodes should be sync up to current blockchain height before any swap operations.
+  The nodes should be synced up to current blockchain height before each swap operation.
 
 In order to set up Beam node and command line wallet, please follow instructions :ref:`Command Line User Guide`
 
 
-2. You can check your Litecoin balance using the following commands:
+2. You can check your Litecoin balance using the following command:
    
    ::
 
@@ -81,7 +81,7 @@ Bob example:
 
 
 
-3. It doesn't matter who will run the swap first. In current case Bob starts:
+3. It doesn't matter who runs the swap first. In current case Bob starts:
 
 ::
 
