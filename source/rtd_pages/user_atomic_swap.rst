@@ -37,13 +37,17 @@ Litecoin node should be configured to allow RPC access using either command line
 
 In order to run Litecoin node Alice and Bob are using following command:
 
-For Alice:
+::
+   
+   $ ./litecoind -server -datadir="path_to_litecoin_wallet_data" -rpcuser=<litecoin_RPC_username> -rpcpassword=<password> -printtoconsole
+
+Alice example:
 
 ::
 
    $ ./litecoind -server -datadir="Alice/path_to_litecoin_wallet_data" -rpcuser=Alice -rpcpassword=123 -printtoconsole
 
-For Bob:
+Bob example:
 
 ::
 
@@ -53,22 +57,24 @@ In this example we are using standard node and RPC ports.
 
 .. attention::
   
-  The nodes should be synce up to current blockchain height before any swap operations.
+  The nodes should be sync up to current blockchain height before any swap operations.
 
-
-In order to run Beam node please see "Run Beam Node".
+In order to set up Beam node and command line wallet, please follow instructions :ref:`Command Line User Guide`
 
 
 2. You can check your Litecoin balance using the following commands:
+   
+   ::
 
-For Alice
+   $ ./litecoin-cli -rpcuser=<rpc_user_name> -rpcpassword=<password> getbalance
+
+Alice example:
 
 ::
 
    $ ./litecoin-cli -rpcuser=Alice -rpcpassword=123 getbalance
 
-For Bob
-
+Bob example:
 ::
 
    $ ./litecoin-cli -rpcuser=Bob -rpcpassword=123 getbalance
@@ -91,13 +97,13 @@ Example:
 
 .. attention::
 
-    Each coin has its own transaction fee (--swap_feerate). To avoid failure or transaction jamming due to inconsistent fee amount, it’s recommended to check appropriate fee amount for each coin, and set it as --swap_feerate value. 
+    Each coin has its own transaction feerate (``--swap_feerate``). To avoid failure or transaction jamming due to inconsistent fee amount, it’s recommended to check appropriate fee amount for each coin, and set it as ``--swap_feerate`` value. 
 
-    LTC --swap_feerate = fee per 1 kb transaction size. Unlike Litecoin, Beam transaction fee_rate is static and doesn’t depend on transaction size. LTC value for swap amount (--swap_amount) is provided in “photon”, 1 LTC = 100000000 photons, BEAM value is provided in beams.
+    LTC ``--swap_feerate`` = fee per 1 kb transaction size. Unlike Litecoin, Beam transaction feerate is static and doesn’t depend on transaction size. LTC value for swap amount (``--swap_amount``) is provided in “photon”, 1 LTC = 1000000 photons, BEAM value is provided in beams.
 
 .. note::
 
-   It’s recommended to create a new permanent SBBS address for Alice before the transaction using `new_addr` command in Beam CLI wallet.
+   It’s recommended to create a new permanent SBBS address for Alice before the transaction using ``beam-wallet new_addr --expiration_time=never`` command in Beam CLI wallet.
 
 Alice will use next command to participate in the swap:
 
@@ -119,7 +125,7 @@ Example
 
 4. If swap conditions match each other, a swap transaction will be created, and LTC UTXO will be locked on Bob’s blockchain.
 
-5. Alice and Bob need to wait for 6 blocks confirmation (in each blockchain) till the coins will be unlocked.
+5. Alice and Bob need to wait for 6 blocks confirmation (in Litecoin blockchain) till the coins will be unlocked.
 
 .. note::
 
@@ -131,7 +137,7 @@ Example
 
 .. note::
 
-    A parameter `--swap_network=testnet` can be used to play with the swap feature on Litecoin testnet or regtest. It is important to set the same value on BOTH sides of the swap.
+    A parameter ``--swap_network=testnet`` can be used to play with the swap feature on Litecoin testnet or regtest. It is important to set the same value on BOTH sides of the swap.
 
 
 Performing atomic swap with Bitcoin
@@ -142,7 +148,7 @@ To perform atomic swap between Beam and Bitcoin, Alice (who has BEAM) and Bob (w
 
 1. Alice and Bob need to start full nodes for Beam and Bitcoin blockchains.
 
-Bitcoin node should be configured to allow RPC access using either command line or config file as described in the documentation `here <ttps://en.bitcoin.it/wiki/Running_Bitcoin>`_.
+Bitcoin node should be configured to allow RPC access using either command line or config file as described in the documentation `here <https://en.bitcoin.it/wiki/Running_Bitcoin>`_.
 
 In order to run Bitcoin node Alice and Bob are using following command:
 
@@ -165,7 +171,7 @@ In this example we are using standard node and RPC ports.
   The nodes should be synce up to current blockchain height before any swap operations.
 
 
-In order to run Beam node please see "Run Beam Node".
+In order to set up Beam node and command line wallet, please follow instructions :ref:`Command Line User Guide`
 
 
 2. You can check your Bitcoin balance using the following commands:
@@ -200,9 +206,9 @@ Example:
 
 .. attention::
 
-    Each coin has its own transaction fee (--swap_feerate). To avoid failure or transaction jamming due to inconsistent fee amount, it’s recommended to check appropriate fee amount for each coin, and set it as --swap_feerate value. 
+    Each coin has its own transaction feerate (``--swap_feerate``). To avoid failure or transaction jamming due to inconsistent fee amount, it’s recommended to check appropriate fee amount for each coin, and set it as ``--swap_feerate`` value. 
 
-    BTC --swap_feerate = fee per 1 kb transaction size. Unlike Bitcoin, Beam transaction fee_rate is static and doesn’t depend on transaction size. BTC value for swap amount (--swap_amount) is provided in satoshi, 1 BTC = 100000000 satoshi, BEAM value is provided in beams.
+    BTC ``--swap_feerate`` = fee per 1 kb transaction size. Unlike Bitcoin, Beam transaction fee_rate is static and doesn’t depend on transaction size. BTC value for swap amount (``--swap_amount``) is provided in satoshi, 1 BTC = 100000000 satoshi, BEAM value is provided in beams.
 
 .. note::
 
@@ -228,7 +234,7 @@ Example
 
 4. If swap conditions match each other, a swap transaction will be created, and BTC UTXO will be locked on Bob’s blockchain.
 
-5. Alice and Bob need to wait for 6 blocks confirmation (in each blockchain) till the coins will be unlocked.
+5. Alice and Bob need to wait for 6 blocks confirmation (in Bitcoin blockchain) till the coins will be unlocked.
 
 .. note::
 
@@ -240,5 +246,5 @@ Example
 
 .. note::
 
-    A parameter `--swap_network=testnet` can be used to play with the swap feature on Bitcoin testnet or regtest. It is important to set the same value on BOTH sides of the swap.
+    A parameter ``--swap_network=testnet`` can be used to play with the swap feature on Bitcoin testnet or regtest. It is important to set the same value on BOTH sides of the swap.
 

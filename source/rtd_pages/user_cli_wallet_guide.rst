@@ -1,7 +1,7 @@
 .. _user_cli_wallet_guide:
 
 
-.. _command_line_user_guide:
+.. _command line user guide:
 .. _command_line_wallet_user_guide:
 
 Command Line Wallet User Guide
