@@ -3,18 +3,18 @@
 Atomic swap
 =========================
 
-The idea of atomic swap was presented as solution for the next problem: two parties (Alice and Bob) want to exchange their coins without having to trust а third party.
+The idea of atomic swap was presented as the solution for the next problem: two parties (Alice and Bob) want to exchange their coins without having to trust а third party.
 
 In a simplified way non-atomic approach consists of four steps:
 
-1. Alice send her A Coins to Bob.
+1. Alice sends her A Coins to Bob.
 2. Bob receives A Coins.
 3. Bob sends his B Coins to Alice.
 4. Alice receives B Coins. 
 
 
-The weakest part of this such approach is lurking in step #3. By malicious intent, Bob can avoid following his part of the agreement.
-Atomic swap is provided to guarantee compliance of the agreement.
+The weakest part of this approach is lurking in step #3. By malicious intent, Bob can avoid following his part of the agreement.
+Atomic swap is provided to guarantee the compliance of the agreement.
 
 .. note::
 
