@@ -363,7 +363,7 @@ Normally, a transaction will pass through the following stages:
 
 * **In Progress** - the phase when the transaction is being created by the Sending and Receiving wallets.
 * **Confirming** - the phase after the transaction was sent to the nodes, but before it is mined.
-* **Completed** - the phase after the transaction is fully mined and confirmed.
+* **Received** - the phase after the transaction is fully mined and confirmed.
 
 Once transaction is complete, the available balance will be updated and the ‘In Progress’ box will disappear.
 
