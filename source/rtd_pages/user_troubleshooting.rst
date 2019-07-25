@@ -129,7 +129,6 @@ Wallet is stuck in 'Downloading blocks' screen
 ::
 
    [localnode]
-   mining_threads=0
    port=10005
    run=true
    peers=@Invalid()
@@ -143,7 +142,6 @@ Wallet is stuck in 'Downloading blocks' screen
 ::
 
    [localnode]
-   mining_threads=0
    port=10005
    run=true
    peers=eu-node02.mainnet.beam.mw:8100, eu-node01.mainnet.beam.mw:8100, us-node02.mainnet.beam.mw:8100, us-node04.mainnet.beam.mw:8100, ap-node01.mainnet.beam.mw:8100, ap-node02.mainnet.beam.mw:8100

@@ -110,20 +110,6 @@ Beam Node allows to provide the settings via command line or using a configurati
 |                         |                                                                                                          |
 |                         |    temp_dir=.                                                                                            |
 +-------------------------+----------------------------------------------------------------------------------------------------------+
-| --miner_type            | Type of built in miner [cpu|gpu]. Only relevant for Linux and Windows builds which support GPU mining.   |
-|                         | In case of CPU mining uses number of threads specified in the mining_threads parameter (see below).      |
-|                         |                                                                                                          |
-|                         | .. code-block:: bash                                                                                     |
-|                         |                                                                                                          |
-|                         |    miner_type=cpu                                                                                        |
-+-------------------------+----------------------------------------------------------------------------------------------------------+
-| --mining_threads        | Number of concurrent threads used in CPU mining (if set to 0, mining is disabled)                        |
-|                         | Relevant for CPU mining only                                                                             |
-|                         |                                                                                                          |
-|                         | .. code-block:: bash                                                                                     |
-|                         |                                                                                                          |
-|                         |    mining_threads=0                                                                                      |
-+-------------------------+----------------------------------------------------------------------------------------------------------+
 
 .. admonition:: Using CPU mining is not recommended
 

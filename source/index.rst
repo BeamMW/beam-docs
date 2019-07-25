@@ -12,7 +12,9 @@ Welcome to Beam documentation!
 
 .. note:: Beam is currently in Mainnet.
 
-	Rules Signature: ed91a717313c6eb0
+	Rules Signature: ed91a717313c6eb0 (for height < 321321)
+
+   Rules Signature: xxxxxxxxxxxxxxxx (for height >= 321321)
 
 	Download binaries from: `Beam Downloads Page <https://beam.mw/downloads>`_
 
@@ -22,13 +24,15 @@ Welcome to Beam documentation!
 Current release
 ===============
 
-**Bright Boson 2.2.5635**
+**Clear Cathode 3.0**
 
-This is maintenance Mainnet release for Bright Boson.
+This is hard fork release, make sure to upgrade your nodes, miners and wallets
 
-**Fixes**
+Hard fork will be activated at height 321321 (approximately August 15th 2019)
 
-- [cli wallet, desktop wallet] Mining key generation scheme fix
+DO NOT COUNT ON THE DATE, WATCH FOR THE BLOCK HEIGHT
+
+
 
 **Known limitations:**
 

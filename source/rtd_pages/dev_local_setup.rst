@@ -37,14 +37,14 @@ See :ref:`creating_new_cli_wallet` for more details
 
 	./beam-wallet export_owner_key
 
-5. Locate sample Beam treasury file treasury.bin (it is located in the root of Beam source folder) and copy it to the same folder as beam-node binary.
+5. Download sample Beam treasury file `treasury.bin <https://github.com/BeamMW/beam/blob/master/treasury.bin>`_ (it is also located in the root of Beam source folder) and copy it to the same folder as beam-node binary.
 
 
 6. Launch the first node using the following command:
 
 ::
 
-	./beam-node --mining_threads=1 --treasury_path=treasury.bin --owner_key=<owner key> --miner_key=<miner key> --pass=<wallet password>
+	./beam-node --treasury_path=treasury.bin --owner_key=<owner key> --miner_key=<miner key> --pass=<wallet password>
 
 Sample output printed by the node to the console (and in the logs) should look like this:
 
@@ -79,7 +79,7 @@ As new blocks are mined, the console will indicate this as follows:
 
 7. Launch additional nodes
 
-To launch more mining nodes either for the same wallet or different ones, just repeat the relevant portions of steps 1 through 6. For validating nodes set mining_threads parameter to 0. 
+To launch more mining nodes either for the same wallet or different ones, just repeat the relevant portions of steps 1 through 6. 
 
 In addition add --peer=<ip:port of the first node> to connect new nodes to the first node, thus extending the network
 
