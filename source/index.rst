@@ -14,7 +14,7 @@ Welcome to Beam documentation!
 
 	Rules Signature: ed91a717313c6eb0 (for height < 321321)
 
-   Rules Signature: xxxxxxxxxxxxxxxx (for height >= 321321)
+   Rules Signature: 6d622e615cfd29d0 (for height >= 321321)
 
 	Download binaries from: `Beam Downloads Page <https://beam.mw/downloads>`_
 
