@@ -361,22 +361,21 @@ For specific address.
 To change all existing addresses in the wallet just omit the `--address` parameter
 
 
-Export and import SBBS addresses
---------------------------------
+Export and import SBBS addresses and transaction history
+-------------------------------------------------------
 
-Sometimes when upgrading the wallet or restoring from seed phrase you need to reimport the list of SBBS addresses from the previous wallet. To do that use the commands below:
+Sometimes when upgrading the wallet or restoring from seed phrase you need to reimport the list of SBBS addresses and transaction history (the data) from the previous wallet. To do that use the commands below:
 
-To export addresses:
-
-::
-
-    ./beam-wallet export_addresses --file_location=<path to addresses file, for example: ~\addresses.dat>
-
-To import addresses
+To export the data:
 
 ::
 
-    ./beam-wallet import_addresses --file_location=<path to addresses file, for example: ~\addresses.dat>
+    ./beam-wallet export_data --file_location=<full path to addresses file, for example: C:\Users\user\addresses.dat>
+
+To import the data
+::
+
+    ./beam-wallet import_data --file_location=<full path to addresses file, for example: C:\Users\user\addresses.dat>
 
 .. note:: It is important that imported addresses were originally created by the wallet with the SAME seed phrase. Only addresses matching the wallet seed phrase will be imported. Other addresse will not be imported as shown in the screenshot below.
 
