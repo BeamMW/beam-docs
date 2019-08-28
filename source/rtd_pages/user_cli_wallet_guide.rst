@@ -311,6 +311,13 @@ Sometimes due to unsuccessful transaction or in different cases you need to canc
 ::
 
     ./beam-wallet cancel_tx --tx_id=<txid, ex: f1e11512141a4f59b1c539ab1386ea84> -n <node address and port, ex: 127.0.0.1:10000>
+    
+Also you could delete useless transaction via first step and following command:
+
+::
+
+./beam-wallet delete_tx --tx_id=<txid, ex: f1e11512141a4f59b1c539ab1386ea84> -n <node address and port, ex: 127.0.0.1:10000>
+
 
 Creating new SBBS address
 -------------------------
