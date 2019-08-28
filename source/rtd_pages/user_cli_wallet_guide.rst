@@ -295,7 +295,22 @@ In the output (as shown in the example below) choose the UTXOs you want to use
 .. figure:: images/cli/set_utxo.jpg
    :alt: Comma separated list of UTXOs
 
+Cancelling and deleting of the transaction
+------------------------------------------
 
+Sometimes due to unsuccessful transaction or in different cases you need to cancel transaction. It is possible following the procedure below:
+
+1.	Print the list of transactions using:
+
+::
+
+    ./beam-wallet  info --tx_history
+
+2.	Get the id of the transaction you need and run:
+
+::
+
+    ./beam-wallet cancel_tx --tx_id=<txid, ex: f1e11512141a4f59b1c539ab1386ea84> -n <node address and port, ex: 127.0.0.1:10000>
 
 Creating new SBBS address
 -------------------------
