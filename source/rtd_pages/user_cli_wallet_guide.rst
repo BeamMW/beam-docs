@@ -197,6 +197,11 @@ It is also possible to see the transaction history using the --tx_history flag
 
     ./beam-wallet  info --tx_history
 
+You could also see the details of transaction using this command:
+
+::
+
+./beam-wallet tx_details --tx_id=<txid>
 
 Receiving BEAMs
 ---------------
@@ -381,6 +386,15 @@ It is possible to change address expiration period to 'never' using the followin
 For specific address.
 
 To change all existing addresses in the wallet just omit the `--address` parameter
+
+You could also choose what specific period it would be:
+
+::
+
+./beam-wallet change_address_expiration --address=<sbbs address> --expiration_time=(never|24h)
+
+There are two options: never or 24 hours.
+
 
 
 Export and import SBBS addresses and transaction history
