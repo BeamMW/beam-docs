@@ -17,13 +17,13 @@ Hence, sometimes you wanna play with the new features on Testnet while sending t
 Downloading binaries
 --------------------
 
-Mainnet address is https://beam.mw/downloads or https://beam.mw/downloads/mainnet, Testnet address is https://beam.mw/downloads/testnet
+Mainnet address is https://www.beam.mw/downloads/mainnet, Testnet address is https://www.beam.mw/downloads/testnet
 Testnet binaries will always include “testnet” in the filename, e.g. *Beam-Wallet-Testnet-x.y.zzz.dmg*
 
 Desktop wallet app and CLI wallet
 ---------------------------------
 
-* In case desktop wallets run integrated nodes, make sure that they use different ports. By default, the Mainnet node will use 10005 port, while Testnet will use 11005 port. 
+* In case desktop wallets run integrated nodes, make sure that they use different ports. By default, the Mainnet node will use 10005 port, while Testnet will use 11005 port.
 * For desktop wallet, the port of the integrated node can be set in the Settings screen.
 * Mainnet wallet files and logs are kept in the *Beam Wallet* folder, Testnet wallet files are in *Beam Wallet Testnet* folder by default.
 * Desktop wallet and download pages on Testnet will have a dark violet background, Mainnet background will remain the same.
@@ -37,4 +37,4 @@ Node
 Miner
 -----
 
-* Currently, the miner is “just” a pure PoW calculation software. Hence, any Beam miner can work with either Mainnet or Testnet node. When configuring the miner-to-node connection, make sure your miner is connected to the network as intended. 
+* Currently, the miner is “just” a pure PoW calculation software. Hence, any Beam miner can work with either Mainnet or Testnet node. When configuring the miner-to-node connection, make sure your miner is connected to the network as intended.
