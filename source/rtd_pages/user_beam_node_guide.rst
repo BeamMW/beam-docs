@@ -106,8 +106,7 @@ Beam Node allows to provide the settings via command line or using a configurati
 
 .. admonition:: Using CPU mining is not recommended
 
-   Beam uses Equihash mining algorith with (150,5) parameters and customized data path. It is efficiently mined on GPUs. Using CPU is most likely to be not cost effective.
-
+   Beam uses Equihash mining algorith with (150,5) parameters and customized data path. It is efficiently mined on GPUs
 
 +-------------------------+----------------------------------------------------------------------------------------------------------+
 |**Parameter**            | **Description & Example**                                                                                |
