@@ -17,14 +17,7 @@ Beam Node can be run in either Mining or Validating mode.
 Mining mode
 ------------------------
 
-Beam Node supports two options for mining Beam:
-
-
-1. Using Internal Miner
-
-    Beam Node has built in GPU and CPU miners. To start the node with internal miner, specify miner type using `miner_type` parameter. Built in GPU mining is only supported on Linux and Windows platforms.
-
-2. Using External Miner via Statum Server API
+Beam Node supports External Miner via Statum Server API for mining Beam:
 
     Beam Node provides built in support for Startum API allowing to connect multiple external mining clients to a single node. (see :ref: `user_beam_stratum_server` for more details). To start the node with stratum server use `stratum_port` and `stratum_secrets_path` parameters. Stratum clients can be run together with the Internal Miner
 
@@ -113,8 +106,7 @@ Beam Node allows to provide the settings via command line or using a configurati
 
 .. admonition:: Using CPU mining is not recommended
 
-   Beam uses Equihash mining algorith with (150,5) parameters and customized data path. It is efficiently mined on GPUs. Using CPU is most likely to be not cost effective.
-
+   Beam uses Equihash mining algorith with (150,5) parameters and customized data path. It is efficiently mined on GPUs
 
 +-------------------------+----------------------------------------------------------------------------------------------------------+
 |**Parameter**            | **Description & Example**                                                                                |

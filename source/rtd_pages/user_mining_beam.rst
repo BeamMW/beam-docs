@@ -22,8 +22,6 @@ To secure the network, Beam uses the uses a `modified <https://docs.beam.mw/Beam
 
 At Mainnet launch, we will use the following Equihash parameters: n=150, k=5. In addition, we will introduce a small change to the datapath to further reduce the chance of zero-day ASICs.
 
-.. note:: Testnet 3 is still using n=144, k=5
-
 The minimal memory requirement for the GPU will be 4 GB. The most up-to-date list of supported GPUs will be available here.
 
 
@@ -289,7 +287,7 @@ The following table describes all parameters in more details
 |                         |                                                                                                          |
 |                         |    --stratum_secrets_path=.                                                                              |
 +-------------------------+----------------------------------------------------------------------------------------------------------+
-| miner_key                | Miner key, exported by CLI wallet (see :ref: `Creating CLI wallet for mining rewards`)                  |
+| miner_key               | Miner key, exported by CLI wallet (see :ref: `Creating CLI wallet for mining rewards`)                   |
 |                         |                                                                                                          |
 |                         | .. code-block:: bash                                                                                     |
 |                         |                                                                                                          |
@@ -313,7 +311,7 @@ The following table describes all parameters in more details
 
 Beam provides two mining clients for Equihash 150,5 with data path change: one for OpenCL and one for CUDA
 
-.. attention:: Only OpenCL mining client is currently available in Testnet 4
+.. attention:: Only OpenCL mining client is currently available in Testnet
 
 .. note:: Mining clients are only supported on Linux and Windows platforms
 
@@ -407,5 +405,6 @@ OpenCL Miner
 +--------------------+-----------------+----------------------------------------------------------------+
 
 CUDA Miner
+
 
 .. note:: CUDA Mining client is still in development.

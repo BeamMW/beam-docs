@@ -553,11 +553,11 @@ In order to rescan the CLI wallet please follow the steps below:
 
     ./beam-node --peer=<ip or url of the peer> --owner_key=<your owner key>
 
-2. Run 'refresh' command as follows:
+2. Run 'rescan' command as follows:
 
 ::
 
-    ./beam-wallet refresh -n <ip:port of the node with the owner key>
+    ./beam-wallet rescan -n <ip:port of the node with the owner key>
 
 3. Run 'listen' command to get updated information from the node
 
