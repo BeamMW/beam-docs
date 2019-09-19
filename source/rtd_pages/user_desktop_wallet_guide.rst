@@ -7,11 +7,11 @@
 Desktop Wallet User Guide
 =========================
 
-Using Beam Desktop Wallet is the simplest way to start using Beam. It is available for Linux, Mac and Windows platforms (see :ref:`supported platforms` for details). 
+Using Beam Desktop Wallet is the simplest way to start using Beam. It is available for Linux, Mac and Windows platforms (see :ref:`supported platforms` for details).
 
 .. attention::
 
-   Beam blockchain does not store transaction history and SBBS addresses. These are only stored in local database inside the wallet data folder. 
+   Beam blockchain does not store transaction history and SBBS addresses. These are only stored in local database inside the wallet data folder.
 
    Please follow the guidelines below to avoid problems with sending are receiving Beam transactions.
 
@@ -27,7 +27,7 @@ Using Beam Desktop Wallet is the simplest way to start using Beam. It is availab
 Downloading binaries
 --------------------
 
-Start downloading here: https://beam.mw/downloads
+Start downloading here: https://www.beam.mw/downloads/mainnet
 
 Ensure that the communication between your browser and Beam's official website is encrypted by verifying that the padlock icon is displayed in its locked state on the URL bar.
 
@@ -87,7 +87,7 @@ Click the lock icon in the bottom left corner of the dialog to unlock.
 .. figure:: images/desktop/02_installing/05.png
    :alt: Mac Security
 
-Change the 'Allow apps downloaded from' setting from 'App Store' to 'App Store and identified developers'. Click the lock icon again when done making changes. 
+Change the 'Allow apps downloaded from' setting from 'App Store' to 'App Store and identified developers'. Click the lock icon again when done making changes.
 
 .. figure:: images/desktop/02_installing/06.png
    :alt: Mac Security
@@ -101,7 +101,7 @@ Now, launch the Beam Wallet from the Applications folder. When notification appe
 Where are the files?
 --------------------
 
-Once Beam Wallet desktop app is installed, the wallet data filers are stored separately from the binaries. 
+Once Beam Wallet desktop app is installed, the wallet data filers are stored separately from the binaries.
 
 The locations of all the files are described here: :ref:`Files and locations`
 
@@ -122,7 +122,7 @@ Generating seed phrase
 
 As a part of creating a new wallet, a new seed phrase will be generated for you.
 
-.. attention:: Seed phrase is the **most important secret you have to keep**. Knowing the seed phrase enables you (or anyone else) to access all your funds. 
+.. attention:: Seed phrase is the **most important secret you have to keep**. Knowing the seed phrase enables you (or anyone else) to access all your funds.
 
 
 .. figure:: images/desktop/03_creating_new_wallet/02.jpg
@@ -144,7 +144,7 @@ As a part of creating a new wallet, a new seed phrase will be generated for you.
 
 Did you wrote down your seed phrase correctly? Triple-check your handwriting again. The difference between *_F_unnel* and *_T_unnel* can be crucial when trying to restore a wallet with valuable funds in the far or near future.
 
-Did you verified your handwriting? Now go find a safe space for the paper! 
+Did you verified your handwriting? Now go find a safe space for the paper!
 
 .. important:: Storing the seed phrase on your computer makes your funds prone to cyber attacks (read: much *less* secure). 'Creative' approaches like saving a screenshot of the wallet or your handwriting on your computer or in the cloud *may* sound like a good idea, but it is absolutely **not recommended**. If hackers get the access to your computer, network drive etc., they can can potentially steal your seed phrase by using OCR programs (which can scan pictures and transform them into plain text) and, therefore, get access to your funds.
 
@@ -153,18 +153,18 @@ Did you verified your handwriting? Now go find a safe space for the paper!
 In order to ensure that you have really written down your seed phrase, you will be asked to fill in the specific words from your seed phrase in random order.
 
 .. figure:: images/desktop/03_creating_new_wallet/05.jpg
-   :alt: Repeat your seed phrase 
+   :alt: Repeat your seed phrase
 
 Only when you typed all the selected words correctly, you will be allowed to proceed to the next step.
 
 .. figure:: images/desktop/03_creating_new_wallet/06.jpg
-   :alt: Indicate correct words 
+   :alt: Indicate correct words
 
 
 Setting wallet password
 -----------------------
 
-To access your Beam Wallet, you will need to create a password. This password is not the same as the seed phrase. Seed phrase identifies a wallet and enables access to all the funds stored in it from any device. Your wallet password provides with a second security layer in case someone gains access to your computer or has stolen your wallet database file. It is important to choose a strong password. 
+To access your Beam Wallet, you will need to create a password. This password is not the same as the seed phrase. Seed phrase identifies a wallet and enables access to all the funds stored in it from any device. Your wallet password provides with a second security layer in case someone gains access to your computer or has stolen your wallet database file. It is important to choose a strong password.
 
 
 .. figure:: images/desktop/03_creating_new_wallet/07.jpg
@@ -173,7 +173,7 @@ To access your Beam Wallet, you will need to create a password. This password is
 The wallet will provide some indication of password strength for your convenience. Do not count on it, however. Choose a password that is at least 8 characters long with a combination of letters, numbers, and symbols.
 
 .. figure:: images/desktop/03_creating_new_wallet/08.jpg
-   :alt: Example of a stronger password 
+   :alt: Example of a stronger password
 
 
 Choosing the node connectivity mode
@@ -187,21 +187,21 @@ Beam Desktop Wallet can connect to the network through:
 
 If you choose to run an integrated node from within the wallet, the trusted node will automatically verify the blockchain. This means you will automatically be connected to a node when you open your wallet.
 
-.. note:: When running behind a firewall you can change the default port the node will be listening on, and in case of CPU mining, set the amount of mining threads. You will be probably provided at least one default peer to connect to but you can always add more peers on the Settings screen. The recommended peers are published in the list of bootstrap nodes in the `downloads page <https://beam.mw/downloads>`_ on `Beam official website <https://beam.mw>`_.
+.. note:: When running behind a firewall you can change the default port the node will be listening on, and in case of CPU mining, set the amount of mining threads. You will be probably provided at least one default peer to connect to but you can always add more peers on the Settings screen. The recommended peers are published in the list of bootstrap nodes in the `downloads page <https://www.beam.mw/downloads/mainnet>`_ on `Beam official website <https://beam.mw>`_.
 
 .. figure:: images/desktop/03_creating_new_wallet/09.jpg
-   :alt: Start wallet with integrated node  
+   :alt: Start wallet with integrated node
 
 Random mode allows you to automatically connect to random bootstrap node. In this mode Beam Wallet acts like a ‘light client’, it will create transactions but will have to trust the remote node for blockchain verification. It is recommended for lighter devices with limited CPU power and/or RAM memory.
 
 .. figure:: images/desktop/03_creating_new_wallet/10.jpg
-   :alt: Start wallet with random mode  
+   :alt: Start wallet with random mode
 
 
 If you are running your own node somewhere (or maybe even more than one) and want to connect specifically to it, use the third option by providing the IP and port the node is listening on.
 
 .. figure:: images/desktop/03_creating_new_wallet/11.jpg
-   :alt: Start wallet with specific remote node  
+   :alt: Start wallet with specific remote node
 
 Synchronizing the wallet
 ------------------------
@@ -215,7 +215,7 @@ Once the Wallet is connected, it synchronizes with the current blockchain state 
 Main Screen
 -----------
 
-Once your wallet is created, the main screen will show up. In the future, the screen will pop-up automatically after you open the application and type in your password. 
+Once your wallet is created, the main screen will show up. In the future, the screen will pop-up automatically after you open the application and type in your password.
 
 Wallet status indicator
 -----------------------
@@ -226,7 +226,7 @@ Wallet status indicator
 The main screen of the wallet shows the current balance as well as the transaction history and statuses. On the left, under the Beam logo, there is a toolbar that provides navigation between different wallet screens such as `Main Screen`, `Addresses Screen`, `UTXO Screen` and `Settings Screen`.
 
 
-In the top left corner of the Main Screen, under 'Wallet', you see connection status indicator. 
+In the top left corner of the Main Screen, under 'Wallet', you see connection status indicator.
 
 Green indicator means that the node is up and running connected to peers.
 
@@ -236,11 +236,11 @@ Green indicator means that the node is up and running connected to peers.
 Red means it is either unable to connect to the node or the node has a problem you can help to solve.
 
 .. figure:: images/desktop/04_main_screen/03.jpg
-   :alt: Wallet disconnected  
+   :alt: Wallet disconnected
 
 In brackets, the indicator also specifies the network to which the wallet is connected:
 
-* **Mainnet:** the network with real money and actual transactions. 
+* **Mainnet:** the network with real money and actual transactions.
 * **Testnet<number>** (such as Testnet3, Testnet4 etc) **:** staging environments for trying new features in our wallet, node and miner software. For advanced users only.
 * **Masternet:** new features under development, if you see this name in your wallet it means that you are very early adopter or Beam code contributor otherwise you’ve probably arrived to the wrong place.
 
@@ -262,14 +262,14 @@ Here is how the process of receiving BEAM looks like from a Receiver’s perspec
 
 * Generate an address
 * Send your address to the Sender person **over a secure communication channel**
-* Both Sender and Receiver’s Wallet must be online at the same time to complete a transaction. 
+* Both Sender and Receiver’s Wallet must be online at the same time to complete a transaction.
 
 It's possible to reuse an address that already exists, more on that later.
 
 Generate an address
 -------------------
 
-Proceed to the main screen and click the blue ‘Receive’ button at the top right corner. This will open the receive screen. 
+Proceed to the main screen and click the blue ‘Receive’ button at the top right corner. This will open the receive screen.
 
 .. figure:: images/desktop/05_receiving_beam/01.jpg
    :alt: Receive BEAM screen
@@ -283,7 +283,7 @@ Copy and paste the newly generated Beam address to send to Sender over a **secur
 .. figure:: images/desktop/05_receiving_beam/02.jpg
    :alt: Copy address
 
-A new Beam address is generated every time the 'Receive' screen is opened.  By default, the address is valid for 24 hours. It is best to give the Sender your address closest to the time they will be sending BEAM so the address does not expire. 
+A new Beam address is generated every time the 'Receive' screen is opened.  By default, the address is valid for 24 hours. It is best to give the Sender your address closest to the time they will be sending BEAM so the address does not expire.
 
 .. figure:: images/desktop/05_receiving_beam/03.jpg
    :alt: Set address expiration
@@ -305,7 +305,7 @@ If the Sender uses a mobile app, he can quickly scan the QR code instead of  rec
 Comment
 -------
 
-You can add a comment when creating the receiving address. The comment is never sent to the network, it is only visible inside your wallet and is used for internal bookkeeping only. 
+You can add a comment when creating the receiving address. The comment is never sent to the network, it is only visible inside your wallet and is used for internal bookkeeping only.
 
 The comment can be seen on the :ref:'Address screen' and in the extended transaction view.
 
@@ -314,7 +314,7 @@ Sending the address
 
 .. attention:: When sending the address make sure you use a secure communication channel.
 
-.. attention:: Make sure the entire address is sent to the Sender as it’s longer than it appears on the screen. Don’t forget to double check the value in whichever messenger app of your choice because viruses and malware on your computer may change your address while it’s in the clipboard. 
+.. attention:: Make sure the entire address is sent to the Sender as it’s longer than it appears on the screen. Don’t forget to double check the value in whichever messenger app of your choice because viruses and malware on your computer may change your address while it’s in the clipboard.
 
 Completing the transaction
 --------------------------
@@ -362,9 +362,9 @@ In order to send BEAM, you will need to click the magenta ‘Send’ button at t
 .. figure:: images/desktop/06_sending_beam/01.jpg
    :alt: Send BEAM screen
 
-Make sure you have the correct address and paste the Receiver’s Beam address in the 'Send To' field. 
+Make sure you have the correct address and paste the Receiver’s Beam address in the 'Send To' field.
 
-To help to identify the transaction, you may also choose to fill in the optional Comment field. The comment will remind you what or who the transaction is for. The comment is stored locally, thus it will only be visible in your wallet for bookkeeping purposes. 
+To help to identify the transaction, you may also choose to fill in the optional Comment field. The comment will remind you what or who the transaction is for. The comment is stored locally, thus it will only be visible in your wallet for bookkeeping purposes.
 
 The comment can be seen on the :ref:'Address screen':
 
@@ -377,7 +377,7 @@ The comment is also displayed in the extended transaction view:
    :alt: Extended transaction view
 
 
-Select the transaction amount in BEAM you want to send. Transaction amount is in BEAM and may contain fractional values such as 1.25 BEAM or 11.3 BEAM and the like. Keep in mind you also have to pay a transaction fee, hence the amount to send plus the fee must be equal to or less than the available balance. 
+Select the transaction amount in BEAM you want to send. Transaction amount is in BEAM and may contain fractional values such as 1.25 BEAM or 11.3 BEAM and the like. Keep in mind you also have to pay a transaction fee, hence the amount to send plus the fee must be equal to or less than the available balance.
 
 .. figure:: images/desktop/06_sending_beam/04.jpg
    :alt: Send BEAM amount
@@ -387,7 +387,7 @@ Transaction fees are specified in GROTH (100 millionths of BEAM). Amount of fees
 .. figure:: images/desktop/06_sending_beam/05.jpg
    :alt: Send BEAM transaction fee
 
-You can see the remaining amount of BEAM in your wallet and the change that will be received after the transaction. 
+You can see the remaining amount of BEAM in your wallet and the change that will be received after the transaction.
 
 .. figure:: images/desktop/06_sending_beam/06.jpg
    :alt: Send BEAM change and remaining amounts
@@ -395,7 +395,7 @@ You can see the remaining amount of BEAM in your wallet and the change that will
 After you click ‘Send’ you will see a confirmation with the most important transaction details:
 
 .. figure:: images/desktop/06_sending_beam/07.jpg
-   :alt: Send BEAM confirmation 
+   :alt: Send BEAM confirmation
 
 Completing the transaction
 --------------------------
@@ -440,21 +440,21 @@ You will be asked to enter your seed phrase. Time to get the phrase out from you
 .. figure:: images/desktop/07_restoring_funds/03.jpg
    :alt: Fully submitted seed phrase
 
-Did you checked your spelling? Once you are sure, click ‘Restore wallet.' 
+Did you checked your spelling? Once you are sure, click ‘Restore wallet.'
 
 .. figure:: images/desktop/07_restoring_funds/04.jpg
    :alt: Restoring funds
 
 Upon completion, you’ll see the main screen of the wallet with your restored funds.
 
-.. note:: Please be patient, restoring funds is a thorough and time consuming operation. 
+.. note:: Please be patient, restoring funds is a thorough and time consuming operation.
 
 .. attention:: If the available balance is zero, it means that one or more words from your seed phrase weren’t typed correctly or are wrong.
 
 Address
 -------
 
-Let’s define the meaning of address in the BEAM ecosystem: BEAM is always sent from one address to another. Both sending and receiving addresses are alphanumeric tokens that uniquely define the transaction endpoints. 
+Let’s define the meaning of address in the BEAM ecosystem: BEAM is always sent from one address to another. Both sending and receiving addresses are alphanumeric tokens that uniquely define the transaction endpoints.
 
 A person can create as many addresses as required. The address creation process is explained in `Receiving BEAM`.
 
@@ -462,15 +462,15 @@ A person can create as many addresses as required. The address creation process 
 
 *Example:* There are three wallets: one belongs to you, one belongs to Alice and another belongs to Bob. You have created one address to receive money from Alice and another address to receive money from Bob. Alice and Bob will never know that they are sending money to the same person.
 
-Same address can be used for sending and receiving money. 
+Same address can be used for sending and receiving money.
 
 *Example:* you have created an address to send money to Alice. Alice can see the address the money came from and can send money to the address back to you.
 
-.. attention:: For ultimate privacy, it is advised to have a **dedicated address for every transaction** (ie. for both Sending or Receiving). 
+.. attention:: For ultimate privacy, it is advised to have a **dedicated address for every transaction** (ie. for both Sending or Receiving).
 
 .. attention:: Although not recommended, an address can be reused until it had reached its expiration (24 hours since when it was generated).
 
-*Example:* Imagine you’ve created the address with expiration interval of 24 hours and immediately sent it to Alice. In the next 24 hours, Alice will be able to send BEAM to you as many times as she likes, reusing the same address of yours. 
+*Example:* Imagine you’ve created the address with expiration interval of 24 hours and immediately sent it to Alice. In the next 24 hours, Alice will be able to send BEAM to you as many times as she likes, reusing the same address of yours.
 
 .. warning:: Reusing same addresses, created with longer expiration interval, can be convenient yet the tradeoff of decreased privacy should be kept in mind.
 
@@ -486,7 +486,7 @@ Upon Beam Wallet desktop app installation, a single address is created by defaul
 .. figure:: images/desktop/08_address_screen/01.jpg
    :alt: Default address
 
-Each address has a default expiration time of 24 hours. An expired address becomes inactive and you won’t be able to be use it again. You can see the expired addresses listed under 'My Expired Addresses.' 
+Each address has a default expiration time of 24 hours. An expired address becomes inactive and you won’t be able to be use it again. You can see the expired addresses listed under 'My Expired Addresses.'
 
 .. figure:: images/desktop/08_address_screen/02.jpg
    :alt: Expired default address
@@ -504,7 +504,7 @@ In the ‘Contacts’ tab, you can see every address that sent you BEAM or to wh
 UTXO
 ----
 
-UTXO (Unspent Transaction (TX) Output) is like a banknote of a specific amount. Simply said, if BEAM is the currency, any UTXO can be considered a ‘bill’. You can have multiple ‘bills’ in your wallet at the same time. 
+UTXO (Unspent Transaction (TX) Output) is like a banknote of a specific amount. Simply said, if BEAM is the currency, any UTXO can be considered a ‘bill’. You can have multiple ‘bills’ in your wallet at the same time.
 
 UTXO screen
 -----------
@@ -544,9 +544,9 @@ This 10 BEAM UTXO will be locked until the 9 BEAM transaction completes. If Alic
 You can split UTXO by yourself
 -------------------------------
 
-One thing you can do is to split UTXO by sending a transaction to yourself (using you own active address). You may want to do this in the case your UTXO is too large, and you don't want it all locked during a transaction. 
+One thing you can do is to split UTXO by sending a transaction to yourself (using you own active address). You may want to do this in the case your UTXO is too large, and you don't want it all locked during a transaction.
 
-.. attention:: You will pay a fee for this transaction. 
+.. attention:: You will pay a fee for this transaction.
 
 
 Settings screen
@@ -557,9 +557,9 @@ Settings screen
 
 .. note:: At the top right corner of the screen the version is displayed. It is always important to specify the version when asking for support or reporting issues.
 
-For integrated and external nodes settings see `Choosing the node connectivity mode`. When running integrated node you should specify the port on which the node will be listening on and the list of node peers. 
+For integrated and external nodes settings see `Choosing the node connectivity mode`. When running integrated node you should specify the port on which the node will be listening on and the list of node peers.
 
-The 'General settings' section allows you to change your wallet password and lock screen time. The Wallet will automatically lock to protect the funds from accidental unauthorized access to an active wallet in the set time you choose. 
+The 'General settings' section allows you to change your wallet password and lock screen time. The Wallet will automatically lock to protect the funds from accidental unauthorized access to an active wallet in the set time you choose.
 
 The ‘Report problem’ section allows you to create an archive of wallet logs and explains how to report an issue. It also shows the current location of the wallet files. See more details about reporting issues and getting support in the `Reporting Issues and Getting Support` and `Desktop Wallet Troubleshooting` sections.
 
@@ -614,7 +614,7 @@ When a wallet is restored, *only the balance (UTXO) is restored*. Addresses (act
 I've forgot my password
 -----------------------
 
-If you lost your password and cannot get into your wallet, you will have to remove ``wallet.db`` file and to `Restore funds` using your seed phrase to create a new password. 
+If you lost your password and cannot get into your wallet, you will have to remove ``wallet.db`` file and to `Restore funds` using your seed phrase to create a new password.
 
 Why is the seed phrase the only thing connecting me to my funds?
 ----------------------------------------------------------------
@@ -626,7 +626,7 @@ I've lost my seed phrase
 
 By design, the only way to access your funds (UTXO) is to have the seed phrase. If you still have access to your wallet, create another wallet with new seed phrase on another device and transfer funds to there. Any solution that would allow you to access your funds without the seed phrase would severely compromise the privacy of BEAM. Therefore, in case you don't have any active access to your funds there is nothing to do (the funds will be stored in the blockchain forever and no one will be able to access or spend them).
 
-I've copied my ``wallet.db`` file to the new machine and I'd like to run wallets on both new and old machines simultaneously  
+I've copied my ``wallet.db`` file to the new machine and I'd like to run wallets on both new and old machines simultaneously
 ----------------------------------------------------------------------------------------------------------------------------
 
 At the current implementation each ``wallet.db`` file should be managed by only a single wallet instance. Any case involving manual transfer of the wallet database **is not supported**.
