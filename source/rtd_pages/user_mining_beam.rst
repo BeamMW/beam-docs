@@ -114,7 +114,7 @@ Important points to understand
 
 .. important:: Miner keys and Owner key should be kept secret at all times
 
-* Several Mining clients can connect to the same node. Mining clients should run on machines with GPUs. 
+* Several Mining clients can connect to the same node. Mining clients should run on machines with GPUs.
 
 * The connection between the Mining Client and the Beam Node is encrypted using TLS. In order for TLS to work you need to provide a certificate file and secret keys for it, as described in Step 9.
 
@@ -127,12 +127,12 @@ Important points to understand
 
 .. note:: In case of Desktop wallet, you need to run local node from within the wallet (which automatically knows the owner key) or connect to are remote node that know the owner key. If you just connect to random node you will NOT see your mining rewards
 
-Beam node should 
+Beam node should
 
 
 Now let's start with the steps:
 
-1. Download CLI Wallet archive for your platform from `Beam Website <https://beam.mw/downloads>`_
+1. Download CLI Wallet archive for your platform from `Beam Website <https://www.beam.mw/downloads/mainnet>`_
 
 2. Extract the CLI Wallet to any folder on your machine (we will call it Wallet Folder)
 
@@ -165,10 +165,10 @@ If you have already created a wallet run the following command:
     ./beam-wallet export_miner_key --subkey=1
 
 .. note:: If you want to run several different mining nodes with different keys you can run the command again with different subkeys.
-	
+
 	Example:
 		For second node, run:
-		./beam-wallet export_miner_key --subkey=2 
+		./beam-wallet export_miner_key --subkey=2
 
 		For third node, run:
 		./beam-wallet export_miner_key --subkey=3
@@ -188,7 +188,7 @@ Save the exported mining key in some text file, you will need it later
 
 Save the exported owner key in some text file, you will need it later
 
-7. Download Beam Node archive for your platform from `Beam Website <https://beam.mw/downloads>`_
+7. Download Beam Node archive for your platform from `Beam Website <https://www.beam.mw/downloads/mainnet>`_
 
 8. Extract Beam Node to any folder on your machine (from now on we will call it Node Folder)
 
@@ -214,7 +214,7 @@ Save the exported owner key in some text file, you will need it later
 Beam node implements Stratum protocol for connecting external miner clients. Clients open a TCP connection to the node though which they receive jobs to mine blocks using Equihash mining protocol.
 
 Stratum server connections are protected using Transport Layer Security (TLS) protocol and require TLS certificates in order to work properly. You can either buy the certificates or create self signed certificates on your local machine. Instructions on how to do this are outside the scope of this guide. You should receive two files: one for certificate and one with the certificate secret key. For testing purposes you can always use sample files provided in the note above.
-	
+
 In addition you should create a file 'stratum.api.keys' which will contain one or more lines. Each line represents one *API key* - random strings of 8 characters or more. You should generate these keys yourself and put each one in new line. These keys are then used by the miner client via --key flag.
 
 As a result you will have three files:
@@ -242,13 +242,13 @@ At this point Node Folder should look something like this:
 
 ::
 
-	./beam-node 
-		--port=10001 
-		--peer=3.0.115.1:8100 
+	./beam-node
+		--port=10001
+		--peer=3.0.115.1:8100
 		--stratum_port=10002
-		--stratum_secrets_path=. 
-		--miner_key=<mining key you got in step 5 > 
-		--owner_key=<owner key you got in step 6> 
+		--stratum_secrets_path=.
+		--miner_key=<mining key you got in step 5 >
+		--owner_key=<owner key you got in step 6>
 		--pass=<your wallet password (not seed phrase) >
 
 
@@ -275,7 +275,7 @@ The following table describes all parameters in more details
 |                         |                                                                                                          |
 |                         | Peer should be a machine on the network you want to connect to (for example Testnet 4)                   |
 |                         |                                                                                                          |
-|                         | List of peers is published on the downloads page at https://beam.mw/downloads                            |
+|                         | List of peers is published on the downloads page at https://www.beam.mw/downloads/mainnet                            |
 |                         |                                                                                                          |
 |                         | .. code-block:: bash                                                                                     |
 |                         |                                                                                                          |
@@ -307,7 +307,7 @@ The following table describes all parameters in more details
 +-------------------------+----------------------------------------------------------------------------------------------------------+
 
 
-12. Downloads miner client archive for your GPU and platform from `Beam Website <https://beam.mw/downloads>`_
+12. Downloads miner client archive for your GPU and platform from `Beam Website <https://www.beam.mw/downloads/mainnet>`_
 
 Beam provides two mining clients for Equihash 150,5 with data path change: one for OpenCL and one for CUDA
 
@@ -406,4 +406,5 @@ OpenCL Miner
 
 CUDA Miner
 
-.. note:: CUDA Mining client is still in development. 
+
+.. note:: CUDA Mining client is still in development.
