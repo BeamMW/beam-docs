@@ -14,7 +14,7 @@ Welcome to Beam documentation!
 
 	Rules Signature: ed91a717313c6eb0
 
-	Download binaries from: `Beam Downloads Page <https://beam.mw/downloads>`_
+	Download binaries from: `Beam Downloads Page <https://www.beam.mw/downloads/mainnet>`_
 
 	Source code: `Beam Github <https://github.com/BeamMW/beam>`_
 
@@ -111,11 +111,11 @@ Mimblewimble has several important differences from most other existing cryptocu
 
 In most cryptocurrencies Address is a hashed public key for which the owner of that Address knows the corresponding private key. In order to transfer funds, the Sender should only know the Address of the Receiver in order to create a unilateral transaction. *The Sender is not aware of whether the Receiver is online or not or whether it even exists*. Once transaction to an Address is complete and added to the blockchain, Receiver that can prove knowledge of the private key corresponding the Address can control this UTXO (short for Unspent Transaction Output).
 
-In Mimblewimble there are no addresses at all and transaction are created **interactively** by both Sender and Receiver wallets. This means that in order to create a transaction, both wallets have to participate in the creation process and eventually co-sign the transaction before it is sent to the blockchain. 
+In Mimblewimble there are no addresses at all and transaction are created **interactively** by both Sender and Receiver wallets. This means that in order to create a transaction, both wallets have to participate in the creation process and eventually co-sign the transaction before it is sent to the blockchain.
 
 .. attention:: In Beam it is not possible to create a transaction unilaterally. Both Sender and Receiver have participate in transaction creation.
 
-To allow Sender and Receiver wallets to create transactions without having to be online at the same time and directly connected to each other, Beam added a module called :ref:`SBBS<sbbs>` that allows wallets to securely communicate using encrypted messages to create a transaction. SBBS Addresses are merely private / public key pairs used to encrypt and decrypt these messages. 
+To allow Sender and Receiver wallets to create transactions without having to be online at the same time and directly connected to each other, Beam added a module called :ref:`SBBS<sbbs>` that allows wallets to securely communicate using encrypted messages to create a transaction. SBBS Addresses are merely private / public key pairs used to encrypt and decrypt these messages.
 
 .. important:: SBBS Addresses are not recorded in the blockchain and are not used to control funds
 
@@ -123,11 +123,11 @@ You are encouraged to create a new SBBS Address for each transaction.
 
 **Wallet and Node concepts are slightly different**
 
-Beam documentation mentions terms Wallet and Node quite a lot and it sometimes causes confusion with users of other cryptocurrencies. 
+Beam documentation mentions terms Wallet and Node quite a lot and it sometimes causes confusion with users of other cryptocurrencies.
 
 Beam Wallet is a *light client* which stores information about UTXO that belong to it and has an ability to create new transactions by connecting to other wallets via :ref:`SBBS<sbbs>`. It does not store or verify the entire blockchain and can thus only work if connected to a Node.
 
-Beam Node, is a *full node* that downloads, validates and updates the entire blockchain state. 
+Beam Node, is a *full node* that downloads, validates and updates the entire blockchain state.
 
 .. note:: Beam Desktop Wallet, provides options to run both as just the Wallet (connected to a remote node) and as a full node.
 
@@ -135,9 +135,9 @@ Beam Node, is a *full node* that downloads, validates and updates the entire blo
 
 **Information that can be restored from the blockchain is completely different**
 
-In most blockchains, information about current UTXOs and the transaction history can be recovered from the blockchain using only the :ref:`Seed Phrase<seed phrase>`. 
+In most blockchains, information about current UTXOs and the transaction history can be recovered from the blockchain using only the :ref:`Seed Phrase<seed phrase>`.
 
-In Beam, only UTXOs can be recovered from the blockchain. All other information, including transaction history and any other meta data are only stored locally in the Beam Wallet database and encrypted by :ref:`Wallet Password<wallet password>`. 
+In Beam, only UTXOs can be recovered from the blockchain. All other information, including transaction history and any other meta data are only stored locally in the Beam Wallet database and encrypted by :ref:`Wallet Password<wallet password>`.
 
 This means that if you run Beam Wallet on two different machines, transaction history **WILL NOT** be synchronized.
 
