@@ -7,11 +7,11 @@
 Mobile Wallet User Guide
 =========================
 
-Beam Mobile Wallet is the simplest way to start using Beam. It is currently available for Android, the iOS app is planned to be developed later on. 
+Beam Mobile Wallet is the simplest way to start using Beam. It is currently available for Android, the iOS app is planned to be developed later on.
 
 .. attention::
 
-   Beam blockchain does not store transaction history and SBBS addresses. These are only stored in local database inside the wallet data folder. 
+   Beam blockchain does not store transaction history and SBBS addresses. These are only stored in local database inside the wallet data folder.
 
    Please follow the guidelines below to avoid problems with sending are receiving Beam transactions.
 
@@ -47,7 +47,7 @@ Generating seed phrase
 
 As a part of creating a new wallet, a new seed phrase will be generated for you.
 
-.. attention:: Seed phrase is the **most important secret you have to keep**. Knowing the seed phrase enables you (or anyone else) to access all your funds. 
+.. attention:: Seed phrase is the **most important secret you have to keep**. Knowing the seed phrase enables you (or anyone else) to access all your funds.
 
 
 .. figure:: images/mobile/02_creating_new_wallet/02.jpg
@@ -68,7 +68,7 @@ As a part of creating a new wallet, a new seed phrase will be generated for you.
 
 Did you wrote down your seed phrase correctly? Triple-check your handwriting again. The difference between *_F_unnel* and *_T_unnel* can be crucial when trying to restore a wallet with valuable funds in the far or near future.
 
-Did you verified your handwriting? Now go find a safe space for the paper! 
+Did you verified your handwriting? Now go find a safe space for the paper!
 
 .. important:: Storing the seed phrase on your computer makes your funds prone to cyber attacks (read: much *less* secure). 'Creative' approaches like saving a screenshot of the wallet or your handwriting on your computer or in the cloud *may* sound like a good idea, but it is absolutely **not recommended**. If hackers get the access to your computer, network drive etc., they can can potentially steal your seed phrase by using OCR programs (which can scan pictures and transform them into plain text) and, therefore, get access to your funds.
 
@@ -84,19 +84,19 @@ Only when you typed all the selected words correctly, you will be allowed to pro
 
 .. figure:: images/mobile/02_creating_new_wallet/05.jpg
    :scale: 30
-   :alt: Repeat your seed phrase 
+   :alt: Repeat your seed phrase
 
 
 Setting wallet password
 -----------------------
 
-To access your Beam Wallet, you will need to create a password. This password is not the same as the seed phrase. Seed phrase identifies a wallet and enables access to all the funds stored in it from any device. Your wallet password provides with a second security layer in case someone gains access to your computer or has stolen your wallet database file. It is important to choose a strong password. 
+To access your Beam Wallet, you will need to create a password. This password is not the same as the seed phrase. Seed phrase identifies a wallet and enables access to all the funds stored in it from any device. Your wallet password provides with a second security layer in case someone gains access to your computer or has stolen your wallet database file. It is important to choose a strong password.
 
 The wallet will provide some indication of password strength for your convenience. Do not count on it, however. Choose a password that is at least 8 characters long with a combination of letters, numbers, and symbols.
 
 .. figure:: images/mobile/02_creating_new_wallet/06.jpg
    :scale: 30
-   :alt: Setting the password 
+   :alt: Setting the password
 
 
 Choosing the node connectivity mode
@@ -107,9 +107,9 @@ Beam Mobile Wallet can connect to the network through:
 * Random remote node
 * Specific remote node
 
-.. note:: When running behind a firewall you can change the default port the node will be listening on, and in case of CPU mining, set the amount of mining threads. You will be probably provided at least one default peer to connect to but you can always add more peers on the Settings screen. The recommended peers are published in the list of bootstrap nodes in the `downloads page <https://beam.mw/downloads>`_ on `Beam official website <https://beam.mw>`_.
+.. note:: When running behind a firewall you can change the default port the node will be listening on, and in case of CPU mining, set the amount of mining threads. You will be probably provided at least one default peer to connect to but you can always add more peers on the Settings screen. The recommended peers are published in the list of bootstrap nodes in the `downloads page <https://www.beam.mw/downloads/mainnet>`_ on `Beam official website <https://beam.mw>`_.
 
-Random mode allows you to automatically connect to random bootstrap node. The wallet wil have to trust the remote node for blockchain verification. 
+Random mode allows you to automatically connect to random bootstrap node. The wallet wil have to trust the remote node for blockchain verification.
 
 Specific remote node will automatically verify the blockchain for your wallet. If you are running your own node somewhere (or maybe even more than one) and want to connect specifically to it, use the option by providing the IP and port the node is listening on.
 
@@ -125,7 +125,7 @@ Once the wallet is connected, it synchronizes with the current blockchain state 
 Main screen
 -----------
 
-Once your wallet is created, the main screen will show up. 
+Once your wallet is created, the main screen will show up.
 
 .. figure:: images/mobile/03_main_screen/01.jpg
    :scale: 30
@@ -142,7 +142,7 @@ Wallet status indicator
 
 The main screen of the wallet shows the current balance as well as the transaction history and statuses. On the left, under the Beam logo, there is a toolbar that provides navigation between different wallet screens such as `Main Screen`, `Addresses Screen`, `UTXO Screen` and `Settings Screen`.
 
-In the top left corner of the Main Screen, under 'Wallet', you see connection status indicator. 
+In the top left corner of the Main Screen, under 'Wallet', you see connection status indicator.
 
 Green indicator means that the node is up and running connected to peers.
 
@@ -150,7 +150,7 @@ Red means it is either unable to connect to the node or the node has a problem y
 
 In brackets, the indicator also specifies the network to which the wallet is connected:
 
-* **Mainnet:** the network with real money and actual transactions. 
+* **Mainnet:** the network with real money and actual transactions.
 * **Testnet<number>** (such as Testnet3, Testnet4 etc) **:** staging environments for trying new features in our wallet, node and miner software. For advanced users only.
 * **Masternet:** new features under development, if you see this name in your wallet it means that you are very early adopter or Beam code contributor otherwise you’ve probably arrived to the wrong place.
 
@@ -170,7 +170,7 @@ Financial transactions
 Main screen password
 --------------------
 
-In the future, the screen will pop-up automatically after you open the application and type in your password. 
+In the future, the screen will pop-up automatically after you open the application and type in your password.
 
 .. figure:: images/mobile/03_main_screen/04.jpg
    :scale: 30
@@ -185,28 +185,28 @@ Here is how the process of receiving BEAM looks like from a Receiver’s perspec
 
 * Generate an address
 * Send your address to the Sender person **over a secure communication channel**
-* Both Sender and Receiver’s Wallet must be online at the same time to complete a transaction. 
+* Both Sender and Receiver’s Wallet must be online at the same time to complete a transaction.
 
 It's possible to reuse an address that already exists, more on that later.
 
 Generate an address
 -------------------
 
-Proceed to the main screen and click the blue ‘Receive’ button at the top right corner. 
+Proceed to the main screen and click the blue ‘Receive’ button at the top right corner.
 
 .. figure:: images/mobile/04_receiving_beam/01.jpg
    :scale: 30
    :alt: Receive BEAM button
 
-This will open the receive screen. 
+This will open the receive screen.
 
 .. figure:: images/mobile/04_receiving_beam/02.jpg
    :scale: 30
    :alt: Receive BEAM screen
 
-Copy and paste the newly generated Beam address to send to Sender over a **secure communication channel**. 
+Copy and paste the newly generated Beam address to send to Sender over a **secure communication channel**.
 
-A new Beam address is generated every time the 'Receive' screen is opened. By default, the address is valid for 24 hours. It is best to give the Sender your address closest to the time they will be sending BEAM so the address does not expire. 
+A new Beam address is generated every time the 'Receive' screen is opened. By default, the address is valid for 24 hours. It is best to give the Sender your address closest to the time they will be sending BEAM so the address does not expire.
 
 .. figure:: images/mobile/04_receiving_beam/03.jpg
    :scale: 30
@@ -221,7 +221,7 @@ You can explicitly set the expiration time to ‘Never’ for this address only 
 QR code
 -------
 
-If the Sender uses a mobile app, he can quickly scan the QR code from your mobile instead of receiving, copying and pasting the alphanumeric address. 
+If the Sender uses a mobile app, he can quickly scan the QR code from your mobile instead of receiving, copying and pasting the alphanumeric address.
 
 .. figure:: images/mobile/04_receiving_beam/04.jpg
    :scale: 30
@@ -230,7 +230,7 @@ If the Sender uses a mobile app, he can quickly scan the QR code from your mobil
 Comment
 -------
 
-You can add a comment when creating the receiving address. The comment is never sent to the network, it is only visible inside your wallet and is used for internal bookkeeping only. 
+You can add a comment when creating the receiving address. The comment is never sent to the network, it is only visible inside your wallet and is used for internal bookkeeping only.
 
 The comment can be seen on the `Address screen`_ and in the extended transaction view.
 
@@ -244,7 +244,7 @@ Sending the address
 
 .. attention:: When sending the address make sure you use a secure communication channel.
 
-.. attention:: Make sure the entire address is sent to the Sender as it’s longer than it appears on the screen. *Don’t forget* to double check the value in whichever messenger app of your choice because viruses and malware on your computer may change your address while it’s in the clipboard. 
+.. attention:: Make sure the entire address is sent to the Sender as it’s longer than it appears on the screen. *Don’t forget* to double check the value in whichever messenger app of your choice because viruses and malware on your computer may change your address while it’s in the clipboard.
 
 Completing the transaction
 --------------------------
@@ -294,9 +294,9 @@ In order to send BEAM, you will need to click the magenta ‘Send’ button at t
    :scale: 30
    :alt: Send BEAM screen
 
-Make sure you have the correct address and paste the Receiver’s Beam address in the 'Send To' field. 
+Make sure you have the correct address and paste the Receiver’s Beam address in the 'Send To' field.
 
-To help to identify the transaction, you may also choose to fill in the optional Comment field. The comment will remind you what or who the transaction is for. The comment is stored locally, thus it will only be visible in your wallet for bookkeeping purposes. 
+To help to identify the transaction, you may also choose to fill in the optional Comment field. The comment will remind you what or who the transaction is for. The comment is stored locally, thus it will only be visible in your wallet for bookkeeping purposes.
 
 The comment can be seen on the `Address screen`_:
 
@@ -310,7 +310,7 @@ The comment is also displayed in the extended transaction view on Main Screen:
    :scale: 30
    :alt: Send BEAM comment
 
-Select the transaction amount in BEAM you want to send. Transaction amount is in BEAM and may contain fractional values such as 1.25 BEAM or 11.3 BEAM and the like. Keep in mind you also have to pay a transaction fee, hence the amount to send plus the fee must be equal to or less than the available balance. 
+Select the transaction amount in BEAM you want to send. Transaction amount is in BEAM and may contain fractional values such as 1.25 BEAM or 11.3 BEAM and the like. Keep in mind you also have to pay a transaction fee, hence the amount to send plus the fee must be equal to or less than the available balance.
 
 .. figure:: images/mobile/05_sending_beam/04.jpg
    :scale: 30
@@ -322,7 +322,7 @@ Transaction fees are specified in GROTH (100 millionths of BEAM). Amount of fees
    :scale: 30
    :alt: Send BEAM transaction fee
 
-You can see the remaining amount of BEAM in your wallet and the change that will be received after the transaction. 
+You can see the remaining amount of BEAM in your wallet and the change that will be received after the transaction.
 
 .. figure:: images/mobile/05_sending_beam/06.jpg
    :scale: 30
@@ -332,7 +332,7 @@ After you click ‘Send’ you will see a confirmation with the most important t
 
 .. figure:: images/mobile/05_sending_beam/07.jpg
    :scale: 30
-   :alt: Send BEAM confirmation 
+   :alt: Send BEAM confirmation
 
 
 Completing the transaction
@@ -374,7 +374,7 @@ This process allows you to restore your funds directly from the blockchain. It i
 Address
 -------
 
-Let’s define the meaning of address in the BEAM ecosystem: BEAM is always sent from one address to another. Both sending and receiving addresses are alphanumeric tokens that uniquely define the transaction endpoints. 
+Let’s define the meaning of address in the BEAM ecosystem: BEAM is always sent from one address to another. Both sending and receiving addresses are alphanumeric tokens that uniquely define the transaction endpoints.
 
 A person can create as many addresses as required. The address creation process is explained in `Receiving BEAM`.
 
@@ -382,15 +382,15 @@ A person can create as many addresses as required. The address creation process 
 
 *Example:* There are three wallets: one belongs to you, one belongs to Alice and another belongs to Bob. You have created one address to receive money from Alice and another address to receive money from Bob. Alice and Bob will never know that they are sending money to the same person.
 
-Same address can be used for sending and receiving money. 
+Same address can be used for sending and receiving money.
 
 *Example:* you have created an address to send money to Alice. Alice can see the address the money came from and can send money to the address back to you.
 
-.. attention:: For ultimate privacy, it is advised to have a **dedicated address for every transaction** (ie. for both Sending or Receiving). 
+.. attention:: For ultimate privacy, it is advised to have a **dedicated address for every transaction** (ie. for both Sending or Receiving).
 
 .. attention:: Although not recommended, an address can be reused until it had reached its expiration (24 hours since when it was generated).
 
-*Example:* Imagine you’ve created the address with expiration interval of 24 hours and immediately sent it to Alice. In the next 24 hours, Alice will be able to send BEAM to you as many times as she likes, reusing the same address of yours. 
+*Example:* Imagine you’ve created the address with expiration interval of 24 hours and immediately sent it to Alice. In the next 24 hours, Alice will be able to send BEAM to you as many times as she likes, reusing the same address of yours.
 
 .. warning:: Reusing same addresses, created with longer expiration interval, can be convenient yet the tradeoff of decreased privacy should be kept in mind.
 
@@ -413,7 +413,7 @@ You can always create a new one by using Receive Screen. You can see all your ac
    :scale: 30
    :alt: Default address
 
-Once an expired address becomes inactive, it cannot be used in any incoming or outgoing transaction. Each address has a default expiration time of 24 hours, including the default address. An expired address becomes inactive and you won’t be able to be use it again. You can see the expired addresses listed under 'My Expired Addresses.' 
+Once an expired address becomes inactive, it cannot be used in any incoming or outgoing transaction. Each address has a default expiration time of 24 hours, including the default address. An expired address becomes inactive and you won’t be able to be use it again. You can see the expired addresses listed under 'My Expired Addresses.'
 
 .. figure:: images/mobile/06_address_screen/03.jpg
    :scale: 30
@@ -446,7 +446,7 @@ In the ‘Contacts’ tab, you can see every address that sent you BEAM or to wh
 UTXO
 ----
 
-UTXO (Unspent Transaction (TX) Output) is like a banknote of a specific amount. Simply said, if BEAM is the currency, any UTXO can be considered a ‘bill’. You can have multiple ‘bills’ in your wallet at the same time. 
+UTXO (Unspent Transaction (TX) Output) is like a banknote of a specific amount. Simply said, if BEAM is the currency, any UTXO can be considered a ‘bill’. You can have multiple ‘bills’ in your wallet at the same time.
 
 UTXO screen
 -----------
@@ -467,7 +467,7 @@ The type of UTXO can be:
 UTXO details
 ------------
 
-Click on the specific UTXO you want to see more details of. 
+Click on the specific UTXO you want to see more details of.
 
 .. figure:: images/mobile/07_utxo_screen/02.jpg
    :scale: 30
@@ -499,6 +499,6 @@ This 10 BEAM UTXO will be locked until the 9 BEAM transaction completes. If Alic
 You can split UTXO by yourself
 -------------------------------
 
-One thing you can do is to split UTXO by sending a transaction to yourself (using you own active address). You may want to do this in the case your UTXO is too large, and you don't want it all locked during a transaction. 
+One thing you can do is to split UTXO by sending a transaction to yourself (using you own active address). You may want to do this in the case your UTXO is too large, and you don't want it all locked during a transaction.
 
-.. attention:: You will pay a fee for this transaction. 
+.. attention:: You will pay a fee for this transaction.
