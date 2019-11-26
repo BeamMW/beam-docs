@@ -12,11 +12,9 @@ Welcome to Beam documentation!
 
 .. note:: Beam is currently in Mainnet.
 
-	Rules Signature: ed91a717313c6eb0 (for height < 321321)
-
    Rules Signature: 6d622e615cfd29d0 (for height >= 321321)
 
-	Download binaries from: `Beam Downloads Page <https://www.beam.mw/downloads/mainnet>`_
+	Download binaries from: `Beam Downloads Page <https://www.beam.mw/downloads>`_
 
 	Source code: `Beam Github <https://github.com/BeamMW/beam>`_
 
@@ -24,15 +22,9 @@ Welcome to Beam documentation!
 Current release
 ===============
 
-**Clear Cathode 3.0**
+**Double Dopple 4.0**
 
-This is hard fork release, make sure to upgrade your nodes, miners and wallets
-
-Hard fork will be activated at height 321321 (approximately August 15th 2019)
-
-DO NOT COUNT ON THE DATE, WATCH FOR THE BLOCK HEIGHT
-
-
+This release includes desktop wallet support for Atomic Swaps
 
 **Known limitations:**
 
@@ -42,12 +34,6 @@ DO NOT COUNT ON THE DATE, WATCH FOR THE BLOCK HEIGHT
 **Points to mention:**
 
 In case a mobile wallet is connected to a random node and the user has both mobile and a desktop wallets which are using the same seed phrase, the funds sent to the desktop wallet won’t appear on the mobile wallet. If the desktop wallet is running a local node, it will see funds sent to both wallets. The reason is that the local node (integrated into desktop wallet) always monitors the blockchain for UTXOs related to the seed of the wallet. The mobile wallet does not run a local node and thus can only monitor transactions sent to its specific SBBS addresses. Of course, no funds will be lost in any event.
-
-**Misc**
-
-The work on Atomic Swap is well in the process.
-
-
 
 
 **TL;DR**

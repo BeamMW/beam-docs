@@ -275,7 +275,7 @@ The following table describes all parameters in more details
 |                         |                                                                                                          |
 |                         | Peer should be a machine on the network you want to connect to (for example Testnet 4)                   |
 |                         |                                                                                                          |
-|                         | List of peers is published on the downloads page at https://www.beam.mw/downloads/mainnet                            |
+|                         | List of peers is published on the downloads page at https://www.beam.mw/downloads                        |
 |                         |                                                                                                          |
 |                         | .. code-block:: bash                                                                                     |
 |                         |                                                                                                          |

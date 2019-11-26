@@ -398,7 +398,7 @@ There are two options: never or 24 hours.
 
 
 Export and import SBBS addresses and transaction history
--------------------------------------------------------
+--------------------------------------------------------
 
 Sometimes when upgrading the wallet or restoring from seed phrase you need to reimport the list of SBBS addresses and transaction history (the data) from the previous wallet. To do that use the commands below:
 
@@ -526,7 +526,7 @@ Now as the "cold" wallet is synced, proceed with the next steps:
 .. _receiving_to_cold_wallet:
 
 Receiving to cold wallet
---------------------------
+------------------------
 
 1. Generate new address in "cold" wallet and send it to the sender.
 2. Copy wallet.db to "hot" wallet.
