@@ -98,7 +98,13 @@ If the connection is successful the green light will be shown near the section t
 Connecting using Electrum Wallet
 --------------------------------
 
-Another simpler option to connect to a remote node using Electrum wallet service. First you need to find an address of an Electrum node, or run your own. To connect to Electrum you need to turn on the 'Electrum' toggle in the appropriate section and specify the required parameters.
+Another simpler option to connect to a remote node using Electrum wallet service. First you need to find an address of an Electrum node, or run your own. 
+
+.. note:
+  It is possible to get an Electrum node by installing the official Electrum wallet and clicking on the 'Network' menu.
+
+
+To connect to Electrum you need to turn on the 'Electrum' toggle in the appropriate section and specify the required parameters.
 
 .. figure:: images/swaps/electrum_settings_btc_new.PNG
    :alt: Connection to the Electrum wallet
@@ -176,6 +182,12 @@ Click 'Swap' to accept the conditions and initiate the swap itself.
 Understanding swap transactions
 -------------------------------
 
-TODO
+Every time a swap offer is created or accepted a matching swap transaction is created as well. The list of current swap transactions can be seen in the 'Transactions' tab of the Atomic Swaps screen.
 
+.. figure:: images/swaps/swap_transactions.PNG
+   :alt: Swap transactions
+
+Here you can see the current status of the transaction, and by clicking on the transaction in the list, you can see its details. 
+
+In case it is still possible to cancel the transaction you can do so by clicking 'Cancel' from the transaction menu (three vertical dots in each line). Once transaction has completed (or expired or failed) you can delete the transaction from the list using the same menu.
 
