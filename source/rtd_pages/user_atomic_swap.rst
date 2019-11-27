@@ -79,12 +79,9 @@ Make sure the node is running and fully synchronised
 
 Open Settings tab in the Beam Wallet and open the Swap section using the 'Swap' toggle in the top right corner of the screen
 
-.. figure:: images/swaps/swap_settings.png
+.. figure:: images/swaps/swap_settings.PNG
    :alt: Open Swap Settings
 
-
-.. figure:: images/desktop/02_installing/08.png
-   :alt: Keep in dock
 
 In the Litecoin section, fill in the node details, including ip:port of the node and the RPC username and password. The default fee parameter specifies the fee paid on the respective chain per Kb of transaction size and can be left at the default value.
 
@@ -94,7 +91,7 @@ Once the settings for the node are specified click 'Apply' and then 'Connect'
 
 If the connection is successful the green light will be shown near the section title
 
-.. figure:: images/swaps/connection_successful_local.png
+.. figure:: images/swaps/connection_successful_local.PNG
    :alt: Connection to the node is successful
 
 
@@ -103,7 +100,7 @@ Connecting using Electrum Wallet
 
 Another simpler option to connect to a remote node using Electrum wallet service. First you need to find an address of an Electrum node, or run your own. To connect to Electrum you need to turn on the 'Electrum' toggle in the appropriate section and specify the required parameters.
 
-.. figure:: images/swaps/electrum_settings_btc_new.png
+.. figure:: images/swaps/electrum_settings_btc_new.PNG
    :alt: Connection to the Electrum wallet
 
 At this point you need to either enter an existing seed phrase for the wallet or create a new one. 
@@ -113,25 +110,25 @@ At this point you need to either enter an existing seed phrase for the wallet or
 
 You can later edit or create new wallet at any time
 
-.. figure:: images/swaps/electrum_settings_btc_edit.png
+.. figure:: images/swaps/electrum_settings_btc_edit.PNG
    :alt: Connection to the Electrum wallet
 
 
 Once the seed is set you can connect to the Electrum wallet
 
-.. figure:: images/swaps/electrum_settings_btc.png
+.. figure:: images/swaps/electrum_settings_btc.PNG
    :alt: Connection to the Electrum wallet
 
 
 Once you have connected, you should be able to see the list of wallet addresses by clicking the 'Show wallet addresses'.
 
-.. figure:: images/swaps/electrum_wallet_addresses.png
+.. figure:: images/swaps/electrum_wallet_addresses.PNG
    :alt: Electrum wallet addresses
 
 
 Afer you have completed the configuiration, you are able to accept swap offers from the Atomic Swaps tab
 
-.. figure:: images/swaps/swaps_tab.png
+.. figure:: images/swaps/swaps_tab.PNG
    :alt: Atomic swaps tab
 
 Before we discuss how to create and accept offers we need to understand the concepts of balance and UTXO
@@ -151,7 +148,7 @@ Creating swap offer
 
 Click on 'Create offer' button in the top right corner of the swaps screen to create a new offer. 
 
-.. figure:: images/swaps/create_offer.png
+.. figure:: images/swaps/create_offer.PNG
    :alt: Create offer dialog
 
 You can specify what amount and of which currency you want to trade to which amount of another currency. If you want to use the rate instead of explicitly setting the received amount, you can use the rate selector.
@@ -170,7 +167,7 @@ You can select the coin you want to swap in the dropdown list in the top right p
 
 Once you have seen the offer you like, and provided you have enough funds for the swap you can click the 'Accept' button near the offer to review the swap details.
 
-.. figure:: images/swaps/accepting_offer.png
+.. figure:: images/swaps/accepting_offer.PNG
    :alt: Accept offer
 
 Click 'Swap' to accept the conditions and initiate the swap itself.
