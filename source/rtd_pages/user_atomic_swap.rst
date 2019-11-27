@@ -82,6 +82,10 @@ Open Settings tab in the Beam Wallet and open the Swap section using the 'Swap' 
 .. figure:: images/swaps/swap_settings.png
    :alt: Open Swap Settings
 
+
+.. figure:: images/desktop/02_installing/08.png
+   :alt: Keep in dock
+
 In the Litecoin section, fill in the node details, including ip:port of the node and the RPC username and password. The default fee parameter specifies the fee paid on the respective chain per Kb of transaction size and can be left at the default value.
 
 .. note: Add description on how to calculate fees
