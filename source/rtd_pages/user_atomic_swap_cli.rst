@@ -222,7 +222,7 @@ Bob example:
 
     Each coin has its own transaction feerate (``--swap_feerate``). To avoid failure or transaction jamming due to inconsistent fee amount, it’s recommended to check appropriate fee amount for each coin, and set it as ``--swap_feerate`` value. 
 
-    BTC ``--swap_feerate`` = fee per 1 kb transaction size. Unlike Bitcoin, Beam transaction feerate is static and doesn’t depend on transaction size. BTC value for swap amount (``--swap_amount``) is provided in “satoshi”, 1 BTC = 1000000 photons, BEAM value is provided in beams.
+    BTC ``--swap_feerate`` = fee per 1 kb transaction size. Unlike Bitcoin, Beam transaction feerate is static and doesn’t depend on transaction size. BTC value for swap amount (``--swap_amount``) is provided in “satoshi”, 1 BTC = 1000000 satoshis, BEAM value is provided in beams.
   
 
 
