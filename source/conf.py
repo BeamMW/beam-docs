@@ -20,13 +20,13 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Beam'
-copyright = '2018, Beam Team'
+copyright = '2019, Beam Team'
 author = 'Beam Team'
 
 # The short X.Y version
 version = ''
 # The full version, including alpha/beta/rc tags
-release = 'December 2018'
+release = '2019'
 
 
 # -- General configuration ---------------------------------------------------
