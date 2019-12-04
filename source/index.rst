@@ -22,9 +22,9 @@ Welcome to Beam documentation!
 Current release
 ===============
 
-**Double Dopple 4.0**
+**Double Doppler 4.0**
 
-This release includes desktop wallet support for Atomic Swaps
+This release includes desktop wallet support for Atomic Swaps, sync time improvements and much more...
 
 **Known limitations:**
 
