@@ -3,6 +3,18 @@
 Atomic Swaps using Command Line Wallet
 ======================================
 
+.. note::
+
+  Atomic Swaps is an advanced feature, currently in beta. 
+
+  DO NOT USE SWAPS FOR LARGE AMOUNTS OF MONEY  
+  
+  For Electrum we support only Legacy type seeds and SSL connection
+
+  For Bitcoin use version `Bitcoin Core v0.17.1 <https://bitcoin.org/en/download>`_ .
+
+  For Litecoin use version `Litecoin v0.17.1 <https://litecoin.org/#download>`_ .
+
 
 Performing atomic swap with LiteCoin
 ------------------------------------
