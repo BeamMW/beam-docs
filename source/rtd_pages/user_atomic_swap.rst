@@ -4,6 +4,19 @@
 Atomic Swaps using Desktop Wallet
 =================================
 
+.. note::
+
+  Atomic Swaps is an advanced feature, currently in beta. 
+
+  DO NOT USE SWAPS FOR LARGE AMOUNTS OF MONEY  
+  
+  For Electrum use only Legasy seed type (we do not support Segwit)
+
+  For Bitcoin use version `Bitcoin Core v0.17.1 <https://bitcoin.org/en/download>`_ .
+
+  For Litecoin use version `Litecoin v0.17.1 <https://litecoin.org/#download>`_ .
+
+
 Introduction to Atomic Swap
 ---------------------------
 
@@ -29,18 +42,6 @@ The way this really works in practice is as follows
 3. Once the lock is confirmed, the parties exchange secret used to lock funds and send the Redeem Tx to the chain, effectively getting the swapped coins.
 
 4. If the swap fails for any reason, Refund Tx can be sent to the network after some significant period of time to get the locked coin back for each party. 
-
-
-.. note::
-
-  Atomic Swaps is an advanced feature, currently in beta. 
-
-  DO NOT USE SWAPS FOR LARGE AMOUNTS OF MONEY  
-
-  For Bitcoin use version `Bitcoin Core v0.17.1 <https://bitcoin.org/en/download>`_ .
-
-  For Litecoin use version `Litecoin v0.17.1 <https://litecoin.org/#download>`_ .
-
 
 
 Configuring swaps in Desktop wallet
