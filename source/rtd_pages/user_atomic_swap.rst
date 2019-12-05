@@ -10,7 +10,7 @@ Atomic Swaps using Desktop Wallet
 
   DO NOT USE SWAPS FOR LARGE AMOUNTS OF MONEY  
   
-  For Electrum use only Legasy seed type (we do not support Segwit)
+  For Electrum we support only Legacy seed and SSL connection type
 
   For Bitcoin use version `Bitcoin Core v0.17.1 <https://bitcoin.org/en/download>`_ .
 
