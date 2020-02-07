@@ -113,60 +113,78 @@ Beam Node allows to provide the settings via command line or using a configurati
 
    Beam uses Equihash mining algorith with (150,5) parameters and customized data path. It is efficiently mined on GPUs
 
-+-------------------------+----------------------------------------------------------------------------------------------------------+
-|**Parameter**            | **Description & Example**                                                                                |
-+-------------------------+----------------------------------------------------------------------------------------------------------+
-| --miner_key             | Secret key to attribute mining rewards mined by the node to your wallet                                  |
-|                         | Created using CLI walelt `export_miner_key` command with --subkey=<miner id> parameter                   |
-|                         | See :ref:`user_cli_wallet_guide` for more details                                                        |
-|                         |                                                                                                          |
-+-------------------------+----------------------------------------------------------------------------------------------------------+
-| --owner_key             | Secret key allowing the node to monitor mining rewards mined by all mining nodes marked by this key.     |
-|                         | Created using CLI walelt `export_owner_key` command                                                      |
-|                         | See :ref:`user_cli_wallet_guide` for more details                                                        |
-|                         |                                                                                                          |
-+-------------------------+----------------------------------------------------------------------------------------------------------+
-| --pass                  | Wallet password. It is required since both Miner Key and Owner Key are protected by walelt password      |
-|                         |                                                                                                          |
-+-------------------------+----------------------------------------------------------------------------------------------------------+
-| --stratum_port          | Port on which stratum server will listen to incoming connections. 0 if stratum server is disabled.       |
-|                         |                                                                                                          |
-|                         | .. code-block:: bash                                                                                     |
-|                         |                                                                                                          |
-|                         |    stratum_port=0                                                                                        |
-+-------------------------+----------------------------------------------------------------------------------------------------------+
-| --stratum_secrets_path  | Path to folder containing stratum certificates                                                           |
-|                         |                                                                                                          |
-|                         | .. code-block:: bash                                                                                     |
-|                         |                                                                                                          |
-|                         |    stratum_secrets_path=.                                                                                |
-+-------------------------+----------------------------------------------------------------------------------------------------------+
++----------------------------+---------------------------------------------------------------------------------------------------------+
+|**Parameter**               | **Description & Example**                                                                               |
++----------------------------+---------------------------------------------------------------------------------------------------------+
+|  --miner_key               | Secret key to attribute mining rewards mined by the node to your wallet                                 |
+|                            | Created using CLI walelt `export_miner_key` command with --subkey=<miner id> parameter                  |
+|                            | See :ref:`user_cli_wallet_guide` for more details                                                       |
+|                            |                                                                                                         |
++----------------------------+---------------------------------------------------------------------------------------------------------+
+| --owner_key                | Secret key allowing the node to monitor mining rewards mined by all mining nodes marked by this key.    |
+|                            | Created using CLI walelt `export_owner_key` command                                                     |
+|                            | See :ref:`user_cli_wallet_guide` for more details                                                       |
+|                            |                                                                                                         |
++----------------------------+---------------------------------------------------------------------------------------------------------+
+| --pass                     | Wallet password. It is required since both Miner Key and Owner Key are protected by walelt password     |
+|                            |                                                                                                         |
++----------------------------+---------------------------------------------------------------------------------------------------------+
+| --stratum_port             | Port on which stratum server will listen to incoming connections. 0 if stratum server is disabled.      |
+|                            |                                                                                                         |
+|                            | .. code-block:: bash                                                                                    |
+|                            |                                                                                                         |
+|                            |    stratum_port=0                                                                                       |
++----------------------------+---------------------------------------------------------------------------------------------------------+
+| --stratum_secrets_path     | Path to folder containing stratum certificates                                                          |
+|                            |                                                                                                         |
+|                            | .. code-block:: bash                                                                                    |
+|                            |                                                                                                         |
+|                            |    stratum_secrets_path=.                                                                               |
++----------------------------+---------------------------------------------------------------------------------------------------------+
+| --stratum_use_tls          | Enable TLS on startum server                                                                            |
+|                            |                                                                                                         |
+|                            | .. code-block:: bash                                                                                    |
+|                            |                                                                                                         |
+|                            |    stratum_use_tls=                                                                                     |
++----------------------------+---------------------------------------------------------------------------------------------------------+ 
+|   --fast_sync              | Fast sync on/off (override horizons)                                                                    |
+|                            |                                                                                                         |
+|                            | .. code-block:: bash                                                                                    |
+|                            |                                                                                                         |
+|                            |    fast_sync=on                                                                                         |
++----------------------------+---------------------------------------------------------------------------------------------------------+ 
+|  --generate_recovery       | Recovery file to generate immediately after start                                                       |
+|                            |                                                                                                         |
++----------------------------+---------------------------------------------------------------------------------------------------------+ 
+|  --recovery_auto_path      | Path and file prefix for recovery auto-generation                                                       |
+|                            |                                                                                                         |
++----------------------------+---------------------------------------------------------------------------------------------------------+ 
+|  --recovery_auto_period    | Period (in blocks) for recovery auto-generation                                                         |
+|                            |                                                                                                         |
++----------------------------+---------------------------------------------------------------------------------------------------------+ 
+
+To run node in fast sync mode you need to run the following command:
+
+::
+
+    ./beam-node --fast_sync=on
+    
+
+.. figure:: images/cli/fast_sync.jpg
+
+Operations with Node Data Base
+------------------------
+
+
 
 +-------------------------+----------------------------------------------------------------------------------------------------------+
 |**Parameter**            | **Description & Example**                                                                                |
 +-------------------------+----------------------------------------------------------------------------------------------------------+
-|  --check_db arg (=0)    | Secret key to attribute mining rewards mined by the node to your wallet                                  |
-|                         | Created using CLI walelt `export_miner_key` command with --subkey=<miner id> parameter                   |
-|                         | See :ref:`user_cli_wallet_guide` for more details                                                        |
-|                         |                                                                                                          |
+| --check_db              |DB integrity check                                                                                        |
 +-------------------------+----------------------------------------------------------------------------------------------------------+
-| --owner_key             | Secret key allowing the node to monitor mining rewards mined by all mining nodes marked by this key.     |
-|                         | Created using CLI walelt `export_owner_key` command                                                      |
-|                         | See :ref:`user_cli_wallet_guide` for more details                                                        |
-|                         |                                                                                                          |
+|  --vacuum               | DB vacuum (compact)                                                                                      |
 +-------------------------+----------------------------------------------------------------------------------------------------------+
-| --pass                  | Wallet password. It is required since both Miner Key and Owner Key are protected by walelt password      |
-|                         |                                                                                                          |
+| --reset_id              | Reset self Node ID (used for network authentication). Must do if the node is cloned                      |
 +-------------------------+----------------------------------------------------------------------------------------------------------+
-| --stratum_port          | Port on which stratum server will listen to incoming connections. 0 if stratum server is disabled.       |
-|                         |                                                                                                          |
-|                         | .. code-block:: bash                                                                                     |
-|                         |                                                                                                          |
-|                         |    stratum_port=0                                                                                        |
-+-------------------------+----------------------------------------------------------------------------------------------------------+
-| --stratum_secrets_path  | Path to folder containing stratum certificates                                                           |
-|                         |                                                                                                          |
-|                         | .. code-block:: bash                                                                                     |
-|                         |                                                                                                          |
-|                         |    stratum_secrets_path=.                                                                                |
+| --erase_id              | Reset self Node ID (used for network authentication) and stop before re-creating the new one.            |
 +-------------------------+----------------------------------------------------------------------------------------------------------+
