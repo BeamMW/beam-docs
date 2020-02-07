@@ -163,11 +163,11 @@ Beam Node allows to provide the settings via command line or using a configurati
 |                            |                                                                                                         |
 +----------------------------+---------------------------------------------------------------------------------------------------------+ 
 
-To run node in fast sync mode you need to run the following command:
+To make it easier to run local node in fast sync mode you need to run the following command:
 
 ::
 
-    ./beam-node --fast_sync=on
+    ./beam-node --port=10000 --peer=eu-nodes.mainnet.beam.mw:8100,us-nodes.mainnet.beam.mw:8100,ap-nodes.mainnet.beam.mw:8100,ap-hk-nodes.mainnet.beam.mw:8100 --fast_sync=on 
     
 
 .. figure:: images/cli/fast_sync.jpg
