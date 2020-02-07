@@ -141,64 +141,32 @@ Beam Node allows to provide the settings via command line or using a configurati
 |                         |                                                                                                          |
 |                         |    stratum_secrets_path=.                                                                                |
 +-------------------------+----------------------------------------------------------------------------------------------------------+
-|  --stratum_use_tls      | enable TLS on startum server                                                                             |
-|                         |                                                                                                          |
-|                         | .. code-block:: bash                                                                                     |
-|                         |                                                                                                          |
-|                         |    stratum_use_tls=                                                                                      |
-+-------------------------+----------------------------------------------------------------------------------------------------------+
-|   --fast_sync           | Fast sync on/off (override horizons)                                                                     |
-|                         |                                                                                                          |
-|                         | .. code-block:: bash                                                                                     |
-|                         |                                                                                                          |
-|                         |    fast_sync=on                                                                                          |
-+-------------------------+----------------------------------------------------------------------------------------------------------+
-| --generate_recovery     | Recovery file to generate immediately after start                                                        |
-|                         |                                                                                                          |
-|                         |                                                                                                          | 
-|                         |                                                    													     |
-|                         |                                                                                                          |
-+-------------------------+----------------------------------------------------------------------------------------------------------+
-|  --recovery_auto_path   | path and file prefix for recovery auto-generation                                                        |
-|                         |                                                                                                          |
-|                         |                                                                                                          | 
-|                         |                                                    													     |
-|                         |                                                                                                          |
-+-------------------------+----------------------------------------------------------------------------------------------------------+
-|  --recovery_auto_period | period (in blocks) for recovery auto-generation                                                          |
-|                         |                                                                                                          |
-|                         | .. code-block:: bash                                                                                     |
-|                         |                                                                                                          |
-|                         |    recovery_auto_period=30                                                                               |
-+-------------------------+----------------------------------------------------------------------------------------------------------+
-
-
-
-
-
-Operations with Node Database
-------------------------
 
 +-------------------------+----------------------------------------------------------------------------------------------------------+
 |**Parameter**            | **Description & Example**                                                                                |
 +-------------------------+----------------------------------------------------------------------------------------------------------+
-|  --check_db             | DB integrity check                                 														 |
-|                         |                                                                                                          | 
-|                         |                                                    													     |
+|  --check_db arg (=0)    | Secret key to attribute mining rewards mined by the node to your wallet                                  |
+|                         | Created using CLI walelt `export_miner_key` command with --subkey=<miner id> parameter                   |
+|                         | See :ref:`user_cli_wallet_guide` for more details                                                        |
 |                         |                                                                                                          |
 +-------------------------+----------------------------------------------------------------------------------------------------------+
-|  --vacuum               | DB vacuum (compact)                                														 |
-|                         |                                                                                                          | 
-|                         |                                                    													     |
+| --owner_key             | Secret key allowing the node to monitor mining rewards mined by all mining nodes marked by this key.     |
+|                         | Created using CLI walelt `export_owner_key` command                                                      |
+|                         | See :ref:`user_cli_wallet_guide` for more details                                                        |
 |                         |                                                                                                          |
 +-------------------------+----------------------------------------------------------------------------------------------------------+
-| --reset_id              | Reset self Node ID (used for network authentication). Must do if the node is cloned                      |
-|                         |                                                    													     |
-|                         |                                                                                                          |
+| --pass                  | Wallet password. It is required since both Miner Key and Owner Key are protected by walelt password      |
 |                         |                                                                                                          |
 +-------------------------+----------------------------------------------------------------------------------------------------------+
-| --erase_id              | Reset self Node ID (used for network authentication) and stop before re-creating the new one.            |
+| --stratum_port          | Port on which stratum server will listen to incoming connections. 0 if stratum server is disabled.       |
 |                         |                                                                                                          |
-|                         |                                                    													     |
+|                         | .. code-block:: bash                                                                                     |
 |                         |                                                                                                          |
+|                         |    stratum_port=0                                                                                        |
++-------------------------+----------------------------------------------------------------------------------------------------------+
+| --stratum_secrets_path  | Path to folder containing stratum certificates                                                           |
+|                         |                                                                                                          |
+|                         | .. code-block:: bash                                                                                     |
+|                         |                                                                                                          |
+|                         |    stratum_secrets_path=.                                                                                |
 +-------------------------+----------------------------------------------------------------------------------------------------------+
