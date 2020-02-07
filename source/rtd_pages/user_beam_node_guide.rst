@@ -172,7 +172,7 @@ To run node in fast sync mode you need to run the following command:
 
 .. figure:: images/cli/fast_sync.jpg
 
-Operations with Node Data Base
+Operations with Node Database
 ------------------------
 
 
