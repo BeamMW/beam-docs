@@ -176,7 +176,7 @@ Beam Node allows to provide the settings via command line or using a configurati
 
 
 
-Operations with Node Data Base
+Operations with Node Database
 ------------------------
 
 +-------------------------+----------------------------------------------------------------------------------------------------------+
