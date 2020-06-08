@@ -22,13 +22,17 @@ Windows
 +-------------------------+---------------------------------------------------------------------------------------------+
 | **File**                | **Location**                                                                                |
 +-------------------------+---------------------------------------------------------------------------------------------+
-| Main Executable         | `\\Program Files\\Beam\\<version>\\Beam Wallet.exe`                                         |
+| Main Executable         | `\\Program Files\\Beam Wallet\\Beam Wallet.exe`                                             |
 +-------------------------+---------------------------------------------------------------------------------------------+
-| Configuration           | `\\Program Files\\Beam\\<version>\\beam-wallet.cfg`                                         |
+| Configuration           | `\\Program Files\\Beam Wallet\\beam-wallet.cfg`                                             |
 +-------------------------+---------------------------------------------------------------------------------------------+
 | Logs                    | `\\Users\\{your User name}\\AppData\\Local\\Beam Wallet\\logs`                              |
 +-------------------------+---------------------------------------------------------------------------------------------+
-| Database                | `\\Users\\{your User name}\\AppData\\Local\\Beam Wallet\\<version>\\wallet.db (node.db)`    |
+| Database                | `\\Users\\{your User name}\\AppData\\Local\\Beam Wallet\\<version>\\wallet.db`              |
+|                         |                                                                                             |
+|                         | `\\Users\\{your User name}\\AppData\\Local\\Beam Wallet\\node.db`                           |
++-------------------------+---------------------------------------------------------------------------------------------+
+| Settings                | `\\Users\\{your User name}\\AppData\\Local\\Beam Wallet\\settings.ini`                      |
 +-------------------------+---------------------------------------------------------------------------------------------+
 | Dumps                   | `\\Users\\{your User name}\\AppData\\Local\\Beam Wallet\\Beam Wallet.exe0.dmp`              |
 +-------------------------+---------------------------------------------------------------------------------------------+
@@ -46,6 +50,10 @@ Mac
 | Logs                    | `/Users/{your User name}/Library/Application Support/Beam Wallet/logs`                     |
 +-------------------------+--------------------------------------------------------------------------------------------+
 | Database                | `/Users/{your User name}/Library/Application Support/Beam Wallet/<version>/wallet.db`      |
+|                         |                                                                                            |
+|                         | `/Users/{your User name}/Library/Application Support/Beam Wallet/node.db`                  |
++-------------------------+--------------------------------------------------------------------------------------------+
+| Settings                | `/Users/{your User name}/Library/Application Support/Beam Wallet/settings.ini`             |
 +-------------------------+--------------------------------------------------------------------------------------------+
 
 Linux
@@ -60,7 +68,11 @@ Linux
 +-------------------------+----------------------------------------------------------------------------------+
 | Logs                    | `/home/{your User name}/.local/share/Beam Wallet/logs`                           | 
 +-------------------------+----------------------------------------------------------------------------------+
-| Database                | `/home/{your User name}/.local/share/Beam Wallet/<version>/wallet.db (node.db)`  |
+| Database                | `/home/{your User name}/.local/share/Beam Wallet/<version>/wallet.db`            |
+|                         |                                                                                  |
+|                         | `/home/{your User name}/.local/share/Beam Wallet/node.db`                        |
++-------------------------+----------------------------------------------------------------------------------+
+| Settings                | `/home/{your User name}/.local/share/Beam Wallet/settings.ini`                   |
 +-------------------------+----------------------------------------------------------------------------------+
 
 
