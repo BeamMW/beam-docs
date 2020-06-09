@@ -6,15 +6,15 @@ Create channel
 
 Alice and Bob must agree on the amount to be blocked for options
 
-+--------------------------------------------------+----------------------------------------------------+
-| **Alice's side**                                 | **Bob’s side**                                     |
-+==================================================+====================================================+
-| laser_my_locked_amount 1(amount of Alice)        | laser_my_locked_amount 2(amount of Bob)            |
-|                                                  |                                                    |
-| laser_remote_locked_amount 2(amount of Bob)      | laser_remote_locked_amount 1(amount of Alice)      |
-|                                                  |                                                    |
-| laser_fee 100 (should be identical)              | laser_fee 100 (should be identical)                |
-+--------------------------------------------------+----------------------------------------------------+
++--------------------------------------------------+-----------------------------------------------+
+| **Alice's side**                                 | **Bob’s side**                                |
++==================================================+===============================================+
+| laser_my_locked_amount 1(amount of Alice)        | laser_my_locked_amount 2(amount of Bob)       |
+|                                                  |                                               |
+| laser_remote_locked_amount 2(amount of Bob)      | laser_remote_locked_amount 1(amount of Alice) |
+|                                                  |                                               |
+| laser_fee 100 (should be identical)              | laser_fee 100 (should be identical)           |
++--------------------------------------------------+-----------------------------------------------+
 
 To open a lasser channel between Alice's and Bob's wallets follow these
 steps
@@ -183,7 +183,7 @@ Example:
 
     $. /beam-wallet laser --laser_close 7a0f1a491fe95f3fe453a298dd62ba12, 4bd5ee31b264f6102709dc145cf37b5 -n 127.0.0.1:1000
     
-.. note::If you use «laser_close» and the 2nd side was not online, your channel will return to the open status . Then you can use the «laser_drop» command
+.. note:: If you use «laser_close» and the 2nd side was not online, your channel will return to the open status . Then you can use the «laser_drop» command
 
 ::
 
@@ -198,7 +198,7 @@ Example:
 
     $ ./beam-wallet laser --laser_drop 7a0f1a491fe95f3fe453a298dd62ba12, 4bd5ee31b264f6102709dc145cf37b5 -n 127.0.0.1:1000
 
-.. note::Using «laser_drop» command, the channel will close after 1440 blocks
+.. note:: Using «laser_drop» command, the channel will close after 1440 blocks
 
 Delete channel
 --------------
@@ -217,5 +217,4 @@ Example:
 
 You can delete channel only after the channel gets the "closed" status and passes > 1440
 
-.. note::Channels with the “Waiting” and “OpenFailed” status can be deleted
-immediately
+.. note:: Channels with the “Waiting” and “OpenFailed” status can be deleted immediately
