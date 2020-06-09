@@ -685,7 +685,11 @@ Pressing 'show owner key' opens popup, which will require to enter password. Whe
 .. figure:: images/desktop/show_owner_key_01.png
    :alt: Show owner key
    
-Swap settings you can find in Atomic Swaps using Desktop Wallet section (see :ref:`atomic swaps using desktop wallet` for details).
+
+Swap settings
+-------------
+   
+Under the name of this screen at the left corner of the screen you can turn on swap settings. More information about it is in the 'Atomic Swaps using Desktop Wallet' section (see :ref:`atomic swaps using desktop wallet` for details).
 
 
 .. _proof_of_transaction:
