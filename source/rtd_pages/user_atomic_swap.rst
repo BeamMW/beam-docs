@@ -1,5 +1,7 @@
 .. _user_atomic_swap:
 
+.. _atomic swaps:
+
 
 Atomic Swaps using Desktop Wallet
 =================================
