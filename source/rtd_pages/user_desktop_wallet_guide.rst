@@ -689,7 +689,7 @@ Pressing 'show owner key' opens popup, which will require to enter password. Whe
 Swap settings
 -------------
    
-Under the name of this screen at the left corner of the screen you can turn on swap settings. More information about it is in the 'Atomic Swaps using Desktop Wallet' section (see :ref:`atomic swaps using desktop wallet` for details).
+Under the name of this screen at the left corner of the screen you can turn on swap settings. More information about it is in the 'Atomic Swaps using Desktop Wallet' section (see :ref:`atomic swaps` for details).
 
 
 .. _proof_of_transaction:
