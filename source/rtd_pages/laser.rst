@@ -26,7 +26,7 @@ Example:
 
 ::
   
-   beam-wallet-masternet.exe laser --laser_receive --laser_my_locked_amount 1 --laser_remote_locked_amount 2 --laser_fee 100 -n 127.0.0.1:1000
+   $ ./beam-wallet-masternet.exe laser --laser_receive --laser_my_locked_amount 1 --laser_remote_locked_amount 2 --laser_fee 100 -n 127.0.0.1:1000
   
 Alice's wallet generates a new address and she send’s it to Bob
 
@@ -44,12 +44,14 @@ Alice's wallet generates a new address and she send’s it to Bob
 address in the option «laser_address»
 
 ::
-    $ beam-wallet laser --laser_open --laser_address <address> --laser_my_locked_amount <amount in beam> --laser_remote_locked_amount <amount in beam> --laser_fee <amount in groth>
+
+    $ ./beam-wallet laser --laser_open --laser_address <address> --laser_my_locked_amount <amount in beam> --laser_remote_locked_amount <amount in beam> --laser_fee <amount in groth>
 
 **Example**:
 
 ::
-    $ beam-wallet laser --laser_open --laser_address 333133cddf316e40f3352e9dae6bae568e97052c1b73531b263a695170658cd13e6 --laser_my_locked_amount 2 --laser_remote_locked_amount 1 --laser_fee 100 -n 127.0.0.1:1000
+
+    $ ./beam-wallet laser --laser_open --laser_address 333133cddf316e40f3352e9dae6bae568e97052c1b73531b263a695170658cd13e6 --laser_my_locked_amount 2 --laser_remote_locked_amount 1 --laser_fee 100 -n 127.0.0.1:1000
 
 If Bob incorrectly entered the values in the channel opening options, then Alice will see the message  "Incoming connection with incorrect …"              
 
@@ -82,21 +84,25 @@ Alice and Bob use an open channel to send beams
 1) Bob should listen to this channel using the following command
 
 ::
+
     $ ./beam-wallet laser --laser_listen [channel id 1,channel id 2, ... channel id N]
 
 Example:
 
 ::
+
     $ ./beam-wallet laser --laser_listen 7a0f1a491fe95f3fe453a298dd62ba12 -n 127.0.0.1:1000»
 
 2) To send coins Alice uses the following command:
 
 ::
+
     $ ./beam-wallet-masternet laser --laser_send <amount in beam> --laser_channel <channel id>
 
 Example:
 
 ::
+
     $ ./beam-wallet laser --laser_send 0.2 --laser_channel 7a0f1a491fe95f3fe453a298dd62ba12 -n 127.0.0.1:1000
 
 3. When the transfer is completed, you will receive a message about
@@ -105,6 +111,7 @@ changing your channel balance
 Alice’s side
 
 ::
+
     D 2020-06-04.14:19:35.166 ### Bbs mesage out ###
     D 2020-06-04.14:19:35.166 Channel:7a0f1a491fe95f3fe453a298dd62ba12 state Open. Last Revision: 2. My balance: 220000000 / Total balance: 300000000
     D 2020-06-04.14:19:35.167 Save channel: 7a0f1a491fe95f3fe453a298dd62ba12
@@ -129,6 +136,7 @@ To see a list of all open channels and checks for balance changes, use
 the following command:
 
 ::
+
     $ ./beam-wallet laser --laser_channels_list »
 
 The wallet log should look similar to something like:
@@ -154,19 +162,24 @@ To close channel, use the following commands
 1. Bob should listen to this channel using the following command
 
 ::
+
     $ ./beam-wallet laser --laser_listen 7a0f1a491fe95f3fe453a298dd62ba12 -n 127.0.0.1:1000
 
 
 2)To close channel, Alice uses the following command
 
 ::
+
     $./beam-wallet laser --laser_close <channel id 1,channel id 2, ... channel id N
     
 Example:
+
 ::
+
     $ ./beam-wallet laser --laser_close 7a0f1a491fe95f3fe453a298dd62ba12 -n 127.0.0.1:1000 
 
 ::
+
     $. /beam-wallet laser --laser_close 7a0f1a491fe95f3fe453a298dd62ba12, 4bd5ee31b264f6102709dc145cf37b5 -n 127.0.0.1:1000
     
     
@@ -177,13 +190,16 @@ channel will return to the open status . Then you can use the
 «laser_drop» command
 
 ::
+
     $ ./beam-wallet laser --laser_drop <channel id 1,channel id 2, ... channel id N
 
 Example:
 ::
+
     $ ./beam-wallet laser --laser_drop 7a0f1a491fe95f3fe453a298dd62ba12 -n 127.0.0.1:1000
     
 ::
+
     $ ./beam-wallet laser --laser_drop 7a0f1a491fe95f3fe453a298dd62ba12, 4bd5ee31b264f6102709dc145cf37b5 -n 127.0.0.1:1000
 
 *Using «laser_drop» command, the channel will close after 1440 blocks
