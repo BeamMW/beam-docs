@@ -11,11 +11,13 @@ If assets are not enabled all incoming asset transaction would be rejected with 
 
 Before asset can be used it should be registered on chain. There is a fixed fee for asset registration of 3000 BEAM.
 
+.. warning:: Lock period is a timeframe when several asset operations are restricted for safety reasons. This ensures that asset is not changed during rollback and/or by the asset owner and that receiver of the asset would receive exactly the expected asset. Asset becomes locked every time when its total emission reaches 0 or leaves 0. Currently lock period duration is set to 1440 blocks (24 hours roughly).
 
 Asset registration 
 ------------------
 
 Asset registration can be performed only via CLI
+
 To register asset uses the following command:
 
 ::
