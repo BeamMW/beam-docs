@@ -167,7 +167,7 @@ To close channel, use the following commands
     $ ./beam-wallet laser --laser_listen 7a0f1a491fe95f3fe453a298dd62ba12 -n 127.0.0.1:1000
 
 
-2)To close channel, Alice uses the following command
+2. To close channel, Alice uses the following command
 
 ::
 
@@ -183,7 +183,7 @@ Example:
 
     $. /beam-wallet laser --laser_close 7a0f1a491fe95f3fe453a298dd62ba12, 4bd5ee31b264f6102709dc145cf37b5 -n 127.0.0.1:1000
     
-.. note:: If you use «laser_close» and the 2nd side was not online, your channel will return to the open status . Then you can use the «laser_drop» command
+.. note::If you use «laser_close» and the 2nd side was not online, your channel will return to the open status . Then you can use the «laser_drop» command
 
 ::
 
@@ -198,7 +198,7 @@ Example:
 
     $ ./beam-wallet laser --laser_drop 7a0f1a491fe95f3fe453a298dd62ba12, 4bd5ee31b264f6102709dc145cf37b5 -n 127.0.0.1:1000
 
-.. note:: Using «laser_drop» command, the channel will close after 1440 blocks
+.. note::Using «laser_drop» command, the channel will close after 1440 blocks
 
 Delete channel
 --------------
@@ -217,5 +217,5 @@ Example:
 
 You can delete channel only after the channel gets the "closed" status and passes > 1440
 
-.. note:: Channels with the “Waiting” and “OpenFailed” status can be deleted
+.. note::Channels with the “Waiting” and “OpenFailed” status can be deleted
 immediately
