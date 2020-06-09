@@ -60,7 +60,7 @@ Beam Node allows to provide the settings via command line or using a configurati
 +-------------------------+----------------------------------------------------------------------------------------------------------+
 |**Parameter**            | **Description & Example**                                                                                |
 +-------------------------+----------------------------------------------------------------------------------------------------------+
-| --port                  | Port to start the server on                                                                              |
+| --port (or -p)          | Port to start the server on                                                                              |
 |                         |                                                                                                          |
 |                         | .. code-block:: bash                                                                                     |
 |                         |                                                                                                          |
@@ -85,7 +85,7 @@ Beam Node allows to provide the settings via command line or using a configurati
 |                         |    log_cleanup_days=5                                                                                    |
 +-------------------------+----------------------------------------------------------------------------------------------------------+
 
-
+There are some node options which can setup using the configuration file. You can also run this options in command line.
 
 +-------------------------+----------------------------------------------------------------------------------------------------------+
 |**Parameter**            | **Description & Example**                                                                                |
@@ -96,17 +96,36 @@ Beam Node allows to provide the settings via command line or using a configurati
 |                         |                                                                                                          |
 |                         |    storage=node.db                                                                                       |
 +-------------------------+----------------------------------------------------------------------------------------------------------+
-| --history_dir           | Path to folder where compressed (cut-through) history files are stored. Defaults to same folder.         |
+|  --miner_key            | Secret key to attribute mining rewards mined by the node to your wallet                                  |
+|                         | Created using CLI walelt `export_miner_key` command with --subkey=<miner id> parameter                   |
+|                         | See :ref:`user_cli_wallet_guide` for more details                                                        |
 |                         |                                                                                                          |
-|                         | .. code-block:: bash                                                                                     |
-|                         |                                                                                                          |
-|                         |    history_dir=.                                                                                         |
 +-------------------------+----------------------------------------------------------------------------------------------------------+
-| --temp_dir              | Path to temp folder for compressed (cut-through) history files. Must be on the same volume as history_dir|
+| --owner_key             | Secret key allowing the node to monitor mining rewards mined by all mining nodes marked by this key.     |
+|                         | Created using CLI walelt `export_owner_key` command                                                      |
+|                         | See :ref:`user_cli_wallet_guide` for more details                                                        |
+|                         |                                                                                                          |
++-------------------------+----------------------------------------------------------------------------------------------------------+
+| --pass                  | Wallet password. It is required since both Miner Key and Owner Key are protected by walelt password      |
+|                         |                                                                                                          |
++-------------------------+----------------------------------------------------------------------------------------------------------+
+| --stratum_port          | Port on which stratum server will listen to incoming connections. 0 if stratum server is disabled.       |
 |                         |                                                                                                          |
 |                         | .. code-block:: bash                                                                                     |
 |                         |                                                                                                          |
-|                         |    temp_dir=.                                                                                            |
+|                         |    stratum_port=0                                                                                        |
++-------------------------+----------------------------------------------------------------------------------------------------------+
+| --stratum_secrets_path  | Path to folder containing stratum certificates                                                           |
+|                         |                                                                                                          |
+|                         | .. code-block:: bash                                                                                     |
+|                         |                                                                                                          |
+|                         |    stratum_secrets_path=.                                                                                |
++-------------------------+----------------------------------------------------------------------------------------------------------+
+| --peer                  | nodes to connect to                                                                                      |
+|                         |                                                                                                          |
+|                         | .. code-block:: bash                                                                                     |
+|                         |                                                                                                          |
+|                         |    --peer=eu-nodes.mainnet.beam.mw:8100                                                                  |
 +-------------------------+----------------------------------------------------------------------------------------------------------+
 
 .. admonition:: Using CPU mining is not recommended
@@ -116,43 +135,76 @@ Beam Node allows to provide the settings via command line or using a configurati
 +----------------------------+---------------------------------------------------------------------------------------------------------+
 |**Parameter**               | **Description & Example**                                                                               |
 +----------------------------+---------------------------------------------------------------------------------------------------------+
-|  --miner_key               | Secret key to attribute mining rewards mined by the node to your wallet                                 |
-|                            | Created using CLI walelt `export_miner_key` command with --subkey=<miner id> parameter                  |
-|                            | See :ref:`user_cli_wallet_guide` for more details                                                       |
-|                            |                                                                                                         |
+| -h (or --help)             | list all available options and commands                                                                 |
 +----------------------------+---------------------------------------------------------------------------------------------------------+
-| --owner_key                | Secret key allowing the node to monitor mining rewards mined by all mining nodes marked by this key.    |
-|                            | Created using CLI walelt `export_owner_key` command                                                     |
-|                            | See :ref:`user_cli_wallet_guide` for more details                                                       |
-|                            |                                                                                                         |
+| -v (or --version)          | print project versio                                                                                    |
 +----------------------------+---------------------------------------------------------------------------------------------------------+
-| --pass                     | Wallet password. It is required since both Miner Key and Owner Key are protected by walelt password     |
-|                            |                                                                                                         |
-+----------------------------+---------------------------------------------------------------------------------------------------------+
-| --stratum_port             | Port on which stratum server will listen to incoming connections. 0 if stratum server is disabled.      |
+| --git_commit_hash          | print git commit hash value                                                                             |
 |                            |                                                                                                         |
 |                            | .. code-block:: bash                                                                                    |
 |                            |                                                                                                         |
-|                            |    stratum_port=0                                                                                       |
+|                            |    git_commit_hash                                                                                      |
 +----------------------------+---------------------------------------------------------------------------------------------------------+
-| --stratum_secrets_path     | Path to folder containing stratum certificates                                                          |
+|  --fast_sync               | Fast sync on/off (override horizons)                                                                    |
 |                            |                                                                                                         |
 |                            | .. code-block:: bash                                                                                    |
 |                            |                                                                                                         |
-|                            |    stratum_secrets_path=.                                                                               |
+|                            |    fast_sync=on                                                                                         |
++----------------------------+---------------------------------------------------------------------------------------------------------+
+|  --print_txo               | Print TXO movements (create/spend) recognized by the owner key.                                         |
+|                            |                                                                                                         |
+|                            | .. code-block:: bash                                                                                    |
+|                            |                                                                                                         |
+|                            |  print_txo=1                                                                                            |
++----------------------------+---------------------------------------------------------------------------------------------------------+
+|  --peers_persistent        | Keep persistent connection to the specified peers, regardless to ratings                                |
+|                            |                                                                                                         |
+|                            | .. code-block:: bash                                                                                    |
+|                            |                                                                                                         |
+|                            |  peers_persistent=1                                                                                     |
++----------------------------+---------------------------------------------------------------------------------------------------------+
+| --mining_threads           | number of mining threads(there is no mining if 0). It works if FakePoW is enabled                       |
+|                            |                                                                                                         |
+|                            | .. code-block:: bash                                                                                    |
+|                            |                                                                                                         |
+|                            |    --mining_threads=1                                                                                   |
++----------------------------+---------------------------------------------------------------------------------------------------------+
+| --pow_solve_time           | pow solve time. It works if FakePoW is enabled                                                          |
+|                            |                                                                                                         |
+|                            | .. code-block:: bash                                                                                    |
+|                            |                                                                                                         |
+|                            |    --pow_solve_time=15000                                                                               |
++----------------------------+---------------------------------------------------------------------------------------------------------+
+| --verification_threads     | number of threads for cryptographic verifications (0 = single thread, -1 = auto)                        |
+|                            |                                                                                                         |
+|                            | .. code-block:: bash                                                                                    |
+|                            |                                                                                                         |
+|                            |    --verification_threads=-1                                                                            |
++----------------------------+---------------------------------------------------------------------------------------------------------+
+| --history_dir              | Path to folder where compressed (cut-through) history files are stored. Defaults to same folder.        |
+|                            |                                                                                                         |
+|                            | .. code-block:: bash                                                                                    |
+|                            |                                                                                                         |
+|                            |    history_dir=.                                                                                        |
++----------------------------+---------------------------------------------------------------------------------------------------------+
+| --temp_dir                 | Path to temp folder for compressed  history files. Must be on the same volume as history_dir            |
+|                            |                                                                                                         |
+|                            | .. code-block:: bash                                                                                    |
+|                            |                                                                                                         |
+|                            |    temp_dir=.                                                                                           |
 +----------------------------+---------------------------------------------------------------------------------------------------------+
 | --stratum_use_tls          | Enable TLS on startum server                                                                            |
 |                            |                                                                                                         |
 |                            | .. code-block:: bash                                                                                    |
 |                            |                                                                                                         |
-|                            |    stratum_use_tls=                                                                                     |
-+----------------------------+---------------------------------------------------------------------------------------------------------+ 
-|   --fast_sync              | Fast sync on/off (override horizons)                                                                    |
+|                            |    --stratum_use_tls=                                                                                   |
++----------------------------+---------------------------------------------------------------------------------------------------------+
+| --nonceprefix_digits       | number of hex digits for nonce prefix for stratum client (0..6)                                         |
 |                            |                                                                                                         |
 |                            | .. code-block:: bash                                                                                    |
 |                            |                                                                                                         |
-|                            |    fast_sync=on                                                                                         |
-+----------------------------+---------------------------------------------------------------------------------------------------------+ 
+|                            |   --nonceprefix_digits=                                                                                 |
++----------------------------+---------------------------------------------------------------------------------------------------------+
 |  --generate_recovery       | Recovery file to generate immediately after start                                                       |
 |                            |                                                                                                         |
 +----------------------------+---------------------------------------------------------------------------------------------------------+ 
