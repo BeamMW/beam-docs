@@ -31,17 +31,16 @@ Example:
 Alice's wallet generates a new address and she send’s it to Bob
 
 ::
-I 2020-06-04.13:23:35.342 Beam Wallet 
-I 2020-06-04.13:23:35.343 Rules signature: 0-5547a592195f4cd4, 10-2fdbbbb74ac57c55, 20-67131c58aa9a6b85
-Enter password: *
-I 2020-06-04.13:23:36.039 wallet sucessfully opened...
-I 2020-06-04.13:23:36.260 New address generated:
 
-333133cddf316e40f3352e9dae6bae568e97052c1b73531b263a695170658cd13e6 
+    I 2020-06-04.13:23:35.342 Beam Wallet 
+    I 2020-06-04.13:23:35.343 Rules signature: 0-5547a592195f4cd4, 10-2fdbbbb74ac57c55, 20-67131c58aa9a6b85
+    Enter password: *
+    I 2020-06-04.13:23:36.039 wallet sucessfully opened...
+    I 2020-06-04.13:23:36.260 New address generated:
 
+    333133cddf316e40f3352e9dae6bae568e97052c1b73531b263a695170658cd13e6 
   
-  
-2) To open channel, Bob uses the following command and inserts Alice's
+2. To open channel, Bob uses the following command and inserts Alice's
 address in the option «laser\_address»
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
