@@ -684,6 +684,8 @@ Pressing 'show owner key' opens popup, which will require to enter password. Whe
 
 .. figure:: images/desktop/show_owner_key_01.png
    :alt: Show owner key
+   
+Swap settings you can find in Atomic Swaps using Desktop Wallet section (see :ref:`atomic swaps using desktop wallet` for details).
 
 
 .. _proof_of_transaction:
