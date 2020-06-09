@@ -7,11 +7,12 @@ Alice and Bob must agree on the amount to be blocked for options
 +--------------------------------------------------+----------------------------------------------------+
 | **Alice's side**                                 | **Bob’s side**                                     |
 +==================================================+====================================================+
-| laser\_my\_locked\_amount 1(amount of Alice)     | laser\_my\_locked\_amount 2(amount of Bob)         |
+| laser_my_locked_amount 1(amount of Alice)     | laser_my_locked_amount 2(amount of Bob)         |
 |                                                  |                                                    |
-| laser\_remote\_locked\_amount 2(amount of Bob)   | laser\_remote\_locked\_amount 1(amount of Alice)   |
+| laser_remote_locked_amount 2(amount of Bob)   | laser_remote_locked_amount 1(amount of Alice)
+   |
 |                                                  |                                                    |
-| laser\_fee 100 (should be identical)             | laser\_fee 100 (should be identical)               |
+| laser_fee 100 (should be identical)             | laser_fee 100 (should be identical)               |
 +--------------------------------------------------+----------------------------------------------------+
 
 To open a lasser channel between Alice's and Bob's wallets follow these
@@ -41,26 +42,19 @@ Alice's wallet generates a new address and she send’s it to Bob
     333133cddf316e40f3352e9dae6bae568e97052c1b73531b263a695170658cd13e6 
   
 2. To open channel, Bob uses the following command and inserts Alice's
-address in the option «laser\_address»
+address in the option «laser_address»
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| « beam-wallet laser --laser\_open --laser\_address <address> --laser\_my\_locked\_amount <amount in beam> --laser\_remote\_locked\_amount <amount in beam> --laser\_fee <amount in groth>»   |
-+==============================================================================================================================================================================================+
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+::
+   $ beam-wallet laser --laser_open --laser_address <address> --laser_my_locked_amount <amount in beam> --laser_remote_locked_amount <amount in beam> --laser_fee <amount in groth>
 
 **Example**:
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| « beam-wallet laser --laser\_open --laser\_address 333133cddf316e40f3352e9dae6bae568e97052c1b73531b263a695170658cd13e6 --laser\_my\_locked\_amount 2 --laser\_remote\_locked\_amount 1 --laser\_fee 100 -n 127.0.0.1:1000»   |
-+==============================================================================================================================================================================================================================+
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+::
+   $ beam-wallet laser --laser_open --laser_address 333133cddf316e40f3352e9dae6bae568e97052c1b73531b263a695170658cd13e6 --laser_my_locked_amount 2 --laser_remote_locked_amount 1 --laser_fee 100 -n 127.0.0.1:1000
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------+
-| If Bob incorrectly entered the values in the channel opening options, then Alice will see the message "Incoming connection with incorrect …\ **" **   |
-+=======================================================================================================================================================+
-+-------------------------------------------------------------------------------------------------------------------------------------------------------+
+If Bob incorrectly entered the values in the channel opening options, then Alice will see the message  "Incoming connection with incorrect …"              
 
-3) Сhannel will be opened and a table with the open channel will appear.
+3. Сhannel will be opened and a table with the open channel will appear.
 
 Alice’s side
 
