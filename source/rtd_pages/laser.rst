@@ -17,36 +17,30 @@ Alice and Bob must agree on the amount to be blocked for options
 To open a lasser channel between Alice's and Bob's wallets follow these
 steps
 
-1)To create channel, Alice uses the following command
+1. To create channel, Alice uses the following command
 ::
    
-   $ ./beam-wallet laser --laser\_receive --laser\_my\_locked\_amount <amount in beam> --laser\_remote\_locked\_amount <amount in beam> --laser\_fee <amount in groth»
+   $ ./beam-wallet laser --laser_receive --laser_my_locked_amount <amount in beam> --laser_remote_locked_amount <amount in beam> --laser_fee <amount in groth
 
-**Example:
-**
+Example:
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
-| « beam-wallet-masternet.exe laser --laser\_receive --laser\_my\_locked\_amount 1 --laser\_remote\_locked\_amount 2 --laser\_fee 100 -n 127.0.0.1:1000 »   |
-+===========================================================================================================================================================+
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
-
+::
+  
+   beam-wallet-masternet.exe laser --laser_receive --laser_my_locked_amount 1 --laser_remote_locked_amount 2 --laser_fee 100 -n 127.0.0.1:1000
+  
 Alice's wallet generates a new address and she send’s it to Bob
 
-+-----------------------------------------------------------------------------------------------------------+
-| I 2020-06-04.13:23:35.342 Beam Wallet                                                                     |
-|                                                                                                           |
-| I 2020-06-04.13:23:35.343 Rules signature: 0-5547a592195f4cd4, 10-2fdbbbb74ac57c55, 20-67131c58aa9a6b85   |
-|                                                                                                           |
-| Enter password: \*                                                                                        |
-|                                                                                                           |
-| I 2020-06-04.13:23:36.039 wallet sucessfully opened...                                                    |
-|                                                                                                           |
-| I 2020-06-04.13:23:36.260 New address generated:                                                          |
-|                                                                                                           |
-| 333133cddf316e40f3352e9dae6bae568e97052c1b73531b263a695170658cd13e6                                       |
-+===========================================================================================================+
-+-----------------------------------------------------------------------------------------------------------+
+::
+I 2020-06-04.13:23:35.342 Beam Wallet 
+I 2020-06-04.13:23:35.343 Rules signature: 0-5547a592195f4cd4, 10-2fdbbbb74ac57c55, 20-67131c58aa9a6b85
+Enter password: *
+I 2020-06-04.13:23:36.039 wallet sucessfully opened...
+I 2020-06-04.13:23:36.260 New address generated:
 
+333133cddf316e40f3352e9dae6bae568e97052c1b73531b263a695170658cd13e6 
+
+  
+  
 2) To open channel, Bob uses the following command and inserts Alice's
 address in the option «laser\_address»
 
