@@ -171,6 +171,8 @@ To report issues and get support please perform the following steps:
    rtd_pages/user_mining_beam.rst
    rtd_pages/user_atomic_swap.rst
    rtd_pages/user_atomic_swap_cli.rst
+   rtd_pages/ca.rst
+   rtd_pages/laser.rst
    rtd_pages/user_blockchain_explorer.rst
    rtd_pages/user_supported_platforms.rst
    rtd_pages/user_files_and_locations.rst
