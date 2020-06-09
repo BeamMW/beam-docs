@@ -18,11 +18,9 @@ To open a lasser channel between Alice's and Bob's wallets follow these
 steps
 
 1)To create channel, Alice uses the following command
-
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| «./beam-wallet laser --laser\_receive --laser\_my\_locked\_amount <amount in beam> --laser\_remote\_locked\_amount <amount in beam> --laser\_fee <amount in groth»   |
-+======================================================================================================================================================================+
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+::
+   
+   $ ./beam-wallet laser --laser\_receive --laser\_my\_locked\_amount <amount in beam> --laser\_remote\_locked\_amount <amount in beam> --laser\_fee <amount in groth»
 
 **Example:
 **
