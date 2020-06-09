@@ -1,6 +1,8 @@
 BEAM LIGHTNING CHANNEL
+======================
 
-**Create channel**
+Create channel
+--------------
 
 Alice and Bob must agree on the amount to be blocked for options
 
@@ -47,7 +49,7 @@ address in the option «laser_address»
 
     $ ./beam-wallet laser --laser_open --laser_address <address> --laser_my_locked_amount <amount in beam> --laser_remote_locked_amount <amount in beam> --laser_fee <amount in groth>
 
-**Example**:
+Example:
 
 ::
 
@@ -73,7 +75,8 @@ Bob’s side
     channel Id                        |aMy    |aTrg     |state     |fee       |valid till
     7a0f1a491fe95f3fe453a298dd62ba12  |2      |1        |Open      |0.000001  |55966
 
-**Sending BEAMs **
+Sending BEAMs
+-------------
 
 Alice and Bob use an open channel to send beams
 
@@ -126,7 +129,8 @@ Bob’s side
     D 2020-06-04.14:19:35.487 OnMined() diff: 0
     D 2020-06-04.14:19:35.488 Receiver::OnComplete
 
-**Channels list**
+Channels list
+-------------
 
 To see a list of all open channels and checks for balance changes, use
 the following command:
@@ -145,7 +149,8 @@ The wallet log should look similar to something like:
     7a0f1a491fe95f3fe453a298dd62ba12  |2.2       |0.8       |Open      |0.000001  |57464
     b9236abe78ab5747ca955189df079d2b  |1.0000005 |1.0000005 |Closed    |0.000001  |0
 
-**Close channel**
+Close channel
+-------------
 
 To close channel, use the following commands
 
@@ -195,7 +200,8 @@ Example:
 
 .. note:: Using «laser_drop» command, the channel will close after 1440 blocks
 
-**Delete channel**
+Delete channel
+--------------
 
 To delete a channel from the wallet database, use the following command:
 
