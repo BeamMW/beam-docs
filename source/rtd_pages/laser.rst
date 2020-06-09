@@ -1,4 +1,4 @@
-BEAM LIGHTNING CHANNEL
+Beam lightning channel
 ======================
 
 Create channel
