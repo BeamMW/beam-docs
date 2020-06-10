@@ -1,7 +1,7 @@
 .. _confidential_assets:
 
 
-CONFIDENTIAL ASSETS
+Confidential assets
 ===================
 
 
