@@ -377,7 +377,7 @@ A sample ouput for this command will look something like this
 Change address expiration
 -------------------------
 
-It is possible to change address expiration period to 'never' using the following command:
+It is possible to extend the address expiration period to '24 hours' from the current time using the following command:
 
 ::
 
@@ -391,9 +391,12 @@ You could also choose what specific period it would be:
 
 ::
 
-./beam-wallet change_address_expiration --address=<sbbs address> --expiration_time=(never|24h)
+./beam-wallet change_address_expiration --address=<sbbs address> --expiration_time=(never|24h|now)
 
-There are two options: never or 24 hours.
+There are three options: never,24 hours or now
+never - makes the address eternal (will never expire)
+24h - extends the address by 24 hours from the current time
+now - makes the address expired immediately. Be careful as wallet stops listen this address.
 
 
 
