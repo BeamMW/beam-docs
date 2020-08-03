@@ -12,7 +12,7 @@ Welcome to Beam documentation!
 
 .. note:: Beam is currently in Mainnet.
 
-   Rules Signature: 6d622e615cfd29d0 (for height >= 321321)
+   Rules Signature: 1ce8f721bf0c9fa7 (for height >= 777777)
 
 	Download binaries from: `Beam Downloads Page <https://www.beam.mw/downloads>`_
 
@@ -22,18 +22,33 @@ Welcome to Beam documentation!
 Current release
 ===============
 
-**Double Doppler 4.0**
+**Double Doppler 5.0.9328**
 
-This release includes desktop wallet support for Atomic Swaps, sync time improvements and much more...
+This release includes:
+
+Fixes:
+
+* Fast-sync potential problem fix
+* Inconsistent balance on mobile wallets after UTXO rescan in node
+* Fixed node slow-down if many shielded txs are broadcasted
+* Attempting to restore txs after rollback
+* Fixed possible API crash on wallet with Lelantus transactions
+
+Improvements:
+
+* Added automatic rollback limit of 60 blocks
+* Multi-threaded Lelantus withdrawal proof generation
+* Faster UTXO rescan in wallet
 
 **Known limitations:**
 
-1. Inconsistent transaction statuses when running two or more wallets that use the same wallet.db file, cloned manually.
-2. If multiple wallets are restored from the same seed phrase, transaction history and addresses will not be shared among the wallets.
+1. When using active laser beam channels the wallet should not be offline for over 24 hours
+2. Atomic Swaps of Confidential Assets with BEAM/BTC/LTC/QTUM will be released later on
 
 **Points to mention:**
 
-In case a mobile wallet is connected to a random node and the user has both mobile and a desktop wallets which are using the same seed phrase, the funds sent to the desktop wallet won’t appear on the mobile wallet. If the desktop wallet is running a local node, it will see funds sent to both wallets. The reason is that the local node (integrated into desktop wallet) always monitors the blockchain for UTXOs related to the seed of the wallet. The mobile wallet does not run a local node and thus can only monitor transactions sent to its specific SBBS addresses. Of course, no funds will be lost in any event.
+1. In case a mobile wallet is connected to a random node and the user has both mobile and desktop wallets that are using the same seed phrase, the funds sent to the desktop wallet won’t appear on the mobile wallet. If the desktop wallet is running a local node, it will see funds sent to both wallets. The reason is that the local node (integrated into the desktop wallet) always monitors the blockchain for UTXOs related to the seed of the wallet. The mobile wallet does not run a local node and thus can only monitor transactions sent to its specific SBBS addresses. Of course, no funds will be lost in any event.
+2. BEAM wallets won’t display received Confidential Assets and amounts kept in the shielded pool. Please use CLI ar API till the future notice.
 
 
 **TL;DR**
