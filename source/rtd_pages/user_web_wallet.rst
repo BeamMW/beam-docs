@@ -126,3 +126,87 @@ For the extension view:
    :alt: Main screen
    
 
+Create a new wallet with the seed phrase verification
+-----------------------------------------------------
+
+Once you launch the wallet for the first time, click the ‘Create new wallet’ button.
+
+.. figure:: images/web_wallet/easy_onboarding/01.png
+   :alt: Creating page
+
+
+For the extension view:
+
+.. figure:: images/web_wallet/easy_onboarding/extension_view/01.png
+   :alt: Creating page
+   
+
+As a part of creating a new wallet, a new seed phrase will be generated for you.
+
+Attention
+Seed phrase is the most important secret you have to keep. Knowing the seed phrase enables you (or anyone else) to access all your funds.
+
+
+.. figure:: images/web_wallet/easy_onboarding/02.png
+   :alt:  Before generating seed phrase
+
+
+For the extension view:
+
+.. figure:: images/web_wallet/easy_onboarding/extension_view/02.png
+   :alt: Before generating seed phrase
+   
+
+
+.. attention:: Did you wrote down your seed phrase correctly? Triple-check your handwriting again. The difference between _F_unnel and _T_unnel can be crucial when trying to restore a wallet with valuable funds in the far or near future.
+Did you verified your handwriting? Now go find a safe space for the paper!
+
+
+.. figure:: images/web_wallet/easy_onboarding/03.png
+   :alt:  Generating seed phrase
+
+
+For the extension view:
+
+.. figure:: images/web_wallet/easy_onboarding/extension_view/03.png
+   :alt: Generating seed phrase
+   
+.. important:: Storing the seed phrase on your computer makes your funds prone to cyber attacks (read: much *less* secure). 'Creative' approaches like saving a screenshot of the wallet or your handwriting on your computer or in the cloud *may* sound like a good idea, but it is absolutely **not recommended**. If hackers get the access to your computer, network drive etc., they can can potentially steal your seed phrase by using OCR programs (which can scan pictures and transform them into plain text) and, therefore, get access to your funds.
+
+.. figure:: images/web_wallet/create_with_seed/01.png
+   :alt:  Generating seed phrase
+
+
+For the extension view:
+
+.. figure:: images/web_wallet/create_with_seed/extension_view/01.png
+   :alt: Generating seed phrase
+
+
+Always store your seed phrase in a safe and secure location (and better more than one in different geo locations). Write it on a piece of paper. Do not store electronically neither as plain text nor in any other form!
+
+In order to ensure that you have really written down your seed phrase, you will be asked to fill in the specific words from your seed phrase in random order. Only when you typed all the selected words correctly, you will be allowed to proceed to the next step.
+
+.. figure:: images/web_wallet/create_with_seed/02.png
+   :alt:  Generating seed phrase
+
+
+For the extension view:
+
+.. figure:: images/web_wallet/create_with_seed/extension_view/02.png
+   :alt: Generating seed phrase
+
+
+Creating a password is the next step, which was describe in ::ref:`Easy onboarding` part. When the password was filled in, press the ‘Start using your wallet’ button 
+
+Once your wallet is created, the main screen will show up without popup with the seed phrase verification.
+
+
+.. figure:: images/web_wallet/create_with_seed/03.png
+   :alt:  Generating seed phrase
+
+
+For the extension view:
+
+.. figure:: images/web_wallet/create_with_seed/extension_view/03.png
+   :alt: Generating seed phrase
