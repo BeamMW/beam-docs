@@ -518,6 +518,7 @@ Beams from Faucet
 -----------------
 
 For best understanding how the wallet is worked you can receive some amount from Beam Community Faucet. 
+
 1. First of all, copy an address from the Receiver screen (read Receiving funds for more information)
 
 .. figure:: images/web_wallet/receiving/01.png
@@ -589,3 +590,64 @@ The type of UTXO can be:
 *	Change - UTXO received as a result of change from a transaction. It is immediately available for spending
 In the following screenshots you can see how this screen is displayed.If you push to a certain UTXO you see details. This function is available only for full screen view. 
 Also, in this screenshot, transactions are finished and have status available.
+
+
+.. figure:: images/web_wallet/utxo/01.png
+   :alt:  UTXO Screen
+
+
+For extension view this screen look like that:   
+
+.. figure:: images/web_wallet/utxo/extension_view/01.png
+   :alt:  UTXO Screen
+   
+For the next screenshot there is an example for the 'in progress' transaction 
+
+
+.. figure:: images/web_wallet/utxo/02.png
+   :alt:  UTXO Screen with the 'in progress' transaction
+
+
+For extension view this screen look like that:   
+
+.. figure:: images/web_wallet/utxo/extension_view/02.png
+   :alt:  UTXO Screen with the 'in progress' transaction
+   
+   
+Security mode
+-------------
+
+
+If you want you may hide from over eyes all values that you have in the wallet. Just activate Security mode from the action menu. Look to the following screenshots:
+
+.. figure:: images/web_wallet/security_mode/01.png
+   :alt:  Security mode in action menu
+   
+   
+On the main screen amounts and balance aren't shown.
+
+.. figure:: images/web_wallet/security_mode/02.png
+   :alt:  Security mode for Main screen
+   
+  
+For incoming/outgoing UTXO information also has been hided.
+
+.. figure:: images/web_wallet/security_mode/03.png
+   :alt:  Security mode for the 'in progress' transaction
+   
+   
+The main screen for extension view in security mode:
+
+.. figure:: images/web_wallet/security_mode/04.png
+   :alt:  Security mode for main screen in extension view
+     
+In Security mode for the UTXO screen you can’t see your UTXO list.
+
+.. figure:: images/web_wallet/security_mode/05.png
+   :alt:  Security mode for UTXO screen
+      
+The same in the extension view:
+
+.. figure:: images/web_wallet/security_mode/06.png
+   :alt:  Security mode for UTXO screen in extension view
+   
