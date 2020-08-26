@@ -651,3 +651,112 @@ The same in the extension view:
 .. figure:: images/web_wallet/security_mode/06.png
    :alt:  Security mode for UTXO screen in extension view
    
+
+Where to buy Beam?
+------------------
+
+If you want to buy some  beams use only exchanges from our website [beam.mw] (https://beam.mw/#exchange).
+
+.. figure:: images/web_wallet/01_where_to_buy.png
+   :alt:  Exchanges
+
+
+In the Web Wallet there is a link to that page, it will redirect you from Wallet to website. Just press on the action menu and choose Where to buy Beam. 
+
+
+.. figure:: images/web_wallet/02_where_to_buy.png
+   :alt:  Link where to buy link in the web wallet
+
+
+Same steps in the extension view:
+
+
+.. figure:: images/web_wallet/03_where_to_buy.png
+   :alt:  Link where to buy link in the web wallet for extension view
+
+
+Proof of transaction
+--------------------
+
+
+Receiver wallet automatically signs proof of received transaction and sends it to the sender. Proof of transaction will be added to the outcoming transaction that was successfully completed (transaction’s status is ‘sent’). Proof of transaction is not available for transaction with different status (‘expired’, ‘failed’, ‘completed’, ‘received’). Upon request, sender can observe proof of transaction following the procedure below:
+
+1. Click outcoming transaction from the list of transactions:
+
+
+.. figure:: images/web_wallet/payment_proof/01.png
+   :alt:  Transactioms details
+   
+   
+2. Click ‘Details’ button under Payment proof:
+
+
+.. figure:: images/web_wallet/payment_proof/02.png
+   :alt:  Payment proof popup
+   
+   
+3. Send payment proof code to the receiver. Copy it by clicking ‘Copy code’ button at ‘Payment proof’ form, or ‘Copy’ button in transactions details:
+
+
+.. figure:: images/web_wallet/payment_proof/03.png
+   :alt:  Copy payment proof code
+   
+   
+4. Receiver can verify that proof is correct by clicking to active menu and choosing ‘Payment proof’ from the list:
+
+
+.. figure:: images/web_wallet/payment_proof/04.png
+   :alt:  Payment proof in action menu
+
+
+.. figure:: images/web_wallet/payment_proof/05.png
+   :alt:  Payment proof verification   
+
+
+5. And pasting payment proof code into the form:
+
+
+.. figure:: images/web_wallet/payment_proof/06.png
+   :alt:  Payment proof verification with code
+   
+
+Logout
+------
+
+When you’ve finished work with your wallet, you should logout from it to secure your beams. There are two options. 
+1. close the tab with wallet in your browser (extension view will close if you tap to the place beyond the wallet)
+2. Open action menu and choose Logout
+
+
+.. figure:: images/web_wallet/logout/01.png
+   :alt:  Logout in action menu
+
+
+For the extension view:
+
+.. figure:: images/web_wallet/logout/extension_view/01.png
+   :alt:  Logout in action menu
+   
+
+After logout you will see the starting screen with the login field.
+
+
+.. figure:: images/web_wallet/logout/02.png
+   :alt:  Opening screen
+
+
+For the extension view:
+
+.. figure:: images/web_wallet/logout/extension_view/02.png
+   :alt:  Opening screen 
+   
+   
+
+Settings screen
+---------------
+
+
+To get to the Settings screen you should use the Settings button from the action menu.
+
+
+
