@@ -40,7 +40,7 @@ or load unpacked extension here chrome://extensions/ (to download packed extensi
 Creating new wallet
 -------------------
 
-There are two ways of how user can create new wallet: ::ref:`Easy onboarding` and ::ref:`Create a new wallet with seed phrase`
+There are two ways of how user can create new wallet: :ref:`Easy onboarding` and :ref:`Create a new wallet with seed phrase`
 
 .. _easy_onboarding: 
 
@@ -263,7 +263,8 @@ For the extension view:
 .. figure:: images/web_wallet/seed_verification/extension_view/03.png
    :alt: Seed verification
    
-::attention: The seed phrase is for your eyes only! Make sure no one is looking over your shoulder. For the best security always generate it on a clean air-gapped machine.
+
+.. attention:: The seed phrase is for your eyes only! Make sure no one is looking over your shoulder. For the best security always generate it on a clean air-gapped machine.
 
 Read carefully information on the popup and confirm it.
 
@@ -453,9 +454,9 @@ Here is how the process of sending BEAM looks like from a Sender’s perspective
 * Send BEAM to Receiver
 * Stay online until Receiver confirms the transaction
 
-::attention: When sending the address make sure you use a secure communication channel.
+.. attention:: Make sure that the address is received untampered by using a **secure communication channel**.
 
-::attention: Make sure the entire address is sent to the Sender as it’s longer than it appears on the screen. Don’t forget to double check the value in whichever messenger app of your choice because viruses and malware on your computer may change your address while it’s in the clipboard.
+.. attention:: When copying the address to the Beam Wallet app please verify visually that the address in the wallet looks exactly like the address in the secure messaging app, because viruses and malware on your computer may change your address while it’s in the clipboard.
 
 In order to send BEAM, you will need to click the magenta ‘Send’ button at the top right corner. This will open the Send screen.
 Make sure you have the correct address and paste the Receiver’s Beam address in the ‘Send To’ field.
@@ -511,7 +512,8 @@ Once you confirm, the transaction is sent to the Receiver’s wallet. If Receive
 While a transaction is in ‘Waiting for receiver’ you can cancel it by clicking on the dropdown to the right of the transaction row and then select ‘Cancel’. The other party will receive notification that the transaction was either ‘Cancelled’ or ‘Expired,’ and funds plus fee that were allocated for this transaction will become available again. It is not possible to cancel a transaction in ‘In progress’ or ‘Sent’ states.
 If your transaction appears as ‘Waiting for receiver’ for a long time, it means the Receiver is not online. 
 
-::attention: If the transaction was not sent to the nodes, for any reason, it will expire after 720 blocks, or roughly 12 hours. This is done to avoid a situation in which UTXO is locked forever.
+
+.. attention:: If the transaction was not sent to the nodes, for any reason, it will expire after 720 blocks, or roughly 12 hours. This is done to avoid a situation in which UTXO is locked forever.
 
 .. _beams from faucet:
 
