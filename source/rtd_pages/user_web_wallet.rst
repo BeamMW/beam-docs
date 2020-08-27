@@ -40,9 +40,9 @@ or load unpacked extension here chrome://extensions/ (to download packed extensi
 Creating new wallet
 -------------------
 
-There are two ways of how user can create new wallet: :ref:`easy-onboarding` and :ref:`create-a-new-wallet-with-the-seed-phrase-verification`
+There are two ways of how user can create new wallet: :ref:`easy onboarding` and :ref:`create-a-new-wallet-with-the-seed-phrase-verification`
 
-.. _easy_onboarding: 
+.. _easy onboarding: 
 
 Easy onboarding
 ---------------
@@ -125,6 +125,8 @@ For the extension view:
 .. figure:: images/web_wallet/easy_onboarding/extension_view/06.png
    :alt: Main screen
    
+.. _create-a-new-wallet-with-the-seed-phrase-verification:
+
 
 Create a new wallet with the seed phrase verification
 -----------------------------------------------------
@@ -196,7 +198,7 @@ For the extension view:
    :alt: Generating seed phrase
 
 
-Creating a password is the next step, which was described in ::ref:`Easy onboarding` part. When the password was filled in, press the ‘Start using your wallet’ button 
+Creating a password is the next step, which was described in :ref:`easy onboarding` part. When the password was filled in, press the ‘Start using your wallet’ button 
 
 Once your wallet is created, the main screen will show up without popup with the seed phrase verification.
 
@@ -544,7 +546,7 @@ For the extension view:
    :alt:  A receiver screen
    
    
-2. Then on the main screen press on get coins button from the popup. It should link you to the [Beam Community Faucet](https://faucet.beamprivacy.community/) 
+2. Then on the main screen press on get coins button from the popup. It should link you to the `Beam Community Faucet <https://faucet.beamprivacy.community/>`_ 
 
 
 .. figure:: images/web_wallet/beam_faucet/01.png
@@ -660,7 +662,7 @@ The same in the extension view:
 Where to buy Beam?
 ------------------
 
-If you want to buy some  beams use only exchanges from our website [beam.mw](https://beam.mw/#exchange).
+If you want to buy some  beams use only exchanges from our website `beam.mw <https://beam.mw/#exchange>`_.
 
 .. figure:: images/web_wallet/01_where_to_buy.png
    :alt:  Exchanges
