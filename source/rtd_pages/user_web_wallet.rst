@@ -405,9 +405,9 @@ Receiving funds
 
 Here is how the process of receiving BEAM looks like from a Receiver’s perspective:
 
-*Generate an address
-*Send your address to the Sender person over a secure communication channel
-*Both Sender and Receiver’s Wallet must be online at the same time to complete a transaction.
+* Generate an address
+* Send your address to the Sender person over a secure communication channel
+* Both Sender and Receiver’s Wallet must be online at the same time to complete a transaction.
 
 It’s possible to reuse an address that already exists, more on that later.
 
@@ -449,6 +449,7 @@ Sending funds
 
 
 Here is how the process of sending BEAM looks like from a Sender’s perspective:
+
 * Receive the address the funds should be sent to
 * Send BEAM to Receiver
 * Stay online until Receiver confirms the transaction
@@ -710,7 +711,7 @@ Payment proof code:
 
 ::
 
-80d07841d031b14ccdb9c56d182b4d1babee264e338bfdabb0b1e9df303bbfe9988057c7d160ddb896c566e67975e93e31b25e114fcc0ebbd2218e9738bae22970770400c2eb0b39d353baa1db2c6ef5b005dea976df47c3ba626f33243eb7ed83246d032b447026c81c9874edb83382c94bf7eb68f870eb863657a6548ecdc2fff172b8de1108017fa94e6e6e574200c2e268ebe7016fa40838ec274e08982e47df7a0be27f6c90
+  80d07841d031b14ccdb9c56d182b4d1babee264e338bfdabb0b1e9df303bbfe9988057c7d160ddb896c566e67975e93e31b25e114fcc0ebbd2218e9738bae22970770400c2eb0b39d353baa1db2c6ef5b005dea976df47c3ba626f33243eb7ed83246d032b447026c81c9874edb83382c94bf7eb68f870eb863657a6548ecdc2fff172b8de1108017fa94e6e6e574200c2e268ebe7016fa40838ec274e08982e47df7a0be27f6c90
 
 
 4. Receiver can verify that proof is correct by clicking to active menu and choosing ‘Payment proof’ from the list:
@@ -852,7 +853,7 @@ For the extension view:
 Report a problem
 ----------------
 
- If you’ve got any troubles with the Web Wallet you need to contact support and provide them session logs through Report a problem submenu. Press on Report a problem submenu, it will open Report a problem popup. Just accurately read all information and press on the “save wallet logs” button. When the file with logs will be downloaded, send it to [Beam Support] (support@beam.mw).
+ If you’ve got any troubles with the Web Wallet you need to contact support and provide them session logs through Report a problem submenu. Press on Report a problem submenu, it will open Report a problem popup. Just accurately read all information and press on the “save wallet logs” button. When the file with logs will be downloaded, send it to `Beam Support <support@beam.mw>`_.
 
 
 .. figure:: images/web_wallet/settings/07.png
@@ -872,7 +873,7 @@ Remove current wallet
 This submenu allows you to erase the current wallet from the database. 
 Press on the submenu to start this procedure. 
 
-.. warning:: Read carefully all information on this popup: All data will be erased. Make sure you’ve saved your seed phrase if you want to restore this wallet later on!
+.. warning:: Read carefully all information on this popup: all data will be erased. Make sure you’ve saved your seed phrase if you want to restore this wallet later on!
 Choose Remove if you are sure to erase the wallet. It will require the password. Enter the password to confirm this action. 
 
 .. figure:: images/web_wallet/settings/08.png
