@@ -859,7 +859,7 @@ For the extension view:
 Report a problem
 ----------------
 
- If you’ve got any troubles with the Web Wallet you need to contact support and provide them session logs through Report a problem submenu. Press on Report a problem submenu, it will open Report a problem popup. Just accurately read all information and press on the “save wallet logs” button. When the file with logs will be downloaded, send it to [Beam Support] (support@beam.mw).
+If you’ve got any troubles with the Web Wallet you need to contact support and provide them session logs through Report a problem submenu. Press on Report a problem submenu, it will open Report a problem popup. Just accurately read all information and press on the “save wallet logs” button. When the file with logs will be downloaded, send it to `Beam Support <support@beam.mw>`_.
 
 
 .. figure:: images/web_wallet/settings/07.png
