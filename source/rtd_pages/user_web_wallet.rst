@@ -381,8 +381,8 @@ Restore is not supported in the Beta version.
 Main screen
 -----------
 
-The main screen of the wallet shows the current balance in the Amount status field as well as the transaction history and statuses. There are several transactions tabs All, In progress, Sent, Receive. On the left, under wallet status, there is a toolbar that provides navigation between two wallet screens - Main Screen and UTXO Screen.
-In the right top corner there is an action menu which includes some functions: Security Mode, Payment proof, Where to buy beam, Settings and Logout. All of these functions will be explored below. 
+The main screen of the wallet shows the current balance in the Amount status field as well as the transaction history and statuses. There are several transactions tabs All, In progress, Sent, Receive. On the left, under wallet status, there is a toolbar that provides navigation between two wallet screens - **Main Screen** and **UTXO Screen**.
+In the right top corner there is an action menu which includes some functions: *Security Mode*, *Payment proof*, *Where to buy beam*, *Settings* and *Logout*. All of these functions will be explored below. 
 Under the action menu there are two buttons Send and Receive which lead to according screens.
 
 
@@ -405,9 +405,9 @@ Receiving funds
 
 Here is how the process of receiving BEAM looks like from a Receiver’s perspective:
 
-*Generate an address
-*Send your address to the Sender person over a secure communication channel
-*Both Sender and Receiver’s Wallet must be online at the same time to complete a transaction.
+* Generate an address
+* Send your address to the Sender person over a secure communication channel
+* Both Sender and Receiver’s Wallet must be online at the same time to complete a transaction.
 
 It’s possible to reuse an address that already exists, more on that later.
 
@@ -449,6 +449,7 @@ Sending funds
 
 
 Here is how the process of sending BEAM looks like from a Sender’s perspective:
+
 * Receive the address the funds should be sent to
 * Send BEAM to Receiver
 * Stay online until Receiver confirms the transaction
@@ -586,10 +587,12 @@ UTXO screen
 
 UTXO (Unspent Transaction (TX) Output) is like a banknote of a specific amount. Simply said, if BEAM is the currency, any UTXO can be considered a ‘bill’. You can have multiple ‘bills’ in your wallet at the same time.
 On the technical level, in Beam, like in most other cryptocurrencies, your balance emerges as a result of multiple incoming and outgoing transactions. Each transaction uses some existing inputs and creates new outputs. All the outputs controlled by the wallet are shown in the UTXO screen.
-There are several transaction tabs Available, In progress, Spent, Unavailable which include UTXO with appropriate statuses.
+There are several transaction tabs *Available*, *In progress*, *Spent*, *Unavailable* which include UTXO with appropriate statuses.
 The type of UTXO can be:
-*	Regular - UTXO received as a result of a transaction. It is immediately available for spending
-*	Change - UTXO received as a result of change from a transaction. It is immediately available for spending
+
+*	*Regular* - UTXO received as a result of a transaction. It is immediately available for spending
+*	*Change* - UTXO received as a result of change from a transaction. It is immediately available for spending
+
 In the following screenshots you can see how this screen is displayed.If you push to a certain UTXO you see details. This function is available only for full screen view. 
 Also, in this screenshot, transactions are finished and have status available.
 
@@ -710,7 +713,7 @@ Payment proof code:
 
 ::
 
-80d07841d031b14ccdb9c56d182b4d1babee264e338bfdabb0b1e9df303bbfe9988057c7d160ddb896c566e67975e93e31b25e114fcc0ebbd2218e9738bae22970770400c2eb0b39d353baa1db2c6ef5b005dea976df47c3ba626f33243eb7ed83246d032b447026c81c9874edb83382c94bf7eb68f870eb863657a6548ecdc2fff172b8de1108017fa94e6e6e574200c2e268ebe7016fa40838ec274e08982e47df7a0be27f6c90
+  80d07841d031b14ccdb9c56d182b4d1babee264e338bfdabb0b1e9df303bbfe9988057c7d160ddb896c566e67975e93e31b25e114fcc0ebbd2218e9738bae22970770400c2eb0b39d353baa1db2c6ef5b005dea976df47c3ba626f33243eb7ed83246d032b447026c81c9874edb83382c94bf7eb68f870eb863657a6548ecdc2fff172b8de1108017fa94e6e6e574200c2e268ebe7016fa40838ec274e08982e47df7a0be27f6c90
 
 
 4. Receiver can verify that proof is correct by clicking to active menu and choosing ‘Payment proof’ from the list:
@@ -835,7 +838,7 @@ Utilities
 ---------
 
 
-From Utilities submenu users can get into payment proof or get some test coins from Beam Community Faucet. The “Get beams from the community Faucet” button opens [Beam Community Faucet] (https://faucet.beamprivacy.community/). Do the same steps which was described in :ref:`beams from faucet`  replacing the second step to this manipulation. 
+From Utilities submenu users can get into payment proof or get some test coins from Beam Community Faucet. The “Get beams from the community Faucet” button opens `Beam Community Faucet <https://faucet.beamprivacy.community/>`_. Do the same steps which was described in :ref:`beams from faucet`  replacing the second step to this manipulation. 
 The “Payment proof” button opens payment proof popup, which allows users to verify transactions. All steps how to do verification are described into :ref:`proof of transaction` section
 
 
