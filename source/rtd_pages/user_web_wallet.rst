@@ -513,6 +513,7 @@ If your transaction appears as ‘Waiting for receiver’ for a long time, it me
 
 ::attention: If the transaction was not sent to the nodes, for any reason, it will expire after 720 blocks, or roughly 12 hours. This is done to avoid a situation in which UTXO is locked forever.
 
+.. _beams from faucet:
 
 Beams from Faucet
 -----------------
@@ -674,6 +675,8 @@ Same steps in the extension view:
 .. figure:: images/web_wallet/03_where_to_buy.png
    :alt:  Link where to buy link in the web wallet for extension view
 
+.. _proof of transaction:
+
 
 Proof of transaction
 --------------------
@@ -700,8 +703,15 @@ Receiver wallet automatically signs proof of received transaction and sends it t
 
 .. figure:: images/web_wallet/payment_proof/03.png
    :alt:  Copy payment proof code
-   
-   
+  
+
+Payment proof code:
+
+::
+
+80d07841d031b14ccdb9c56d182b4d1babee264e338bfdabb0b1e9df303bbfe9988057c7d160ddb896c566e67975e93e31b25e114fcc0ebbd2218e9738bae22970770400c2eb0b39d353baa1db2c6ef5b005dea976df47c3ba626f33243eb7ed83246d032b447026c81c9874edb83382c94bf7eb68f870eb863657a6548ecdc2fff172b8de1108017fa94e6e6e574200c2e268ebe7016fa40838ec274e08982e47df7a0be27f6c90
+
+
 4. Receiver can verify that proof is correct by clicking to active menu and choosing ‘Payment proof’ from the list:
 
 
@@ -742,13 +752,13 @@ After logout you will see the starting screen with the login field.
 
 
 .. figure:: images/web_wallet/logout/02.png
-   :alt:  Opening screen
+   :alt:  The login screen
 
 
 For the extension view:
 
 .. figure:: images/web_wallet/logout/extension_view/02.png
-   :alt:  Opening screen 
+   :alt:  The login screen 
    
    
 
@@ -759,4 +769,121 @@ Settings screen
 To get to the Settings screen you should use the Settings button from the action menu.
 
 
+.. figure:: images/web_wallet/settings/01.png
+   :alt:  Settings in action menu
 
+
+For the extension view:
+
+.. figure:: images/web_wallet/settings/extension_view/01.png
+   :alt:  Settings in action menu
+   
+   
+The settings screen includes 5 submenu: General, Privacy, Utilities, Report a problem and Remove current wallet.
+
+
+.. figure:: images/web_wallet/settings/02.png
+   :alt:  Settings submenus
+
+
+For the extension view:
+
+.. figure:: images/web_wallet/settings/extension_view/02.png
+   :alt:  Settings submenus
+
+
+General
+-------
+
+This submenu includes only one point: Clear local wallet data. It allows users to clear information about transactions and session logs.
+
+.. figure:: images/web_wallet/settings/03.png
+   :alt:  General submenu
+
+
+For the extension view:
+
+.. figure:: images/web_wallet/settings/extension_view/03.png
+   :alt:  General submenu
+
+
+Privacy
+-------
+
+
+The privacy submenu allows users to manipulate with some password features. First, you can use a switcher to set up a confirmation of password for every sending transaction. If the switcher is active (has a green color) the password will be required. When the switcher is grey out the confirmation window won’t be required. 
+
+
+.. figure:: images/web_wallet/settings/04.png
+   :alt:  Privacy submenu
+
+
+For the extension view:
+
+.. figure:: images/web_wallet/settings/extension_view/04.png
+   :alt:  Privacy submenu
+   
+
+Second, you can change the password. You can change your password using this button, which leads to change password popup. Remember, that password cannot be the same as old. Enter all fields with correct data and press the ‘change password’ button to finish this action.
+
+.. figure:: images/web_wallet/settings/05.png
+   :alt:  Change wallet password
+   
+
+Utilities
+---------
+
+
+From Utilities submenu users can get into payment proof or get some test coins from Beam Community Faucet. The “Get beams from the community Faucet” button opens [Beam Community Faucet] (https://faucet.beamprivacy.community/). Do the same steps which was described in :ref:`beams from faucet`  replacing the second step to this manipulation. 
+The “Payment proof” button opens payment proof popup, which allows users to verify transactions. All steps how to do verification are described into :ref:`proof of transaction` section
+
+
+.. figure:: images/web_wallet/settings/06.png
+   :alt:  Utilities submenu
+
+
+For the extension view:
+
+.. figure:: images/web_wallet/settings/extension_view/06.png
+   :alt:  Utilities submenu
+   
+   
+Report a problem
+----------------
+
+ If you’ve got any troubles with the Web Wallet you need to contact support and provide them session logs through Report a problem submenu. Press on Report a problem submenu, it will open Report a problem popup. Just accurately read all information and press on the “save wallet logs” button. When the file with logs will be downloaded, send it to [Beam Support] (support@beam.mw).
+
+
+.. figure:: images/web_wallet/settings/07.png
+   :alt:  Report a problem submenu
+
+
+For the extension view:
+
+.. figure:: images/web_wallet/settings/extension_view/07.png
+   :alt:  Report a problem submenu
+   
+
+Remove current wallet
+---------------------
+
+
+This submenu allows you to erase the current wallet from the database. 
+Press on the submenu to start this procedure. 
+
+.. warning:: Read carefully all information on this popup: All data will be erased. Make sure you’ve saved your seed phrase if you want to restore this wallet later on!
+Choose Remove if you are sure to erase the wallet. It will require the password. Enter the password to confirm this action. 
+
+.. figure:: images/web_wallet/settings/08.png
+   :alt:  Report a problem submenu
+
+
+For the extension view:
+
+.. figure:: images/web_wallet/settings/extension_view/08.png
+   :alt:  Report a problem submenu
+
+After wallet removing the creating screen is shown
+
+.. figure:: images/web_wallet/easy_onboarding/01.png
+   :alt: Creating page
