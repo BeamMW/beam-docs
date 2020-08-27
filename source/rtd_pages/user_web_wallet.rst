@@ -27,7 +27,7 @@ User can download Web wallet from `Chrome Webstore <https://chrome.google.com/we
 .. figure:: images/web_wallet/01_install.png
    :alt: Download Web wallet
 
-or load unpacked extension here chrome://extensions/ (to download packed extension, please, check our [Github](https://github.com/BeamMW/web-wallet/releases) ) 
+or load unpacked extension here chrome://extensions/ (to download packed extension, please, check our `Github <https://github.com/BeamMW/web-wallet/releases>`_ ) 
 
 
 .. figure:: images/web_wallet/02_install.png
@@ -543,7 +543,7 @@ For the extension view:
    :alt:  A receiver screen
    
    
-2. Then on the main screen press on get coins button from the popup. It should link you to the [Beam Community Faucet](https://faucet.beamprivacy.community/) 
+2. Then on the main screen press on get coins button from the popup. It should link you to the `Beam Community Faucet <https://faucet.beamprivacy.community>`_ 
 
 
 .. figure:: images/web_wallet/beam_faucet/01.png
@@ -657,7 +657,7 @@ The same in the extension view:
 Where to buy Beam?
 ------------------
 
-If you want to buy some  beams use only exchanges from our website [beam.mw](https://beam.mw/#exchange).
+If you want to buy some  beams use only exchanges from our website `beam.mw <https://beam.mw/#exchange>`_.
 
 .. figure:: images/web_wallet/01_where_to_buy.png
    :alt:  Exchanges
