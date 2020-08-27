@@ -143,8 +143,8 @@ For the extension view:
 
 As a part of creating a new wallet, a new seed phrase will be generated for you.
 
-Attention
-Seed phrase is the most important secret you have to keep. Knowing the seed phrase enables you (or anyone else) to access all your funds.
+
+.. attention:: Seed phrase is **the most important secret** you have to keep. Knowing the seed phrase enables you (or anyone else) to access all your funds.
 
 
 .. figure:: images/web_wallet/easy_onboarding/02.png
@@ -157,8 +157,7 @@ For the extension view:
    :alt: Before generating seed phrase
    
 
-
-.. attention:: Did you wrote down your seed phrase correctly? Triple-check your handwriting again. The difference between _F_unnel and _T_unnel can be crucial when trying to restore a wallet with valuable funds in the far or near future.
+.. attention:: Did you wrote down your seed phrase correctly? Triple-check your handwriting again. The difference between *_F_unnel* and *_T_unnel* can be crucial when trying to restore a wallet with valuable funds in the far or near future.
 Did you verified your handwriting? Now go find a safe space for the paper!
 
 
