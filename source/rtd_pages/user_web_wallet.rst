@@ -27,7 +27,7 @@ User can download Web wallet from `Chrome Webstore <https://chrome.google.com/we
 .. figure:: images/web_wallet/01_install.png
    :alt: Download Web wallet
 
-or load unpacked extension here chrome://extensions/ (to download packed extension, please, check our [Github](https://github.com/BeamMW/web-wallet/releases) ) 
+or load unpacked extension here chrome://extensions/ (to download packed extension, please, check our `Github]<https://github.com/BeamMW/web-wallet/releases>`_ ) 
 
 
 .. figure:: images/web_wallet/02_install.png
