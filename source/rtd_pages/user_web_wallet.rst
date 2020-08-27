@@ -27,7 +27,7 @@ User can download Web wallet from `Chrome Webstore <https://chrome.google.com/we
 .. figure:: images/web_wallet/01_install.png
    :alt: Download Web wallet
 
-or load unpacked extension here chrome://extensions/ (to download packed extension, please, check our `Github <https://github.com/BeamMW/web-wallet/releases>`_ ) 
+or load unpacked extension `here <chrome://extensions/>`_ (to download packed extension, please, check our `Github <https://github.com/BeamMW/web-wallet/releases>`_ ) 
 
 
 .. figure:: images/web_wallet/02_install.png
@@ -522,7 +522,7 @@ If your transaction appears as ‘Waiting for receiver’ for a long time, it me
 Beams from Faucet
 -----------------
 
-For best understanding how the wallet is worked you can receive some amount from Beam Community Faucet. 
+For best understanding how the wallet is worked you can receive some amount from `Beam Community Faucet <https://faucet.beamprivacy.community/>`_. 
 
 1. First of all, copy an address from the Receiver screen (read Receiving funds for more information)
 
@@ -559,14 +559,14 @@ For the extension view:
    :alt:  Go to Faucet
    
    
-3. On this website enter your address below to get some free Beam for testing to appropriate field, do a captcha and press on ‘Get beams’ button
+3. On this website enter your address below to get some free beams for testing to appropriate field, do a captcha and press on ‘Get beams’ button
 
 
 .. figure:: images/web_wallet/beam_faucet/02.png
    :alt:  Beam Community Faucet
    
 
-4. When the transaction is approved on Beam Community Faucet you need to return to the Wallet. The transaction with a small amount should have receiving status (or received).
+4. When the transaction is approved on `Beam Community Faucet <https://faucet.beamprivacy.community/>`_ you need to return to the Wallet. The transaction with a small amount should have receiving status (or received).
 
 
 .. figure:: images/web_wallet/beam_faucet/03.png
@@ -625,7 +625,7 @@ Security mode
 -------------
 
 
-If you want you may hide from over eyes all values that you have in the wallet. Just activate Security mode from the action menu. Look to the following screenshots:
+If you want you may hide from over eyes all values that you have in the wallet. Just activate 'Security mode' from the action menu. Look to the following screenshots:
 
 .. figure:: images/web_wallet/security_mode/01.png
    :alt:  Security mode in action menu
@@ -668,7 +668,7 @@ If you want to buy some  beams use only exchanges from our website `beam.mw <htt
    :alt:  Exchanges
 
 
-In the Web Wallet there is a link to that page, it will redirect you from Wallet to website. Just press on the action menu and choose Where to buy Beam. 
+In the Web Wallet there is a link to that page, it will redirect you from Wallet to website `beam.mw <https://beam.mw/#exchange>`_. Just press on the action menu and choose Where to buy Beam. 
 
 
 .. figure:: images/web_wallet/02_where_to_buy.png
@@ -787,7 +787,7 @@ For the extension view:
    :alt:  Settings in action menu
    
    
-The settings screen includes 5 submenu: *General*, *Privacy*, *Utilities*, *Report a problem* and *Remove current wallet*.
+The settings screen includes 5 submenu: :ref:`general`, :ref:`privacy`, :ref:`utilities`, :ref:`report a problem` and :ref:`remove current wallet`.
 
 
 .. figure:: images/web_wallet/settings/02.png
@@ -799,6 +799,8 @@ For the extension view:
 .. figure:: images/web_wallet/settings/extension_view/02.png
    :alt:  Settings submenus
 
+
+.. _general:
 
 General
 -------
@@ -814,6 +816,8 @@ For the extension view:
 .. figure:: images/web_wallet/settings/extension_view/03.png
    :alt:  General submenu
 
+
+.. _privacy:
 
 Privacy
 -------
@@ -836,7 +840,9 @@ Second, you can change the password. You can change your password using this but
 
 .. figure:: images/web_wallet/settings/05.png
    :alt:  Change wallet password
-   
+  
+  
+.. _utilities:
 
 Utilities
 ---------
@@ -855,7 +861,9 @@ For the extension view:
 .. figure:: images/web_wallet/settings/extension_view/06.png
    :alt:  Utilities submenu
    
-   
+
+.. _report a problem:
+
 Report a problem
 ----------------
 
@@ -871,6 +879,8 @@ For the extension view:
 .. figure:: images/web_wallet/settings/extension_view/07.png
    :alt:  Report a problem submenu
    
+   
+.. _remove current wallet:
 
 Remove current wallet
 ---------------------
@@ -891,7 +901,7 @@ For the extension view:
 .. figure:: images/web_wallet/settings/extension_view/08.png
    :alt:  Report a problem submenu
 
-After wallet removing the creating screen is shown
+After removing this wallet the creating screen is shown
 
 .. figure:: images/web_wallet/easy_onboarding/01.png
    :alt: Creating page
