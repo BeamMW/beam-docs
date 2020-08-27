@@ -40,7 +40,7 @@ or load unpacked extension here chrome://extensions/ (to download packed extensi
 Creating new wallet
 -------------------
 
-There are two ways of how user can create new wallet: :ref:`Easy onboarding` and :ref:`Create a new wallet with seed phrase`
+There are two ways of how user can create new wallet: :ref:`easy onboarding` and :ref:`create a new wallet with seed phrase`
 
 .. _easy_onboarding: 
 
@@ -125,6 +125,7 @@ For the extension view:
 .. figure:: images/web_wallet/easy_onboarding/extension_view/06.png
    :alt: Main screen
    
+.. _create a new wallet with seed phrase
 
 Create a new wallet with the seed phrase verification
 -----------------------------------------------------
