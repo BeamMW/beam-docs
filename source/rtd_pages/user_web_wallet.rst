@@ -21,7 +21,7 @@ How to install Beam Web Wallet
 ------------------------------
 
 
-User can download Web wallet from [Chrome Webstore](https://chrome.google.com/webstore/detail/beam-web-wallet-testnet/ilhaljfiglknggcoegeknjghdgampffk?utm_source=chrome-ntp-icon) 
+User can download Web wallet from `Chrome Webstore <https://chrome.google.com/webstore/detail/beam-web-wallet-testnet/ilhaljfiglknggcoegeknjghdgampffk?utm_source=chrome-ntp-icon>`_ 
 
 
 .. figure:: images/web_wallet/01_install.png
