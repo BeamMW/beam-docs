@@ -739,9 +739,11 @@ Payment proof code:
 Logout
 ------
 
-When you’ve finished work with your wallet, you should logout from it to secure your beams. There are two options. 
-1. close the tab with wallet in your browser (extension view will close if you tap to the place beyond the wallet)
-2. Open action menu and choose Logout
+When you’ve finished work with your wallet, you should logout from it to secure your beams. There are two options: 
+
+1. Close the tab with wallet in your browser (extension view will close if you tap to the place beyond the wallet).
+
+2. Open action menu and choose Logout.
 
 
 .. figure:: images/web_wallet/logout/01.png
@@ -785,7 +787,7 @@ For the extension view:
    :alt:  Settings in action menu
    
    
-The settings screen includes 5 submenu: General, Privacy, Utilities, Report a problem and Remove current wallet.
+The settings screen includes 5 submenu: *General*, *Privacy*, *Utilities*, *Report a problem* and *Remove current wallet*.
 
 
 .. figure:: images/web_wallet/settings/02.png
