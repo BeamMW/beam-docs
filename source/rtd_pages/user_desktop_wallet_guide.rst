@@ -1,7 +1,5 @@
 .. _user_desktop_wallet_guide:
 
-.. warning:: The following document is still under construction and is subject to changes.
-
 .. _desktop_wallet_guide:
 
 Desktop Wallet User Guide
@@ -13,7 +11,7 @@ Beam Desktop Wallet is the simplest way to start using Beam. It is available for
 
    Beam blockchain does not store transaction history and SBBS addresses. These are only stored in local database inside the wallet data folder.
 
-   Please follow the guidelines below to avoid problems with sending are receiving Beam transactions.
+   Please follow these guidelines below to avoid problems with sending are receiving Beam transactions.
 
    1. Do not copy the wallet.db to another machine and run another wallet simultaneously using the same wallet database
 
@@ -21,7 +19,7 @@ Beam Desktop Wallet is the simplest way to start using Beam. It is available for
 
    3. SBBS messages sent between wallets expire after 12 hours. You have to connect within 12 hours of the transaction initiation to receive or send the funds.
 
-   4. SBBS Addresses by default expire after 24 hours. Always use 'never' expiring addresses with pools and exchanges to make sure you receive payments.
+   4. Always use 'Permanent address' and choose 'ONLINE ADDRESS (for exchanges and mining pools)' with pools and exchanges to make sure you receive payments.
 
 
 Downloading binaries
@@ -328,45 +326,68 @@ Here is how the process of receiving BEAM looks like from a Receiver’s perspec
 
 * Generate an address
 * Send your address to the Sender person **over a secure communication channel**
-* Both Sender and Receiver’s Wallet must be online at the same time to complete a transaction.
 
-It's possible to reuse an address that already exists, more on that later.
+
 
 Generate an address
 -------------------
 
 Proceed to the main screen and click the blue ‘Receive’ button at the top right corner. This will open the receive screen.
 
-.. figure:: images/desktop/05_receiving_beam/01.png
+.. figure:: images/desktop/05_receiving_beam/1.png
    :alt: Receive BEAM screen
 
-Copy and paste the newly generated Beam address to send to Sender over a **secure communication channel**. There are three ways to do it:
 
-* By selecting the address and clicking ``Command-C`` or ``Ctrl-C`` (depending on your platform)
-* By right-click on the address and choosing 'Copy' from the drop-down menu
-* By clicking the 'Copy transaction address' button
+Choose between 'Regular' and 'Offline' transaction modes
 
-.. figure:: images/desktop/05_receiving_beam/02.png
-   :alt: Copy address
+In the 'Regular' mode: 
 
-Each time the Receive Beam dialog is open, a new Beam address is generated. By default, the address is valid for 24 hours. It is best to give the Sender your address closest to the time they will be sending BEAM so the address does not expire.
+If you expect to receive transaction from another Beam wallet: 
 
-.. figure:: images/desktop/05_receiving_beam/03.png
-   :alt: Set address expiration
+   1. Leave the address type selector in 'One-time use' position. This adddress is good for one transaction only.
+   2. Click 'copy and close' in the 'ONLINE ADDRESS (for wallets)' pane on the right.
 
-You can explicitly set the expiration time to ‘Never’ for this address only by selecting the value in the ‘Expires’ drop down.
+If you expect to receive transaction from exchange or pool
 
-.. warning:: The permanent addresses that never expire are only useful in limited special cases, like working with mining pools or exchanges. For ultimate privacy, do not use this option for regular transactions, rather always create a new address for each transaction.
+   1. Switch the address type selector to the 'Permanent addres' position. This adderess can be used in multiple transactions.
+   2. Click 'copy and close' in the 'ONLINE ADDRESS (for exchange or mining pool)'  pane on the right.
 
-.. attention:: If you want make the address active, you should close Receive screen. You can do it by clicking on ‘Close’ button or ‘Copy transaction address’.
+If you expect to receive transactions from another Beam wallet on regular basis:
+
+   1. Switch the address type selector to the 'Permanent addres' position. This adderess can be used in multiple transactions.
+   2. Click 'copy and close' in the 'ONLINE ADDRESS (for wallets)'  pane on the right.   
+
+
+In the 'Offline' mode:
+
+   1. Switch to 'Offline' mode 
+   2. Click 'copy and close' in the 'OFFLINE ADDRESS (for wallets)' pane on the right
+
+
+.. note:: Each offline address is good for ten offline payments (aka vouchers). When payments run out, the Sender wallet will automatically send request for more payments to the Receiver wallet using SBBS. If Receiver wallet is online within 12 hours of the request (until the SBBS message expires) it will send 20 more offline payment vouchers to the sender. Otherwise, Sender will receive notification that there are no more vouchers and will have to request another offline address via external channel. 
+
+
+If you want to view the address before sending it over, click on 'Show address' in the relevant pane on the right
+
+Send copied address to the other side via a **secure communication channel**
+
+Each time the Receive Beam dialog is open, a new Beam address is generated. 
 
 QR code
 -------
 
 If the Sender uses a mobile app, he can quickly scan the QR code instead of  receiving, copying and pasting the alphanumeric address. 
 
-.. figure:: images/desktop/05_receiving_beam/04.png
+.. figure:: images/desktop/05_receiving_beam/2.png
    :alt: QR code
+
+Request
+-------
+
+When creating an address you can specify the requested amount directly in the Receive dialog. This amount will be embedded in the address and automatically filled into the Send dialog.
+
+.. figure:: images/desktop/05_receiving_beam/6.png
+   :alt: Request amount
 
 Comment
 -------
@@ -374,6 +395,9 @@ Comment
 You can add a comment when creating the receiving address. The comment is never sent to the network, it is only visible inside your wallet and is used for internal bookkeeping only.
 
 The comment can be seen on the `Address screen`_ and in the extended transaction view.
+
+.. figure:: images/desktop/05_receiving_beam/7.png
+   :alt: Comment
 
 Sending the address
 -------------------
@@ -426,19 +450,16 @@ Sending funds
 
 In order to send BEAM, you will need to click the magenta ‘Send’ button at the top right corner. This will open the Send screen.
 
-.. figure:: images/desktop/06_sending_beam/01.png
+.. figure:: images/desktop/06_sending_beam/5_1/1.png
    :alt: Send BEAM screen
 
 Make sure you have the correct address and paste the Receiver’s Beam address in the 'Send To' field.
 
+The address type will be automatically recognized by the wallet and displayed in the Send dialog, so that the Sender will immediately see which transaction type was requested.
+
 To help to identify the transaction, you may also choose to fill in the optional Comment field. The comment will remind you what or who the transaction is for. The comment is stored locally, thus it will only be visible in your wallet for bookkeeping purposes.
 
-The comment can be seen on the `Address screen`_:
-
-.. figure:: images/desktop/06_sending_beam/02.png
-   :alt: Send BEAM screen
-
-The comment is also displayed in the extended transaction view on Main Screen:
+The comment can be seen on the `Address screen`_ and in transaction details on the main screen.
 
 Select the transaction amount in BEAM you want to send. Transaction amount is in BEAM and may contain fractional values such as 1.25 BEAM or 11.3 BEAM and the like. Keep in mind you also have to pay a transaction fee, hence the amount to send plus the fee must be equal to or less than the available balance.
 
@@ -466,12 +487,14 @@ It’s also can require the password if this function was turned on in the setti
 Completing the transaction
 --------------------------
 
-Once you confirm, the transaction is sent to the Receiver's wallet. If Receiver's wallet is currently offline or if the network is loaded, you might see the transaction appear ‘Waiting for receiver’ accordingly on your transaction list. Once the transaction is starting, it will be sent to the nodes and shown as ‘In progress’.
+Once you confirm, the transaction is sent to the Receiver's wallet. 
+
+For Regular transactions, if Receiver's wallet is currently offline or if the network is loaded, you might see the transaction appear ‘Waiting for receiver’ accordingly on your transaction list. Once the transaction is starting, it will be sent to the nodes and shown as ‘In progress’.
 
 .. figure:: images/desktop/06_sending_beam/05.png
    :alt: Transaction 'In progress'
 
-.. note:: While a transaction is in ‘Waiting for receiver’ you can cancel it by clicking on the dropdown to the right of the transaction row and then select ‘Cancel’. The other party will receive notification that the transaction was either ‘Cancelled’ or ‘Expired,’ and funds plus fee that were allocated for this transaction will become available again. It is not possible to cancel a transaction in ‘In progress’ or ‘Sent’ states.
+.. note:: While a transaction is in ‘Waiting for receiver’ you can cancel it by clicking on the dropdown to the right of the transaction row and then select ‘Cancel’. The other party will receive notification that the transaction was either ‘Cancelled’ or ‘Expired,’ and funds plus fee that were allocated for this transaction will become available again. It is not possible to cancel a transaction in ‘In progress’ or ‘Sent’ states. It is also not possible to cancel 'Offline' transactions.
 
 .. figure:: images/desktop/06_sending_beam/08.png
    :alt: Canceling outgoing transaction

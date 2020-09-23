@@ -16,34 +16,31 @@ Welcome to Beam documentation!
 
 	Download binaries from: `Beam Downloads Page <https://www.beam.mw/downloads>`_
 
-	Source code: `Beam Github <https://github.com/BeamMW/beam>`_
+	Source code: `Beam Github <https://github.com/BeamMW>`_
 
 
 Current release
 ===============
 
-**Double Doppler 5.0.9328**
+**Eager Electron 5.1.xxxx**
 
 This release includes:
 
-Fixes:
+Features:
 
-* Fast-sync potential problem fix
-* Inconsistent balance on mobile wallets after UTXO rescan in node
-* Fixed node slow-down if many shielded txs are broadcasted
-* Attempting to restore txs after rollback
-* Fixed possible API crash on wallet with Lelantus transactions
+* Enabled Offline transactions by implementing LelantusMW protocol
+* For Offline transactions new “offline” addresses are supported: it includes all the necessary information for 10 payments so that a receiver doesn’t need to talk to the sender to create a transaction. Once the ten payments run out, the sender wallet will automatically request more payments from the receiver using SBBS. In case the Receiver is not online and not responding, the Sender wallet will show an indication that there are no more payments left and the user will request a new address using external channel.
+* Atomic swaps are significantly cheaper now due to SegWit support and a minimal fee rate is nicely recommended so that transactions will complete within a reasonable time
+* Confirmation count is implemented for CLI wallet and in API to better align with exchanges
 
 Improvements:
 
-* Added automatic rollback limit of 60 blocks
-* Multi-threaded Lelantus withdrawal proof generation
-* Faster UTXO rescan in wallet
+* Confidential Assets metadata is standardized. Read more here.
+* Settings were restructured for better usability
 
 **Known limitations:**
 
-1. When using active laser beam channels the wallet should not be offline for over 24 hours
-2. Atomic Swaps of Confidential Assets with BEAM/BTC/LTC/QTUM will be released later on
+1. Offline transactions are only supported when Desktop wallets run their own node
 
 **Points to mention:**
 
