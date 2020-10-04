@@ -41,11 +41,8 @@ Improvements:
 **Known limitations:**
 
 1. Offline transactions are only supported when Desktop wallets run their own node
-
-**Points to mention:**
-
-1. In case a mobile wallet is connected to a random node and the user has both mobile and desktop wallets that are using the same seed phrase, the funds sent to the desktop wallet won’t appear on the mobile wallet. If the desktop wallet is running a local node, it will see funds sent to both wallets. The reason is that the local node (integrated into the desktop wallet) always monitors the blockchain for UTXOs related to the seed of the wallet. The mobile wallet does not run a local node and thus can only monitor transactions sent to its specific SBBS addresses. Of course, no funds will be lost in any event.
-2. BEAM wallets won’t display received Confidential Assets and amounts kept in the shielded pool. Please use CLI ar API till the future notice.
+2. In case a mobile wallet is connected to a random node and the user has both mobile and desktop wallets that are using the same seed phrase, the funds sent to the desktop wallet won’t appear on the mobile wallet. If the desktop wallet is running a local node, it will see funds sent to both wallets. The reason is that the local node (integrated into the desktop wallet) always monitors the blockchain for UTXOs related to the seed of the wallet. The mobile wallet does not run a local node and thus can only monitor transactions sent to its specific SBBS addresses. Of course, no funds will be lost in any event.
+3. BEAM wallets won’t display received Confidential Assets and amounts kept in the shielded pool. Please use CLI ar API till the future notice.
 
 
 **TL;DR**
@@ -193,7 +190,6 @@ To report issues and get support please perform the following steps:
    rtd_pages/user_atomic_swap_cli.rst
    rtd_pages/ca.rst
    rtd_pages/laser.rst
-   rtd_pages/lelantus.rst
    rtd_pages/user_web_wallet.rst
    rtd_pages/user_blockchain_explorer.rst
    rtd_pages/user_supported_platforms.rst

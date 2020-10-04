@@ -1,5 +1,12 @@
-Beam lightning channel
-======================
+Laser Beam
+==========
+
+Introduction
+------------
+
+Laser Beam is an implementation of direct payment channels between two Beam wallets. As of now this feature is only implemented in Beam CLI wallets. 
+
+When channel is opened each party commits some amount of Beam into the channel. Then it is possible to perform instant transactions between the wallets with values within the locked sum. When the channel is closed the last state of the channel is committed on chain. 
 
 Create channel
 --------------
@@ -155,9 +162,9 @@ Close channel
 To close channel, use the following commands
 
 +----------------+--------------------------------------------------------+
-| laser_close   | before lock time is up, only if other side is online   |
+| laser_close   | before lock time is up, only if other side is online    |
 +================+========================================================+
-| Laser_drop    |  after lock time is up or if other side is offline     |
+| Laser_drop    |  after lock time is up or if other side is offline      |
 +----------------+--------------------------------------------------------+
 
 1. Bob should listen to this channel using the following command

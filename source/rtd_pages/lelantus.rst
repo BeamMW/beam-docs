@@ -2,11 +2,11 @@
 
 .. _lelantus :
 
-Lelantus
-========
+LelantusMW Shielded Pool
+========================
 
 
-Conceptually, Lelantus is a mean which allows to avoid UXTO linkability in transactions graph. To make UTXOs unlinked user should insert regular BEAM UTXO into *shielded pool*, converting these UTXOs into *shielded UTXOs* and then, after some time extract them back as *unlinked* UTXOs. *Shielded UTXO* belonging to the wallet could be detected by the node with owner key (as regular utxo), and user can use this info to extract these coins back.
+LelantusMW is a new protocol that was enabled during the 5.0 hard fork in order to augment the MW and allow to avoid UXTO linkability in transactions graph. To make UTXOs unlinked user should insert regular BEAM UTXO into *shielded pool*, converting these UTXOs into *shielded UTXOs* and then, after some time extract them back as *unlinked* UTXOs. *Shielded UTXO* belonging to the wallet could be detected by the node with owner key (as regular utxo), and user can use this info to extract these coins back.
 
 To send coins in the pool and get from it using commands insert_to_pool and exctract_from_pool accordingly.
 

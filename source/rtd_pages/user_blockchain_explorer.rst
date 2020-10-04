@@ -63,7 +63,17 @@ Clicking on the hash link or the details triangle button on the right allows you
 
 
 
+Confidential Assets
+-------------------
 
+Starting from 5.0 Hard fork, Beam mainnet supports creation of confidential assets that are displayed in the `asset explorer <https://explorer.beam.mw/assets>`_. 
 
+.. figure:: images/explorer/assets.png
+	:alt: Confidential Assets
+
+Creation of new asset is supported in Beam CLI wallet. To generate the string for creation of a new asset we have added a convenient `helper <https://explorer.beam.mw/asset-create>`_ that can be accessed from the Confidential Asset page.
+
+.. figure:: images/explorer/create_assets.png
+	:alt: Confidential Asset Helper
 
 
