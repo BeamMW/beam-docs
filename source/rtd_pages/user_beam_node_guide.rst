@@ -225,7 +225,7 @@ To make it easier to run local node in fast sync mode you need to run the follow
 .. figure:: images/cli/fast_sync.jpg
 
 Operations with Node Database
-------------------------
+-----------------------------
 
 
 

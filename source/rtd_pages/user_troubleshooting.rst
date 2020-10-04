@@ -1,21 +1,25 @@
 .. _user_troubleshooting:
 
-Wallet Troubleshooting (all wallets)
-====================================
+Troubleshooting
+===============
+
+.. contents::
 
 Where are the wallet files located?
 -----------------------------------
 
 When Beam Wallet desktop app is installed, the wallet data files are stored separately from the binaries. The locations of all the files are described here: :ref:`Files and Locations`
 
-My transaction is stuck 'In Progress' for a long time
---------------------------------------------------------------
+All wallets
+-----------
+
+.. rubric:: My transaction is stuck 'In Progress' for a long time
+
 
 In progress means that the message sent to the other wallet address was not answered yet. Each message has a lifetime of 12 hours, so if the message will not be answered during that time transaction will be canceled automatically by the wallet. At this stage, the sender can cancel the transaction by clicking on transaction menu and selecting 'Cancel'.
 
 
-My transaction is stuck in 'Synching with blockchain' for a very long time
---------------------------------------------------------------------------
+.. rubric:: My transaction is stuck in 'Synching with blockchain' for a very long time
 
 In order to create a transaction Sender and Receiver should exchange messages with all the necessary information. After that, Sender creates the transaction and sends it to the network for distribution and mining.
 
@@ -26,41 +30,34 @@ In any case, if the transaction does not appear in the blockchain after 2 hours 
 .. note: In older versions of the wallet (before 1.1.4201) the timeout was set to 24 hours.
 
 
-I’ve forgot the local password for my wallet
---------------------------------------------
+.. rubric:: I’ve forgot the local password for my wallet
 
 See :ref: `Restoring funds`
 
 
-I’ve restored the wallet but my balance is zero
------------------------------------------------
+.. rubric:: I’ve restored the wallet but my balance is zero
 
 One or more the of the words is wrong or misspelled. Triple-check that all the words from the seed phrase are typed in correctly. You will need to repeate the :ref: `Restoring funds` procedure.
 
 
-I've forgot my password
------------------------
+.. rubric:: I've forgot my password
 
 If you lost your password and cannot get into your wallet, you will have to remove ``wallet.db`` file and to `Restore funds` using your seed phrase to create a new password. 
 
-Why is the seed phrase the only thing connecting me to my funds?
-----------------------------------------------------------------
+.. rubric:: Why is the seed phrase the only thing connecting me to my funds?
 
 To ensure the utmost privacy, the only information we can use to link you to your wallet is your seed phrase. So, if you lose it we cannot recover it for you.
 
-I've lost my seed phrase
-------------------------
+.. rubric:: I've lost my seed phrase
 
 By design, the only way to access your funds (UTXO) is to have the seed phrase. If you still have access to your wallet, create another wallet with new seed phrase on another device and transfer funds to there. Any solution that would allow you to access your funds without the seed phrase would severely compromise the privacy of BEAM. Therefore, in case you don't have any active access to your funds there is nothing to do (the funds will be stored in the blockchain forever and no one will be able to access or spend them).
 
-I've copied my ``wallet.db`` file to the new machine and I'd like to run wallets on both new and old machines simultaneously  
-----------------------------------------------------------------------------------------------------------------------------
+.. rubric:: I've copied my ``wallet.db`` file to the new machine and I'd like to run wallets on both new and old machines simultaneously  
 
 At the current implementation each ``wallet.db`` file should be managed by only a single wallet instance. Any case involving manual transfer of the wallet database **is not supported**.
 
 
-I am trying to send Beam but transactions are failing 
------------------------------------------------------
+.. rubric:: I am trying to send Beam but transactions are failing 
 
 In certain cases, the wallet my get out of sync with the blockchain which might result in UTXOs that were already spent being incorrectly marked as available. When such UTXOs are selected for a transaction by the wallet, the transaction will be rejected by the blockchain.
 
@@ -87,36 +84,33 @@ If this does not help, you may try to resync the wallet completely by following 
 4. After 2 days: Erase both wallet.db AND node.db. Then - do a full restore.
 
 
-
 Desktop Wallet Troubleshooting 
-==============================
+------------------------------
 
-Why is my available balance lower than expected while I'm sending BEAM?
------------------------------------------------------------------------
+.. rubric:: Why is my available balance lower than expected while I'm sending BEAM?
+
 
 UTXO can be locked during active outgoing transaction. The locked amount is displayed as a change in 'Sending screen'. The change will become spendable when the transaction expires or completes.
 
 
-I’ve restored the wallet but I can’t see my transaction list and/or my active addresses
----------------------------------------------------------------------------------------
+.. rubric:: I’ve restored the wallet but I can’t see my transaction list and/or my active addresses
+
 
 As explained in `Restoring funds`, only your available balance (i.e. your UTXO) is kept on the blockchain, hence that’s all that can be restored.
 
 
-I’ve restored the wallet using my seed phrase - can someone still send me money to the addresses created in the previous wallet?
---------------------------------------------------------------------------------------------------------------------------------
+.. rubric:: I’ve restored the wallet using my seed phrase - can someone still send me money to the addresses created in the previous wallet?
 
 When a wallet is restored, *only the balance (UTXO) is restored*. Addresses (active and expired), contacts and transaction history are only stored locally, so they can't be restored from the blockchain. Each wallet is aware of only the active and expired addresses it displays. Therefore, all transactions sent to the addresses no wallet is aware of anymore will fail by timeout and the funds will be automatically released in Sender's wallet.
 
 
-Why can't I just cancel the transaction in the 'Synching with blockchain' state?
---------------------------------------------------------------------------------
+.. rubric:: Why can't I just cancel the transaction in the 'Synching with blockchain' state?
+
 
 Your wallet has already disclosed enough information so that transaction can be created anyway and sent to the network even if you cancel it. 
 
 
-Wallet is stuck in 'Downloading blocks' screen
-----------------------------------------------
+.. rubric:: Wallet is stuck in 'Downloading blocks' screen
 
 1. Close your wallet
 
@@ -150,8 +144,7 @@ Wallet is stuck in 'Downloading blocks' screen
    address=us-node01.mainnet.beam.mw:8100 
 
 
-My peers look ok but the wallet is still stuck during sync
-----------------------------------------------------------
+.. rubric:: My peers look ok but the wallet is still stuck during sync
 
 1. Close your wallet
 
@@ -164,10 +157,10 @@ My peers look ok but the wallet is still stuck during sync
 
 
 Command Line Wallet Troubleshooting
-===================================
+-----------------------------------
 
-I am getting the ``error code=26, file is not a database`` error when starting the command line wallet
-------------------------------------------------------------------------------------------------------
+
+.. rubric:: I am getting the ``error code=26, file is not a database`` error when starting the command line wallet
 
 Notice how you were starting the wallet:
 
@@ -183,8 +176,7 @@ You have submitted an incorrect password. The wallet can not decrypt the databas
 *Only if you are absolutely sure that password is correct, remove the database file and restore wallet from your Seed Phrase*
 
 
-I am getting the ``Failed. No inputs`` exception when starting the command line wallet
---------------------------------------------------------------------------------------
+.. rubric:: I am getting the ``Failed. No inputs`` exception when starting the command line wallet
 
 Notice how you were starting the wallet:
 
@@ -205,10 +197,9 @@ Notice how you were starting the wallet:
 The most common cause of this error is trying to send a transaction with insufficient funds. You can not send a greater amount than you have.
 
 Miscellaneous Troubleshooting
-=============================
+-----------------------------
 
-My question is not answered anywhere
-------------------------------------
+.. rubric:: My question is not answered anywhere
 
 See `Reporting issues and getting support`
 

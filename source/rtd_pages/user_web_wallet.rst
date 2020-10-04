@@ -1,7 +1,5 @@
 .. _web_wallet:
 
-.. _web wallet:
-
 
 Web Wallet (Testnet) User Guide
 ===============================
@@ -159,8 +157,9 @@ For the extension view:
    :alt: Before generating seed phrase
    
 
-.. attention:: Did you wrote down your seed phrase correctly? Triple-check your handwriting again. The difference between *_F_unnel* and *_T_unnel* can be crucial when trying to restore a wallet with valuable funds in the far or near future.
-Did you verified your handwriting? Now go find a safe space for the paper!
+.. attention:: Did you write down your seed phrase correctly? Triple-check your handwriting again. The difference between *_F_unnel* and *_T_unnel* can be crucial when trying to restore a wallet with valuable funds in the far or near future.
+
+Did you verify your handwriting? Now go find a safe space for the paper!
 
 
 .. figure:: images/web_wallet/easy_onboarding/03.png
@@ -890,18 +889,21 @@ This submenu allows you to erase the current wallet from the database.
 Press on the submenu to start this procedure. 
 
 .. warning:: Read carefully all information on this popup: All data will be erased. Make sure you’ve saved your seed phrase if you want to restore this wallet later on!
-Choose Remove if you are sure to erase the wallet. It will require the password. Enter the password to confirm this action. 
+
+Choose Remove if you are sure and enter the password to confirm this action. 
 
 .. figure:: images/web_wallet/settings/08.png
-   :alt:  Report a problem submenu
+   :alt:  Remove the wallet
 
 
 For the extension view:
 
 .. figure:: images/web_wallet/settings/extension_view/08.png
-   :alt:  Report a problem submenu
+   :alt:  Extension view
 
-After removing this wallet the creating screen is shown
+After removing this wallet you will redirected to 'Create new wallet' screen
 
 .. figure:: images/web_wallet/easy_onboarding/01.png
    :alt: Creating page
+
+

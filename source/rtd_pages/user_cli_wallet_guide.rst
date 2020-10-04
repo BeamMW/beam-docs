@@ -4,6 +4,8 @@
 .. _command line user guide:
 .. _command_line_wallet_user_guide:
 
+.. contents::
+
 Command Line Wallet User Guide
 ==============================
 
@@ -581,7 +583,7 @@ In order to rescan the CLI wallet please follow the steps below:
 .. _lelantus :
 
 LelantusMW Shielded Pool
-========================
+------------------------
 
 
 LelantusMW is a new protocol that was enabled during the 5.0 hard fork in order to augment the MW and allow to avoid UXTO linkability in transactions graph. To make UTXOs unlinked user should insert regular BEAM UTXO into *shielded pool*, converting these UTXOs into *shielded UTXOs* and then, after some time extract them back as *unlinked* UTXOs. *Shielded UTXO* belonging to the wallet could be detected by the node with owner key (as regular utxo), and user can use this info to extract these coins back.
@@ -724,7 +726,7 @@ Make sure that coins are gone from pool using command ``beam-wallet info --shiel
  
  
 One side payments
-=================
+-----------------
 
 In MW in order to create a valid transaction all the parties must collaborate. Here we'll present a one-side payment scheme, which, after initial setup, allows arbitrary senders to pay specified (fixed) values to a particular receiver, without any further collaboration from the receiver side.
 
