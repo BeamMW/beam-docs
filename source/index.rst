@@ -118,18 +118,18 @@ Beam supports two types of transactions: Regular and Offline.
 
 1. **Generating address** - Receiver generates a 'Regular' address by using 'Receive' operation in the wallet and sends it to the Sender via external channel (i.e Telegram, email etc...)
 2. **Initiating transaction** - Sender initiates transction by pasting the address into the 'Send' dialog in the wallet and fills in the required amount, fee and optionally additional details. 
-3. ** Receiver response ** - Receiver wallet must be online within 12 hours of the moment transaction was initiated. It signs the receiver part and sends it back to the sender.
-4. ** Finalize ** - Sender walelt must be online within 12 hours of Receiver response to finalize the transaction, generate payment proof (store locally) and send the transaction to the network.
+3. **Receiver response** - Receiver wallet must be online within 12 hours of the moment transaction was initiated. It signs the receiver part and sends it back to the sender.
+4. **Finalize** - Sender walelt must be online within 12 hours of Receiver response to finalize the transaction, generate payment proof (store locally) and send the transaction to the network.
 
 **Offline** (LelantusMW non-interactive) transactions go through the following steps:
 
 1. **Generating address** - Receiver generates a 'Offline' address by using 'Receive' operation in the wallet and sends it to the Sender via external channel (i.e Telegram, email etc...). 
-2. Sender pastes the Address into the 'Send' dialog in the wallet, specifies the amount and clicks 'Send'. The transaction is immediately sent to the network and no additional interactions are required
+2. **Sending transaction** - Sender pastes the Address into the 'Send' dialog in the wallet, specifies the amount and clicks 'Send'. The transaction is immediately sent to the network and no additional interactions are required
 
 
-..note:: The 'Offline' address are valid for 10 offline payments, since each offline payment spends a unique identifier. When payments run out the Sender wallet automatically attempts to get more payments from the Receiver through SBBS. If the Receiver is online payments are automatically replenished, otherwise the Sender wallet indicates that there are no more payments left and the Sender needs to contact the Receiver via external channel to get new Offline address.
+.. note:: The 'Offline' address are valid for 10 offline payments, since each offline payment spends a unique identifier. When payments run out the Sender wallet automatically attempts to get more payments from the Receiver through SBBS. If the Receiver is online payments are automatically replenished, otherwise the Sender wallet indicates that there are no more payments left and the Sender needs to contact the Receiver via external channel to get new Offline address.
 
-..note:: Offline transaction fees are signicantly higher (minimum ~0.01 BEAM) than 'Regular' transactions (minimum 100 Groth). This is due to the fact that Offline transactions leave more permanent information in the blockchain.
+.. note:: Offline transaction fees are signicantly higher (minimum ~0.01 BEAM) than 'Regular' transactions (minimum 100 Groth). This is due to the fact that Offline transactions leave more permanent information in the blockchain.
 
 **Wallet and Node concepts are slightly different**
 

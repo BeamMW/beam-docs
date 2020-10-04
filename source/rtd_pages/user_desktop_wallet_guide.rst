@@ -475,12 +475,12 @@ You can see the remaining amount of BEAM in your wallet and the change that will
 
 After you click ‘Send’ you will see a confirmation transaction details popup with the most important transaction details:
 
-.. figure:: images/desktop/06_sending_beam/07.png
+.. figure:: images/desktop/06_sending_beam/03.png
    :alt: Send BEAM confirmation
    
 It’s also can require the password if this function was turned on in the settings. 
 
-.. figure:: images/desktop/06_sending_beam/03.png
+.. figure:: images/desktop/06_sending_beam/07.png
    :alt: Confirmation with required password
 
 
