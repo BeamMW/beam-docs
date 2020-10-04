@@ -22,7 +22,7 @@ Welcome to Beam documentation!
 Current release
 ===============
 
-**Eager Electron 5.1.xxxx**
+**Eager Electron 5.1.9898**
 
 This release includes:
 
@@ -61,17 +61,19 @@ Improvements:
 What is Beam?
 --------------
 
-`Beam <https://beam.mw/>`_ is a next generation scalable, confidential cryptocurrency based on an elegant and innovative `Mimblewimble protocol <https://scalingbitcoin.org/papers/mimblewimble.txt>`_.
+`Beam <https://beam.mw/>`_ is a next generation scalable, confidential cryptocurrency based on an elegant and innovative `Mimblewimble protocol <https://scalingbitcoin.org/papers/mimblewimble.txt>`_ and `LelantusMW protocol <https://github.com/BeamMW/beam/wiki/Lelantus-MW>`_.
 
 Things that make BEAM special include:
 
 * Users have complete control over privacy - a user decides which information will be available and to which parties, having complete control over his personal data in accordance to his will and applicable laws.
 
+* Beautiful and usable `wallets <https://beam.mw/downloads>`_ for all platforms
+
 * Confidentiality without penalty - in BEAM confidential transactions do not cause bloating of the blockchain, avoiding excessive computational overhead or penalty on performance or scalability while completely concealing the transaction value.
 
-* No trusted setup required.
+* No trusted setup.
 
-* Blocks are mined using Equihash Proof-of-Work algorithm.
+* Blocks are mined using `BeamHash III <https://docs.beam.mw/beamHash_III_spec.pdf>`_ Proof-of-Work algorithm.
 
 * Limited emission using periodic halving.
 
@@ -88,20 +90,15 @@ Things that make BEAM special include:
 Getting Started
 ---------------
 
-The simplest way to get started with Beam is by visiting the `Beam website <https://beam.mw>`_, reading and understanding the materials posted there and joining `Beam Community <https://t.me/BeamPrivacy>`_ on Telegram for updates and discussions.
+The simplest way to get started with Beam is by visiting the `Beam website <https://beam.mw>`_, `downloading wallets <https://beam.mw/downloads>`_ and joining `Beam Community <https://t.me/BeamPrivacy>`_ on Telegram for updates and discussions.
 
 .. danger:: Beam is extremely new and experimental technology. No guarantees can be provided by anyone whatsoever. Use it at your own risk. Make sure you know what you are doing, especially if there is money involved.
 
 Just like any other cryptocurrency, using Beam requires learning and understanding what this all is about. If real money is involved, it also requires concern with security of the process.
 
-.. hint:: That said, you can always safely play with Beam by connecting to the permanent Testnet.
-
+That said, you can always safely play with Beam by connecting to the permanent `Testnet <https://beam.mw/downloads/testnet>`_  and following instructions in :ref:`desktop_wallet_guide`.
 
 To lean more about how cryptocurrencies work in general and Beam in particular please visit our :ref:`Resources` page
-
-Once you familiarized yourself with key ideas and concepts, it is recommended to start from connecting to our Testnet. The simplest way to do that is by downloading and installing our Desktop Wallet and following instructions in :ref:`desktop_wallet_guide`.
-
-
 
 
 Important differences from other cryptocurrencies
@@ -113,15 +110,26 @@ Mimblewimble has several important differences from most other existing cryptocu
 
 In most cryptocurrencies Address is a hashed public key for which the owner of that Address knows the corresponding private key. In order to transfer funds, the Sender should only know the Address of the Receiver in order to create a unilateral transaction. *The Sender is not aware of whether the Receiver is online or not or whether it even exists*. Once transaction to an Address is complete and added to the blockchain, Receiver that can prove knowledge of the private key corresponding the Address can control this UTXO (short for Unspent Transaction Output).
 
-In Mimblewimble there are no addresses at all and transaction are created **interactively** by both Sender and Receiver wallets. This means that in order to create a transaction, both wallets have to participate in the creation process and eventually co-sign the transaction before it is sent to the blockchain.
+In Beam, Addresses are not recorded in the blockchain and are not related to coin ownership. They are just containers of transaction related information between Sender and Receiver wallets, are only stored locally and can be discarded at any time.
 
-.. attention:: In Beam it is not possible to create a transaction unilaterally. Both Sender and Receiver have participate in transaction creation.
+Beam supports two types of transactions: Regular and Offline. 
 
-To allow Sender and Receiver wallets to create transactions without having to be online at the same time and directly connected to each other, Beam added a module called :ref:`SBBS<sbbs>` that allows wallets to securely communicate using encrypted messages to create a transaction. SBBS Addresses are merely private / public key pairs used to encrypt and decrypt these messages.
+**Regular** (Mimblewimble interactive) transactions go through the following steps:
 
-.. important:: SBBS Addresses are not recorded in the blockchain and are not used to control funds
+1. **Generating address** - Receiver generates a 'Regular' address by using 'Receive' operation in the wallet and sends it to the Sender via external channel (i.e Telegram, email etc...)
+2. **Initiating transaction** - Sender initiates transction by pasting the address into the 'Send' dialog in the wallet and fills in the required amount, fee and optionally additional details. 
+3. ** Receiver response ** - Receiver wallet must be online within 12 hours of the moment transaction was initiated. It signs the receiver part and sends it back to the sender.
+4. ** Finalize ** - Sender walelt must be online within 12 hours of Receiver response to finalize the transaction, generate payment proof (store locally) and send the transaction to the network.
 
-You are encouraged to create a new SBBS Address for each transaction.
+**Offline** (LelantusMW non-interactive) transactions go through the following steps:
+
+1. **Generating address** - Receiver generates a 'Offline' address by using 'Receive' operation in the wallet and sends it to the Sender via external channel (i.e Telegram, email etc...). 
+2. Sender pastes the Address into the 'Send' dialog in the wallet, specifies the amount and clicks 'Send'. The transaction is immediately sent to the network and no additional interactions are required
+
+
+..note:: The 'Offline' address are valid for 10 offline payments, since each offline payment spends a unique identifier. When payments run out the Sender wallet automatically attempts to get more payments from the Receiver through SBBS. If the Receiver is online payments are automatically replenished, otherwise the Sender wallet indicates that there are no more payments left and the Sender needs to contact the Receiver via external channel to get new Offline address.
+
+..note:: Offline transaction fees are signicantly higher (minimum ~0.01 BEAM) than 'Regular' transactions (minimum 100 Groth). This is due to the fact that Offline transactions leave more permanent information in the blockchain.
 
 **Wallet and Node concepts are slightly different**
 
@@ -135,7 +143,7 @@ Beam Node, is a *full node* that downloads, validates and updates the entire blo
 
 .. attention:: It is always recommended to run a full node
 
-**Information that can be restored from the blockchain is completely different**
+**Only the total balance for your seed phrase can be restored from the blockchain**
 
 In most blockchains, information about current UTXOs and the transaction history can be recovered from the blockchain using only the :ref:`Seed Phrase<seed phrase>`.
 

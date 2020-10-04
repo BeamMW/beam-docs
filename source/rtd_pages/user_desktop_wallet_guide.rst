@@ -411,7 +411,7 @@ Completing the transaction
 
 Once Sender initiates the transaction, you will see on the new transaction appear in the transaction list on the main screen. The amount sent will also appear on extended Amount status field. 
 
-.. figure:: images/desktop/05_receiving_beam/05.png
+.. figure:: images/desktop/05_receiving_beam/8.png
    :alt: Incoming transaction
 
 Normally, a transaction will pass through the following stages:
@@ -422,7 +422,7 @@ Normally, a transaction will pass through the following stages:
 
 Once transaction is complete, the available balance will be updated and the Amount status field will be in normal condition.
 
-.. figure:: images/desktop/05_receiving_beam/06.png
+.. figure:: images/desktop/05_receiving_beam/9.png
    :alt: BEAM received
 
 
@@ -563,25 +563,18 @@ Upon completion, you’ll see the main screen of the wallet with your restored f
 Address
 -------
 
-Let’s define the meaning of address in the BEAM ecosystem: BEAM is always sent from one address to another. Both sending and receiving addresses are alphanumeric tokens that uniquely define the transaction endpoints.
+BEAM Address is a collection of parameters encoded into an alphanumeric string and used to conveniently pack information needed to send and recive Beam coins and Confidential Assets.
 
-A person can create as many addresses as required. The address creation process is explained in `Receiving BEAM`_.
+An Address has the following parameters
 
-*Example:* There are two wallets: one belongs to you and the other belongs to Alice. You have created one address to receive money from Alice and another address to send money to Alice. Since you can generate multiple addresses, Alice will never know that she’s receiving money from the same person that she is sending the money to (unless you want her to know).
+* SBBS Key (or SBBS Address) - a public key created by Receiver and used by Sender to encrypt the tranasction information in a way that ONLY the Receiver can detect and decrypt this information. SBBS
+   * SBBS Keys can be either one time or permanent. 
+   * A wallet can generate any amount of keys of either type but the differnce is that 'one time' keys are discarded after the first transaction received for this key, while 'permanent' keys are stored in the wallet forever. 
 
-*Example:* There are three wallets: one belongs to you, one belongs to Alice and another belongs to Bob. You have created one address to receive money from Alice and another address to receive money from Bob. Alice and Bob will never know that they are sending money to the same person.
+* Transaction type - Beam wallet currently supports 'Regular' and 'Offline' transactions
+* Requested amount - the Receiver can optionally specify a requested transaction amount, which non binding and can be changed by the receiver
 
-Same address can be used for sending and receiving money.
-
-*Example:* you have created an address to send money to Alice. Alice can see the address the money came from and can send money to the address back to you.
-
-.. attention:: For ultimate privacy, it is advised to have a **dedicated address for every transaction** (ie. for both Sending or Receiving).
-
-.. attention:: Although not recommended, an address can be reused until it had reached its expiration (24 hours since when it was generated).
-
-*Example:* Imagine you’ve created the address with expiration interval of 24 hours and immediately sent it to Alice. In the next 24 hours, Alice will be able to send BEAM to you as many times as she likes, reusing the same address of yours.
-
-.. warning:: Reusing same addresses, created with longer expiration interval, can be convenient yet the tradeoff of decreased privacy should be kept in mind.
+.. note:: Both one time and permanent SBBS keys are the same in terms of the privacy they provide. However, the more permanent keys you have the more time it will take to the wallet to decrypt SBBS communications. The only reason to use the 'permanent' keys is for exchanges, pools and other entities where the keys can not be easily updated for each transaction.
 
 Address screen
 --------------
