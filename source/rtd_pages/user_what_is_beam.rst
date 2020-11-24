@@ -10,7 +10,7 @@ Project overview
 
 `Beam <https://beam.mw/>`_ is a scalable, confidential cryptocurrency based on an elegant and innovative `Mimblewimble protocol <https://scalingbitcoin.org/papers/mimblewimble.txt>`_ and `LelantusMW protocol <https://github.com/BeamMW/beam/wiki/Lelantus-MW>`_.
 
-Beam development started in March 2018, and only nine and a half month later Beam Mainnet was launched on January 3rd 2019, the ten year annyversary of the Bitoin genesis block.
+Beam development started in March 2018, and only nine and a half month later Beam Mainnet was launched on January 3rd 2019, the ten year annyversary of the Bitcoin genesis block.
 
 Today Beam is one of the leading confidential cryptocurrencies listed on over fifty exchanges and accepted in several hunderd online stores and services.
 
