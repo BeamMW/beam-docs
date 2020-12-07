@@ -364,11 +364,14 @@ If you expect to receive Offline transactions from another Beam wallet:
 
    1. Navigate to 'OFFLINE ADDRESS (for wallet)' pane on the right. This address can be used in multiple transactions.
    2. Click 'copy and close' in the 'OFFLINE ADDRESS (for wallets)' pane on the right
-
+   
+.. attention:: You will pay a fee for this transaction. 1 000 1000 GROTH for sending an offline transaction and an additional 1 000 000 GROTH for each Shielded UTXO if sending amount included it 
 .. attention:: To generate and receive offline funds make sure that you're connected to the integrated node.
 
 .. note:: Each offline address is good for ten offline payments (aka vouchers). When payments run out, the Sender wallet will automatically send request for more payments to the Receiver wallet using SBBS. If Receiver wallet is online within 12 hours of the request (until the SBBS message expires) it will send 30 more offline payment vouchers to the sender. Otherwise, Sender will receive notification that there are no more vouchers and will have to request another offline address via external channel. 
 
+In the 'Max privacy' mode: 
+...
 
 If you want to view the address before sending it over, click on 'More details' in the relevant pane on the right
 
@@ -474,7 +477,7 @@ Select the transaction amount in BEAM you want to send. Transaction amount is in
 .. figure:: images/desktop/06_sending_beam/04.png
    :alt: Send BEAM amount
 
-Transaction fees are specified in GROTH (100 millionths of BEAM).The minimum fee is 100 GROTH, it’s set by default but the higher transaction fee will help miners to prioritize your transaction. 
+Transaction fees are specified in GROTH (100 millionths of BEAM).The minimum fee is 100 GROTH and an additional 1 000 000 GROTH for each Shielded UTXO if sending amount included it, it’s set by default but the higher transaction fee will help miners to prioritize your transaction. 
 
 You can see the remaining amount of BEAM in your wallet and the change that will be received after the transaction.
 
@@ -645,7 +648,7 @@ The type of UTXO can be:
 * **Change** - UTXO received as a result of change from a transaction. It is immediately available for spending
 * **Transaction fee** - Fees received as a result of mining a block which contain transactions
 * **Coinbase** - UTXO you have mined. It has maturity of 3 hours (240 blocks) and will not be immediately seen in Available tab
-* **Shielded** - UTXO received as a result of a Offline or Max privacy transaction. It is immediately available for spending
+* **Shielded** - UTXO received as a result of a Offline or Max privacy transaction. Offline is immediately available for spending, meanwhile how to max privacy can be immediately available( no limit) or locked by "Max privacy longest transaction time" parameter on settings screen
 
 
 UTXO in sending BEAM screen (explained by example)
