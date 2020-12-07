@@ -645,6 +645,7 @@ The type of UTXO can be:
 * **Change** - UTXO received as a result of change from a transaction. It is immediately available for spending
 * **Transaction fee** - Fees received as a result of mining a block which contain transactions
 * **Coinbase** - UTXO you have mined. It has maturity of 3 hours (240 blocks) and will not be immediately seen in Available tab
+* **Shielded** - UTXO received as a result of a Offline or Max privacy transaction. It is immediately available for spending
 
 
 UTXO in sending BEAM screen (explained by example)
