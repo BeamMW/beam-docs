@@ -380,8 +380,11 @@ QR code
 -------
 
 If the Sender uses a mobile app, he can quickly scan the QR code instead of receiving, copying and pasting the alphanumeric address. To do that click on the QR code icon on one of the right pane
+
 .. figure:: images/desktop/05_receiving_beam/qr.png
-   :alt: QR code icon
+   :width: 80px
+   :height: 80px
+   :align: center
 
 .. figure:: images/desktop/05_receiving_beam/1.png
    :alt: QR code
