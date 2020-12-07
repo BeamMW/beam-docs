@@ -334,40 +334,43 @@ Generate an address
 
 Proceed to the main screen and click the blue ‘Receive’ button at the top right corner. This will open the receive screen.
 
-.. figure:: images/desktop/05_receiving_beam/1.png
+.. figure:: source/rtd_pages/images/desktop/05_receiving_beam/1.png
    :alt: Receive BEAM screen
 
 
-Choose between 'Regular' and 'Offline' transaction modes
+Choose between 'Regular' and 'Max privacy' transaction modes
 
 In the 'Regular' mode: 
 
-If you expect to receive transaction from another Beam wallet: 
+If you expect to receive transaction once from another Beam wallet: 
 
    1. Leave the address type selector in 'One-time use' position. This adddress is good for one transaction only.
-   2. Click 'copy and close' in the 'ONLINE ADDRESS (for wallets)' pane on the right.
+   2. Click 'copy and close' in the 'ONLINE ADDRESS (for wallet)' pane on the right.
+.. note:: The address will be created with the expiration period ‘24 hours’ from the current time.
 
-If you expect to receive transaction from exchange or pool
-
-   1. Switch the address type selector to the 'Permanent addres' position. This adderess can be used in multiple transactions.
-   2. Click 'copy and close' in the 'ONLINE ADDRESS (for exchange or mining pool)'  pane on the right.
 
 If you expect to receive transactions from another Beam wallet on regular basis:
 
-   1. Switch the address type selector to the 'Permanent addres' position. This adderess can be used in multiple transactions.
-   2. Click 'copy and close' in the 'ONLINE ADDRESS (for wallets)'  pane on the right.   
+   1. Switch the ONLINE address type selector to the 'Permanent' position. This adderess can be used in multiple transactions.
+   2. Click 'copy and close' in the 'ONLINE ADDRESS (for wallet)'  pane on the right. 
+.. note:: The address will be created with the expiration period ‘Never’. That means that address will live forever.
 
+If you expect to receive transaction from exchange or pool
 
-In the 'Offline' mode:
+   1. Navigate to 'ONLINE ADDRESS (for exchange or mining pool)' pane on the right. This address can be used in multiple transactions.
+   2. Click 'copy and close' in the 'ONLINE ADDRESS (for exchange or mining pool)'  pane on the right.
 
-   1. Switch to 'Offline' mode 
+If you expect to receive Offline transactions from another Beam wallet: 
+
+   1. Navigate to 'OFFLINE ADDRESS (for wallet)' pane on the right. This address can be used in multiple transactions.
    2. Click 'copy and close' in the 'OFFLINE ADDRESS (for wallets)' pane on the right
 
+.. attention:: To generate and receive offline funds make sure that you're connected to the integrated node.
 
-.. note:: Each offline address is good for ten offline payments (aka vouchers). When payments run out, the Sender wallet will automatically send request for more payments to the Receiver wallet using SBBS. If Receiver wallet is online within 12 hours of the request (until the SBBS message expires) it will send 20 more offline payment vouchers to the sender. Otherwise, Sender will receive notification that there are no more vouchers and will have to request another offline address via external channel. 
+.. note:: Each offline address is good for ten offline payments (aka vouchers). When payments run out, the Sender wallet will automatically send request for more payments to the Receiver wallet using SBBS. If Receiver wallet is online within 12 hours of the request (until the SBBS message expires) it will send 30 more offline payment vouchers to the sender. Otherwise, Sender will receive notification that there are no more vouchers and will have to request another offline address via external channel. 
 
 
-If you want to view the address before sending it over, click on 'Show address' in the relevant pane on the right
+If you want to view the address before sending it over, click on 'More details' in the relevant pane on the right
 
 Send copied address to the other side via a **secure communication channel**
 
@@ -376,9 +379,10 @@ Each time the Receive Beam dialog is open, a new Beam address is generated.
 QR code
 -------
 
-If the Sender uses a mobile app, he can quickly scan the QR code instead of  receiving, copying and pasting the alphanumeric address. 
+If the Sender uses a mobile app, he can quickly scan the QR code instead of receiving, copying and pasting the alphanumeric address. To do that click on the QR code icon 
+.. figure:: source/rtd_pages/images/desktop/05_receiving_beam/qr.png on one of the right pane
 
-.. figure:: images/desktop/05_receiving_beam/2.png
+.. figure:: source/rtd_pages/images/desktop/05_receiving_beam/1.png
    :alt: QR code
 
 Request
