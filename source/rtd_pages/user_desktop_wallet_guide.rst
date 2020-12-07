@@ -334,7 +334,7 @@ Generate an address
 
 Proceed to the main screen and click the blue ‘Receive’ button at the top right corner. This will open the receive screen.
 
-.. figure:: source/rtd_pages/images/desktop/05_receiving_beam/1.png
+.. figure:: images/desktop/05_receiving_beam/1.png
    :alt: Receive BEAM screen
 
 
@@ -379,10 +379,11 @@ Each time the Receive Beam dialog is open, a new Beam address is generated.
 QR code
 -------
 
-If the Sender uses a mobile app, he can quickly scan the QR code instead of receiving, copying and pasting the alphanumeric address. To do that click on the QR code icon 
-.. figure:: source/rtd_pages/images/desktop/05_receiving_beam/qr.png on one of the right pane
+If the Sender uses a mobile app, he can quickly scan the QR code instead of receiving, copying and pasting the alphanumeric address. To do that click on the QR code icon on one of the right pane
+.. figure:: images/desktop/05_receiving_beam/qr.png
+   :alt: QR code icon
 
-.. figure:: source/rtd_pages/images/desktop/05_receiving_beam/1.png
+.. figure:: images/desktop/05_receiving_beam/1.png
    :alt: QR code
 
 Request
