@@ -371,6 +371,7 @@ If you expect to receive Offline transactions from another Beam wallet:
 PUBLIC OFFLINE ADDRESS
 
 Public Offline is used if you expect to receive offline transactions from another Beam wallets on regular basis.This address can be used in multiple transactions.
+Example: Used Public offline addresses for collecting donations while your wallet is completely offline
 
    1. Navigate to `Settings screen`_. 
    2. Сlick on 'Utilities' to expand the form
@@ -380,7 +381,8 @@ Public Offline is used if you expect to receive offline transactions from anothe
 .. note:: The address will be created with the expiration period ‘Never’. That means that address will live forever.
 
 .. attention:: To generate and receive Offline funds either to Offline address either to Public offline address make sure that you're connected to the integrated node.
-.. attention:: You will pay a fee for this transactions. 1 000 1000 GROTH for sending an offline transaction and an additional 1 000 000 GROTH for each Shielded UTXO if sending amount included it 
+.. attention:: You will pay a fee for this transactions. 1 000 100 GROTH for sending an offline transaction and an additional 1 000 000 GROTH for each Shielded UTXO if sending amount included it 
+.. attention:: The sender of funds to a receiver's Public Offline Address might be able to know that those funds are later being used by the receiver. Beam wallet and Beam explorer do not expose such functionality but it's possible to derive this information by analyzing the Blockchain.
 
 
 In the 'Max privacy' mode: 
