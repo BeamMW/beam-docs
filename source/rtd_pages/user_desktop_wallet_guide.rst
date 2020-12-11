@@ -344,7 +344,7 @@ In the 'Regular' mode:
 
 If you expect to receive transaction once from another Beam wallet: 
 
-   1. Leave the address type selector in 'One-time use' position. This adddress is good for one transaction only.
+   1. Leave the address type selector in 'One-time use' position. This address is good for one transaction only.
    2. Click 'copy and close' in the 'ONLINE ADDRESS (for wallet)' pane on the right.
 .. note:: This address is suitable if you are waiting for a transaction in the next 24 hours and will no longer use this address to receive transactions in the future. The address will be created with the expiration period ‘24 hours’ from the current time.
 
@@ -381,7 +381,9 @@ Example: Used Public offline addresses for collecting donations while your walle
 .. note:: The address will be created with the expiration period ‘Never’. That means that address will live forever.
 
 .. attention:: To generate and receive Offline funds either to Offline address either to Public offline address make sure that you're connected to the integrated node.
-.. attention:: You will pay a fee for this transactions. 1 000 100 GROTH for sending an offline transaction and an additional 1 000 000 GROTH for each Shielded UTXO if sending amount included it 
+.. attention:: You will pay a fee for these transactions. 1 000 100 GROTH for sending an offline transaction and an additional 1 000 000 GROTH for each Shielded UTXO if sending amount included it. 
+Additionally, if the Shielded coins have matured in the shielded pool at the time when the transaction is created they can also impact to the fee as 1 000 000 GROTH for each Shielded UTXO extracted from the pool. 
+Last part belongs not only for offline transactions but for all transaction's types
 .. important:: The sender of funds to a receiver's Public Offline Address might be able to know that those funds are later being used by the receiver. Beam wallet and Beam explorer do not expose such functionality but it's possible to derive this information by analyzing the Blockchain.
 
 
