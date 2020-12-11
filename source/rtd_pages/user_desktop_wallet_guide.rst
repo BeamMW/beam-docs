@@ -365,7 +365,7 @@ If you expect to receive Offline transactions from another Beam wallet:
    1. Navigate to 'OFFLINE ADDRESS (for wallet)' pane on the right. This address can be used in multiple transactions.
    2. Click 'copy and close' in the 'OFFLINE ADDRESS (for wallets)' pane on the right
    
-  .. note:: Each offline address is good for ten offline payments (aka vouchers). When payments run out, the Sender wallet will automatically send request for more payments to the Receiver wallet using SBBS. If Receiver wallet is online within 12 hours of the request (until the SBBS message expires) it will send 30 more offline payment vouchers to the sender. Otherwise, Sender will receive notification that there are no more vouchers and will have to request another offline address via external channel. 
+.. note:: Each offline address is good for ten offline payments (aka vouchers). When payments run out, the Sender wallet will automatically send request for more payments to the Receiver wallet using SBBS. If Receiver wallet is online within 12 hours of the request (until the SBBS message expires) it will send 30 more offline payment vouchers to the sender. Otherwise, Sender will receive notification that there are no more vouchers and will have to request another offline address via external channel. 
    
    
 PUBLIC OFFLINE ADDRESS
