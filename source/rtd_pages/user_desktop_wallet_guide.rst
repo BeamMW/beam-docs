@@ -381,9 +381,9 @@ Example: Used Public offline addresses for collecting donations while your walle
 .. note:: The address will be created with the expiration period ‘Never’. That means that address will live forever.
 
 .. attention:: To generate and receive Offline funds either to Offline address either to Public offline address make sure that you're connected to the integrated node.
-.. attention:: You will pay a fee for these transactions. 1 000 100 GROTH for sending an offline transaction and an additional 1 000 000 GROTH for each Shielded UTXO if sending amount included it. 
-Additionally, if the Shielded coins have matured in the shielded pool at the time when the transaction is created they can also impact to the fee as 1 000 000 GROTH for each Shielded UTXO extracted from the pool. 
-Last part belongs not only to offline transactions but for all transaction's types
+.. attention:: You will pay a fee for these transactions. 1 000 100 GROTH for sending an offline transaction and an additional 1 000 000 GROTH for each Shielded UTXO if the sending amount included it. 
+Additionally, if the Shielded coins have matured in the shielded pool at the time when the transaction is created they can also impact the fee as 1 000 000 GROTH for each Shielded UTXO extracted from the pool. 
+The ast part belongs not only to offline transactions but for all transaction's types
 .. important:: The sender of funds to a receiver's Public Offline Address might be able to know that those funds are later being used by the receiver. Beam wallet and Beam explorer do not expose such functionality but it's possible to derive this information by analyzing the Blockchain.
 
 
