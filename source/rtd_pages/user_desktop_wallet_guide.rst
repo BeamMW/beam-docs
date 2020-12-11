@@ -346,7 +346,7 @@ If you expect to receive transaction once from another Beam wallet:
 
    1. Leave the address type selector in 'One-time use' position. This adddress is good for one transaction only.
    2. Click 'copy and close' in the 'ONLINE ADDRESS (for wallet)' pane on the right.
-.. note:: The address will be created with the expiration period ‘24 hours’ from the current time.
+.. note:: This address is suitable if you are waiting for a transaction in the next 24 hours and will no longer use this address to receive transactions in the future. The address will be created with the expiration period ‘24 hours’ from the current time.
 
 
 If you expect to receive transactions from another Beam wallet on regular basis:
