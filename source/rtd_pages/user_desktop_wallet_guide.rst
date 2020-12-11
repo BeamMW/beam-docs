@@ -383,13 +383,10 @@ Public Offline is used if you expect to receive offline transactions from anothe
 .. attention:: You will pay a fee for this transactions. 1 000 1000 GROTH for sending an offline transaction and an additional 1 000 000 GROTH for each Shielded UTXO if sending amount included it 
 
 
-
-
 In the 'Max privacy' mode: 
 ...
 
 If you want to view the address before sending it over, click on 'More details' in the relevant pane on the right
-
 
 
 
