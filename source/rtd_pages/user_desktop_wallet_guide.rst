@@ -365,15 +365,33 @@ If you expect to receive Offline transactions from another Beam wallet:
    1. Navigate to 'OFFLINE ADDRESS (for wallet)' pane on the right. This address can be used in multiple transactions.
    2. Click 'copy and close' in the 'OFFLINE ADDRESS (for wallets)' pane on the right
    
-.. attention:: You will pay a fee for this transaction. 1 000 1000 GROTH for sending an offline transaction and an additional 1 000 000 GROTH for each Shielded UTXO if sending amount included it 
-.. attention:: To generate and receive offline funds make sure that you're connected to the integrated node.
+  .. note:: Each offline address is good for ten offline payments (aka vouchers). When payments run out, the Sender wallet will automatically send request for more payments to the Receiver wallet using SBBS. If Receiver wallet is online within 12 hours of the request (until the SBBS message expires) it will send 30 more offline payment vouchers to the sender. Otherwise, Sender will receive notification that there are no more vouchers and will have to request another offline address via external channel. 
+   
+   
+Public Offline address
 
-.. note:: Each offline address is good for ten offline payments (aka vouchers). When payments run out, the Sender wallet will automatically send request for more payments to the Receiver wallet using SBBS. If Receiver wallet is online within 12 hours of the request (until the SBBS message expires) it will send 30 more offline payment vouchers to the sender. Otherwise, Sender will receive notification that there are no more vouchers and will have to request another offline address via external channel. 
+Public Offline is used if you expect to receive offline transactions from another Beam wallets on regular basis.This address can be used in multiple transactions.
+
+   1. Navigate to `Settings screen`_. 
+   2. Сlick on 'Utilities' to expand the form
+   3. Click 'Show public offline address'
+   4. Click 'copy and close' on the openned pop-up OR if the Sender uses a mobile app, he can quickly scan the QR code instead of receiving, copying and pasting the alphanumeric address.
+   
+.. note:: The address will be created with the expiration period ‘Never’. That means that address will live forever.
+
+.. attention:: To generate and receive Offline funds either to Offline address either to Public offline address make sure that you're connected to the integrated node.
+.. attention:: You will pay a fee for this transactions. 1 000 1000 GROTH for sending an offline transaction and an additional 1 000 000 GROTH for each Shielded UTXO if sending amount included it 
+
+
+
 
 In the 'Max privacy' mode: 
 ...
 
 If you want to view the address before sending it over, click on 'More details' in the relevant pane on the right
+
+
+
 
 Send copied address to the other side via a **secure communication channel**
 
