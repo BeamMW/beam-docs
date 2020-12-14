@@ -384,7 +384,9 @@ In order to create new SBBS address, run the following command:
 You will be prompted for the wallet password
 
 Sample output from this command should look like this:
+
 ::
+
 I 2020-12-14.17:45:45.613 Rules signature: 0-ed91a717313c6eb0, 321321-6d622e615cfd29d0, 777777-1ce8f721bf0c9fa7
 Enter password: *
 I 2020-12-14.17:45:47.901 wallet sucessfully opened...
@@ -408,7 +410,9 @@ In order to create new SBBS address, run the following command:
 You will be prompted for the wallet password
 
 Sample output from this command should look like this:
+
 ::
+
 I 2020-12-14.17:55:55.843 Rules signature: 0-ed91a717313c6eb0, 321321-6d622e615cfd29d0, 777777-1ce8f721bf0c9fa7
 Enter password: *
 I 2020-12-14.17:55:56.815 wallet sucessfully opened...
