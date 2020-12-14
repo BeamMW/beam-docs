@@ -363,14 +363,14 @@ Sample output from this command should look like this:
 
 ::
 
-I 2020-12-14.17:47:47.160 Rules signature: 0-ed91a717313c6eb0, 321321-6d622e615cfd29d0, 777777-1ce8f721bf0c9fa7
-Enter password: *
-I 2020-12-14.17:47:48.084 wallet sucessfully opened...
-I 2020-12-14.17:47:48.196 New address generated:
+    I 2020-12-14.17:47:47.160 Rules signature: 0-ed91a717313c6eb0, 321321-6d622e615cfd29d0, 777777-1ce8f721bf0c9fa7
+    Enter password: *
+    I 2020-12-14.17:47:48.084 wallet sucessfully opened...
+    I 2020-12-14.17:47:48.196 New address generated:
 
-3a92298f29cf61617a96749644cdcefb0b3a1c10beb52bc611ae7968116ae16b363
+    3a92298f29cf61617a96749644cdcefb0b3a1c10beb52bc611ae7968116ae16b363
 
-I 2020-12-14.17:47:48.197 address: 8NmCQLhTTk2P7XeFZrHe1SNvAbpyfvrtgP1MJa7tx75fLDzcDeNqLTTxDfGg49wEfij8Z8i9qqfVR7jBiXnvQ2ousCBdTVdjgwuc4R6RYGZNTysNUGQei1vH42duGMFoB76fuKkCScran
+    I 2020-12-14.17:47:48.197 address: 8NmCQLhTTk2P7XeFZrHe1SNvAbpyfvrtgP1MJa7tx75fLDzcDeNqLTTxDfGg49wEfij8Z8i9qqfVR7jBiXnvQ2ousCBdTVdjgwuc4R6RYGZNTysNUGQei1vH42duGMFoB76fuKkCScran
  
 
 Creating Offline address
@@ -387,15 +387,15 @@ Sample output from this command should look like this:
 
 ::
 
-I 2020-12-14.17:45:45.613 Rules signature: 0-ed91a717313c6eb0, 321321-6d622e615cfd29d0, 777777-1ce8f721bf0c9fa7
-Enter password: *
-I 2020-12-14.17:45:47.901 wallet sucessfully opened...
-I 2020-12-14.17:45:47.901 Generating offline address
-I 2020-12-14.17:45:48.028 New address generated:
+    I 2020-12-14.17:45:45.613 Rules signature: 0-ed91a717313c6eb0, 321321-6d622e615cfd29d0, 777777-1ce8f721bf0c9fa7
+    Enter password: *
+    I 2020-12-14.17:45:47.901 wallet sucessfully opened...
+    I 2020-12-14.17:45:47.901 Generating offline address
+    I 2020-12-14.17:45:48.028 New address generated:
 
-4185792e5691fafc4135355c343d0d7cf97d20fbdf20e1b020c21320e188e55327
+    4185792e5691fafc4135355c343d0d7cf97d20fbdf20e1b020c21320e188e55327
 
-I 2020-12-14.17:45:48.030 address: 3XHPHapAXANcf3KT1LPMmzE4ADxkCAFyvU3767TiFWAtVukMVjwnHG9VnFcVevgptKmLLPXTAiw8MxX9tFTZ2SVe3CrDEzj6ShRk5ofhYJ6VHsrkJ5PwxP8mqcHcp3wH1qRcae5eeBXSHg7Z6pqyZS6LrxBU5rBdxddn2mwk7zrNwCZj4gk5NCXvLfuCaP6SmAkcbibcQN2oAmxfFW8J71YiuQ58gCki4QVoWXXt859hmPeobQ1qqDJMJo1M6Y8mmVhpLaismnWHxC42fuf1k6AmeJVtuf6hD2zVBCtu82AU9hDoXa1ieArPiPzRpopvDYYeKwsnGiTCf6Mwz4Q4ab5JC6Rb7bd7YbT7EkvycaLrzvzYyeDfbozP9BRJLvKYF4UycV9mvZV8DKT8UNHsLD75q3dQcbQc4dMoixHPcqKa4Jq5McmqqNCzzfwDDGbt7wTTHV
+    I 2020-12-14.17:45:48.030 address: 3XHPHapAXANcf3KT1LPMmzE4ADxkCAFyvU3767TiFWAtVukMVjwnHG9VnFcVevgptKmLLPXTAiw8MxX9tFTZ2SVe3CrDEzj6ShRk5ofhYJ6VHsrkJ5PwxP8mqcHcp3wH1qRcae5eeBXSHg7Z6pqyZS6LrxBU5rBdxddn2mwk7zrNwCZj4gk5NCXvLfuCaP6SmAkcbibcQN2oAmxfFW8J71YiuQ58gCki4QVoWXXt859hmPeobQ1qqDJMJo1M6Y8mmVhpLaismnWHxC42fuf1k6AmeJVtuf6hD2zVBCtu82AU9hDoXa1ieArPiPzRpopvDYYeKwsnGiTCf6Mwz4Q4ab5JC6Rb7bd7YbT7EkvycaLrzvzYyeDfbozP9BRJLvKYF4UycV9mvZV8DKT8UNHsLD75q3dQcbQc4dMoixHPcqKa4Jq5McmqqNCzzfwDDGbt7wTTHV
 
 .. note:: It is important to provide number of payments(aka vouchers). When payments run out, the Sender wallet will automatically send request for more payments to the Receiver wallet using SBBS.If Receiver wallet is online within 12 hours of the request (until the SBBS message expires) it will send 30 more offline payment vouchers to the sender. Otherwise, Sender will receive notification that there are no more vouchers and will have to request another offline address via external channel.
 
@@ -413,11 +413,11 @@ Sample output from this command should look like this:
 
 ::
 
-I 2020-12-14.17:55:55.843 Rules signature: 0-ed91a717313c6eb0, 321321-6d622e615cfd29d0, 777777-1ce8f721bf0c9fa7
-Enter password: *
-I 2020-12-14.17:55:56.815 wallet sucessfully opened...
-I 2020-12-14.17:55:56.816 Generating public offline address
-I 2020-12-14.17:55:56.818 address: A4Y8nZvGgzE7hvGT5QX4P3VqEeWpxPe8PCQ5o5nhATNrtJbExhgbuwQHGavD5XaSTXPLAovgZXQPExW38A6Z5ZcovwqPkSVmWu2wEhGjv7dV4sDMpxFGFF1tiKJudJcZZNASeZTQ1ZTYBybiDENxbiH5gcqzBQhqC3P3ke3SxABPYqHL4pTSRmginWx2JJF7sVkiPTQAEoqCfU7C6v9uisjURNcvv4PdkG68QKf2GWRUqYEH9UPwKi7gFZxKpnfKToa1fDSRo3xqeMVEB2ZrYAw9k3wqb2seZHtVzACiTc
+    I 2020-12-14.17:55:55.843 Rules signature: 0-ed91a717313c6eb0, 321321-6d622e615cfd29d0, 777777-1ce8f721bf0c9fa7
+    Enter password: *
+    I 2020-12-14.17:55:56.815 wallet sucessfully opened...
+    I 2020-12-14.17:55:56.816 Generating public offline address
+    I 2020-12-14.17:55:56.818 address: A4Y8nZvGgzE7hvGT5QX4P3VqEeWpxPe8PCQ5o5nhATNrtJbExhgbuwQHGavD5XaSTXPLAovgZXQPExW38A6Z5ZcovwqPkSVmWu2wEhGjv7dV4sDMpxFGFF1tiKJudJcZZNASeZTQ1ZTYBybiDENxbiH5gcqzBQhqC3P3ke3SxABPYqHL4pTSRmginWx2JJF7sVkiPTQAEoqCfU7C6v9uisjURNcvv4PdkG68QKf2GWRUqYEH9UPwKi7gFZxKpnfKToa1fDSRo3xqeMVEB2ZrYAw9k3wqb2seZHtVzACiTc
 
 .. note:: Public Offline is used if you expect to receive offline transactions from another Beam wallets on regular basis.This address can be used in multiple transactions. Example: Used Public offline addresses for collecting donations while your wallet is completely offline
 
