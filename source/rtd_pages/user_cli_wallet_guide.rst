@@ -375,7 +375,7 @@ Sample output from this command should look like this:
 
 Creating Offline address
 -------------------------
-In order to create new SBBS address, run the following command:
+In order to create Offline address, run the following command:
 
 ::
 
@@ -401,7 +401,7 @@ Sample output from this command should look like this:
 
 Creating Public Offline address
 -------------------------
-In order to create new SBBS address, run the following command:
+In order to create ublic Offline address, run the following command:
 
 ::
 
