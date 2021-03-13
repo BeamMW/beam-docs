@@ -11,7 +11,7 @@ Beam Desktop Wallet is the simplest way to start using Beam. It is available for
 
    Beam blockchain does not store transaction history and SBBS addresses. These are only stored in local database inside the wallet data folder.
 
-   Please follow these guidelines below to avoid problems with sending are receiving Beam transactions.
+   Please follow these guidelines below to avoid problems with sending and receiving Beam transactions.
 
    1. Do not copy the wallet.db to another machine and run another wallet simultaneously using the same wallet database
 
